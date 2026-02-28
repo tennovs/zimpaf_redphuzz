@@ -3,9 +3,13 @@
 *.h linguist-language=C
 *.py linguist-language=Python
 
-# Ignore testbed, web interface, leftover files
+# Ignore web/testbed files that confuse Linguist
 www/html/** linguist-vendored
-www/**/index.php linguist-vendored
+www/html/**/*.php linguist-vendored
+www/html/**/*.html linguist-vendored
+www/html/**/*.css linguist-vendored
+
+# Ignore leftover binaries
 *.zip linguist-vendored
 *.tar linguist-vendored
 *.o linguist-vendored
