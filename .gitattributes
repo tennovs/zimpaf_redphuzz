@@ -1,0 +1,14 @@
+# Main research code
+*.c linguist-language=C
+*.h linguist-language=C
+*.py linguist-language=Python
+
+# Ignore PHP testbed files
+www/html/**/*.php linguist-vendored
+
+# Ignore binaries and large files
+*.zip linguist-vendored
+*.tar linguist-vendored
+*.tar.gz linguist-vendored
+*.so linguist-vendored
+*.o linguist-vendored
