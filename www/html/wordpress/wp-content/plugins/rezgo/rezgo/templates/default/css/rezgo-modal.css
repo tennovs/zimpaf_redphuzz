@@ -1,0 +1,132 @@
+/* REZGO MODAL */
+#rezgo-modal {
+	margin: 32px auto;
+}
+#rezgo-modal .modal-content {
+	padding: 1px;
+	border-radius: 0;
+}
+#rezgo-modal .modal-header {
+	background-color: #428bca;
+	color: #fff;
+}
+#rezgo-modal .modal-header .close {
+	color: #fff;
+	opacity: .65;
+}
+#rezgo-modal .modal-header .close:hover {
+	opacity: 1;
+}
+#rezgo-modal .modal-header {
+	padding: 10px 44px 10px 15px;
+}
+#rezgo-modal h4,
+#rezgo-modal .close {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	margin: 0;
+}
+#rezgo-modal .close {
+	font-size: 32px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	height: 44px;
+	width: 44px;
+	background: transparent;
+    text-decoration: none;
+	text-align: center;
+}
+#rezgo-modal #rezgo-cross-dismiss {
+	font-size: 16px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 4px 12px;
+	border-color: #2a6495;
+}
+#rezgo-modal-loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+#rezgo-modal-loader .modal-loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	height: 15px;
+	margin-left: -100px;
+	margin-top: -7px;
+	background-color: #999;
+	border-radius: 4px;
+	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.15) inset;
+	animation: 2s linear 0s normal none infinite progress-bar-stripes;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+	background-size: 30px 30px;
+	transition: width 0.6s ease 0s;
+}
+
+@media (min-width: 1080px) {
+  .modal-xl {
+    width: 1100px;
+  }
+	.modal-xl.modal-dialog {
+		height: 90%;
+	}
+	.modal-xl .modal-content {
+		height: 86%;
+	}		
+}
+
+
+@media (max-width: 1080px) and (min-width: 768px) {
+  .modal-xl {
+    width: 95%;
+  }
+	.modal-xl.modal-dialog {
+		height: 98%;
+	}
+	.modal-xl .modal-content {
+		height: 88%;
+		max-height: 600px;
+	}		
+}
+
+@media (max-width: 768px) and (min-width: 350px) {
+  .modal-xl {
+    width: 95%;
+  }
+	.modal-xl.modal-dialog {
+		height: 98%;
+	}
+	.modal-xl .modal-content {
+		height: 95%;
+	}		
+}
+
+@media screen and (max-width:400px){
+	.modal-xl .modal-content{
+		height:95vh;
+	}
+}
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .modal-xl .modal-content {
+			height: 95vh;
+		}
+     }
+
+@media (min-width: 768px) {
+	.modal-dialog:not(.modal-xl) {
+		width: auto !important;
+		max-width: 700px !important;
+	}
+}

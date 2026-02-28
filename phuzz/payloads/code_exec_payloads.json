@@ -1,0 +1,43 @@
+{"malformed":[";cat2 /etc/passwd",
+              "exec '/bin/bash')",
+              "\\\\xfbin\\\\x2fbash",
+              "| pinging localhost",
+              "|pinging localhost",
+              "'localhost' | eco 'code exec test'",
+              "localhost > ",
+              "'test code exec' > /dev/nul",
+              "`idssss`",
+              "localhostr",
+              "257.1000.452.4321",
+              "||/usr/bin/cleared",
+              "|| /usr/bin/cleared",
+              "id && /usr/bin/cleared",
+              "&& /usr/bin/ids",
+              "& /usr/bin/ids",
+              "); cleared",
+              "http://localhost",
+              "1270%2E%2E0%2E0%2E1"
+               
+              ],
+               
+"wellformed":[";cat /etc/passwd",
+              "exec ('/bin/bash')",
+              "\\\\x2fbin\\\\x2fbash",
+              "| grep 'clear'",
+              "| ping localhost",
+              "'localhost' | echo 'code exec test'",
+              "localhost &2> /dev/null",
+              "'test code exec' > /dev/null",
+              "`clear`",
+              "`id`",
+              "localhost",
+              "127.0.0.1",
+              "||/usr/bin/clear",
+              "id && /usr/bin/clear",
+              "&& /usr/bin/id",
+              "& /usr/bin/id",
+              "); clear",
+              "127%2E0%2E0%2E1"
+
+              ]
+}

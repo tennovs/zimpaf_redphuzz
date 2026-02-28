@@ -1,0 +1,76 @@
+.pieregister_selector .pieregister-divi-form-preview{
+    float: left;
+    width: 70%;
+}
+#pie_register_reg_form, div.pieregForgotPassword, .piereg_login_container, .pieregWrapper, .piereg_container, .piereg_login_wrapper{
+    padding: 0px;
+    margin: 0px;
+}
+.piereg_login_container .piereg_login_wrapper, .piereg_login_container .piereg_login_wrapper .piereg_loginform .forgetmenot{
+    margin: 0px;
+}
+.pieregister-divi-form-preview .piereg_login_container .piereg_login_wrapper .piereg_loginform p#nav, .piereg_login_container .piereg_login_wrapper .piereg_resetpassform p.nav{
+    float: left;
+    text-align: left;
+}
+.pieregister-divi-form-preview .pieregWrapper #pie_register .fields label, .pieregister-divi-form-preview #piereg_login form#piereg_lostpasswordform p label {
+    width: 100%;
+    display: block;
+}
+
+.pieregWrapper #pie_register .fields .input_fields, .pieregWrapper #piereg_login .input_fields, .piereg_login_container .piereg_login_wrapper .piereg_resetpassform .input_fields{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+.pieregWrapper #pie_register .fields textarea {
+    height: 150px;
+}
+.pieregWrapper #pie_register .fields input[type="checkbox"] , .pieregWrapper #pie_register .fields input[type="radio"] {
+    width: auto;
+    display: initial;
+    margin-right: 9px;
+}
+.pieregWrapper #pie_register .fields ul{
+    list-style: none;
+}
+.pieregWrapper #pie_register .fields select{
+    width: 100%;
+    height: 40px!important;
+    overflow: hidden!important;
+    margin-bottom: 10px;
+}
+.pieregWrapper #pie_register .fields select option{
+    width: 100%;
+    height: 40px;
+    padding: 7px;
+}
+.pieregWrapper #pie_register .fields input[type="submit"], .pieregWrapper input[type="submit"], .piereg_container .piereg_login_wrapper .submit input[type="submit"]{
+    margin: 10px auto;
+    float: left;
+    width: 70%;
+}
+.pieregWrapper #pie_register .fields input[type="reset"], .pieregWrapper input[type="reset"]{
+    margin: 10px auto;
+    float: left;
+    width: 70%;
+}
+.pieregWrapper #pie_register .fields input[type=url]{
+    background-color: #fff;
+    border: 1px solid #bbb; 
+    color: #4e4e4e;
+}
+.et-db #et-boc .et-l .et-fb-modules-list ul > li.pieregister_selector::before {
+    content: '';
+    background-image: url("../images/editors/divi/pieregister-logo.svg");
+    height: 16px;
+    font-variant: normal;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#et-main-area .pieregister_selector .pieregister-divi-form-placeholder img {
+    width: 13.6px;
+    height: 16px;
+}

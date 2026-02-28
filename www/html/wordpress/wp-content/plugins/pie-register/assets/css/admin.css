@@ -1,0 +1,89 @@
+.pieregWrapper .ui-datepicker{width:17em;padding:.2em .2em 0}.pieregWrapper .ui-datepicker .ui-datepicker-header{position:relative;padding:.2em 0}.pieregWrapper .ui-datepicker .ui-datepicker-next,.pieregWrapper .ui-datepicker .ui-datepicker-prev{position:absolute;top:2px;width:1.8em;height:1.8em}.pieregWrapper .ui-datepicker .ui-datepicker-next-hover,.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover{top:1px}.pieregWrapper .ui-datepicker .ui-datepicker-prev{left:2px}.pieregWrapper .ui-datepicker .ui-datepicker-next{right:2px}.pieregWrapper .ui-datepicker .ui-datepicker-prev-hover{left:1px}.pieregWrapper .ui-datepicker .ui-datepicker-next-hover{right:1px}.pieregWrapper .ui-datepicker .ui-datepicker-next span,.pieregWrapper .ui-datepicker .ui-datepicker-prev span{display:block;position:absolute;left:50%;margin-left:-8px;top:50%;margin-top:-8px}.pieregWrapper .ui-datepicker .ui-datepicker-title{margin:0 2.3em;line-height:1.8em;text-align:center}.pieregWrapper .ui-datepicker .ui-datepicker-title select{font-size:1em;margin:1px 0}.pieregWrapper .ui-datepicker select.ui-datepicker-month-year{width:100%}.pieregWrapper .ui-datepicker select.ui-datepicker-month,.pieregWrapper .ui-datepicker select.ui-datepicker-year{width:49%}.pieregWrapper .ui-datepicker table{width:100%;font-size:.9em;border-collapse:collapse;margin:0 0 .4em}.pieregWrapper .ui-datepicker th{padding:.7em .3em;text-align:center;font-weight:700;border:0}.pieregWrapper .ui-datepicker td{border:0;padding:1px}.pieregWrapper .ui-datepicker td a,.pieregWrapper .ui-datepicker td span{display:block;padding:.2em;text-align:right;text-decoration:none}.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane{background-image:none;margin:.7em 0 0 0;padding:0 .2em;border-left:0;border-right:0;border-bottom:0}.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button{float:right;margin:.5em .2em .4em;cursor:pointer;padding:.2em .6em .3em .6em;width:auto;overflow:visible}.pieregWrapper .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current{float:left}.pieregWrapper .ui-datepicker.ui-datepicker-multi{width:auto}.pieregWrapper .ui-datepicker-multi .ui-datepicker-group{float:left}.pieregWrapper .ui-datepicker-multi .ui-datepicker-group table{width:95%;margin:0 auto .4em}.pieregWrapper .ui-datepicker-multi-2 .ui-datepicker-group{width:50%}.pieregWrapper .ui-datepicker-multi-3 .ui-datepicker-group{width:33.3%}.pieregWrapper .ui-datepicker-multi-4 .ui-datepicker-group{width:25%}.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header{border-left-width:0}.pieregWrapper .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header{border-left-width:0}.pieregWrapper .ui-datepicker-multi .ui-datepicker-buttonpane{clear:left}.pieregWrapper .ui-datepicker-row-break{clear:both;width:100%}.pieregWrapper .ui-datepicker-rtl{direction:rtl}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev{right:2px;left:auto}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next{left:2px;right:auto}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-prev:hover{right:1px;left:auto}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-next:hover{left:1px;right:auto}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane{clear:right}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button{float:left}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current{float:right}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group{float:right}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header{border-right-width:0;border-left-width:1px}.pieregWrapper .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header{border-right-width:0;border-left-width:1px}.pieregWrapper .ui-datepicker-cover{display:none;display:block;position:absolute;z-index:-1;filter:mask();top:-4px;left:-4px;width:200px;height:200px}.pieregWrapper .ui-widget-content{border:1px solid #aaa;background:#fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;color:#222}.form-table tr td:first-child{padding-left:0;width:200px}div.pie_register-admin-meta{display:inline-block;width:100%}div.pie_register-admin-meta div.piereg_restriction_field_area{display:inline-block;width:100%;margin:5px auto}div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_label{float:left;width:30%}div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input{float:left;width:69%}div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input input[type=text],div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input input[type=url],div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input select{width:70%}div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input textarea{width:100%;min-height:100px;max-height:500px;min-width:50%;max-width:100%}div.pie_register-admin-meta div.piereg_restriction_field_area div.piereg_input div.piereg_input_radio{width:auto;display:inline-block;padding-right:20px}div.pie_register-admin-meta .pie_register_saprator_admin_meta{border:#ccc 1px groove;height:1px}.pie-content-ul{width:100%;max-height:380px;overflow:auto}.pieregister-admin .advance_fields.dropdown_field_value label{margin:0 10px;min-width:0!important;width:auto!important}.pieregister-admin .advance_fields.dropdown_field_value label.select_option_display{min-width:111px!important}.pieregister-admin .advance_fields.dropdown_field_value label.select_option_then_price{min-width:111px!important}.pieregister-admin .enabel_conditional_logic_area input.conditional_value{width:auto!important}.pieregister-admin .advance_fields hr{border:1px solid #969696}.pieregister-admin .enabel_conditional_logic_area .advance_fields a{float:none!important}.pieregister-admin .advance_options_fields .message_required{color:#fff;font-size:10px;float:left;margin:4px 0 0 120px;line-height:12px;max-width:282px}.pieregister-admin .settings .widefat th,.pieregister-admin .settings .widefat th a{color:#fefefe!important;font-weight:400!important;text-shadow:none!important}.pieregister-admin .settings .widefat th{background:#64727c!important}.invitation.settings .widefat th:nth-child(1){width:35px}.invitation.settings .name.column-name>input[type=text],.invitation.settings .usage.column-usage>input[type=text]{width:100%}.invitation.settings .code_usage.column-code_usage>span,.invitation.settings .name.column-name>span,.invitation.settings .usage.column-usage>span{cursor:pointer}.invitation.settings .column-id{width:10%}#piereg_user_notification .btnvisibile,#piereg_user_notification .hide-div{display:none}.wp-core-ui .button-disaled,.wp-core-ui .button-disaled:focus,.wp-core-ui .button-disaled:hover{cursor:default;background:#ccc;border:1px solid #666;box-shadow:0 1px 0 #999;-o-box-shadow:0 1px 0 #999;-moz-box-shadow:0 1px 0 #999;-webkit-box-shadow:0 1px 0 #999;-ms-box-shadow:0 1px 0 #999;color:#666}.pieHelpTicket p{margin:8px 0 0}table.piereg_form_table{width:100%}table.piereg_form_table>tfoot>tr>th,table.piereg_form_table>thead>tr>th{background:#64727c;color:#fff;padding:10px;font-size:14px;text-shadow:none}table.piereg_form_table>thead>tr>th:nth-child(1){width:20px}table.piereg_form_table>tbody>tr:nth-child(even){background:#f9f9f9}table.piereg_form_table>tbody>tr:hover{background:#fcf7f7}table.piereg_form_table>tbody>tr>td{border:#d0d0d0 1px solid;padding:5px;vertical-align:middle}table.piereg_form_table>tbody>tr>td:nth-child(1),table.piereg_form_table>tbody>tr>td:nth-child(2),table.piereg_form_table>tbody>tr>td:nth-child(4),table.piereg_form_table>tbody>tr>td:nth-child(5){text-align:center}table.piereg_form_table>tbody>tr>td>div.piereg-actions>span a{cursor:pointer}table.piereg_form_table .style_textarea,table.piereg_form_table>tbody>tr>td>textarea{width:100%;height:100%;background:0 0!important;width:100%!important;border:none!important;box-shadow:none!important;resize:none;line-height:20px;cursor:text}#TB_overlay{z-index:99998!important}#TB_window{z-index:99999!important}#TB_window{font:12px "Open Sans",sans-serif;color:#333}#TB_secondLine{font:10px "Open Sans",sans-serif;color:#666}.rtl #TB_secondLine,.rtl #TB_window{font-family:Tahoma,sans-serif}:lang(he-il) .rtl #TB_secondLine,:lang(he-il) .rtl #TB_window{font-family:Arial,sans-serif}#TB_window a:link{color:#666}#TB_window a:visited{color:#666}#TB_window a:hover{color:#000}#TB_window a:active{color:#666}#TB_window a:focus{color:#666}.pieregister-admin .pie-list-table{font-size:12px;width:100%;text-align:center;border-color:#d0d0d0;border:none}.pieregister-admin .pie-list-table>tbody>:nth-child(odd){background:#f9f9f9!important}.pieregister-admin .pie-list-table>tbody>:nth-child(even){background:#fff!important}.pieregister-admin .pie-list-table tr:first-child td{border-top:none}.pieregister-admin .pie-list-table tr td:first-child{border-left:none}.pieregister-admin .pie-list-table td{border-left:1px solid #d0d0d0;border-top:1px solid #d0d0d0;color:#646464}.pieregister-admin .pie-list-table tr td .delete{background:url(../images/invitation_action_icon.png) no-repeat -42px 0;width:10px;height:10px;display:inline-block;margin:0 5px}.pieregister-admin .pie-list-table tr td .active{background:url(../images/invitation_action_icon.png) no-repeat -21px 0;width:10px;height:10px;display:inline-block;margin:0 5px}.pieregister-admin .pie-list-table tr td .inactive{background:url(../images/invitation_action_icon.png) no-repeat 0 0;width:10px;height:10px;display:inline-block;margin:0 5px}
+.pieregister-admin .advance_options_fields span.message_required.msg_visibility {
+    margin: 8px 0 0 11px;
+}
+
+/* Notice Slider */
+.piereg-notice-slider .slick-prev.slick-arrow , .slick-next.slick-arrow {
+    background: #ffffff;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    position: absolute;
+    z-index: 99;
+    text-indent: -9999px;
+    border: 1px solid #7e8993;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+.piereg-notice-slider .slick-prev.slick-arrow {
+    right: 80px;
+}
+.piereg-notice-slider .slick-next.slick-arrow {
+    right: 33px;
+   }
+.piereg-notice-slider .slick-prev.slick-arrow:focus , .piereg-notice-slider .slick-next.slick-arrow:focus{
+    outline: none;
+}
+.piereg-notice-slider .slick-prev.slick-arrow:after{
+    font-family: 'FontAwesome';
+    content: "\f104";
+    display: inline-block;
+    font-size: 15px;
+    width: inherit;
+    position: absolute;
+    left: -1px;
+    text-indent: 0;
+}
+.piereg-notice-slider .slick-next.slick-arrow:after{
+    font-family: 'FontAwesome';
+    content: "\f105";
+    display: inline-block;
+    font-size: 15px;
+    width: inherit;
+    position: absolute;
+    left: -1px;
+    text-indent: 0;
+}
+/* Notice */
+.notice.piereg-notice {
+    display: flex !important;
+    padding: 12px 10px 22px !important;
+    align-items: center;
+    /* flex-wrap: wrap !important; */
+    border-radius: 4px;
+    /* width: inherit !important; */
+}
+.notice.piereg-notice .image{
+    margin-right: 3.5%;
+    margin-left: 1%;
+    width: 9%;
+}
+.notice.piereg-notice .content{
+    margin-right: 3.5%;
+    width: calc( 100% - 9% - 3.5% - 1% );
+}
+.notice.piereg-notice .image > img{
+    width: 100%;
+}
+.notice.piereg-notice .buttons a {
+    padding: 6px 14px;
+    display: inline-block;
+    background: #1688b8;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #1688b8;
+}
+.notice.piereg-notice .content h2{
+    margin-bottom: 0px;
+}
+.notice.piereg-notice .buttons {
+    margin-top: 14px;
+}
+.notice.piereg-notice .buttons .cta-2 {
+    background: #f3f5f6;
+    color: #1688b8;
+    border: 1px solid #1688b8;
+}

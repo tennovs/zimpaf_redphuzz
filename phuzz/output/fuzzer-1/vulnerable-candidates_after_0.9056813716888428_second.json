@@ -1,0 +1,105 @@
+{
+  "SQLi": [
+    {
+      "coverage_id": "1771981062-f59f7484-f777-4289-aef1-701f6d4a0e64",
+      "priority": 85,
+      "http_target": "http://localhost/dvwa/vulnerabilities/sqli/",
+      "http_method": "GET",
+      "fixed_params": {
+        "headers": {},
+        "cookies": {
+          "security": "low",
+          "PHPSESSID": "lrrj11ovbae13g1uf5ks2ua62m"
+        },
+        "query_params": {
+          "Submit": "Submit"
+        },
+        "body_params": {},
+        "files_params": {}
+      },
+      "fuzz_params": {
+        "headers": {},
+        "cookies": {},
+        "query_params": {
+          "id": "<a href='javascript:alert(0xdeadbeef)'\u00031"
+        },
+        "body_params": {},
+        "files_params": {}
+      },
+      "fuzz_weights": {
+        "headers": 0.25,
+        "cookies": 0.0,
+        "query_params": 1.0,
+        "body_params": 0.25,
+        "files_params": {}
+      },
+      "errors": [
+        {
+          "errno": 2,
+          "errstr": "mysqli_query(): (42000/1064): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'javascript:alert(0xdeadbeef)'\u00031'' at line 1",
+          "errfile": "/var/www/instr/overrides.d/02_mysql.php",
+          "errline": 13
+        }
+      ],
+      "exceptions": null,
+      "response_body": "\n<pre>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'javascript:alert(0xdeadbeef)'\u00031'' at line 1</pre>",
+      "response.body.length": 190,
+      "response.headers": {
+        "Date": "Wed, 25 Feb 2026 00:57:42 GMT",
+        "Server": "Apache/2.4.62 (Debian)",
+        "X-Powered-By": "PHP/8.3.19",
+        "Expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+        "Cache-Control": "no-store, no-cache, must-revalidate",
+        "Pragma": "no-cache",
+        "Set-Cookie": "PHPSESSID=9lnnptffu5j9asebf4754n5ksq; path=/, security_level=0; expires=Thu, 25 Feb 2027 00:57:42 GMT; Max-Age=31536000; path=/",
+        "Vary": "Accept-Encoding",
+        "Content-Length": "190",
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "response.status.code": 200,
+      "response.time": 19.343,
+      "number_of_new_paths": 3,
+      "total_hit": 0,
+      "total_unhit": 0,
+      "hit_count": 0,
+      "new_lines": 0,
+      "parent": "1771981062-d6cb8831-6377-4d52-ba0b-71b859b70ac8",
+      "paths": [
+        "/var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php::::108_111_116_120_125_128_13_133_134_138_16_17_173_174_180_188_196_197_21_22_224_225_230_234_235_236_237_241_255_256_257_264_265_269_275_277_278_279_280_281_288_289_290_291_292_293_294_295_296_297_298_299_3_300_301_302_303_304_305_307_308_309_312_313_314_315_317_319_320_321_324_326_327_328_329_330_331_333_337_338_339_340_341_354_355_356_357_360_361_365_366_367_368_369_371_372_376_377_378_380_387_389_391_393_402_409_416_418_426_432_441_517_518_527_528_529_534_535_541_542_558_559_560_567_568_569_581_587_654_655_658_659_660_661_662_663_664_665_666_668_669_671_672_674_675_676_677_678_682_8",
+        "/var/www/html/dvwa/vulnerabilities/sqli/index.php::::10_11_12_14_16_17_18_19_20_21_3_34_4_6_8_9",
+        "/var/www/html/dvwa/vulnerabilities/sqli/index.php::::10_11_12_14_16_17_18_19_20_21_3_34_36_4_41_45_46_49_56_58_6_61_64_67_68_73_74_75_76_8_80_83_9",
+        "/var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php::::108_111_116_120_125_126_128_13_133_134_138_16_17_180_188_196_197_21_22_234_235_236_237_241_3_541_542_558_559_560_567_568_569_581_587_654_655_658_659_660_661_662_663_664_665_666_668_669_671_672_674_675_676_677_678_682_8",
+        "/var/www/html/dvwa/vulnerabilities/sqli/source/low.php::::10_11_3_5_7_8",
+        "/var/www/html/dvwa/config/config.inc.php::::17_18_19_20_21_22_27_28_33_38_43_45_46_52_57_8",
+        "/var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php::::108_111_116_120_125_126_128_13_133_134_138_16_17_173_174_180_188_196_197_21_22_224_225_230_234_235_236_237_241_255_256_257_264_265_269_275_277_278_279_280_281_288_289_290_291_292_293_294_295_296_297_298_299_3_300_301_302_303_304_305_307_308_309_312_313_314_315_317_319_320_321_324_326_327_328_329_330_331_333_337_338_339_340_341_354_355_356_357_360_361_365_366_367_368_369_371_372_376_377_378_380_387_389_391_393_402_409_416_418_426_432_441_517_518_527_528_529_534_535_541_542_558_559_560_567_568_569_581_587_654_655_658_659_660_661_662_663_664_665_666_668_669_671_672_674_675_676_677_678_682_8",
+        "/var/www/html/dvwa/vulnerabilities/sqli/source/low.php::::10_11_14_23_24_3_5_57_7_8",
+        "/var/www/html/dvwa/vulnerabilities/sqli/source/low.php::::10_11_14_16_17_20_23_24_3_5_57_7_8"
+      ],
+      "hash": "18c60be1fdd4cddb8ad412c7d8c02974",
+      "new_paths": [
+        "/var/www/html/dvwa/vulnerabilities/sqli/source/low.php::::10_11_3_5_7_8",
+        "/var/www/html/dvwa/vulnerabilities/sqli/index.php::::10_11_12_14_16_17_18_19_20_21_3_34_4_6_8_9",
+        "/var/www/html/dvwa/dvwa/includes/dvwaPage.inc.php::::108_111_116_120_125_126_128_13_133_134_138_16_17_180_188_196_197_21_22_234_235_236_237_241_3_541_542_558_559_560_567_568_569_581_587_654_655_658_659_660_661_662_663_664_665_666_668_669_671_672_674_675_676_677_678_682_8"
+      ],
+      "vulns": [
+        "SQLi"
+      ],
+      "score": 85,
+      "is_interesting": false,
+      "fuzzer_id": "1",
+      "is_initial_candidate": false,
+      "mutated_param_type": "query_params",
+      "mutated_param_name": "id",
+      "parent_cov_id": null,
+      "fuzz_status": 0,
+      "path_hash": null,
+      "api_call_status": 0,
+      "vuln_functions": [],
+      "vuln_functions_done": [],
+      "num_iterations": 0,
+      "sanitation_report": {},
+      "parameter_comparison_report": [],
+      "mutated_parameter_comparison": []
+    }
+  ]
+}

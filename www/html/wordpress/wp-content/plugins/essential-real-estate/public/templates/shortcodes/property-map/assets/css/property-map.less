@@ -1,0 +1,92 @@
+#map-property-single {
+	.infoBox {
+		overflow: inherit !important;
+		position: relative;
+		border: 5px solid rgba(0,0,0,.05);
+		box-shadow: 0 5px 13px rgba(0,0,0,.22);
+		>img {
+			z-index:5;
+			padding: 3px 3px 0 0;
+			width: auto !important;
+		}
+		&:after {
+			border: solid transparent;
+			content: ' ';
+			height: 0;
+			position: absolute;
+			top: inherit;
+			right: inherit;
+			bottom: -50px;
+			left: 50%;
+			width: 0;
+			border-width: 22px;
+			border-top-color: rgba(0,0,0,.05);
+			-moz-transform: translate(-50%, 0);
+			z-index: 0;
+			-o-transform: translate(-50%, 0);
+			-ms-transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+		}
+	}
+	.marker-content {
+		background-color: #fff;
+		padding: 22px 20px;
+	    text-align: left;
+		&:after {
+			border: solid transparent;
+			content: ' ';
+			height: 0;
+			position: absolute;
+			top: inherit;
+			right: inherit;
+			bottom: -40px;
+			left: 50%;
+			z-index: 2;
+			width: 0;
+			border-width: 20px;
+			border-top-color: #fff;
+			-moz-transform: translate(-50%, 0);
+			-o-transform: translate(-50%, 0);
+			-ms-transform: translate(-50%, 0);
+			-webkit-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+		}
+	}
+	.marker-content-item {
+		overflow: hidden;
+	}
+	.item-thumb {
+		img {
+			float: left;
+		}
+		display: inline-block;
+		float: left;
+		margin-right: 12px;
+	}
+	.item-body {
+		overflow: hidden;
+		.title-marker,
+		.price-marker {
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1.4;
+			letter-spacing: 0;
+			color: #222;
+			text-transform: capitalize;
+		}
+		.price-marker {
+			font-weight: 600;
+		}
+		.address-marker {
+			font-size: 12px;
+			color: #8f8f8f;
+			i {
+				margin-right: 10px;
+			}
+		}
+		a:hover {
+			color: #fb6a19;
+		}
+	}
+}

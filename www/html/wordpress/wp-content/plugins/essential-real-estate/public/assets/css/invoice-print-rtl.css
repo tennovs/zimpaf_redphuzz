@@ -1,0 +1,21 @@
+html {
+	direction: rtl;
+}
+
+body {
+	direction: rtl;
+}
+.pull-left {
+	float: right !important;
+}
+.pull-right {
+	float: left !important;
+}
+
+.text-right {
+	text-align: left;
+}
+
+.text-left {
+	text-align: right;
+}

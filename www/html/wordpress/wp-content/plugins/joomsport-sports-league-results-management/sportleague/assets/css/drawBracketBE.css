@@ -1,0 +1,267 @@
+@charset "utf-8";
+.jsOverXdiv{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.jsOverXdiv .jsknockwinnerDiv{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  margin-top: -12px;
+  width: 24px;
+  height:24px;
+  background-image: url('../../../assets/images/cup.png');
+}
+.knIsHover {
+  background-color: #ddd;
+}
+div[class^='drawBracketContainer']{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div[class^='drawBracketContainer'] .table th, div[class^='drawBracketContainer'] .table td{
+  border: none!important;
+  vertical-align: middle !important;
+}
+div[class^='drawBracketContainer'] div[class^="jsborderI"]{
+  position: absolute;
+  z-index:-1;
+}
+div[class^='drawBracketContainer'] .jsborderI{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-left: 0;
+}
+div[class^='drawBracketContainer'] .jsborderIFin{
+  width: 20px;
+  height: 2px;
+  border-top: 1px solid #ccc;
+}
+div[class^='drawBracketContainer'] .table td.even .knockround{
+  margin-left: 9px;
+}
+div[class^='drawBracketContainer'] .table td.even:first-child .knockround{
+  margin-left: 0;
+}
+div[class^='drawBracketContainer'] .table td.even .player{
+  display: table;
+  min-height: 32px;
+  border-collapse: separate;
+  color: #666;
+}
+div[class^='drawBracketContainer'] .table td.even .knockbot{
+  border-top: 0;
+}
+div[class^='drawBracketContainer'] .table td.even .kntmprow{
+  display:table-row;
+}
+div[class^='drawBracketContainer'] .table td.even .knockplName{
+  position: relative;
+  width:100%;
+  min-width: 150px;
+  text-align: left;
+}
+
+/*BackEnd knockout */
+.drawBracketContainerBE .table td{
+  position: relative;
+  padding: 0px 20px 10px 0px !important;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 1;
+}
+.drawBracketContainerBE div[class^="jsborderI"]{
+  margin-top:39px;
+}
+.drawBracketContainerBE .jsborderI{
+  height: calc(100% - 1px);
+}
+.drawBracketContainerBE .table td.even .player{
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+}
+.drawBracketContainerBE .table td.even .knocktop{
+  border-radius: 4px 4px 0px 0px;
+}
+.drawBracketContainerBE .table td.even .knockbot{
+  border-radius: 0px 0px 4px 4px;
+}
+.drawBracketContainerBE .table td.even .kntmprow > div{
+  display:table-cell;
+  vertical-align: middle;
+}
+.drawBracketContainerBE .table td.even .knockplName{
+  padding:0px 7px;
+}
+.drawBracketContainerBE .table td.even .knockscore{
+  height: 38px;
+  border-left: 1px solid #ccc;
+  background-color: #eee;
+  text-align: center;
+  font-weight: bold;
+}
+.drawBracketContainerBE .table td.even .knockplName > select{
+  width: 100%;
+}
+.drawBracketContainerBE .table td.even .knockscoreItem{
+  position:relative;
+  display: inline;
+}
+.drawBracketContainerBE .table td.even input.mglScore{
+  width: 35px;
+  height:25px;
+  text-align: center;
+}
+.drawBracketContainerBE .table td.even .fa{
+  position: absolute;
+  cursor: pointer;
+}
+.drawBracketContainerBE .table td.even .fa-plus-square{
+  right: 2px;
+  margin-top: 41px;
+  color: green;
+  font-size: 1em;
+}
+.drawBracketContainerBE .table td.even .fa-arrow-circle-right{
+  right: 0;
+  margin-top:23px; 
+  color:#666;
+  font-size: 1.3em;
+}
+.drawBracketContainerBE .table td.even .fa-plus-square.facirclebot{
+  margin-top: 25px;
+}
+.drawBracketContainerBE .table td.even .fa-arrow-circle-right.facirclebot{
+  margin-top: 42px;
+}
+.drawBracketContainerBE .table td.even .knockscoreItem .fa{
+  display: none;
+  bottom: -18px;
+}
+.drawBracketContainerBE .table td.even .fa-minus-square{
+  right: 2px;
+  color:red;
+}
+.drawBracketContainerBE .table td.even .fa.jsmatchconf2{
+  left:2px;
+}
+
+/*FrontEnd knockout*/
+#joomsport-container .drawBracketContainerFE .table tr{
+  background: none!important;
+}
+#joomsport-container .drawBracketContainerFE .table td{
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  z-index: 1;
+}
+#joomsport-container .drawBracketContainerFE div[class^="jsborderI"]{
+  margin-top:37px;
+}
+#joomsport-container .drawBracketContainerFE .jsborderI{
+  height: calc(100% + 1px);
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockround{
+  padding: 7px 5px;
+  background-color: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2),-2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+#joomsport-container .drawBracketContainerFE .table td.even .kntmprow > div{
+  border-left: 1px solid #ddd;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .kntmprow > div:first-child{
+  border: 0;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockplName{
+  display:table-cell;
+  padding: 0;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockscore{
+  display:table-cell;
+  min-width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockfix{
+  position: relative;
+  max-width: 32px;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .js_div_particName{
+  display: inline;
+  padding:0px 10px;
+  color: #aaa;
+  vertical-align: top;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .js_div_particName > a{
+  color: #757575;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockscore > a{
+  display:block;
+  width: 32px;
+  font-size: 14px;
+  text-decoration: none;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knocktop .knockfix > a{
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+}
+#joomsport-container .drawBracketContainerFE .table td.even .knockbot .knockfix > a{
+  visibility: hidden;
+}
+
+/*Prediction future knockout*/
+#joomsport-container #jsprediction_bracket .drawBracketContainerFE .table td.even .player{
+  width: 100%;
+}
+/*Prediction knockout*/
+.drawBracketContainerFE.userPickTable div[class^="jsborderI"]{
+  margin-top: 70px!important;
+}
+
+/*RTL*/
+html[dir="rtl"] div[class^='drawBracketContainer'] .jsborderI {
+  border-left: 1px solid #ccc;
+  border-right: none!important;
+}
+html[dir="rtl"] div[class^='drawBracketContainer'] .table td.even .knockplName {
+  text-align: right;
+}
+html[dir="rtl"] div[class^='drawBracketContainer'] .table td.even .knockround {
+  margin-left:0;
+  margin-right:9px;
+}
+html[dir="rtl"] div[class^='drawBracketContainer'] .table td.even:first-child .knockround{
+  margin-right: 0;
+}
+html[dir="rtl"] .drawBracketContainerBE .table td.even .knockscore {
+  border-right: 1px solid #ccc;
+  border-left: 0;
+}
+html[dir="rtl"] .drawBracketContainerBE .table td{
+  padding: 0 0 10px 20px !important;
+  text-align: right;
+}
+html[dir="rtl"] .drawBracketContainerBE .table td.even .fa-arrow-circle-right{
+  right: auto;
+  left: 0;
+}
+html[dir="rtl"] .drawBracketContainerBE .table td.even .fa-arrow-circle-right:before{
+  content: "\f0a8";
+}
+html[dir="rtl"] .drawBracketContainerBE .table td.even .fa-plus-square{
+ right: auto;
+ left: 2px;
+}
+html[dir="rtl"] .drawBracketContainerFE .table td.even .kntmprow > div {
+  border-left: none!important;
+  border-right: 1px solid #ddd;
+}

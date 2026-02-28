@@ -1,0 +1,50 @@
+.ere-mini-search-properties {
+    text-align: center;
+}
+.ere-mini-search-properties .ere-mini-search-properties-form {
+    max-width: 872px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.ere-mini-search-properties .ere-status {
+    width: 120px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 0;
+}
+.ere-mini-search-properties button {
+    width: 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 21px;
+}
+.ere-mini-search-properties select + input {
+    padding-left: 130px;
+}
+.ere-mini-search-properties input {
+    padding-right: 60px;
+    width: 100%;
+}
+.ere-mini-search-properties button,
+.ere-mini-search-properties select,
+.ere-mini-search-properties input {
+    height: 60px !important;
+}
+.ere-mini-search-properties input::-webkit-input-placeholder,
+.ere-mini-search-properties input:-moz-placeholder,
+.ere-mini-search-properties input::-moz-placeholder,
+.ere-mini-search-properties input:-ms-input-placeholder,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #787878;
+}
+.ere-mini-search-properties select,
+.ere-mini-search-properties input,
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #787878;
+}

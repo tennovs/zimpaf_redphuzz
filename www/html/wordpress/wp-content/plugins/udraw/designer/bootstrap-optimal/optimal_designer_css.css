@@ -1,0 +1,1607 @@
+body.modal-open {
+    overflow: auto;
+}
+body div.modal.overlay-modal {
+    z-index: 10000!important; 
+}
+
+body div.modal#crop-modal {
+    top: auto !important;
+}
+body div.modal.overlay-modal div.modal-dialog {
+    padding-top: 25%;
+}
+#udraw-bootstrap .under_menu_bar {
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+#udraw-bootstrap .modal:not(.toolbox-modal):not(.left-toolbox-modal):not(.overlay-modal) {
+    width: 100% !important;
+    margin-left: 0px !important;
+    background-color: initial !important;
+    position: relative !important;
+}
+
+#udraw-bootstrap .select2-container,
+#udraw-bootstrap .select2-drop, 
+#udraw-bootstrap .select2-search,
+#udraw-bootstrap .select2-search input {
+    z-index: 10000;
+}
+
+#designer-wrapper {
+    left: 0px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    overflow: auto;
+}
+
+#designer-wrapper form {
+    margin: 0;
+}
+
+#designer-wrapper form input {
+    color: #333;
+}
+
+#udraw-bootstrap .mobile_only {
+    display: block;
+}
+
+#udraw-bootstrap td {
+    border-bottom: 0px solid #fff !important;
+    background: transparent !important;
+}
+
+#udraw-bootstrap .select2-large-list {
+    width: 300px !important;
+}
+
+#udraw-bootstrap .select2-fitting-list {
+    width: 150px !important;
+}
+
+#udraw-bootstrap .layer-box {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#udraw-bootstrap .layer-box ul {
+    width: 350px;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+#udraw-bootstrap .layer-box li {
+    background: white;
+    position: relative;
+    margin: 1px;
+    padding: 4px;
+    border: 1px solid grey;
+    color: #000;
+    list-style: none;
+    padding-left: 30px;
+}
+
+#udraw-bootstrap .layer-box li .handle {
+    background: #f8f8f8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 5px;
+}
+
+#udraw-bootstrap .layer-box .ui-selecting {
+    background: #eee;
+}
+
+#udraw-bootstrap .layer-box .ui-selecting .handle {
+    background: #ddd;
+}
+
+#udraw-bootstrap .layer-box .ui-selected {
+    background: #def;
+}
+
+#udraw-bootstrap .layer-box .ui-selected .handle {
+    background: #cde;
+}
+
+#udraw-bootstrap .scroll-content {
+    width: auto;
+    height: 250px;
+    /*border: 13px solid #bed5cd;*/
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: normal;
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap .scroll-content-item {
+    display: inline-block;
+    margin-right: 5px;
+    max-width: 110px;
+}
+
+#udraw-bootstrap .scroll-content-item a,
+#udraw-bootstrap .scroll-content-item a:hover {
+    margin-top: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#udraw-bootstrap .scroll-content-item span.linked_templates_name_span {
+    white-space: normal;
+    color: #aaa;
+}
+
+#udraw-bootstrap [data-udraw="qrPreviewContainer"] img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#udraw-bootstrap .dropdown-submenu {
+    position: relative;
+}
+
+#udraw-bootstrap .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+#udraw-bootstrap .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+#udraw-bootstrap .dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+
+
+#udraw-bootstrap #layer_properties_options label {
+    padding-left: 2px !important;
+    font-size: 14px !important;
+}
+
+#udraw-bootstrap ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*uDraw-bootstrap Container*/
+#udraw-bootstrap {
+    position: relative; /*Should not change*/
+    background-color: #f3f3f3;
+    text-align: left;
+    word-wrap: normal;
+    height: 90%;
+    width: 100%;
+    overflow: visible;
+    display: inline-block;
+    vertical-align: top;
+    /*
+    width and height can be defined by #px or #%;
+    If using %, you must define a width and height in a wrapper div.
+    if you want full width and height of browser, you must define
+    100% in the <body> and <html>? tags    
+    */
+}
+#udraw-bootstrap button.button, div.modal.overlay-modal button.button {
+    background-color: #ccc;
+    color: #000;
+}
+#udraw-bootstrap a.btn i {
+    margin-left: 0px !important;
+}
+
+#udraw-bootstrap .select2-container .select2-choice {
+    padding: 0 0 0 8px !important;
+    background-color: #F2F2F2;
+}
+
+#udraw-bootstrap label {
+    margin-bottom: 0px;
+}
+
+/* END uDraw-bootstrap Container*/
+
+/* uDraw Designer menu Bar*/
+#udraw-bootstrap [data-udraw="designerMenu"] {
+    position: relative;
+    background-color: #2b2b2b;
+    width: 100%;
+    min-height: 30px;
+    padding: 0 5px;
+    color: #fff;
+}
+
+#udraw-bootstrap [data-udraw="designerMenu"] .designer-menu-btn {
+    width: 120px;
+    padding: 3px 10px;
+}
+
+#udraw-bootstrap [data-udraw="designerMenu"] [data-udraw="zoomContainer"] {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: auto;
+    width: 220px;
+}
+#udraw-bootstrap [data-udraw="designerMenu"] a.menu_button {
+    text-decoration: none;
+    color: #fff;
+}
+#udraw-bootstrap [data-udraw="designerMenu"] div.menu_button_div {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    vertical-align: middle;
+}
+#udraw-bootstrap [data-udraw="designerMenu"] a.menu_button:active, #udraw-bootstrap [data-udraw="designerMenu"] a.menu_button:hover {
+    text-decoration: none;
+    color: #efefef;
+}
+#udraw-bootstrap [data-udraw="designerMenu"] div.page_div {
+    display: inline-block;
+}
+/* END uDraw-menu Bar*/
+#udraw-bootstrap [data-udraw="replaceImage"] {
+    display: none;
+    z-index: 1;
+}
+#udraw-bootstrap [data-udraw="replaceImageModal"] .replace-image-upload-btn {
+    height: 45px;
+    width: 175px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    left: 20px;
+    top: 16px;
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#udraw-bootstrap #replace-image-body-div a.replace-image-local-storage-btn, #udraw-bootstrap #replace-image-body-div a.replcae-image-clipart-btn {
+    display: none;
+    }
+/* End Tool Bar*/
+
+/* LEFT TOOL BAR*/
+#udraw-bootstrap [data-udraw="designerSideBar"] {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    height: 95%;
+    max-height: calc(100% - 30px);
+    width: 75px;
+    background: #2b2b2b;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] div.designer_tools {
+    display: none;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] div.designer_tools.active {
+    display: block;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] div.button_holder {
+    width: 100%;
+    color: #a0a0a0;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] div.button_holder.active {
+    background-color: #5d5d5d;
+    color: #fff;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] div.button_holder.active button,
+#udraw-bootstrap [data-udraw="designerSideBar"] div.button_holder:hover,
+#udraw-bootstrap [data-udraw="designerSideBar"] div.button_holder button:hover {
+    color: #fff;
+}
+#udraw-bootstrap [data-udraw="designerSideBar"] button.sidebar_button {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    background: none;
+    white-space: normal;
+}
+
+#udraw-bootstrap [data-udraw="tools_container"] {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    max-width: 90%;
+    width: 0;
+    height: 90%;
+    max-height: calc(100% - 30px);
+    margin-left: -5px;
+    color: #fff;
+}
+#udraw-bootstrap [data-udraw="tools_container"] input,
+#udraw-bootstrap [data-udraw="tools_container"] select {
+    color: #444;
+    width: 45%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.tools_container {
+    display: none;
+    height: 100%;
+    overflow: auto;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.inner_container {
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.inner_container div.tab {
+    position: absolute;
+    top: calc(50% - 50px);
+    margin-left: -5px;
+    padding: 25px 10px 25px 5px;
+    background: #5d5d5d;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.inner_container div.tab a {
+    color: #2b2b2b;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.inner_container.tools {
+    background: #5d5d5d;
+    width: 85%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.tools_container.active {
+    display: block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.tools_container ol.breadcrumb {
+    text-align: center;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-bottom: -12px;
+    margin-left: 40px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.tools_container div.pointer {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    height: 15px;
+    width: 15px;
+    transform: rotate(45deg);
+    display: none;
+    z-index: 1;
+    background: #efefef;
+    margin-bottom: -13px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.tools_container div.pointer.active {
+    display: block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list > li > a {
+    font-size: 2em;
+    display: block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list a.btn-sm {
+    font-size: 12px;
+    display: inline-block;
+    width: 75px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list > li > a.active, 
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list > li > a:hover {
+    color: white;
+}
+#udraw-bootstrap [data-udraw="tools_container"] ul.tools_list > li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+#udraw-bootstrap [data-udraw="tools_container"] [data-udraw="uploadImage"] {
+    display: none!important;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.layouts.active {
+    padding: 15px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.layouts [data-udraw="linked_templates_spinner"] {
+    display: none;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.layouts i.active[data-udraw="linked_templates_spinner"] {
+    display: inline-block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container, 
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container {
+    display: none;
+    overflow: auto;
+    margin: 5px;
+    height: calc(100% - 100px);
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container.active, 
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container.active {
+    display: block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container,
+#udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container {
+    display: inline-block;
+    width: 31%;
+    padding: 5px;
+    text-align: center;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container a,
+#udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container a:active,
+#udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container a:hover,
+#udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container a,
+#udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container a:active,
+#udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container a:hover {
+    text-decoration: none;
+    color: #000;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container span,
+#udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container span {
+    word-break: break-all;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container [data-udraw="localFoldersList"] {
+    display: none;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container ul li {
+    width: 45%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container a.delete-asset {
+    font-size: 12px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.image_container div.designer-thumbs img {
+    position: relative;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container [data-udraw="openClipartList"] {
+    height: calc(100% - 175px);
+    overflow: auto;
+    margin-bottom: 10%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container [data-udraw="searchOpenClipartInput"] {
+    width: 100%;
+}
+#udraw-bootstrap [data-udraw="openClipartList"] li {
+    width: 45%;
+}
+#udraw-bootstrap div.thumbnail {
+    margin: 0;
+}
+#udraw-bootstrap [data-udraw="openClipartList"] div.thumbnail {
+    display: inline-block; 
+    overflow: hidden; 
+    padding: 0; 
+    margin: 5px; 
+    border: 0; 
+    vertical-align: top;
+    background: transparent;
+}
+#udraw-bootstrap [data-udraw="openClipartList"] li div img {
+    width: 100%;
+    height: 100%;
+    max-height: 120px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container.clipart > div {
+    overflow: auto;
+    max-height: 40vh;
+}
+#udraw-bootstrap [data-udraw="tools_container"] [data-udraw="uDrawClipartFolderContainer"] {
+    margin-bottom: 20%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.element_container.clipart div > ul > li {
+    width: 45%;
+}
+#udraw-bootstrap [data-udraw="tools_container"] [data-udraw="qrInput"] {
+    width: calc(100% - 75px);
+    display: inline-block;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.colour_container {
+    padding: 15px;
+}
+#udraw-bootstrap [data-udraw="tools_container"] div.background_colours, #udraw-bootstrap [data-udraw="tools_container"] div.layers {
+    padding: 5px;
+}
+#udraw-bootstrap div.tools_container.background_colours hr {
+    margin: 0 10px;
+    border-color: #ccc;
+    width: 95%;
+}
+#udraw-bootstrap ul.colour_list {
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+}
+#udraw-bootstrap ul.colour_list li {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid #888;
+    cursor: pointer;
+}
+
+/* END LEFT TOOL BAR*/
+
+/*Canvas and Container*/
+#udraw-bootstrap [data-udraw="canvasContainer"] {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 10px);
+    height: calc(99% - 45px);
+    overflow: auto;
+    padding: 15px;
+}
+#udraw-bootstrap [data-udraw="canvasWrapper"] {
+    display: none;
+    position: relative;
+}
+#udraw-bootstrap [data-udraw="canvasWrapper"] div.canvas-container {
+    margin: auto;
+}
+
+#udraw-bootstrap [data-udraw="canvas"] {
+    box-shadow: rgba(0,0,0,0.5) 0 0 10px;
+}
+/* End Canvas and Container*/
+
+/*Rulers*/
+#udraw-bootstrap [data-udraw="topRuler"] {
+    border-radius: 5px;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+#udraw-bootstrap [data-udraw="sideRuler"] {
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+#udraw-bootstrap .font-size-select-option {
+    min-width: 75px;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightContainer"] div.dropdownList, #udraw-bootstrap [data-udraw="fontSizeContainer"] div.dropdownList {
+    width: 75px;
+}
+
+#udraw-bootstrap [data-udraw="fontHeightSelector"] {
+    width: 75px;
+    padding-left: 5px;
+    height: 29px;
+}
+
+#udraw-bootstrap .font-family-selection {
+    min-width: 150px;
+    max-width: 150px;
+}
+
+#udraw-bootstrap .tab-content {
+    display: none;
+    background: #ededed;
+    padding: 15px;
+    overflow-y: auto;
+    height: 375px;
+}
+
+#udraw-bootstrap .tab-content.current {
+    display: inherit;
+}
+
+#udraw-bootstrap .toolbox-header {
+    padding: 5px;
+    padding-left: 10px;
+    cursor: move;
+    background-color: #CCCCCC;
+}
+
+#udraw-bootstrap .toolbox-body {
+    padding: 0px;
+}
+
+#udraw-bootstrap .toolbox-footer {
+    padding: 10px;
+}
+
+#udraw-bootstrap .btn-group .sm-btn-group {
+    padding: 3px 6px 2px;
+    margin: 0px;
+}
+
+#udraw-bootstrap #text-container .text-input-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap .toolbox-modal{
+    width: 50%;
+    left: calc(95% - 450px);
+    /*position: absolute;*/
+    overflow: visible;
+}
+
+#udraw-bootstrap .left-toolbox-modal{
+    width: 50%;
+    left: 0px;
+    right: calc(95% - 450px); 
+    position: absolute !important;
+    overflow: visible;
+}
+#udraw-bootstrap .toolbox-modal .modal-content {
+    border-radius: 2px;
+}
+#udraw-bootstrap .standard-js-colour-picker {
+    font-size: 0px;
+    min-width: 27px;
+    min-height: 27px;
+    cursor: pointer;
+    display: inline;
+    margin-left: 6px;
+    border-style:none;
+}
+
+.cp-app {
+    z-index: 100000000000000000 !important;
+    left: 0;
+}
+
+#udraw-bootstrap .toolbox-modal .modal-header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+#udraw-bootstrap .left-toolbox-modal .modal-header {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+#udraw-bootstrap .toolbox-modal .modal-header-btn-container > a {
+    font-size: 10px;
+}
+#udraw-bootstrap .restriction-list-container {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    min-height: 25px;
+    min-width: 150px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 8%;
+    font-size: 14px;
+}
+
+#udraw-bootstrap .listed-restriction-tags {
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #DFDFDF;
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+}
+
+#udraw-bootstrap .remove-restrict-tag {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#udraw-bootstrap .list-hr-divider {
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+
+#udraw-bootstrap .restricted-colour-tags{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+}
+#udraw-bootstrap .restricted-designer-colours-min {
+    display: none;
+}
+
+#udraw-bootstrap .object-rotation-slider-container {
+    width: 435px;
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#udraw-bootstrap .form-input-field {
+    padding: 2px 5px 2px 5px;
+    display: inline-block;
+}
+
+#udraw-bootstrap .disable-selection-text {
+    color: #ABABAB;
+    font-style: italic;
+}
+
+#udraw-bootstrap .input-field-container {
+    padding: 5px;
+    display: none;
+}
+
+#udraw-bootstrap .input-label-span {
+    width: 30%;
+    display: inline-block;
+}
+
+#udraw-bootstrap .move-page-btn-designer {
+    width: 5px;
+}
+
+#udraw-bootstrap .image-clipping-box {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#udraw-bootstrap [data-udraw="privateTemplatesCategoryList"] {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+#udraw-bootstrap [data-udraw="rectangleCornerContainer"] {
+    width: 435px;
+    padding: 7px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#udraw-bootstrap [data-udraw="templatesCategoryList"] .dropdown-menu, [data-udraw="privateTemplatesCategoryList"] .dropdown-menu {
+    height: 475px;
+    overflow: auto;
+}
+
+#udraw-bootstrap .disabled-btn {
+    font-style: italic;
+    color: #A7A7A7;
+    cursor: default;
+    pointer-events: none;
+}
+
+#udraw-bootstrap [data-udraw="pagesList"] {
+    overflow: auto;
+    max-height: 250px;
+    width: 95%;
+}
+#udraw-bootstrap .slick-initialized.slick-slider[data-udraw="pagesList"] {
+    overflow: initial;
+}
+#udraw-bootstrap [data-udraw="pagesList"] li.pages_list {
+    list-style-type: none;
+    display:inline-block;
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#udraw-bootstrap .slick-prev:before, .slick-next:before {
+    color: #000000 !important;
+}
+
+#udraw-bootstrap #pages-sortable {
+    /*display: inline-flex;
+    height: 95px;*/
+}
+
+#udraw-bootstrap .accordion-content-wrapper {
+    padding: 5px;
+}
+
+#udraw-bootstrap .udraw-layers a,
+#udraw-bootstrap .udraw-layers a:hover {
+    padding-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #9a9a9a;
+}
+
+    #udraw-bootstrap .udraw-layers a:hover {
+        color: #333;
+    }
+    
+    #udraw-bootstrap .udraw-layers .row {
+        margin: 0;
+    }
+
+#udraw-bootstrap .layers-icon {
+    padding-left: 5px;
+    padding-top: 2px;
+}
+    #udraw-bootstrap li.udraw-layers img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    #udraw-bootstrap li.udraw-layers .scale_image {
+        width: 48%;
+    }
+
+#udraw-bootstrap [data-udraw="fontHeightContainer"] > div {
+    min-width: 55px;
+}
+
+#udraw-bootstrap [data-udraw="designerSideBar"] .modalButton {
+    width: 100px;
+    text-align: center;
+    display: none;
+    float: right;
+    font-size: 10px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list > div {
+    margin-bottom: 5px;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div[data-udraw="uDrawClipartFolderContainer"] ul > li.category-list.active > div {
+    box-shadow: 0px 0px 10px rgba(41, 126, 255, 0.5);
+    position: relative;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"],
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] {
+    display: inline-block;
+    margin: 0px 5px 0px 0px;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#udraw-bootstrap [data-udraw="clipartModal"] div.modal-footer > ol[data-udraw="clipartFolderList"] a.active,
+#udraw-bootstrap [data-udraw="apparelGraphicsModal"] div.modal-footer > ol[data-udraw="apparelGraphicsCategoryPath"] a.active {
+    font-weight: 800;
+}
+
+#udraw-bootstrap .modal-dialog {
+    width: 100%;
+}
+#udraw-bootstrap .modal-dialog.modal-lg {
+    width: 925px;
+}
+#udraw-bootstrap div.modal-body {
+    overflow: auto;
+}
+
+#udraw-bootstrap div.main-category-container {
+    width: 16%;
+    vertical-align: top;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer {
+    height: 0px;
+    margin-top: 0px;
+    display: none;
+}
+
+#udraw-bootstrap div.main-category-container div.category-pointer i {
+    transform: scale(2);
+    padding-bottom: 10px;
+    color: #EEEEEE;
+}
+
+#udraw-bootstrap div.sub-category-container {
+    display: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#udraw-bootstrap div.graphic-container {
+    width: 15%;
+    max-height: 100px;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    text-align: center;
+}
+
+#udraw-bootstrap div.sub-category-row {
+    width: 99%;
+}
+
+#udraw-bootstrap .modal .modal-header [data-dismiss="modal"] {
+    float: right;
+    text-decoration: none;
+    color: #4D4D4D;
+    padding: 3px 8px;
+}
+
+#udraw-bootstrap [data-udraw="settingsModal"] .document-settings-container {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    width: calc(100% - (8.3% * 2));
+    padding-bottom: 5px;
+}
+
+#udraw-bootstrap div.designer-thumbs{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    max-height: 120px;
+    overflow: hidden;
+    padding: 0;
+    margin: 5px;
+    border: 0;
+    vertical-align: top;
+    position: relative;
+    background: transparent;
+}
+
+#udraw-bootstrap a.delete-asset {
+    font-size: 12px;
+    display: inline-block;
+}
+
+#udraw-bootstrap a.delete-asset:hover {
+    text-decoration: none;
+    color: #9BD1FF;
+}
+
+#udraw-bootstrap div.designer-thumbs > div {
+    height: 96px;
+    max-height:96px;
+}
+
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] {
+    padding-left: 0px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .layer-label-list-items {
+    list-style: none;
+    padding: 5px;
+}
+#udraw-bootstrap [data-udraw="layerLabelsModal"] [data-udraw="layerLabelsList"] .handle {
+    background: #f8f8f8;
+    padding: 5px;
+    display: inline-block;
+}
+#udraw-bootstrap li.category-list {
+    max-width: 120px;
+    width: 50%;
+    text-align: center;
+}
+#udraw-bootstrap [data-udraw="pagesList"] {
+    overflow: auto;
+    max-height: 250px;
+}
+ul[data-udraw="layerLabelsList"] {
+    list-style-type: none;
+    line-height: 0.5;
+}
+#udraw-bootstrap [data-udraw="toolboxOverlay"] {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.10;
+    z-index: -1;
+}
+#udraw-bootstrap [data-udraw="toolboxContainer"] {
+    /*width: 460px;
+    display: inline-block;
+    float: right;*/
+    display: none;
+}
+#udraw-bootstrap [data-udraw="pages_section"] {
+    background: #F2F2F2;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+#udraw-bootstrap [data-udraw="body_block"] {
+    display: none;
+    width: calc(100% - 80px - 30%);
+    vertical-align: top;
+    height: 95%;
+    max-height: calc(100% - 30px);
+    position: absolute;
+}
+#udraw-bootstrap div.active[data-udraw="body_block"] {
+    display: inline-block;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] {
+    margin-left: -5px;
+    min-height: 45px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] {
+    background: #fff;
+    margin-left: 5px;
+    display: none;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] div.active[data-udraw="top_toolbar"] {
+    display: block;
+    font-size: 12px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] > div {
+    display: none;
+    white-space: nowrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] > div.active {
+    display: inline-block;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] > div.active:not(last-child) {
+    border-right: 1px solid #eee;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] > div > div:not(.dropdown-menu) {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] .select2-container .select2-choice {
+    border-radius: 0;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] div.dropdown-menu{
+    top: initial;
+    float: none;
+    left: initial;
+    margin-left: -5px;
+    min-width: 150px;
+    padding-left: 10px;
+}
+#udraw-bootstrap a.text_buttons {
+    margin: 5px;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+#udraw-bootstrap a.text_buttons:hover, #udraw-bootstrap a.text_buttons:active {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] div.text_tools > div:not(.btn-group) {
+    padding: 5px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] [data-udraw="top_toolbar"] div.text_tools > div:not(.btn-group).show {
+    outline: auto;
+}
+#udraw-bootstrap [data-udraw="curved_text_container"] [data-udraw="curvedTextSpacing"],
+#udraw-bootstrap [data-udraw="curved_text_container"] [data-udraw="curvedTextRadius"],
+#udraw-bootstrap [data-udraw="curved_text_container"] [data-udraw="curvedTextStartingAngle"]{
+    width: 60%;
+    margin: 5px;
+    display: inline-block;
+    float: right;
+    font-size: 0.5em;
+}
+#udraw-bootstrap [data-udraw="curved_text_container"] span.ui-slider-handle {
+    top: -0.8em;
+    height: 2.2em;
+}
+#udraw-bootstrap div[data-udraw="pagesContainer"] a {
+    padding: 0!important;
+}
+#udraw-bootstrap div[data-udraw="pagesContainer"] i {
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+#udraw-bootstrap [data-udraw="top_toolbar_container"] div.text_tools div.textarea_dropdown {
+    padding: 10px;
+    height: 75px;
+}
+#udraw-bootstrap textArea[data-udraw="textArea"] {
+    height:50px;
+    resize: none;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+#udraw-bootstrap div.page_container {
+    height: 100px;
+    display: none;
+    text-align: center;
+}
+#udraw-bootstrap [data-udraw="add_page"], #udraw-bootstrap [data-udraw="add_page"]:active, #udraw-bootstrap [data-udraw="add_page"]:hover {
+    text-decoration: none;
+    color: #888;
+}
+#udraw-bootstrap [data-udraw="add_page"] > div {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 5%;
+}
+#udraw-bootstrap [data-udraw="next_page_container"] > div > i.fa.fa-trash {
+    cursor: pointer;
+    margin: 5px;
+}
+#udraw-bootstrap img.page_thumb {
+    max-width: 50%;
+    max-height: 75px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+@media only screen and (min-width: 640px) {
+    #udraw-bootstrap [data-udraw="designerMenu"] span.menu_button_text {
+        display: inline-block;
+    }
+    #udraw-bootstrap .toolbox-modal {
+        width: 450px;
+    }
+    #udraw-bootstrap .modal-dialog {
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    div#udraw-bootstrap {
+        height: 99%;
+    }
+    #udraw-bootstrap [data-udraw="tools_container"] div.image_btn_container span,
+    #udraw-bootstrap [data-udraw="tools_container"] div.element_btn_container span {
+        word-break: break-word;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #udraw-bootstrap [data-udraw="openClipartList"] li div img {
+        max-width: 120px;
+    }
+}
+
+#udraw-bootstrap [data-udraw="designerMenu"] a.menu_button[disabled] {
+    pointer-events: none;
+    color: #aaa;
+}
+#udraw-bootstrap [data-udraw="designerColourContainer"] {
+    z-index: 1;
+}
+#udraw-bootstrap [data-udraw="colour_picker_btn"] > div, #udraw-bootstrap [data-udraw="convert_svg"] > div {
+    background-image: url('colour_wheel.svg');
+    background-color: transparent;
+    width: 27px;
+    height: 27px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+#udraw-bootstrap [data-udraw="convert_svg"] {
+    display: none;
+}
+#udraw-bootstrap [data-udraw="background_colour"], #udraw-bootstrap [data-udraw="designerColourPicker"], #udraw-bootstrap [data-udraw="text_colour_picker"],
+#udraw-bootstrap [data-udraw="border_colour_picker"] {
+    background-image: url('colour_wheel.svg')!important;
+    border: 1px solid #000;
+    background-color: transparent!important;
+    margin: 0;
+}
+/*Tab container*/
+#udraw-bootstrap div.tabs_container {
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    z-index: 1;
+    margin-left: 8px;
+    margin-top: 5%;
+}
+#udraw-bootstrap ul.tabs_list {
+    padding: 0;
+}
+#udraw-bootstrap ul.tabs_list li.tab {
+    display: none;
+    background: #77cdff;
+    border: 1px solid #555;
+    border-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#udraw-bootstrap ul.tabs_list li.tab.active {
+    display: inline-block;
+}
+#udraw-bootstrap ul.tabs_list li.tab a {
+    color: #555;
+    width: 100%;
+}
+#udraw-bootstrap ul.tabs_list li.tab a:hover, #udraw-bootstrap ul.tabs_list li.tab a:active {
+    color: #999;
+}
+#udraw-bootstrap ul.tabs_list li.tab a div.tab_span_div {
+    display: inline-block;
+    overflow: hidden;
+    width: calc(100% - 15px);
+}
+#udraw-bootstrap ul.tabs_list li.tab a i, #udraw-bootstrap ul.tabs_list li.tab a div.tab_span_div {
+    vertical-align: top;
+}
+
+#udraw-bootstrap div.footer {
+    width: 100%;
+    padding: 0 15px;
+    text-align: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#udraw-bootstrap [data-udraw="zoom_container"],
+#udraw-bootstrap [data-udraw="add_container"]{
+    border-radius: 25px;
+    background: rgb(115, 123, 128);
+    border: 1px solid rgb(115, 123, 128);
+    display: inline-block;
+    padding: 5px;
+}
+#udraw-bootstrap [data-udraw="add_container"] {
+    display: none;
+    padding: 5px 10px;
+    color: #2b2b2b;
+}
+#udraw-bootstrap [data-udraw="add_container"].active {
+    display: inline-block;
+}
+
+#udraw-bootstrap [data-udraw="zoom_container"] > div {
+    display: inline-block;
+}
+#udraw-bootstrap div.divider {
+    border-left: 1px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+}
+#udraw-bootstrap ul.zoom_dropdown[data-udraw="zoom_selector"] {
+    min-width: 75px;
+    left: initial;
+    margin-left: 10px;
+    background-color: rgb(115, 123, 128);
+    padding: 5px;
+    text-align: center;
+    color: #2b2b2b;
+}
+#udraw-bootstrap ul.zoom_dropdown[data-udraw="zoom_selector"] li {
+    cursor: pointer;
+}
+
+/*Upload Artwork game generator holder*/
+div.game_generator_holder {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    padding: 15px;
+}
+div.game_generator_holder div.game_generator div.modal-dialog {
+    width: 100%;
+}
+/*div.game_generator_holder.designer {
+    width: 40%;
+    right: 0;
+    left: initial;
+    display:inline-block;
+    background: none;
+}*/
+div.game_generator_holder [data-dismiss="modal"] {
+    display: none;
+}
+/*div.game_generator_holder.designer [data-dismiss="modal"] {
+    display: initial;
+}
+div.game_generator_holder.designer a.apply_btn{
+    display: none;
+}*/
+/*Multipage PDF import modal*/
+body div[data-udraw="multipagePDFModal"] div.modal-dialog.modal-lg {
+    padding-top: 10%;
+}
+body [data-udraw="multipagePDFModal"] [data-udraw="page_list_container"],
+body [data-udraw="multipagePDFModal"] [data-udraw="imported_images_container"] {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+body [data-udraw="multipagePDFModal"] img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #777;
+}
+#udraw-bootstrap [data-udraw="multipagePDFModal"] img {
+    border: 1px solid #777;
+}
+body [data-udraw="multipagePDFModal"] div.image_div {
+    display: inline-block;
+    padding: 5px;
+    /*Grabbing cursor, using move as a fallback*/
+    cursor: move;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+body [data-udraw="multipagePDFModal"] div.image_import_queue {
+    min-height: 110px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+body [data-udraw="multipagePDFModal"] span.import_span {
+    font-size: 2em;
+    color: #ccc;
+}
+body [data-udraw="multipagePDFModal"] div.page_div {
+    border: 1px solid #888;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+body [data-udraw="multipagePDFModal"] a.remove_import_image,
+body [data-udraw="multipagePDFModal"] a.remove_import_image:hover,
+body [data-udraw="multipagePDFModal"] a.remove_import_image:active {
+    text-decoration: none;
+    color: #888;
+    display: block;
+}
+body [data-udraw="multipagePDFModal"] div.import_image_clone {
+    width: 30%;
+    display: inline-block;
+}
+body [data-udraw="multipagePDFModal"] div.progress_div {
+    display: none;
+    text-align: center;
+}
+body [data-udraw="multipagePDFModal"] div[data-udraw="page_list"] {
+    overflow: auto;
+}
+body [data-udraw="multipagePDFModal"] [data-udraw="multipage_import_apply"] {
+    color: #fff;
+}
+
+        
+        
+#udraw-bootstrap [data-udraw="facebook_albums_list"] li,
+#udraw-bootstrap [data-udraw="facebook_photos_list"] li,
+#udraw-bootstrap [data-udraw="google_albums_list"] li,
+#udraw-bootstrap [data-udraw="google_photos_list"] li,
+#udraw-bootstrap [data-udraw="instagram_photos_list"] li{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 1.5%;
+    text-align: center;
+}
+    #udraw-bootstrap [data-udraw="facebook_albums_list"] li.active {
+        box-shadow: rgba(0, 55, 255, 0.5) 0px 0px 25px;
+    }
+#udraw-bootstrap [data-udraw="facebook_albums_list"] li img.image_thumbnail,
+#udraw-bootstrap [data-udraw="google_photos_list"] li img.image_thumbnail,
+#udraw-bootstrap [data-udraw="instagram_photos_list"] li img.image_thumbnail,
+#udraw-bootstrap [data-udraw="facebook_photos_list"] li img.image_thumbnail {
+    margin: auto;
+}
+#udraw-bootstrap div.facebook_content > ul {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    margin-left: 0;
+}
+
+    #udraw-bootstrap ul.stock_image_list {
+        overflow: auto;
+    }
+
+    #udraw-bootstrap ul.stock_image_list li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1.5%;
+    }
+    #udraw-bootstrap ul.stock_image_list li img {
+        margin: auto;
+    }
+    
+#udraw-bootstrap [data-udraw="tools_container"] div.inner_container.hide_tools_container {
+    width: 5%;
+}
+
+@media only screen and (min-width: 500px) {
+    #udraw-bootstrap [data-udraw="facebook_albums_list"] li,
+    #udraw-bootstrap [data-udraw="facebook_photos_list"] li,
+    #udraw-bootstrap [data-udraw="google_albums_list"] li,
+    #udraw-bootstrap [data-udraw="google_photos_list"] li,
+    #udraw-bootstrap [data-udraw="instagram_photos_list"] li{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 650px) {
+    #udraw-bootstrap [data-udraw="facebook_albums_list"] li,
+    #udraw-bootstrap [data-udraw="facebook_photos_list"] li,
+    #udraw-bootstrap [data-udraw="google_albums_list"] li,
+    #udraw-bootstrap [data-udraw="google_photos_list"] li,
+    #udraw-bootstrap [data-udraw="instagram_photos_list"] li{
+        width: 20%;
+    }
+    
+    #udraw-bootstrap .mobile_only {
+        display: none;
+    }
+    
+    #designer-wrapper div.left {
+        float: left;
+    }
+
+    #designer-wrapper div.right {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 765px) {
+    #udraw-bootstrap [data-udraw="tools_container"] {
+        display: inline-block;
+        max-width: 30%;
+        width: 0;
+        height: 95%;
+        position: relative;
+    }
+}
+
+@media only screen and (min-height: 570px) {
+    #udraw-bootstrap [data-udraw="tools_container"] div.element_container.clipart > div {
+        max-height: 50vh;
+    }
+}
+
+@media only screen and (min-height: 830px) {
+    #udraw-bootstrap [data-udraw="tools_container"] div.element_container.clipart > div {
+        max-height: 60vh;
+    }
+}
+
+@media only screen and (min-height: 830px) and (min-width: 1000px) {
+    #udraw-bootstrap [data-udraw="tools_container"] div.element_container.clipart > div {
+        max-height: 65vh;
+    }
+}
+
+div.loading_overlay {
+    display: none;
+    width: 99vw;
+    height: 99vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+}
+
+div.loading_overlay.active {
+    display: block;
+}
+
+div.loading_overlay i {
+    margin-top: 45vh;
+    color: white;
+}
+
+#udraw-bootstrap [data-udraw="textTemplatesList"] li {
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 45%;
+    text-align: right;
+    padding: 5px;
+    vertical-align: top;
+}
+
+#udraw-bootstrap [data-udraw="textTemplatesList"] li img {
+    max-width: 100%;
+}
+#udraw-bootstrap [data-udraw="textTemplateSearch"] {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#udraw-bootstrap div.text-templates {
+    color: #222;
+}
+
+#udraw-bootstrap div.under_menu_bar {
+    display: none; 
+    height: 95%;
+    position: absolute;
+    width: 100%;
+}
+
+#udraw-bootstrap [data-udraw="multilayerImageContainer"] .multilayer-tag {
+    width: 70px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    font-size: 10px;
+}
+
+#udraw-bootstrap [data-udraw="multilayerImageContainer"] img.thumbnail {
+    max-width: 50px;
+    max-height: 50px;
+    box-shadow: rgba(203, 203, 203, 1) 0 0 10px;
+    cursor: pointer;
+}
+
+#udraw-bootstrap [data-udraw="multilayerImageContainer"] .delete_tag {
+    font-size: 10px;
+    padding-left: 10px;
+    display: table-cell;
+    color: red;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#udraw-bootstrap .stroke-colour-picker-class.active {
+    z-index: 999999;
+}
+#udraw-bootstrap [data-udraw="layersContainer"] {
+    padding: 0;
+    margin: 0;
+}
+#udraw-bootstrap [data-udraw="layersContainer"] img.layer_icon {
+    max-width: 100px;
+    max-height: 25px;
+    display: inline-block;
+}
+#udraw-bootstrap a.scale_image {
+    float: none;
+    width: 50%;
+}
+
+#udraw-main-designer-ui {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+
+#udraw-bootstrap li.multilayer-thumbnail {
+    display: inline-block;
+}

@@ -1,0 +1,58 @@
+/* Rezgo responsive calendar */
+.responsive-calendar {
+	font-family:'Lato', sans-serif;
+	/* padding:20px; */
+	padding:5%;
+	background:#eee;
+}
+.responsive-calendar .controls a {
+  	font-size:20px;
+}
+.responsive-calendar .day-headers {
+	height:20px;
+	margin-top:20px;
+}
+.responsive-calendar .day {
+	font-size: 13px;
+}
+.responsive-calendar .day.active a {
+  	border-radius:50%;
+}
+.responsive-calendar .day.active a{
+	background-color:#0D4191;
+	transition: 0.1s ease;
+}
+.responsive-calendar .day.active a:hover {
+	background-color:#449d44 ;
+}
+.responsive-calendar .day.active a:hover,
+.responsive-calendar .day.select a {
+	background-color:#398439;
+}
+.responsive-calendar .day.select:after{
+	background-color: #449d44;
+}
+.responsive-calendar .day.select a:hover {
+	background-color:#449d44;
+}
+.responsive-calendar .day.not-current a {
+	cursor: default;
+}
+.responsive-calendar .day.available a {
+  background-color: #090;
+}
+.responsive-calendar .day:not(.active) a,
+.responsive-calendar .day.past a,
+.responsive-calendar .day.passed a,
+.responsive-calendar .day.cutoff a,
+.responsive-calendar .day.unavailable a {
+	cursor: none;
+	pointer-events: none;
+	border-radius: 50%;
+}
+.responsive-calendar .day.full a {
+    background-color: #FF9900;
+	border-radius: 50%;
+	color: #FFFFFF;
+	cursor: default;
+}

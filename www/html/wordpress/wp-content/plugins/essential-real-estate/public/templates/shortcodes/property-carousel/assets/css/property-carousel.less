@@ -1,0 +1,97 @@
+.ere-property-carousel {
+	.navigation-wrap {
+		width: 25%;
+		float: left;
+		padding-left: 30px;
+		padding-right: 15px;
+		.owl-nav {
+			margin-top: 40px;
+			div {
+				position: relative;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin-top: 0;
+				display: inline-block;
+				cursor: pointer;
+			}
+			.owl-prev {
+				margin-right: 20px;
+			}
+		}
+	}
+	.property-content {
+		width: 75%;
+		float: left;
+		padding-left: 1px;
+	}
+	&.color-light {
+		.navigation-wrap {
+			.owl-nav {
+				div {
+					background-color: rgba(255,255,255,0.3);
+					&.owl-prev:after {
+						border-top-color: rgba(255,255,255,0.3);
+					}
+					&.owl-next:after {
+						border-bottom-color: rgba(255,255,255,0.3);
+					}
+					i {
+						color: #fff;
+					}
+					&:hover {
+						background-color: #fb6a19;
+						&.owl-prev:after {
+							border-top-color: #fb6a19;
+						}
+						&.owl-next:after {
+							border-bottom-color: #fb6a19;
+						}
+					}
+				}
+			}
+		}
+	}
+	.property-element-inline {
+		display: none;
+	}
+}
+
+@media ( min-width: 1820px ) {
+	.ere-property-carousel {
+		.navigation-wrap {
+			width: 20%;
+		}
+		.property-content {
+			width: 80%;
+		}
+	}
+}
+
+@media ( max-width: 1199px ) {
+	.ere-property-carousel {
+		.navigation-wrap {
+			width: 33.3333333%;
+		}
+		.property-content {
+			width: 66.6666666%;
+		}
+	}
+}
+
+@media ( max-width: 767px ) {
+	.ere-property-carousel {
+		.navigation-wrap {
+			width: 100%;
+			float: none;
+			padding-bottom: 40px!important;
+			padding-left: 15px;
+			padding-top: 60px !important;
+		}
+		.property-content {
+			width: 100%;
+			float: none;
+			padding-left: 0;
+		}
+	}
+}

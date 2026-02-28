@@ -1,0 +1,1 @@
+{"function":"mysqli_query","params":["SELECT first_name, last_name FROM users WHERE user_id = '2 g'';"],"errno":1064,"errstr":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2 g''' at line 1"}

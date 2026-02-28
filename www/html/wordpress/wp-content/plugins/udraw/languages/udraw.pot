@@ -1,0 +1,659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: udraw\n"
+"POT-Creation-Date: 2015-01-26 12:49-0500\n"
+"PO-Revision-Date: 2015-01-26 12:50-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+# Ignore this one
+#: ../assets/jquery-ui-1.11.1.custom/jquery-ui.min.js:10
+msgid "'"
+msgstr ""
+
+#: ../designer/designer-admin.php:25
+msgid "Template Name:"
+msgstr ""
+
+#: ../designer/designer-template-script.php:112
+#: ../designer/designer-template-wrapper.php:15
+#: ../price-matrix/templates/frontend/price-matrix-product.php:171
+#: ../price-matrix/templates/frontend/price-matrix.php:99
+msgid "Add To Cart"
+msgstr ""
+
+#: ../designer/designer-template-wrapper.php:13
+msgid "Update Now"
+msgstr ""
+
+#: ../designer/designer-template.php:122
+msgid "Toggle Dropdown"
+msgstr ""
+
+#: ../designer/designer-template.php:167
+msgid "Crop Image"
+msgstr ""
+
+#: ../designer/designer-template.php:202
+msgid "Bounding Box"
+msgstr ""
+
+#: ../designer/designer-template.php:206
+msgid "Create"
+msgstr ""
+
+#: ../designer/designer-template.php:210
+msgid "Lock"
+msgstr ""
+
+#: ../designer/designer-template.php:211
+msgid "Unlock"
+msgstr ""
+
+#: ../designer/designer-template.php:212
+msgid "Remove"
+msgstr ""
+
+#: ../designer/designer-template.php:213
+msgid "Update"
+msgstr ""
+
+#: ../designer/designer-template.php:217
+msgid "Width"
+msgstr ""
+
+#: ../designer/designer-template.php:221 ../designer/designer-template.php:229
+msgid "Inch"
+msgstr ""
+
+#: ../designer/designer-template.php:225
+msgid "Height"
+msgstr ""
+
+#: ../designer/designer-template.php:239
+msgid "Thickness"
+msgstr ""
+
+#: ../pdf-blocks/templates/admin/uDraw-manage-block-templates.php:22
+#: ../uDraw.php:539
+msgid "PDF Templates"
+msgstr ""
+
+#: ../pdf-blocks/templates/frontend/pdf-block-product.php:16
+msgid "Approve & Continue"
+msgstr ""
+
+#: ../pdf-blocks/templates/frontend/pdf-block-product.php:18
+msgid "Preview Now"
+msgstr ""
+
+#: ../pdf-blocks/uDrawBlockTemplatesTable.class.php:91
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:120
+#: ../uDrawPublicTemplatesTable.class.php:134
+#: ../uDrawTemplatesTable.class.php:176
+msgid "Name"
+msgstr ""
+
+#: ../pdf-blocks/uDrawBlockTemplatesTable.class.php:92
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:90
+#: ../uDrawPublicTemplatesTable.class.php:84
+#: ../uDrawPublicTemplatesTable.class.php:135
+#: ../uDrawTemplatesTable.class.php:177
+msgid "Preview"
+msgstr ""
+
+#: ../pdf-blocks/uDrawBlockTemplatesTable.class.php:93
+#: ../uDrawPublicTemplatesTable.class.php:138
+#: ../uDrawTemplatesTable.class.php:180
+msgid "Linked Products"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:93
+msgid "Successfully created new price matrix."
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:94
+msgid "Price matrix updated."
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:100
+msgid "Name:"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:106
+#: ../price-matrix/templates/admin/create-price-set.php:109
+#: ../price-matrix/templates/admin/create-price-set.php:110
+msgid "Save Price Matrix"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:107
+msgid "Update Price Matrix"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:112
+msgid "Close"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:140
+msgid "Categories"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:141
+msgid "Preview & Settings"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:142
+msgid "Help"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:485
+msgid "Link uDraw Template:"
+msgstr ""
+
+#: ../price-matrix/templates/admin/create-price-set.php:486 ../uDraw.php:679
+msgid "Select a Template&hellip;"
+msgstr ""
+
+#: ../price-matrix/templates/admin/manage-price-sets.php:18
+msgid "View Price Matrix Sets"
+msgstr ""
+
+#: ../price-matrix/templates/admin/manage-price-sets.php:19
+#: ../templates/admin/uDraw-manage-templates.php:19
+msgid "Add New"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:106
+#: ../price-matrix/templates/frontend/price-matrix.php:78
+#: ../templates/frontend/uDraw-variable-add-to-cart.php:79
+msgid "Options:"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:112
+#: ../price-matrix/templates/frontend/price-matrix.php:84
+msgid "Total Price:"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:124
+msgid "Upload in progress"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:138
+msgid "Upload File(s)"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:154
+msgid "Design Now"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix-product.php:170
+msgid "Show Quote"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix.php:94
+#: ../templates/frontend/uDraw-variable-add-to-cart.php:88
+msgid "Preview or Edit Your Design"
+msgstr ""
+
+#: ../price-matrix/templates/frontend/price-matrix.php:96
+#: ../templates/frontend/uDraw-variable-add-to-cart.php:91
+msgid "Save & Finish Later"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrix.class.php:188 ../uDraw.php:782
+msgid "Price Matrix"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrix.class.php:191
+msgid "Manage Price Matrix"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:53
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:58
+#: ../uDrawTemplatesTable.class.php:116 ../uDrawTemplatesTable.class.php:122
+msgid "Edit"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:54
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:151
+#: ../uDrawTemplatesTable.class.php:117 ../uDrawTemplatesTable.class.php:212
+msgid "Delete"
+msgstr ""
+
+# %s is a placeholder for
+# created/modified (2 hours) ago
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:81
+#: ../uDrawPublicTemplatesTable.class.php:117
+#: ../uDrawTemplatesTable.class.php:159
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:83
+#: ../uDrawPublicTemplatesTable.class.php:119
+#: ../uDrawTemplatesTable.class.php:161
+msgid "Y/m/d"
+msgstr ""
+
+#: ../price-matrix/uDrawPriceMatrixTable.class.php:121
+#: ../uDrawPublicTemplatesTable.class.php:139
+#: ../uDrawTemplatesTable.class.php:181
+msgid "Date"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:97
+msgid "uDraw Host:"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:99
+msgid "Username:"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:101
+msgid "Password:"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:103
+msgid "Connect & Load"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:133
+msgid "Invalid Username/Password Combination"
+msgstr ""
+
+#: ../templates/admin/uDraw-import-templates.php:150
+msgid "Successfully Imported Template. You Balloon!"
+msgstr ""
+
+#: ../templates/admin/uDraw-manage-fonts.php:22
+msgid "Upload Font(s)"
+msgstr ""
+
+#: ../templates/admin/uDraw-manage-fonts.php:22
+msgid "Note: Only .woff fonts are supported."
+msgstr ""
+
+#: ../templates/admin/uDraw-manage-fonts.php:24
+msgid "Select files..."
+msgstr ""
+
+#: ../templates/admin/uDraw-manage-templates.php:18 ../uDraw.php:530
+msgid "View Templates"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:20
+msgid "Settings saved."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:44
+msgid "Error: Your GoPrint2 API Key is not valid. Please re-enter a valid key."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:57
+msgid "Error: Your GoEpower API Key is not valid. Please re-enter a valid key."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:84
+msgid "General"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:85
+msgid "Designer UI"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:86
+#: ../uDrawPublicTemplatesTable.class.php:137
+msgid "Pages"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:87
+msgid "GoPrint2"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:88
+msgid "GoEpower"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:121
+msgid "Save changes"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:151
+#: ../templates/admin/uDraw-settings.php:154
+msgid "Proofing"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:163
+msgid "Display a proof before adding design to shopping cart."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:169
+#: ../templates/admin/uDraw-settings.php:172
+msgid "Product Title"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:181
+msgid "Show default product title while viewing a uDraw product."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:187
+#: ../templates/admin/uDraw-settings.php:190
+msgid "Product Breadcrumbs"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:199
+msgid "Show default product breadcrumbs while viewing a uDraw product."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:205
+#: ../templates/admin/uDraw-settings.php:208
+msgid "Product Description"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:217
+msgid ""
+"Show product description, reviews &amp; ratings while viewing a uDraw "
+"product."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:223
+#: ../templates/admin/uDraw-settings.php:226
+msgid "Improved Variable Product Layout"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:235
+msgid ""
+"Split Variable products into a 2 step process. This improves the user "
+"experience process while designing products."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:241
+msgid "Improved Display Options With UI Update"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:253
+msgid "Display options on a separate screen with a better default UI."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:290
+msgid "Lanuage for uDraw Designer Only."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:295
+#: ../templates/admin/uDraw-settings.php:298
+msgid "Enable Local Clipart"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:307
+msgid ""
+"This will enable the ability to upload a private Clipart Collection for your "
+"customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:313
+#: ../templates/admin/uDraw-settings.php:316
+msgid "Disable Global Clipart"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:325
+msgid "This will disable the default global Clipart Collection"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:331
+#: ../templates/admin/uDraw-settings.php:334
+msgid "Disable QRCode"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:343
+msgid "This will disable QRCode on designer for all customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:349
+#: ../templates/admin/uDraw-settings.php:352
+msgid "Disable Shapes"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:361
+msgid "This will disable Shapes on designer for all customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:367
+#: ../templates/admin/uDraw-settings.php:370
+msgid "Disable Image Cropper"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:379
+msgid "This will disable Image Cropper tool on designer for all customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:385
+#: ../templates/admin/uDraw-settings.php:388
+msgid "Disable Image Replace"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:397
+msgid "This will disable Image Replace tool on designer for all customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:403
+#: ../templates/admin/uDraw-settings.php:406
+msgid "Disable Text Gradient"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:415
+msgid "This will disable Text Gradient tool on designer for all customers."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:429
+msgid "Default pages not created. Would you like to create them now?"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:429
+msgid "Create Pages Now?"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:437
+msgid "Private Templates"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:452
+msgid "Page must contain shortcode [udraw_private_templates] ."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:457
+msgid "Customer Saved Designs"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:472
+msgid "Page must contain shortcode [udraw_customer_saved_designs] ."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:486
+msgid "GoPrint2 API Key"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:496
+#: ../templates/admin/uDraw-settings.php:499
+msgid "File Submission"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:508
+msgid "Submit all orders to GoPrint2 System."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:529
+msgid "GoEpower API Key"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:537
+msgid "GoEpower Producer ID"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:554
+#: ../templates/admin/uDraw-settings.php:557
+msgid "Order Submission"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:566
+msgid "Submit all orders to GoEpower System."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:573
+msgid "GoEpower Company ID"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:588
+msgid "Company where all jobs will be submitted to."
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:595
+msgid "Additional Notification Email"
+msgstr ""
+
+#: ../templates/admin/uDraw-settings.php:599
+msgid "A copy of all orders will also be sent to the above email address."
+msgstr ""
+
+#: ../uDraw.php:357
+msgid "uDraw Designer"
+msgstr ""
+
+#: ../uDraw.php:407
+msgid "uDraw Manager"
+msgstr ""
+
+#: ../uDraw.php:531
+msgid "Add Template"
+msgstr ""
+
+#: ../uDraw.php:533
+msgid "Import Templates"
+msgstr ""
+
+#: ../uDraw.php:535
+msgid "Global Templates"
+msgstr ""
+
+#: ../uDraw.php:542
+msgid "Manage Fonts"
+msgstr ""
+
+#: ../uDraw.php:543
+msgid "Settings"
+msgstr ""
+
+#: ../uDraw.php:546
+msgid "Modify Template"
+msgstr ""
+
+#: ../uDraw.php:621 ../uDraw.php:633
+msgid "uDraw Product"
+msgstr ""
+
+#: ../uDraw.php:622
+msgid "Select if you want to designate this product as a uDraw product."
+msgstr ""
+
+#: ../uDraw.php:678
+msgid "Select Template"
+msgstr ""
+
+#: ../uDraw.php:700 ../uDraw.php:732
+msgid ""
+"Link an existing template. Templates can be created from the uDraw->Add "
+"Template section."
+msgstr ""
+
+#: ../uDraw.php:709
+msgid "Select Block Template"
+msgstr ""
+
+#: ../uDraw.php:710
+msgid "Select Block Template&hellip;"
+msgstr ""
+
+#: ../uDraw.php:749
+msgid "Customers"
+msgstr ""
+
+#: ../uDraw.php:750
+msgid "Select a Customer&hellip;"
+msgstr ""
+
+#: ../uDraw.php:769
+msgid "These users will have private access to this product/template."
+msgstr ""
+
+#: ../uDraw.php:774
+msgid "Define Price Matrix"
+msgstr ""
+
+#: ../uDraw.php:779
+msgid "Override default Price and Price Matrix."
+msgstr ""
+
+#: ../uDraw.php:799
+msgid "This price matrix will override the default price and price matrix."
+msgstr ""
+
+#: ../uDraw.php:2236
+msgid ""
+"Please activate the WooCommerce Plugin, otherwise you can not use uDraw for "
+"WooCommerce!"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:61
+msgid "Link To Product"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:136
+#: ../uDrawTemplatesTable.class.php:178
+msgid "Size (inches)"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:204
+#: ../uDrawTemplatesTable.class.php:260
+msgid "All"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:209
+msgid "Linked To Products"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:214
+msgid "Not Linked To Products"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:226
+msgid "Category:"
+msgstr ""
+
+#: ../uDrawPublicTemplatesTable.class.php:242
+msgid "Filter"
+msgstr ""
+
+#: ../uDrawTemplatesTable.class.php:115 ../uDrawTemplatesTable.class.php:121
+msgid "Duplicate"
+msgstr ""
+
+#: ../uDrawTemplatesTable.class.php:179
+msgid "Tags"
+msgstr ""
+
+#: ../uDrawTemplatesTable.class.php:265
+msgid "Linked To Product"
+msgstr ""
+
+#: ../uDrawTemplatesTable.class.php:270
+msgid "Not Linked To Product"
+msgstr ""

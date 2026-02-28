@@ -1,0 +1,67 @@
+.fixed-dialog .ui-dialog-titlebar .ui-button .ui-icon-closethick::after {
+    content: url(../images/installation_status_faild.png) !important;
+    background-position: left top !important;
+    margin: 0 !important;
+    height: 10px !important;
+    width: 20px !important;
+}
+
+.ui-dialog.fixed-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable {
+    z-index: 999;
+    background: white;
+    border: 0.5px darkgray solid;
+    box-shadow: 0.5px 0.5px 6px grey;
+    border-radius: 9px;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.fixed-dialog.ui-dialog-buttons.ui-draggable.ui-resizable{
+	width:auto !important;
+}
+.fixed-dialog .ui-dialog-titlebar .ui-button span.ui-button-text{
+	display: none;
+}
+.fixed-dialog .ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
+    background: #133950;
+    color: white;
+    padding-left: 24px;
+    line-height: 51px;
+    border-radius: 10px 10px 0px 0px;
+}
+.fixed-dialog button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
+    background: none;
+    float: right;
+}
+
+.fixed-dialog div#dialog-message > p {
+    text-align: center;
+    padding: 33px;
+    color: #8c8888;
+}
+.fixed-dialog button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only {
+    background: #133950;
+    padding: 8px 19px;
+    border-radius: 8px;
+}
+.fixed-dialog .ui-dialog-buttonset {
+    text-align: right;
+    margin: 10px 12px;
+}
+.fixed-dialog{
+  position: fixed;
+  top: 50px;
+  left: 50px;
+}
+/* wp 5.6 */
+.fixed-dialog .ui-dialog-buttonset button{
+	background: #133950;
+    padding: 5px 11px;
+	border-radius: 9px;
+	font-weight: 500;
+	color: white;
+	border: none;
+}
+.fixed-dialog .ui-dialog-buttonset button:hover{
+	background: #133950;
+}
+.fixed-dialog .ui-dialog-titlebar button{
+	display: none;
+}

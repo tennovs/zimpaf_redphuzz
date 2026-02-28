@@ -1,0 +1,18 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+if (!class_exists('ERE_Shortcode_Login')) {
+    class ERE_Shortcode_Login
+    {
+        /**
+         * Output the cart shortcode.
+         *
+         * @param array $atts
+         */
+        public static function output($atts)
+        {
+            return ere_get_template_html('account/login.php', array('atts' => $atts));
+        }
+    }
+}

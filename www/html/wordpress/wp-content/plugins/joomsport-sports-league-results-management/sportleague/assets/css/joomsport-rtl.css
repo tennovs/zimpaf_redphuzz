@@ -1,0 +1,1103 @@
+/*Bootstrap*/
+#joomsport-container .jsalignleft {
+  text-align: right!important;
+}
+#joomsport-container .cansorttbl.table .img-thumbnail {
+  margin-left: 15px;
+  margin-right: auto;
+}
+[dir="rtl"] #joomsport-container table {
+  direction: rtl;
+}
+[dir="rtl"] #joomsport-container th{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .jsTextAlignCenter, [dir="rtl"] #joomsport-container .jsalcenter {
+  text-align: center;
+}
+[dir="rtl"] #joomsport-container .cansorttbl.table .img-thumbnail {
+  margin-left: 15px;
+  margin-right: auto;
+}
+#joomsport-container .div_for_socbut .glyphicon{
+  margin-left: 0;
+  margin-right: 15px;
+}
+[dir="rtl"] #joomsport-container [class*="col-"]{
+  float: right;
+}
+#joomsport-container .text-left {
+  text-align: right;
+}
+#joomsport-container .text-right {
+  text-align: left;
+}
+[dir="rtl"] #joomsport-container .pull-left {
+  float: right!important;
+}
+[dir="rtl"] #joomsport-container .pull-right {
+  float: left!important;
+}
+[dir="rtl"] #joomsport-container .js-div-pagination .pagination > li > a, [dir="rtl"] #joomsport-container .js-div-pagination .pagination > li > span {
+  float: right;
+}
+[dir="rtl"] #joomsport-container .js-div-pagination .pagination > li:first-child > a, [dir="rtl"] #joomsport-container .js-div-pagination .pagination > li:first-child > span{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+[dir="rtl"] #joomsport-container .js-div-pagination .pagination > li:last-child > a, [dir="rtl"] #joomsport-container .js-div-pagination .pagination > li:last-child > span {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+[dir="rtl"] #joomsport-container .text-right {
+  text-align: left;
+}
+
+/*Joomsport*/
+[dir="rtl"] #joomsport-container *[style="text-align:left;"],
+[dir="rtl"] #joomsport-container *[style="text-align: left;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="text-align:left;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="text-align: left;"]{
+  text-align: right!important;
+}
+[dir="rtl"] #joomsport-container *[style="text-align:right;"],
+[dir="rtl"] #joomsport-container *[style="text-align: right;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="text-align:right;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="text-align: right;"]{
+  text-align: left!important;
+}
+[dir="rtl"] #joomsport-container *[style="float:right;"],
+[dir="rtl"] #joomsport-container *[style="float: right;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="float:right;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="float: right;"] {
+  float: left!important;
+}
+[dir="rtl"] #joomsport-container *[style="float:left;"],
+[dir="rtl"] #joomsport-container *[style="float: left;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="float:left;"],
+[dir="rtl"] .jsmodtbl_responsive *[style="float: left;"] {
+  float: right!important;
+}
+[dir="rtl"] #joomsport-container .jsalignleft {
+  text-align: right!important;
+}
+[dir="rtl"] div.js_div_particName{
+  padding-right: 10px;
+}
+[dir="rtl"] div.photoDIV{
+  margin: 0 12px 10px 18px;
+}
+[dir="rtl"] div.jsInline{
+  float: right;
+  width: 50%;
+}
+[dir="rtl"] #joomsport-container div.jsdispad label{
+  margin-left:15px;
+}
+[dir="rtl"] .srchButton{
+  text-align: left;
+}
+[dir="rtl"] table.cansorttbl th a > i.fa{
+  padding-left: 0;
+  padding-right: 5px;
+}
+[dir="rtl"] h2.groups {
+  padding: 0 12px 0 0;
+}
+[dir="rtl"] div.imgGalleryDiv{
+  float: right;
+}
+[dir="rtl"] #joomsport-container .jsScoreDivM .extra-time-g{
+  left: -12px;
+}
+[dir="rtl"] #joomsport-container .jsScoreDivM .extra-time-h{
+  right: -12px;
+}
+[dir="rtl"] .BigMScore1{
+  float: right;
+}
+[dir="rtl"] .BigMScore2{
+  float: right;
+}
+[dir="rtl"] #joomsport-container #stab_overview table .jsTextAlignLeft{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .jsTextAlignLeft{
+  text-align: right!important;
+}
+[dir="rtl"] .jsHmBonus{
+  left:5px;
+}
+[dir="rtl"] .jsAwBonus{
+  right:5px;
+}
+[dir="rtl"] #joomsport-container div.jstable .jsCol6 img{
+  margin-left: 10px;
+}
+[dir="rtl"] div.teamEventGraphHome{
+  float: left;
+  text-align: left;
+}
+[dir="rtl"] div.teamEventGraphAway{
+  text-align: right;
+}
+[dir="rtl"] .jsLabelEField {
+  padding-left: 2px;
+  padding-right: 0;
+}
+[dir="rtl"] .seasonTable .table>tbody>tr>td.left, [dir="rtl"] .seasonTable .table>thead:first-child>tr:first-child>th.left {
+  text-align: right;
+}
+[dir="rtl"] .seasonTable .table .img-thumbnail {
+  margin-left: 15px;
+  padding: 0;
+}
+[dir="rtl"] .nav-tabs>li>a>i {
+  float: right;
+  margin-left: 10px;
+  margin-right: auto;
+}
+[dir="rtl"] .nav-tabs i {
+  margin-left: 10px;
+}
+[dir="rtl"] .nav-tabs li:first-child{
+  margin-right:13px;
+}
+[dir="rtl"] #joomsport-container .nav-tabs > li {
+  margin-right: 0;
+  float: right;
+}
+[dir="rtl"] .data {
+  float: left;
+  margin-right: 1%;
+}
+[dir="rtl"] .place,  .photoPlayer a.jsLightLink {
+  float: right;
+}
+[dir="rtl"] .place {
+  line-height: 30px;
+}
+[dir="rtl"] .navbar-nav .btn i.date {
+  margin-left: 5px;
+  margin-right: 0px;
+}
+[dir="rtl"] .navbar-nav .btn i {
+  margin-right: 5px;
+}
+[dir="rtl"] #joomsport-container .navHeadFull {
+  padding-left: 15px;
+  padding-right:5px;
+}
+[dir="rtl"] .navbar-nav .btn i.tableS {
+  margin-left: 5px;
+  margin-right: 0px;
+}
+[dir="rtl"] .navHeadFull .navbar-nav a.btn{
+  margin: 0px 5px 5px;
+}
+[dir="rtl"] .searchBar .form-control {
+  margin-right: 1%;
+}
+[dir="rtl"] #joomsport-container ol.breadcrumb {
+  float: right;
+}
+[dir="rtl"] #joomsport-container .breadcrumb i {
+  margin-left: 5px;
+}
+[dir="rtl"] #joomsport-container .jsTblMatchTab td.evPlayerName{
+  text-align: right;
+  padding-right: 10px;
+}
+[dir="rtl"] #joomsport-container .jsTblMatchTab td:last-child, [dir="rtl"] #joomsport-container .jsTblMatchTab th:last-child{
+  border-left: 0px;
+}
+[dir="rtl"] #joomsport-container .jsTblMatchTab.firstTeam td, [dir="rtl"] #joomsport-container .jsTblMatchTab.firstTeam th{
+  border-right: 0px;
+  border-left:1px solid #ccc;
+}
+[dir="rtl"] #joomsport-container #jsMatchViewID .jsMatchDivMainMobile div.js_div_particName{
+  padding-right:0px;
+}
+[dir="rtl"] #joomsport-container .tooltip.bottom .tooltip-arrow {
+  right: 50%;
+  right: auto;
+  margin-right: -5px;
+}
+[dir="rtl"] [dir="rtl"] .jsplayerCart{ float:right; }
+[dir="rtl"] [dir="rtl"] .namePlayerCart .LeftnamePlayerCart{ padding-right: 10px; }
+[dir="rtl"] [dir="rtl"] .namePlayerCart .js_div_particName{ padding-right: 0; }
+[dir="rtl"] [dir="rtl"] .namePlayerCart .PlayerCardPlNumber{ padding-left: 10px; }
+[dir="rtl"] #joomsport-container .extra-time-h {
+  right:-2px;
+  left: auto;
+  top:6px;
+}
+[dir="rtl"] #joomsport-container .extra-time-g {
+  left:-2px;
+  right: auto;
+  top:6px;
+}
+[dir="rtl"] #joomsport-container .extra-time-h-re {
+  right:80px;
+  left: auto;
+  top:45px;
+}
+[dir="rtl"] #joomsport-container .extra-time-g-re {
+  left:80px;
+  right: auto;
+  top:45px;
+}
+[dir="rtl"] #joomsport-container .extra-time-aet {
+  right:34px;
+  left: auto;
+  top:-13px;
+}
+[dir="rtl"] #joomsport-container div.jsScoreDiv .extra-time-g {
+  left: 0px;
+  right: auto;
+  top: -5px;
+}
+[dir="rtl"] #joomsport-container div.jsScoreDiv .extra-time-h {
+  right: 0px;
+  left: auto;
+  top: -5px;
+}
+[dir="rtl"] span.jsform_none {
+  margin: 0px 1px;
+  padding: 4px 0;
+  font-size: 9px;
+  line-height: 1;
+}
+[dir="rtl"] #joomsport-container .display {
+  float: left !important;
+  text-align: left;
+}
+[dir="rtl"] #joomsport-container .display label {
+  margin-right: 0;
+  margin-left: 15px;
+  text-align: left;
+}
+[dir="rtl"] #jsMatchViewID .matchdtime span.glyphicon {
+    margin-right: 0;
+    margin-left: 5px;
+}
+[dir="rtl"] .jsMatchHomeTeam .jsMatchPartName span {
+    text-align: right;
+}
+[dir="rtl"] .jsMatchAwayTeam .jsMatchPartName span {
+    text-align: left;
+}
+[dir="rtl"] #jsMatchViewID .jsMatchStatHeader i {
+  padding-left: 0;
+  padding-right: 5px;
+}
+[dir="rtl"] #jsMatchViewID .divTabfade:first-child > a {
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+[dir="rtl"] #jsMatchViewID .divTabfade:last-child > a {
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+[dir="rtl"] .jsHHPercentage table {
+  direction: ltr;
+}
+[dir="rtl"] .jsHHPercentage table .circleHmWinText:first-child{
+  left: auto;
+  right: 0;
+  padding-right: 0;
+  padding-left: 10px;
+}
+[dir="rtl"] .jsHHPercentage table .circleHmWinText:last-child{
+  right: auto;
+  left: 0;
+  padding-left: 0;
+  padding-right: 10px;
+}
+[dir="rtl"] .jsHHPercentage table .circle, [dir="rtl"] .jsHHPercentage table .circleInnerDraw{
+  direction: ltr;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+[dir="rtl"] .jsplayerCart {
+  float: right;
+}
+[dir="rtl"] .namePlayerCart .LeftnamePlayerCart {
+  padding-left: 0;
+  padding-right: 10px;
+  text-align: right;
+}
+[dir="rtl"] .namePlayerCart .PlayerCardPlNumber {
+  padding-right: 0;
+  padding-left: 10px;
+}
+[dir="rtl"] .namePlayerCart .js_div_particName {
+  padding-right: 0;
+}
+
+/*Matrix add-on*/
+[dir="rtl"] #joomsport-container .jsMatrixContainer .jsmatrix_table td:first-child {
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .jsMatrixContainer .jsmatrix_table td img {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+/*Buttons&Tabs*/
+[dir="rtl"] #joomsport-container .navbar-nav .btn i, [dir="rtl"] #joomsport-container .nav-tabs > li > a > i  {
+  margin-left: 8px;
+  margin-right: 0;
+  float: right;
+}
+
+/* Comments box */
+[dir="rtl"] #joomsport-container .comments-box li img { float:right; margin-left:10px; }
+[dir="rtl"] #joomsport-container .comments-box li .comments-box-inner .date { left:0px; }
+[dir="rtl"] #joomsport-container .comments-box li .comments-box-inner p { padding:0 0 15px 130px; margin-right:50px; }
+[dir="rtl"] #joomsport-container .comments-box .jsCommentDelImg{
+  float:left;
+  margin-right:15px;
+  font-family: beinnormal;
+  margin-left:0px;
+}
+[dir="rtl"] #jsFilterMatches .btn i.fa-search{
+  margin-left: 5px;
+}
+[dir="rtl"] .seasonList .btn-default i.arrow-right, .joinSeason .btn-default i.arrow-right {
+  margin-left: 5px;
+}
+[dir="rtl"] #joomsport-container .jsdispad .form-control {
+  margin-right: 5px;
+}
+[dir="rtl"] #joomsport-container .jsdispad label {
+  text-align: left;
+}
+[dir="rtl"] #joomsport-container .navSingle .fa-user{
+  text-align: right;
+  margin-right: 0px;
+}
+[dir="rtl"] div.jsd_buttons{
+  float: right;
+  margin-right: 10px;
+  margin-left: 0;
+}
+[dir="rtl"] div.div_for_socbut{
+  float: left;
+}
+
+/*registration*/
+[dir="rtl"] #joomsport-container .regPlayer .navbar-link>ul>li>a {
+  margin-left: 10px;
+  float: right;
+}
+[dir="rtl"] #joomsport-container .editDraw .navbar-link>ul>li>a {
+  margin-left: 10px;
+  float: right;
+}
+[dir="rtl"] #joomsport-container #stab_main .rmpadd, [dir="rtl"] #joomsport-container .seasonTable .rmpadd{
+  padding-right:0px;
+  padding-left: 30px;
+}
+[dir="rtl"] #joomsport-container .extrafldcn{
+  float:right;
+  //margin-right: 20px;
+}
+[dir="rtl"] #joomsport-container div.selection{
+  padding-left:0px;
+}
+[dir="rtl"] #joomsport-container ul.navSingle a:last-child{
+  margin-left: 0px;
+}
+[dir="rtl"] #joomsport-container .navbar-link>ul>li>a {
+  margin-left: 10px;
+  float: right;
+}
+[dir="rtl"] #joomsport-container .tools a {
+  border-right: 1px solid #e7e7e7;
+}
+[dir="rtl"] #joomsport-container .copyright { right:21px;}
+[dir="rtl"] .matchdtime img{
+  margin-left:10px;
+  margin-right: 0;
+}
+[dir="rtl"] .matchvenue{
+  text-align:left;
+}
+[dir="rtl"] .matchdtime{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container #stab_overview table th, [dir="rtl"] #joomsport-container #stab_overview table td{
+  border-right: 1px solid #fff;
+}
+[dir="rtl"] #joomsport-container #stab_overview table th:first-child, [dir="rtl"] #joomsport-container #stab_overview table td:first-child{
+  border-right:0px;
+}
+[dir="rtl"] #joomsport-container .overviewBlocks h2{
+  margin-right:20px;
+}
+[dir="rtl"] #joomsport-container .overviewBlocks .img-thumbnail {
+  margin-left: 15px;
+  margin-right: 0;
+}
+[dir="rtl"] #joomsport-container .jsObjectPhoto{
+  float:right;
+  padding-left:30px;
+  padding-right: 0;
+}
+[dir="rtl"] .jsTimeLineDivInnerResTime {
+  left: 0;
+  right: auto;
+  text-align-last: left;
+}
+[dir="rtl"] #jsTimeLineDivAway .jsTLEvent .tlArrow {
+  margin-left: 0;
+  margin-right: 6px;
+}
+[dir="rtl"] #jsTimeLineDivHome .jsTLEvent .tlArrow {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+@media (max-width: 480px) {
+  [dir="rtl"] #jsMatchViewID #stab_main .jsTeamStat div.jsInline{
+    float:right;
+  }
+  [dir="rtl"] .photoPlayer a.jsLightLink {
+    //margin-left: 2%;
+  }
+  [dir="rtl"] #joomsport-container .extrafldcn{
+    margin-right: 0px;
+  }
+}
+
+[dir="rtl"] #joomsport-container .jstable.jsMatchDivMainMobile div.js_div_particName{
+  padding-right:0px;
+}
+
+@media(max-width:767px){
+  [dir="rtl"] #joomsport-container ul.navSingle a:last-child{
+    margin-left: 5px;
+  }
+  [dir="rtl"] #joomsport-container .nav-tabs li:first-child {
+    margin-right: 3px;
+  }
+}
+
+[dir="rtl"] #joomsport-container .select2{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .select2-container--default .select2-selection--single{
+  border: 0px;
+  padding-right:4px;
+}
+[dir="rtl"] #joomsport-container .jspaddinleft10{
+  padding-right:10px;
+}
+[dir="rtl"] #joomsport-container .jsMatchDivHome .jsDivLineEmbl{
+  float:left;
+}
+[dir="rtl"] #joomsport-container .jsBoxStatDIvFE td:first-child{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .jsTableCareer td:first-child,[dir="rtl"] #joomsport-container  .jsTableCareer th:first-child{
+  text-align:right;
+}
+[dir="rtl"] #joomsport-container .jsTableCareer td .img-thumbnail{
+  margin-left: 15px;
+  margin-right: 0;
+}
+[dir="rtl"] #joomsport-container table.jsTblVerticalTimeLine .jsMatchPlayer:first-child{
+  text-align: left;
+}
+[dir="rtl"] #joomsport-container table.jsTblVerticalTimeLine .jsMatchPlayer:last-child{
+  text-align: right;
+}
+[dir="rtl"] #joomsport-container .jsTblVerticalTimeLine td:nth-child(3){
+  width: 10%;
+  text-align: center !important;
+}
+[dir="rtl"] table.cansorttbl th span.short { padding-left: 0; }
+[dir="rtl"] #jsMatchViewID .tabs .jsPaddingBottom30 .jsInline + .jsInline > div{float: left}
+[dir="rtl"] #joomsport-container .jstbl_legend div:nth-child(2){
+  padding-right:20px;
+}
+[dir="rtl"] #joomsport-container .nav-tabs > li.jsmintab i { margin-left: 0; }
+[dir="rtl"] #joomsport-container .nav-tabs > li.active.jsmintab i { margin-left: 10px; }
+@media (max-width: 568px) {
+  [dir="rtl"] #joomsport-container .nav-tabs > li.active.jsmintab i { margin-left: 0; }
+}
+
+/*JS_season_standings*/
+[dir="rtl"] .cansorttbl.table .img-thumbnail {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+/*Prediction*/
+[dir="rtl"] #joomsport-container .selection .jspred_filterround .selectpicker {
+  margin-right: 10px!important;
+  margin-left: 0!important;
+  text-align: right !important;
+}
+
+/*JS_scrollmatches*/
+#joomsport-container.jsSliderContainer .jsmainscroll .jscaruselcont{
+  direction: ltr;
+}
+#joomsport-container.jsSliderContainer .jsmainscroll .jscaruselcont ul{
+  direction: rtl;
+}
+#joomsport-container .jsSliderContainer .jsmainscroll li{
+  float: right;
+}
+#joomsport-container .jsmainscroll .jsmatchdate>a{
+  padding-right: 5px!important;
+  padding-left: 0!important;
+}
+#joomsport-container.jsSliderContainer button[class^="js"]{
+  left: 0!important;
+  right: auto!important;
+}
+#joomsport-container.jsSliderContainer button.jsprev{
+  right: 0!important; 
+}
+#joomsport-container .jsmainscroll table .scoreScrMod {
+  text-align: left;
+}
+.widget #joomsport-container .jsmainscroll .jsview1 table td.jsteamname+td>.scoreScrMod {
+  margin-left: 0;
+  margin-right: 5px;
+}
+@media (min-width: 768px){
+  .widget #joomsport-container .jsmainscroll .jsview1 table td.tdminwdt>.js_div_particName{
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 992px){
+  #joomsport-container .jsmainscroll .jsview2 table td.tdminwdt{
+    text-align: right;
+  }
+  #joomsport-container .jsmainscroll .jsview2 table td.jstdhometeam{
+    text-align: left;
+  }
+}
+#joomsport-container .jsDivLineEmbl a {
+    white-space: nowrap;
+}
+.widget_wpb_jommsport_players #joomsport-container .table > thead > tr > th,
+.widget_wpb_jommsport_players #joomsport-container .table > tbody > tr > td {
+  vertical-align: middle;
+}
+[dir='rtl'] div.js_div_particName {
+  padding-right: 10px;
+  padding-left: 0;
+}
+.widget_wpb_jommsport_players #joomsport-container .jsDivLineTeam .js_div_particName {
+  display: inline-block;
+  padding: 0;
+}
+
+@media (min-width: 992px){
+  .jsmainscroll .jsview2 table td.tdminwdt{
+    text-align: right; 
+  }
+  .jsmainscroll .jsview2 table td.jstdhometeam{
+    text-align: left; 
+  }
+}
+
+/*Bootstrap grid*/
+@media (min-width: 768px) {
+  [dir="rtl"] #joomsport-container .col-sm-pull-12 {
+    left: 100%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-12 {
+    left: 100%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-11 {
+    right: 91.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-10 {
+    right: 83.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-9 {
+    right: 75%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-8 {
+    right: 66.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-7 {
+    right: 58.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-6 {
+    right: 50%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-5 {
+    right: 41.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-4 {
+    right: 33.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-3 {
+    right: 25%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-2 {
+    right: 16.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-1 {
+    right: 8.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-push-0 {
+    right: auto;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-sm-offset-0 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  [dir="rtl"] #joomsport-container .col-md-pull-12 {
+    left: 100%;
+    right: 0%;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-12 {
+    right: 100%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-11 {
+    right: 91.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-10 {
+    right: 83.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-9 {
+    right: 75%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-8 {
+    right: 66.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-7 {
+    right: 58.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-6 {
+    right: 50%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-5 {
+    right: 41.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-4 {
+    right: 33.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-3 {
+    right: 25%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-2 {
+    right: 16.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-1 {
+    right: 8.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-push-0 {
+    right: auto;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-md-offset-0 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1200px) {
+  [dir="rtl"] #joomsport-container .col-lg-pull-12 {
+    left: 100%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-11 {
+    left: 91.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-10 {
+    left: 83.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-9 {
+    left: 75%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-8 {
+    left: 66.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-7 {
+    left: 58.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-6 {
+    left: 50%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-5 {
+    left: 41.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-4 {
+    left: 33.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-3 {
+    left: 25%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-2 {
+    left: 16.66666667%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-1 {
+    left: 8.33333333%;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-pull-0 {
+    left: auto;
+    right: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-12 {
+    right: 100%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-11 {
+    right: 91.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-10 {
+    right: 83.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-9 {
+    right: 75%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-8 {
+    right: 66.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-7 {
+    right: 58.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-6 {
+    right: 50%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-5 {
+    right: 41.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-4 {
+    right: 33.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-3 {
+    right: 25%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-2 {
+    right: 16.66666667%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-1 {
+    right: 8.33333333%;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-push-0 {
+    right: auto;
+    left: auto;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-12 {
+    margin-right: 100%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-11 {
+    margin-right: 91.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-10 {
+    margin-right: 83.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-9 {
+    margin-right: 75%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-8 {
+    margin-right: 66.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-7 {
+    margin-right: 58.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-6 {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-5 {
+    margin-right: 41.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-4 {
+    margin-right: 33.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-3 {
+    margin-right: 25%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-2 {
+    margin-right: 16.66666667%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-1 {
+    margin-right: 8.33333333%;
+    margin-left: 0;
+  }
+  [dir="rtl"] #joomsport-container .col-lg-offset-0 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+[dir="rtl"] #jsMatchViewID .divTabfade:first-child>a {
+    -webkit-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+[dir="rtl"] #jsMatchViewID .divTabfade:last-child>a {
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}

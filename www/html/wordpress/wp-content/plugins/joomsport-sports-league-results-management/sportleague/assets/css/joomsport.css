@@ -1,0 +1,3112 @@
+@font-face {
+	font-family: 'Hemi-head-JS';
+	src: url('../fonts/hemi head js.ttf');
+}
+#joomsport-container{
+	font-family: Roboto, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #555;
+}
+body .jsEntryPost{
+	width:100% !important;
+	float:none !important;
+}
+h1.entry-title img{
+	width:60px;
+	margin-right: 15px;
+}
+#joomsport-container .jsalignleft {
+	text-align: left!important;
+}
+#joomsport-container th, #joomsport-container td{
+	border:0px;
+}
+#joomsport-container table {
+	border:0px;
+	margin-bottom: 0;
+	table-layout: auto;
+}
+#joomsport-container a{
+	box-shadow: none;
+}
+#joomsport-container .nav > li:before {
+	content:none;
+}
+#joomsport-container .nav > li {
+	padding:0px;
+}
+#joomsport-container .jsNoWrap{
+	white-space: nowrap;
+}
+#joomsport-container .jsCell5perc{
+	width: 5%;
+}
+#joomsport-container #mapformat input{
+	width:auto;
+}
+#joomsport-container #mapformat select{
+	height:auto;
+}
+#joomsport-container .width5prc{
+	width: 5%;
+}
+#joomsport-container .seasonTable #stab_main{
+	margin: 0px -15px;
+}
+#joomsport-container .form-control{
+	display:inline;
+	width:auto;
+}
+#joomsport-container #adminForm table.table td{
+	border:0px;
+}
+#joomsport-container #adminForm table.jsaddmatch th{
+	border: 0px;
+}
+#joomsport-container .table td.tdJsRemove{
+	vertical-align: middle;
+}
+#joomsport-container .jsTdCentered.table td,#joomsport-container .jsTdCentered th{
+	text-align:center;
+	vertical-align: middle;
+}
+#joomsport-container .newTeam{
+	overflow:hidden;
+}
+#joomsport-container .jsTdCentered .img-responsive{
+	display:inline;
+}
+#joomsport-container .closerem {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=20);
+	opacity: .2;
+	-webkit-appearance: none;
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+}
+#new_matches .jsdtime{
+	width: 159px;
+}
+#new_matches .jstime{
+	width: 114px;
+}
+#joomsport-container #new_matches td{
+	vertical-align: middle;
+}
+#joomsport-container #new_matches select{
+	width:110px;
+}
+#joomsport-container #adminForm table.table .jsmfirstTR td, #joomsport-container #adminForm #new_matches  td:first-child{
+	border-bottom: 1px solid #ddd;
+}
+#joomsport-container #adminForm #new_matches tr{
+	background-color: #f5f5f5;
+}
+#joomsport-container #adminForm #new_matches tr:nth-child(2n+1),
+#joomsport-container #adminForm #new_matches tr:nth-child(2n+2){
+	background-color: #fff;
+}
+#joomsport-container .jsaddmatch input, #joomsport-container .jsaddmatch select{
+	width:180px;
+}
+div.jstable{
+	display:table;
+	width:100%;
+}
+div.jstable-row{
+	display: table-row;
+}
+div.jstable-cell{
+	display: table-cell;
+	padding:5px 10px;
+	vertical-align: middle;
+}
+div.jstable-row:nth-child(2n-1) {
+	background-color: #fafafa;
+}
+div.jstable-row:nth-child(2n) {
+	background: #f0f0f0;
+}
+.extrafldcn div.jstable-row{
+	background: transparent;
+}
+div.emblInline{
+	display: table-cell;
+}
+div.js_div_particName{
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+}
+div.jsDivLineEmbl{
+	display: table;
+}
+div.emblInlinePC{
+	display : inline-block;
+	vertical-align: top;
+	padding-bottom: 20px;
+}
+div.descrDIV{
+	width: 80%;
+}
+div.photoDIV{
+	text-align: center;
+	margin: 0 18px 10px 12px;
+	padding: 15px;
+	background-color: #efefef;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+div.square30{
+	width: 30px;
+	height:30px;
+}
+div.width150{
+	width:150px;
+}
+div.jsInline{
+	float: left;
+	width: 50%;
+}
+div.jsOverflowHidden{
+	overflow: hidden;
+}
+#joomsport-container div.jsdispad label{
+	margin-right:15px;
+}
+div.js-overflow-hidden{
+	overflow:hidden;
+	width:100%;
+	padding: 5px;
+	margin: 0; 
+	padding-bottom: 0; 
+	min-height:39px; 
+	position:relative; 
+	background: #f6f6f6; 
+	background: -moz-linear-gradient(top, #f6f6f6 0%, #ededed 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6f6f6), color-stop(100%,#ededed)); 
+	background: -webkit-linear-gradient(top, #f6f6f6 0%,#ededed 100%); 
+	background: -o-linear-gradient(top, #f6f6f6 0%,#ededed 100%); 
+	background: -ms-linear-gradient(top, #f6f6f6 0%,#ededed 100%); 
+	background: linear-gradient(top, #f6f6f6 0%,#ededed 100%); 
+	border-bottom:1px solid #cccccc; -webkit-border-top-left-radius: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+	-moz-border-radius-topleft: 5px; 
+	-moz-border-radius-topright: 5px; 
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px; 
+}
+#joomsport-container{
+	margin-bottom:10px;
+}
+.page-content-js {
+	width: 100%;
+	min-height: 400px;
+	padding: 0 0 20px 0 !important;
+	position: relative;
+}
+.js-overflow-hidden .navbar-header{
+	float: none;
+}
+.js-div-pagination{
+	text-align: center;
+}
+.jsTournEmblem{
+	text-align: center;
+}
+.srchButton{
+	text-align: right;
+}
+table.cansorttbl th{
+	cursor: pointer;
+}
+table.cansorttbl th a > i.fa{
+	display: none;
+	padding-left: 5px;
+}
+table.cansorttbl th a > span {
+	display: inline-block;
+}
+#joomsport-container table.cansorttbl th a img {
+	display: block;
+	margin: 0 auto;
+}
+table.cansorttbl th[class*="headerSort"] a > i.fa{
+	display: inline-block;
+}
+h2.groups {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	padding: 0 0 0 12px;
+	color: #757a83;
+	border-bottom: 1px dotted #ccc;
+}
+div.imgGalleryDiv{
+	float: left;
+	padding:5px;
+}
+#joomsport-container .photoPlayer .img-responsive{
+	width: 150px;
+	max-width: 150px;
+}
+div.jsScoreDiv{
+	width: 70px;
+	margin: 0 auto;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	font-size: 12px;
+	font-weight: bold;
+	min-height: 27px;
+	text-align: center;
+	word-spacing: 5px;
+	line-height: 25px;
+	position:relative;
+}
+#joomsport-container .jsScoreDivM .extra-time-g{
+	right: -12px;
+	font-weight: bold;
+}
+#joomsport-container .jsScoreDivM .extra-time-h{
+	left: -12px;
+	font-weight: bold;
+}
+#joomsport-container .w30{
+	width:30px;
+}
+#joomsport-container .w50{
+	width:50px;
+}
+#joomsport-container .jsTextAlignCenter{
+	text-align: center;
+}
+#joomsport-container #stab_overview table .jsTextAlignLeft {
+	text-align: left;
+	padding-left: 15px;
+}
+#joomsport-container .jsTextAlignLeft{
+	text-align: left;
+}
+#joomsport-container .jsTextAlignRight{
+	text-align: right;
+}
+div.jstable{
+	border-collapse: collapse; 
+}
+.selection form {
+	margin:0px;
+}
+.jsd_buttons {
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.jsd_buttons:hover {
+	filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+.seasonTable .itemTable {
+	font-size: 12px;
+	padding: 0;
+}
+.seasonTable {
+	font-size: 12px;
+	color: #3a3f48;
+}
+.seasonTable .table>tbody>tr>th,
+.seasonTable .table>thead>tr>td,
+.seasonTable .table>tbody>tr>td,
+.seasonTable .table>thead:first-child>tr:first-child>th 
+.seasonTable .table>thead:first-child>tr:first-child>th {
+	text-align: center;
+	vertical-align: text-top;
+}
+.seasonTable .table>tbody>tr:nth-child(odd)  {
+	background: #efefef;
+}
+.seasonTable .table>tbody>tr>td.left, .seasonTable .table>thead:first-child>tr:first-child>th.left {
+	text-align: left;
+}
+.seasonTable .table .img-thumbnail {
+	margin-right: 15px;
+	padding: 0;
+}
+#joomsport-container a {
+	color: #369;
+}
+#joomsport-container a:hover, #joomsport-container a.active {
+	color: #B03030;
+	text-decoration: none;
+}
+.headerSortDown .fa:before {
+	content: "\f0d7";
+}
+.headerSortUp .fa:before {
+	content: "\f0d8";
+}
+.data {
+	float: right;
+	margin-left: 1%;
+}
+.place, .photoPlayer a.jsLightLink {
+	width: 100%;
+	float: left;
+}
+.place {
+	line-height: 30px;
+}
+.widget #joomsport-container {
+	background: transparent;
+	margin-bottom: 0;
+}
+#stab_statistic .table>tbody>tr>td:first-child {
+	width: 30%;
+}
+.table-responsive {
+	padding-left: 0;
+	padding-right: 0;
+}
+#stab_photos li {
+	display: inline-block;
+	margin: 15px 0;
+}
+#stab_photos ul {
+	padding: 0;
+}
+#stab_statistic{
+	overflow: hidden;
+}
+.navbar-nav .btn i.date {
+	height: 16px;
+	background: url(../images/calendar_ico.png) center left no-repeat;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+.navbar-nav .btn i {
+	width: 16px;
+	margin-left: 5px;
+	display: inline-block;
+}
+#joomsport-container .jsalcenter{
+	text-align: center;
+}
+#joomsport-container table.cansorttbl td{
+	vertical-align: middle !important;
+}
+#joomsport-container .navbar-nav .btn {
+	margin-top:7px;
+	height: auto;
+	min-height: 30px;
+	font-size: 11px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 5px;
+	display: inline-block;
+	color: #3a3f48!important;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+    /*box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: box-shadow 0.5s;*/
+    border: 1px solid #a7a7a7;
+}
+#joomsport-container #venue_gmap {
+	height: 500px;
+	border: 2px solid #ccc;
+}
+#joomsport-container .navbar-nav .btn:hover {
+	background: #f7f7f7;
+	color: #B03030;
+}
+#joomsport-container .navHeadFull {
+	width: 100%;
+	margin: 0px auto;
+	padding-right: 15px;
+	padding-top:3px;
+	padding-left:5px;
+}
+.navbar-nav .btn i.tableS {
+	height: 16px;
+	background: url(../images/table_ico.png) top left no-repeat;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+.navbar-nav .btn:hover i.tableS {
+	background: url(../images/table_ico_active.png) top left no-repeat;
+}
+#joomsport-container .navbar-default {
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#joomsport-container .navbar-brand {
+	width: 131px;
+	height: 38px;
+	padding: 0;
+	margin-top: 5px;
+}
+#joomsport-container .navbar-nav {
+	margin-top: 8px;
+}
+.navHeadFull .navbar-nav .btn{
+	padding-top: 8px;
+} 
+.navbar-nav .btn:hover i.date {
+	background: url(../images/calendar_ico_hover.png) center left no-repeat;
+}
+.navHeadFull .navbar-nav a.btn{
+	margin: 0px 5px 5px 5px;
+}
+.seasonTable .center-block a.jsLightLink, .photoPlayer a.jsLightLink{
+	display: block;
+	text-align: center;
+}
+.searchBar .form-control {
+	display: inline;
+	margin-left: 1%;
+}
+#joomsport-container .form-control {
+	font-size: 12px;
+}
+#joomsport-container .searchBar {
+	padding: 0;
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 20px;
+}
+#joomsport-container .fsStyle legend a {
+	color: inherit;
+}
+#joomsport-container .fsStyle legend.legendStyle {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#joomsport-container fieldset.fsStyle {
+	border: 1px solid #e7e7e7;
+	padding: 4px;
+	margin: 5px;
+}
+#joomsport-container .fsStyle legend.legendStyle {
+	font-size: 90%;
+	color: #757a83;
+	background-color: transparent;
+	font-weight: bold;
+}
+#joomsport-container .fsStyle legend {
+	width: auto;
+	border-bottom: 0px;
+}
+.history {
+	border-bottom: 1px solid #e7e7e7;
+	padding: 8px 15px;
+}
+#joomsport-container ol.breadcrumb {
+	background: none;
+	margin: 0px;
+	padding: 0;
+	float: left;
+}
+#joomsport-container .breadcrumb li a {
+	color: #369;
+}
+#joomsport-container .breadcrumb i {
+	margin-right: 5px;
+	color: #315087;
+}
+#joomsport-container .page-content-js h2 {
+	font-size: 18px;
+	color: #757a83;
+	margin: 10px 0;
+}
+div.jsInlineBlock, h3.jsInlineBlock{
+	display: inline-block;
+}
+.jscenter {
+	text-align: center!important;
+}
+.jsTblMatchTab{
+	width: 100%;
+}
+#joomsport-container .jsTblMatchTab th{
+	font-size: 80%;
+}
+#joomsport-container .jsTblMatchTab td, #joomsport-container .jsTblMatchTab th{
+	padding:5px;
+	border:1px solid #ccc;
+	background-color: #eee;
+	text-align: center;
+}
+#joomsport-container .jsTblMatchTab td.evPlayerName{
+	min-width: 35%;
+	text-align: left;
+	padding-left: 10px;
+}
+#joomsport-container .jsTblMatchTab td:last-child, #joomsport-container .jsTblMatchTab th:last-child{
+	border-right: 0px;
+}
+#joomsport-container .jsTblMatchTab.firstTeam td, #joomsport-container .jsTblMatchTab.firstTeam th{
+	border-left: 0px;
+	background-color: #f9f9f9;
+	border-right:1px solid #ccc;
+}
+#joomsport-container .jsTblMatchTab img.img-responsive{
+	display: inline;
+}
+.matchExtraFields{
+	padding:5px 20px;
+}
+.matchExtraFields .place{
+	width:50%;
+}
+.JSplaceM{
+	padding: 5px 0px;
+}
+.labelEFM{
+	font-weight: bold;
+	padding:5px 0px;
+}
+div.jsMapName{
+	text-align: center;
+	font-size: 12px;
+	color: #757a83;
+}
+div.jsMarginBtm{
+	padding: 5px 0px;
+}
+div.jsClear{
+	clear: both;
+}
+#joomsport-container .seasonTable .tooltip-inner {
+	width:auto;
+}
+#jsMatchViewID .jsMatchDivMainMobile{
+	text-align: center;
+}
+#jsMatchViewID .jsMatchDivMainMobile div{
+	display:block;
+}
+#joomsport-container #jsMatchViewID .jsMatchDivMainMobile .jsScoreBonusB {
+	display: inline-block;
+	min-width: 120px;
+	text-align: center;
+}
+#joomsport-container #jsMatchViewID .jsMatchDivMainMobile div.js_div_particName{
+	padding-left:0px;
+}
+#joomsport-container .tooltip-inner { max-width: 400px; width:400px; padding: 5px; color: #555; text-align: center; text-decoration: none; background-color: #e6e6e6; border: 1px solid #adadad; border-radius: 4px; }
+#joomsport-container .tooltip-inner .tooltipInnerHtml { position: relative; overflow: hidden; }
+#joomsport-container .tooltip-inner .tooltipInnerHtml:before { content: ''; position: absolute; top: 0; left: 50%; display: block; height: 100%; margin-left: -1px; border-right: 1px solid #ccc; }
+.tooltipInnerHtml .jstable-row .jstable-cell { min-height: 44px; padding: 5px; }
+.tooltipInnerHtml .jstable-row .jsEventDiv { width: 34px; }
+.tooltipInnerHtml .jstable-row .jsPlayerDiv { width: 101px; }
+.tooltipInnerHtml .jstable-row .jsResDiv,.tooltipInnerHtml .jstable-row .jsTimeDiv { width: 30px; }
+#joomsport-container .tooltip.bottom .tooltip-arrow { display:none!important; } 
+#joomsport-container .tooltip.bottom .tooltip-arrow { top: 0; left: 50%; margin-left: -5px; border-width: 0 5px 5px; border-bottom-color: #adadad; }
+#joomsport-container .tooltip .tooltipInnerHtml .jsEvent > img { max-width: 24px!important; padding: 0; }
+#joomsport-container .tabs .tab-content {
+	padding: 15px;
+	border: none;
+}
+#joomsport-container .jsplayerCart > a:hover, #joomsport-container .jsplayerCart > a:focus { text-decoration: none; }
+.jsplayerCart{ float:left; }
+.jsplayerCartInner{ margin:10px; border: 1px solid #ddd; border-radius: 4px; min-width: 250px; max-width: 500px; background-color: #fff; overflow: hidden; -webkit-transform: scale(1); transform: scale(1); -webkit-transition: .4s ease-in-out; transition: .4s ease-in-out; }
+.jsplayerCart > a:hover .jsplayerCartInner{ -webkit-transform: scale(1.04); transform: scale(1.04); border: 1px solid #aaa; }
+.imgPlayerCart{ text-align: center; }
+.innerjsplayerCart a{ display:block; }
+.innerjsplayerCart{ margin: 5px 0; overflow: hidden; }
+#joomsport-container .innerjsplayerCart img{ width: auto; margin-top: 0; border: none; padding: 0; border-radius: 0; vertical-align: middle; }
+.namePlayerCart{margin-top: 0; border-top: 1px solid; border-color: #ddd; opacity: .7; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
+.jsplayerCart > a:hover .namePlayerCart { opacity: 1; }
+
+.namePlayerCart > div { display: table-cell; padding: 10px 0; vertical-align: middle; }
+.namePlayerCart .LeftnamePlayerCart{ width: 100%; padding-left: 10px; }
+.namePlayerCart .js_div_particName{ padding-left: 0; font-size: 16px; font-weight: bold; text-transform: uppercase; }
+.namePlayerCart .PlayerCardPos{ display: table; table-layout: fixed; width: 100%; margin-top: 5px; font-size: 12px; color: #717171; white-space: nowrap;}
+.namePlayerCart .PlayerCardPos > span{ display: table-cell; overflow: hidden; text-overflow: ellipsis;}
+.namePlayerCart .PlayerCardPlNumber{ padding-right: 10px; color: #c6c6c6; font-family: 'Hemi-head-JS'; font-size: 45px; line-height: 1; }
+.jsplayerCart > a:hover .namePlayerCart .PlayerCardPlNumber{ color: #9e9e9e; /*secondary color*/ }
+.namePlayerCart .PlayerCardFIO{ min-height: 32px; line-height: 1;}
+#joomsport-container .table > thead > tr > th {
+	vertical-align: middle;
+}
+#joomsport-container .extra-time-h,
+#joomsport-container .extra-time-g-re,
+#joomsport-container .extra-time-h-re,
+#joomsport-container .extra-time-g { position:absolute; font-size:9px; color:#3A3F48; }
+#joomsport-container .extra-time-h { left:-2px; top:6px; }
+#joomsport-container .extra-time-g { right:-2px; top:6px; }
+#joomsport-container .extra-time-h-re {left:80px; top:45px; }
+#joomsport-container .extra-time-g-re { right:80px; top:45px; }
+#joomsport-container .extra-time-aet { left:34px; top:-13px; position:absolute; font-size:11px; color:#3A3F48; }
+#joomsport-container div.jsScoreDiv .extra-time-g {right: 0px;top: 0px;line-height: 1;}
+#joomsport-container div.jsScoreDiv .extra-time-h {left: 0px;top: 0px;line-height: 1;}
+
+.searchMatchesDiv{
+	overflow: auto;
+}
+#joomsport-container img.img-thumbnail{ min-width: 35px; margin-bottom: 0; -webkit-box-shadow: none; box-shadow: none; }
+span.jsform_none{
+	display: inline-block;
+	width: 17px;
+	height:17px;
+	color: white;
+	margin: 0px 3px;
+	font-size:10px;
+	font-weight: bold;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 17px;
+}
+#joomsport-container span.match_quest{
+	background-color: #888;
+}
+#joomsport-container span.match_win{
+	background-color: #01a252;
+}
+#joomsport-container span.match_draw{
+	background-color: #FBDE2D;
+}
+#joomsport-container span.match_loose{
+	background-color: #E83737;
+}
+div.overviewBlocks{
+	margin-bottom:30px;
+}
+/* Comments box */
+#joomsport-container .comments-box { margin:0px; padding:0px; margin-bottom:10px; }
+#joomsport-container .comments-box li { overflow:hidden; padding:5px 10px; margin-bottom:10px;  }
+#joomsport-container .comments-box li:last-child { border-bottom:none; }
+#joomsport-container .comments-box li img { float:left; margin-right:10px; }
+#joomsport-container .comments-box li .comments-box-inner { position:relative; padding:5px 0 0 0; overflow:hidden; }
+#joomsport-container .comments-box li .comments-box-inner .date { position:absolute; bottom:0px; right:0px; font-size:11px; font-style:italic; color:#757a83; }
+#joomsport-container .comments-box li .comments-box-inner .nickname { margin-top:5px;    padding: 0px;margin-bottom: 0px; padding-bottom:12px; font-size:12px; color:#3a3f48; }
+#joomsport-container .comments-box li .comments-box-inner p { padding:0 130px 15px 0; line-height:19px; color:#3a3f48; margin-left:50px; }
+#joomsport-container .post-comment { padding:10px 10px 20px 10px;}
+#joomsport-container .post-comment textarea {width:100%;margin-bottom:10px; font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#3a3f48; border:1px solid #ccc; background-color:#fff; }
+.jsCommentBox{
+	background-color: #f6f6f6;
+	border-top: 1px solid #d5d5d5;
+	padding:7px;
+	color:#666;
+}
+#joomsport-container .comments-box .jsCommentDelImg{
+	cursor:pointer;
+	float:right;
+	margin-right:0px;
+	margin-left:15px;
+	margin-bottom:-1px;
+}
+.comments-box-inner img.img-thumbnail{
+	margin-bottom: 5px;
+}
+#joomsport-container .seasonList .btn, #jsFilterMatches .btn, #joomsport-container .main .joinSeason .btn {
+	font-size: 12px;
+	font-weight: 700;
+	background: #ECECEC;
+	border-radius: 10px;
+	//display: block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	-webkit-transition: box-shadow 0.5s;
+}
+#joomsport-container .seasonList .btn:hover, #jsFilterMatches .btn:hover , #joomsport-container .main .joinSeason .btn:hover{
+	background: #f7f7f7;
+	color: #B03030;
+}
+#jsFilterMatches .btn i.fa-search{
+	width: 12px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 5px;
+}
+#jsFilterMatches{
+	padding: 15px;
+	overflow: hidden;
+	border-top: 1px solid #e7e7e7;
+}
+#joomsport-container #jsFilterMatches label{
+	font-weight: normal;
+}
+#joomsport-container .searchMatchesDiv select{
+	//width:auto !important;
+	display: inline;
+}
+#joomsport-container .searchMatchesDiv label{
+	min-width: 150px;
+}
+.seasonList .btn-default i.arrow-right, .joinSeason .btn-default i.arrow-right {
+	width: 12px;
+	height: 10px;
+	display: inline-block;
+	background: url(../images/right_arrow_ico.png) center left no-repeat;
+	margin-right: 5px;
+}
+.seasonList .btn-default:hover i.arrow-right, .joinSeason .btn-default:hover i.arrow-right {
+	background: url(../images/right_arrow_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .jsdispad .form-control {
+	width: auto;
+	margin-left: 5px;
+	padding: 3px;
+	height: 34px;
+}
+#joomsport-container .jsdispad label {
+	line-height: 30px;
+	text-align: right;
+	font-weight: normal;
+}
+#joomsport-container .navSingle .fa-user{
+	text-align: left;
+	margin-left: 0px;
+}
+#stab_statistic table{
+	width:100%;
+}
+#stab_statistic table td[style="width:1%;"] + td { width: 30%; }   
+#stab_statistic table td{
+	padding: 8px;
+	border: 0px;
+	vertical-align: middle;
+	height: 40px;
+}
+div.jsd_buttons{
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+	line-height: 1em;
+}
+div.div_for_socbut{
+	float: right;
+}
+.jsd_buttons iframe {
+	max-width: none;
+}
+#joomsport-container th img.img-responsive{
+	display: inline;
+}
+#stab_statistic img.img-responsive, #stab_statistic .jsColTeamEvents img.img-responsive{
+	display: inline;
+}
+#joomsport-container table.seasonList .join-button .btn, #jsFilterMatches .btn, #joomsport-container .main .joinSeason .btn{
+	border-radius: 5px;
+	box-shadow: none;
+}
+/*registration*/
+#joomsport-container div.selection{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#joomsport-container .regPlayer .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+}
+#joomsport-container .regPlayer .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#joomsport-container .regPlayer .navbar-link>ul>li:hover>a,#joomsport-container  .regPlayer .navbar-link>ul>li>a.active {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .regPlayer .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .main .form-group{
+	margin:0px;
+	padding:10px;
+}
+#joomsport-container .regPlayer select {
+	height: 34px;
+}
+#joomsport-container select[size] {
+	height: 34px;
+}
+#joomsport-container .main{
+	padding: 5px;
+}
+#joomsport-container .regPlayer h2{
+	padding:0px;
+}
+
+#joomsport-container .main .navbar-link {
+	border-bottom: 1px solid #e7e7e7;
+}
+#joomsport-container .main .navbar-link>ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#joomsport-container .editDraw .navbar-link>ul>li:hover>a,#joomsport-container  .editDraw .navbar-link>ul>li>a.active {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .editDraw .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .editDraw .form-group{
+	margin:0px;
+	padding:10px;
+}
+#joomsport-container .editDraw select {
+	height: 34px;
+}
+#joomsport-container .editDraw h2{
+	padding:0px;
+}
+#joomsport-container #stab_main .rmpadd, #joomsport-container .seasonTable .rmpadd{
+	padding-left:0px;
+	padding-bottom:15px;
+}
+#joomsport-container .extrafldcn span.pull-left{
+	min-width: 150px; 
+}
+#joomsport-container .extrafldcn{
+	float:left;
+	//margin-left: 20px;
+}
+#joomsport-container .JSplace{
+	line-height: 30px;
+}
+#joomsport-container .heading .img-thumbnail{
+	padding: 3px;
+}
+#joomsport-container #stab_matches .img-thumbnail{
+	padding: 3px;
+}
+.main .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+.main .tools a {
+	padding: 3px 20px;
+}
+.main .tools a i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+#joomsport-container .main .upload .form-group .btn {
+	margin-bottom: 10px;
+}
+#joomsport-container .main .btn {
+	min-height: 35px;
+	font-size: 11px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	background-color: #ECECEC;
+	display: inline-block;
+	color: #3a3f48;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border: 1px solid #a7a7a7;
+	border-radius: 5px;
+	box-shadow: none;
+}
+#joomsport-container .js-mdname:first-child .jsrow-matchday-name {
+	border-top: 0;
+}
+#joomsport-container div.selection{
+	padding-right:0px;
+}
+#joomsport-container ul.navSingle a:last-child{
+	margin-right: 0px;
+}
+#joomsport-container select.selectpicker{
+	height: 34px;
+}
+#joomsport-container .js-mdname{
+	position: relative;
+	height: 45px;
+	background-color: transparent;
+}
+#joomsport-container .jsrow-matchday-name{
+	position:absolute;
+	width: 100%;
+	height: 45px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+}
+#joomsport-container .adminMatchday .navbar-link>ul>li:hover>a, #joomsport-container .adminMatchday .navbar-link>ul>li>a.active {
+	color: #B03030;
+	text-decoration: none;
+}
+#joomsport-container .navbar-link>ul>li>a {
+	margin-right: 10px;
+	text-decoration: underline;
+	float: left;
+	clear: none;
+}
+#joomsport-container .adminMatchday h4 {
+	font-size: 12px;
+	color: #999ca3;
+	font-weight: 600;
+}
+#joomsport-container .tools i.add {
+	background: url(../../../img/add_ico.png) top left no-repeat;
+}
+#joomsport-container .tools i.add {
+	background: url(../../../img/add_ico.png) top left no-repeat;
+}
+#joomsport-container .tools a:hover i.add {
+	background: url(../../../img/add_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .tools i.edit {
+	background: url(../../../img/edit_ico.png) top left no-repeat;
+}
+#joomsport-container .tools a:hover i.edit {
+	background: url(../../../img/edit_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .tools i.delete {
+	background: url(../../../img/delete_ico.png) top left no-repeat;
+}
+#joomsport-container .tools a:hover i.delete {
+	background: url(../../../img/delete_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .tools i.save {
+	background: url(../../../img/save_ico.png) top left no-repeat;
+}
+#joomsport-container .tools a:hover i.save {
+	background: url(../../../img/save_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .tools i.apply {
+	background: url(../../../img/apply_ico.png) top left no-repeat;
+}
+#joomsport-container .tools a:hover i.apply {
+	background: url(../../../img/apply_ico_hover.png) top left no-repeat;
+}
+#joomsport-container .tools {
+	border-bottom: 1px dotted #e7e7e7;
+	padding: 10px 0;
+}
+#joomsport-container .tools a {
+	border-left: 1px solid #e7e7e7;
+	padding: 3px 20px;
+}
+#joomsport-container table th, #joomsport-container .table th {
+	font: inherit;
+	font-weight: bold;
+}
+#joomsport-container .editMatchDay .score{
+	width:50px;
+}
+#joomsport-container .editMatchDay input{
+	display:inline;
+}
+#joomsport-container .editMatchDay input[type="date"]{
+	//width:180px;
+	display:inline;
+}
+#joomsport-container .joinSeason{
+	line-height: 20px;
+	padding:20px;
+}
+#joomsport-container  .copyright { position:absolute; left:21px; bottom:20px; font-size:11px;	color:#757a83;	}
+#joomsport-container  .copyright a {	text-decoration:none; color:#757a83; }
+
+#joomsport-container .table th{
+	background-color: transparent;
+	background-image: none;
+	color: #555;
+}
+#joomsport-container .table, #joomsport-container h2{
+	border:0px;
+}
+#joomsport-container .paginationJS span, #joomsport-container .paginationJS span a:hover {
+	background-color: #fff;
+	line-height: 1em;
+}
+#joomsport-container .paginationJS{
+	width: auto;
+}
+#joomsport-container .table-striped td{
+	background-color: inherit;
+}
+#stab_overview table{
+	width:100%;
+}
+#stab_overview h3 {
+	font-size: 14px;
+	color: #555;
+}
+#joomsport-container #stab_overview table th{
+	background-color: #ededed;
+}
+#joomsport-container #stab_overview table td{
+	background-color: #f9f9f9;
+}
+#joomsport-container #stab_overview table th, #joomsport-container #stab_overview table td{
+	border:0px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding:5px;
+	text-align: center;
+}
+#joomsport-container #stab_overview table th:first-child, #joomsport-container #stab_overview table td:first-child{
+	border-left:0px;
+}
+#joomsport-container .overviewBlocks h2{
+	color: #555;
+	margin-left:20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#stab_overview, #stab_players, #stab_matches{
+	margin: 0px -15px;
+}
+#joomsport-container .overviewBlocks .img-thumbnail {
+	margin-right: 15px;
+	padding: 0;
+}
+#joomsport-container .jsObjectPhoto{
+	float:left;
+	padding-right:30px;
+}
+#joomsport-container .emblpadd3{
+	padding:3px;
+}
+#joomsport-container .selection select{
+	min-width: 150px;
+}
+@media (max-width: 480px) {
+	#joomsport-container .div_for_socbut{
+		float:none;
+	}
+	.data {
+		width: 100%;
+	}
+	.place {
+		width: 50%;
+	}
+	.photoPlayer a.jsLightLink {
+		width: 100%;
+		float:none;
+		//margin-right: 2%;
+	}
+	.navHeadFull ul.navbar-nav{
+		margin:0px;
+	}
+	.matchExtraFields .place{
+		width:100%;
+	}
+	#joomsport-container .comments-box li .comments-box-inner .date { 
+		position:static; width:100%; margin-bottom: 10px; font-style:italic; color:#757a83; 
+	}
+	#joomsport-container .photoPlayer .img-responsive{
+		width:100%!important;
+	}
+	#joomsport-container .jsObjectPhoto{
+		float:none;
+	}
+	#joomsport-container .extrafldcn{
+		margin-left: 0px;
+		margin-top:15px;
+		float:none;
+	}
+	#joomsport-container .navbar-nav{
+		margin: 0px;
+	}
+	#joomsport-container .navHeadFull ul.navSingle{ margin-bottom: 10px; float: none!important; text-align: center; }
+	#joomsport-container .heading,#joomsport-container .jsObjectPhoto{
+		text-align: center;
+	}
+}
+#joomsport-container .jsMatchDivMainMobile{
+	display:block;
+}
+#joomsport-container .jsMatchDivMainMobile div{
+	text-align: center;
+}
+.jsMatchDivMainMobile .jsDivMobileMdayName {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+}
+.jsMatchDivMainMobile .jsDivMobileMdayName:first-child{
+	padding-top: 0;
+}
+.jsMatchDivMainMobile .jsMobileMatchCont{
+	display: table;
+	width: 100%;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #bbb;
+	padding: 5px;
+	border-collapse: separate;
+	background-color: #f5f5f5;
+}
+.jsMatchDivMainMobile .jsMatchDivVenue{
+	padding: 3px 0;
+}
+.jsMatchDivMainMobile .jsMatchDivScore{
+	display: table;
+	width: 100%;
+}
+.jsMatchDivMainMobile .jsMatchDivScore > div{
+	display: table-cell;
+	width: 40%;
+	vertical-align: top;
+}
+.jsMatchDivMainMobile .jsMatchDivScore > .jsScoreBonusB{
+	width: 20%;
+	vertical-align: middle;
+}
+.jsMatchDivMainMobile .jsMatchDivScore > .jsScoreBonusB .jsScoreDiv {
+	max-width: 64px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.jsMatchDivMainMobile .jsDivTeamName > .js_div_particName{
+	display:block;
+	padding: 0;
+	line-height: 1.2;
+}
+@media(max-width:767px){
+	#joomsport-container .navbar-fixed-top,#joomsport-container .navbar-fixed-bottom,#joomsport-container .navbar-static-top {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#joomsport-container ul.navSingle a:last-child{
+		margin-right: 5px;
+	}
+	#joomsport-container .seasonTable .center-block .img-responsive{
+		display:block;
+		margin: 0 auto;
+	}
+	#joomsport-container .selection{
+		margin-bottom: 15px;
+	}
+	#joomsport-container .nav-tabs li:first-child {
+		margin-left: 3px;
+	}
+	#joomsport-container .nav > li > a{
+		padding:5px 10px;
+	}
+	#joomsport-container .table-responsive{
+		border:0px;
+	}
+}
+@media (max-width: 320px){
+	.place, .photoPlayer a.jsLightLink{
+		width: 100%;
+	}
+}
+@media print {
+	a[href]:after {
+		content: none!important;
+	}
+}
+#joomsport-container .navbar-nav.nav{
+	width:auto;
+	background: none;
+}
+#joomsport-container .navbar-header{
+	margin:0px;
+}
+#joomsport-container input[type="file"]{
+	display: inline;
+	margin: 0px;
+	border: 0px;
+}
+#joomsport-container .select2{
+	text-align: left;
+	height: 34px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1em;
+	line-height: 1.42857143;
+}
+#joomsport-container .select2-container--default .select2-selection--single{
+	border: 0px;
+	padding-left:4px;
+}
+li.select2-results__option{
+	font-size: 12px;
+}
+#joomsport-container #adminForm input[type="text"] {
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+#joomsport-container #mapformat input[type="text"]{
+	height:20px;
+	width: 50px;
+	margin-top:-5px;
+	font-size:12px;
+	line-height: 12px;
+	padding:0 4px;
+}
+#joomsport-container #mapformat select{
+	height:20px;
+	font-size:12px;
+	line-height: 12px;
+	padding:0 4px;
+}
+#joomsport-container .form-group input{
+	display: inline;
+	width:auto;
+}
+#joomsport-container .jsMapsTable td, #joomsport-container .jsMapsTable th{
+	padding:5px;
+}
+tr.jsMatchTRevents{
+	height:42px;
+}
+#jsFilterMatches #partic,#jsFilterMatches #matchDay{
+	width: 200px;
+}
+#joomsport-container .jsaligncenter{
+	text-align: center !important;
+	vertical-align: middle!important;
+}
+#joomsport-container .jspaddinleft10{
+	padding-left:10px;
+}
+#joomsport-container .table-responsive {
+	clear: both;
+}
+body #stab_statistic img{
+	margin:0px;
+	min-width: 24px;
+}
+#joomsport-container .jsMatchDivHome .jsDivLineEmbl{
+	float: right;
+}
+#joomsport-container .jsMatchDivHome .jsDivLineEmbl .js_div_particName { padding-right: 10px; text-align: right; }
+.single-joomsport_team .post-thumbnail{
+	margin-bottom: 0px;
+}
+#joomsport-container .jsDivLineTeam > .js_div_particName {
+	display: inline-block;
+	padding: 0;
+}
+#joomsport-container .jsBoxStatDIvFE th, #joomsport-container .jsBoxStatDIvFE td{
+	border:1px solid #eee;
+	padding:8px;
+	text-align: center;
+}
+#joomsport-container .jsBoxStatDIvFE{
+	border-collapse: collapse;
+}
+#joomsport-container .jsBoxStatDIvFE tbody tr:nth-child(2n){
+	background-color: #f4f4f4;
+}    
+#joomsport-container .jsBoxStatDIvFE th{
+	font-size: 85%;
+}
+#joomsport-container .jsBoxStatDIvFE td:first-child{
+	text-align: left;
+	white-space: nowrap;
+}
+#stab_statistic h3 {
+	font-size: 14px;
+	color: #555;
+}
+#joomsport-container .jsTableCareer td, #joomsport-container  .jsTableCareer th{
+	text-align:center;
+	vertical-align: middle!important;
+	white-space: nowrap;
+}
+#joomsport-container .jsTableCareer td:first-child,#joomsport-container  .jsTableCareer th:first-child{
+	text-align:left;
+}
+#joomsport-container .jsTableCareer td .img-thumbnail{
+	margin-right: 15px;
+}
+#stab_statistic .jsCreerMatchStath3{
+	font-size: 14px;
+	color: #555;
+}
+#joomsport-container .jsBoxStatDIvFE th { font-size: 14px; font-weight: normal; background-color: #f3f3f3; border: 1px solid #fff; }
+#joomsport-container .jsBoxStatDIvFE tr:first-child > th:first-child, 
+#joomsport-container .jsBoxStatDIvFE thead {
+	border-bottom: 2px solid #d2d2d2;
+}
+#joomsport-container .jsBoxStatDIvFE tbody tr:nth-child(2n) { background-color: #f9f9f9; }
+#joomsport-container .jsBoxStatDIvFE td:first-child { border-left: 0; }
+#joomsport-container .jsBoxStatDIvFE td:last-child { border-right: 0; }
+#joomsport-container .jsBoxStatDIvFE tfoot tr { border-top: 2px solid #ccc; }
+#joomsport-container .jsBoxStatDIvFE tfoot td { border-bottom: 0; }
+#joomsport-container .table-responsive + .jsOverflowHidden { margin-top: 15px; }
+table.cansorttbl th span.short { padding-right: 0; }
+#stab_statistic .table-responsive > *:first-child { margin-bottom: 1.75em; }
+.jsGroupedPlayersHeader{
+	clear: both;
+	padding:10px;
+}
+#joomsport-container .jstbl_legend div{
+	display:inline-block;
+	height: 20px;
+}
+#joomsport-container .jstbl_legend div:first-child{
+	width:20px;
+}
+#joomsport-container .jstbl_legend div:nth-child(2){
+	padding-left:20px;
+}
+#joomsport-container .jstbl_legend{
+	margin-bottom: 10px;
+}
+/*--BUTTONS--*/
+#joomsport-container .navbar-nav .btn{
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: normal;
+}
+/*Calendar*/
+#joomsport-container .navbar-nav .btn i.js-calendr{
+	background: url(../images/jsport-ico-24.png) -24px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-calendr{
+	background: url(../images/jsport-ico-24.png) 0 0;
+}
+/*Standings*/
+#joomsport-container .navbar-nav .btn i.js-stand{
+	background: url(../images/jsport-ico-24.png) -216px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-stand{
+	background: url(../images/jsport-ico-24.png) -192px 0;
+}
+/*Matrix*/
+#joomsport-container .navbar-nav .btn i.js-matrx{
+	background: url(../images/jsport-ico-24.png) -264px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-matrx{
+	background: url(../images/jsport-ico-24.png) -240px 0;
+}
+/*Player list*/
+#joomsport-container .navbar-nav .btn i.js-pllist{
+	background: url(../images/jsport-ico-24.png) -456px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-pllist{
+	background: url(../images/jsport-ico-24.png) -432px 0;
+}
+/*List of items (stages, rounds)*/
+#joomsport-container .navbar-nav .btn i.js-itlist{
+	background: url(../images/jsport-ico-24.png) -648px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-itlist{
+	background: url(../images/jsport-ico-24.png) -624px 0;
+}
+/*Matchday*/
+#joomsport-container .navbar-nav .btn i.js-match{
+	background: url(../images/jsport-ico-24.png) -600px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-match{
+	background: url(../images/jsport-ico-24.png) -576px 0;
+}
+/*Team*/
+#joomsport-container .navbar-nav .btn i.js-team{
+	background: url(../images/jsport-ico-24.png) -504px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-team{
+	background: url(../images/jsport-ico-24.png) -480px 0;
+}
+/*Player*/
+#joomsport-container .navbar-nav .btn i.js-player{
+	background: url(../images/jsport-ico-24.png) -888px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-player{
+	background: url(../images/jsport-ico-24.png) -864px 0;
+}
+/*Join*/
+#joomsport-container .navbar-nav .btn i.js-join{
+	background: url(../images/jsport-ico-24.png) -744px 0;
+}
+#joomsport-container .navbar-nav .btn:hover i.js-join{
+	background: url(../images/jsport-ico-24.png) -720px 0;
+}
+#joomsport-container .navbar-nav .btn i {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+	margin-left: 0;
+	float: left;
+	background-repeat: no-repeat!important;
+}
+
+/*--TABS--*/
+#joomsport-container .nav-tabs {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	justify-content: center;
+	margin: 0;
+	margin-bottom: 25px;
+}
+#joomsport-container .nav-tabs > li {
+	margin-bottom: 0;
+}
+#joomsport-container .nav-tabs > li > a {
+	position: relative;
+	min-height: 40px;
+	border: none!important;
+	padding: 8px 15px;
+	font-size: 14px;
+	line-height: 24px;
+	background-color: transparent!important;
+}
+#joomsport-container .nav-tabs > li a.active {
+	font-weight: 700;
+}
+#joomsport-container .nav-tabs > li a.active:before, #joomsport-container .nav-tabs > li a:hover:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1.5px;
+	width: 100%;
+	height: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #2196f3;
+}
+#joomsport-container .nav-tabs > li a:not(.active):hover:before {
+	background-color: #90caf9;
+}
+#joomsport-container .nav-tabs > li > a > i {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+	margin-left: 0;
+	float: left;
+	background-repeat: no-repeat!important;
+}
+#joomsport-container .nav-tabs > li.jsmintab span { display: none; }
+#joomsport-container .nav-tabs > li.jsmintab a.active span { display: inline-block; }
+#joomsport-container .nav-tabs > li.jsmintab i { margin-right: 0; }
+#joomsport-container .nav-tabs > li.jsmintab a.active i { margin-right: 10px; }
+/*Photos*/
+#joomsport-container .nav-tabs > li > a > i.js-photo{
+	background: url(../images/jsport-ico-24.png) -72px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-photo,
+#joomsport-container .nav-tabs > li:hover > a > i.js-photo{
+	background: url(../images/jsport-ico-24.png) -48px 0;
+}
+/*Standings*/
+#joomsport-container .nav-tabs > li > a > i.js-stand{
+	background: url(../images/jsport-ico-24.png) -216px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-stand,
+#joomsport-container .nav-tabs > li:hover > a > i.js-stand{
+	background: url(../images/jsport-ico-24.png) -192px 0;
+}
+/*Matches*/
+#joomsport-container .nav-tabs > li > a > i.js-match{
+	background: url(../images/jsport-ico-24.png) -600px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-match,
+#joomsport-container .nav-tabs > li:hover > a > i.js-match{
+	background: url(../images/jsport-ico-24.png) -576px 0;
+}
+/*Team*/
+#joomsport-container .nav-tabs > li > a > i.js-team{
+	background: url(../images/jsport-ico-24.png) -504px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-team,
+#joomsport-container .nav-tabs > li:hover > a > i.js-team{
+	background: url(../images/jsport-ico-24.png) -480px 0;
+}
+/*Player list*/
+#joomsport-container .nav-tabs > li > a > i.js-pllist{
+	background: url(../images/jsport-ico-24.png) -456px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-pllist,
+#joomsport-container .nav-tabs > li:hover > a > i.js-pllist{
+	background: url(../images/jsport-ico-24.png) -432px 0;
+}
+/*Team overview*/
+#joomsport-container .nav-tabs > li > a > i.js-tmover{
+	background: url(../images/jsport-ico-24.png) -552px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-tmover,
+#joomsport-container .nav-tabs > li:hover > a > i.js-tmover{
+	background: url(../images/jsport-ico-24.png) -528px 0;
+}
+/*Squad*/
+#joomsport-container .nav-tabs > li > a > i.js-squad{
+	background: url(../images/jsport-ico-24.png) -168px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-squad,
+#joomsport-container .nav-tabs > li:hover > a > i.js-squad{
+	background: url(../images/jsport-ico-24.png) -144px 0;
+}
+/*Box score*/
+#joomsport-container .nav-tabs > li > a > i.js-boxscr{
+	background: url(../images/jsport-ico-24.png) -936px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-boxscr,
+#joomsport-container .nav-tabs > li:hover > a > i.js-boxscr{
+	background: url(../images/jsport-ico-24.png) -912px 0;
+}
+/*Rules*/
+#joomsport-container .nav-tabs > li > a > i.js-rules{
+	background: url(../images/jsport-ico-24.png) -121px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-rules,
+#joomsport-container .nav-tabs > li:hover > a > i.js-rules{
+	background: url(../images/jsport-ico-24.png) -96px 0;
+}
+/*About*/
+#joomsport-container .nav-tabs > li > a > i.js-about{
+	background: url(../images/jsport-ico-24.png) -696px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-about,
+#joomsport-container .nav-tabs > li:hover > a > i.js-about{
+	background: url(../images/jsport-ico-24.png) -672px 0;
+}
+/*Roster*/
+#joomsport-container .nav-tabs > li > a > i.js-rostr{
+	background: url(../images/jsport-ico-24.png) -408px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-rostr,
+#joomsport-container .nav-tabs > li:hover > a > i.js-rostr{
+	background: url(../images/jsport-ico-24.png) -384px 0;
+}
+/*Player*/
+#joomsport-container .nav-tabs > li > a > i.js-player{
+	background: url(../images/jsport-ico-24.png) -888px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-player,
+#joomsport-container .nav-tabs > li:hover > a > i.js-player{
+	background: url(../images/jsport-ico-24.png) -864px 0;
+}
+/*Player statistic*/
+#joomsport-container .nav-tabs > li > a > i.js-plstat{
+	background: url(../images/jsport-ico-24.png) -312px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-plstat,
+#joomsport-container .nav-tabs > li:hover > a > i.js-plstat{
+	background: url(../images/jsport-ico-24.png) -288px 0;
+}
+/*Club*/
+#joomsport-container .nav-tabs > li > a > i.js-club{
+	background: url(../images/jsport-ico-24.png) -792px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-club,
+#joomsport-container .nav-tabs > li:hover > a > i.js-club{
+	background: url(../images/jsport-ico-24.png) -768px 0;
+}
+/*Venue*/
+#joomsport-container .nav-tabs > li > a > i.js-venue{
+	background: url(../images/jsport-ico-24.png) -360px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-venue,
+#joomsport-container .nav-tabs > li:hover > a > i.js-venue{
+	background: url(../images/jsport-ico-24.png) -336px 0;
+}
+/*Live*/
+#joomsport-container .nav-tabs > li > a > i.js-live{
+	background: url(../images/jsport-ico-24.png) -984px 0;
+}
+#joomsport-container .nav-tabs > li > a.active > i.js-live,
+#joomsport-container .nav-tabs > li:hover > a > i.js-live{
+	background: url(../images/jsport-ico-24.png) -960px 0;
+}
+@media (max-width: 568px) {
+	#joomsport-container .nav-tabs > li.jsmintab a.active span {
+		display: none; 
+	}
+	#joomsport-container .nav-tabs > li.jsmintab a.active i {
+		margin-right: 0; 
+	}
+	/*--TABS--*/
+	#joomsport-container .nav-tabs > li > a {
+		line-height: 32px;
+		padding: 3px;
+	}
+	#joomsport-container .nav-tabs > li > a > i {
+		width: 32px;
+		height: 32px;
+		margin-right: 5px;
+	}
+	/*Photos*/
+	#joomsport-container .nav-tabs > li > a > i.js-photo{
+		background: url(../images/jsport-ico-32.png) -96px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-photo,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-photo{
+		background: url(../images/jsport-ico-32.png) -64px 0;
+	}
+	/*Standings*/
+	#joomsport-container .nav-tabs > li > a > i.js-stand{
+		background: url(../images/jsport-ico-32.png) -288px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-stand,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-stand{
+		background: url(../images/jsport-ico-32.png) -256px 0;
+	}
+	/*Matches*/
+	#joomsport-container .nav-tabs > li > a > i.js-match{
+		background: url(../images/jsport-ico-32.png) -800px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-match,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-match{
+		background: url(../images/jsport-ico-32.png) -768px 0;
+	}
+	/*Team*/
+	#joomsport-container .nav-tabs > li > a > i.js-team{
+		background: url(../images/jsport-ico-32.png) -672px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-team,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-team{
+		background: url(../images/jsport-ico-32.png) -640px 0;
+	}
+	/*Player list*/
+	#joomsport-container .nav-tabs > li > a > i.js-pllist{
+		background: url(../images/jsport-ico-32.png) -606px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-pllist,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-pllist{
+		background: url(../images/jsport-ico-32.png) -574px 0;
+	}
+	/*Team overview*/
+	#joomsport-container .nav-tabs > li > a > i.js-tmover{
+		background: url(../images/jsport-ico-32.png) -736px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-tmover,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-tmover{
+		background: url(../images/jsport-ico-32.png) -704px 0;
+	}
+	/*Squad*/
+	#joomsport-container .nav-tabs > li > a > i.js-squad{
+		background: url(../images/jsport-ico-32.png) -224px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-squad,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-squad{
+		background: url(../images/jsport-ico-32.png) -192px 0;
+	}
+	/*Box score*/
+	#joomsport-container .nav-tabs > li > a > i.js-boxscr{
+		background: url(../images/jsport-ico-32.png) -1248px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-boxscr,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-boxscr{
+		background: url(../images/jsport-ico-32.png) -1216px 0;
+	}
+	/*Rules*/
+	#joomsport-container .nav-tabs > li > a > i.js-rules{
+		background: url(../images/jsport-ico-32.png) -160px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-rules,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-rules{
+		background: url(../images/jsport-ico-32.png) -128px 0;
+	}
+	/*About*/
+	#joomsport-container .nav-tabs > li > a > i.js-about{
+		background: url(../images/jsport-ico-32.png) -928px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-about,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-about{
+		background: url(../images/jsport-ico-32.png) -896px 0;
+	}
+	/*Roster*/
+	#joomsport-container .nav-tabs > li > a > i.js-rostr{
+		background: url(../images/jsport-ico-32.png) -544px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-rostr,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-rostr{
+		background: url(../images/jsport-ico-32.png) -512px 0;
+	}
+	/*Player*/
+	#joomsport-container .nav-tabs > li > a > i.js-player{
+		background: url(../images/jsport-ico-32.png) -1184px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-player,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-player{
+		background: url(../images/jsport-ico-32.png) -1152px 0;
+	}
+	/*Player statistic*/
+	#joomsport-container .nav-tabs > li > a > i.js-plstat{
+		background: url(../images/jsport-ico-32.png) -416px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-plstat,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-plstat{
+		background: url(../images/jsport-ico-32.png) -384px 0;
+	}
+	/*Club*/
+	#joomsport-container .nav-tabs > li > a > i.js-club{
+		background: url(../images/jsport-ico-32.png) -1056px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-club,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-club{
+		background: url(../images/jsport-ico-32.png) -1024px 0;
+	}
+	/*Venue*/
+	#joomsport-container .nav-tabs > li > a > i.js-venue{
+		background: url(../images/jsport-ico-32.png) -480px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-venue,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-venue{
+		background: url(../images/jsport-ico-32.png) -448px 0;
+	}
+	/*Live*/
+	#joomsport-container .nav-tabs > li > a > i.js-live{
+		background: url(../images/jsport-ico-32.png) -1312px 0;
+	}
+	#joomsport-container .nav-tabs > li > a.active > i.js-live,
+	#joomsport-container .nav-tabs > li:hover > a > i.js-live{
+		background: url(../images/jsport-ico-32.png) -1280px 0;
+	}
+	/*--BUTTONS--*/
+	#joomsport-container .navbar-nav .btn{
+		padding: 2px 7px;
+		line-height: 32px;
+	}
+	#joomsport-container .navbar-nav .btn i {
+		width: 32px;
+		height: 32px;
+		margin-right: 5px;
+	}
+	/*Calendar*/
+	#joomsport-container .navbar-nav .btn i.js-calendr{
+		background: url(../images/jsport-ico-32.png) -32px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-calendr{
+		background: url(../images/jsport-ico-32.png) 0 0;
+	}
+	/*Standings*/
+	#joomsport-container .navbar-nav .btn i.js-stand{
+		background: url(../images/jsport-ico-32.png) -288px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-stand{
+		background: url(../images/jsport-ico-32.png) -256px 0;
+	}
+	/*Matrix*/
+	#joomsport-container .navbar-nav .btn i.js-matrx{
+		background: url(../images/jsport-ico-32.png) -352px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-matrx{
+		background: url(../images/jsport-ico-32.png) -320px 0;
+	}
+	/*Player list*/
+	#joomsport-container .navbar-nav .btn i.js-pllist{
+		background: url(../images/jsport-ico-32.png) -608px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-pllist{
+		background: url(../images/jsport-ico-32.png) -576px 0;
+	}
+	/*List of items (stages, rounds)*/
+	#joomsport-container .navbar-nav .btn i.js-itlist{
+		background: url(../images/jsport-ico-32.png) -864px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-itlist{
+		background: url(../images/jsport-ico-32.png) -832px 0;
+	}
+	/*Matchday*/
+	#joomsport-container .navbar-nav .btn i.js-match{
+		background: url(../images/jsport-ico-32.png) -800px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-match{
+		background: url(../images/jsport-ico-32.png) -768px 0;
+	}
+	/*Team*/
+	#joomsport-container .navbar-nav .btn i.js-team{
+		background: url(../images/jsport-ico-32.png) -672px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-team{
+		background: url(../images/jsport-ico-32.png) -640px 0;
+	}
+	/*Player*/
+	#joomsport-container .navbar-nav .btn i.js-player{
+		background: url(../images/jsport-ico-32.png) -1184px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-player{
+		background: url(../images/jsport-ico-32.png) -1152px 0;
+	}
+	/*Join*/
+	#joomsport-container .navbar-nav .btn i.js-join{
+		background: url(../images/jsport-ico-32.png) -992px 0;
+	}
+	#joomsport-container .navbar-nav .btn:hover i.js-join{
+		background: url(../images/jsport-ico-32.png) -960px 0;
+	}
+}
+
+#joomsport-container a { outline: none!important; }
+.jscalMdayNav{
+	overflow:hidden;
+	padding: 10px;
+}
+.jscalMdayPrev{
+	float:left;
+	text-align: left;
+
+	width:50%;
+}
+.jscalMdayNext{
+	float:left;
+	text-align: right;
+
+	width:50%;
+}
+.jsCalByMd #matchDay{
+	min-width: 200px;
+}
+.select2-results {
+	color: #000;
+}
+#joomsport-container table[id^="jstable_"] td.jsalignleft > a:last-child {
+	display: inline-block;
+	min-width: 45px;
+	vertical-align: middle;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+#joomsport-container img { opacity: 1!important; }
+#joomsport-container .pull-right { margin: 0; border: none; }
+.entry-content #joomsport-container img { display: inline-block; margin-bottom: 0; }
+#joomsport-container strong, .select2-container--default .select2-results__group { font-size: inherit; }
+.jscalendarLive {
+	display: table;
+	margin: 0 auto;
+	background: #e53935;
+	color: #fff;
+	text-align: center;
+}
+.jscalendarLive{
+	border: 3px solid transparent;
+	border-radius: 3px;
+	line-height: normal;
+}
+/*Player match events*/
+#joomsport-container table.jsTblVerticalTimeLine {
+	margin-top: 15px;
+	border-collapse:separate;
+	border-spacing:0 10px;
+}
+#joomsport-container .table-responsive table.jsTblVerticalTimeLine > tbody > tr {
+	background:rgba(204,204,204,1)!important;
+	background:-moz-linear-gradient(left,rgba(255,255,255,.1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,.1) 100%)!important;
+	background:-webkit-gradient(left top,right top,color-stop(0%,rgba(255,255,255,.1)),color-stop(50%,rgba(204,204,204,1)),color-stop(100%,rgba(255,255,255,.1)))!important;
+	background:-webkit-linear-gradient(left,rgba(255,255,255,.1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,.1) 100%)!important;
+	background:-o-linear-gradient(left,rgba(255,255,255,.1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,.1) 100%)!important;
+	background:-ms-linear-gradient(left,rgba(255,255,255,.1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,.1) 100%)!important;
+	background:linear-gradient(to right,rgba(255,255,255,.1) 0%,rgba(204,204,204,1) 50%,rgba(255,255,255,.1) 100%)!important;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ffffff',GradientType=1);
+}
+#joomsport-container .table-responsive table.jsTblVerticalTimeLine > tbody > tr > td {
+	border: none!important;
+	vertical-align: middle;
+}
+#joomsport-container table.jsTblVerticalTimeLine > tbody > tr > td.jstimeevent:after {
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	height: 10px;
+	margin-left: -1px;
+	border-left: 2px solid #9e9e9e;
+}
+#joomsport-container table.jsTblVerticalTimeLine > tbody > tr:last-child > td.jstimeevent:after {
+	display: none;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jstimeevent {
+	position: relative;
+	width: 6%;
+	background-color: #9e9e9e;
+	color: #fff;
+	text-align: center;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsMatchPlayer {
+	width: 36%;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsMatchPlayer:first-child {
+	text-align: right;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsMatchPlayer:last-child {
+	text-align: left;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsMatchEvent {
+	width: 11%;
+	text-align: center;
+	font-style: italic;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsMatchEvent img {
+	margin: 0 auto;
+}
+#joomsport-container table.jsTblVerticalTimeLine .jsHidden {
+	visibility:hidden;
+}
+#joomsport-container table.jsTblVerticalTimeLine tbody > tr > td a {
+	color:#595959;
+}
+#joomsport-container table.jsTblVerticalTimeLine tbody > tr > td a:hover {
+	text-decoration: underline;
+}
+.subEvDiv {
+	font-style: italic;
+}
+#joomsport-container.jsSliderContainer .jsmainscroll .jsview2 li {
+	height:auto!important;
+}
+
+/*--Club Page--*/
+.joomsport-club {
+	margin-bottom: 20px;
+}
+#joomsport-container .jsClubAbout {
+	font-size: 14px;
+}
+#joomsport-container .jsClubAbout > h1 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.jsClubTeams .jsTeam {
+	border: 1px solid #e0e0e0;
+	background-color: #ffffff;
+}
+.jsClubTeams a:hover > .jsTeam {
+	background-color: #f5f5f5;
+	text-decoration: none;
+}
+.jsClubTeams .jsTeam > div {
+	padding: 10px;
+	text-align: center;
+}
+.jsClubTeams .jsTeam .jsTeamLogo {
+	width: 80px;
+	padding-right: 5px;
+}
+.jsClubTeams .jsTeam .jsTeamLogo img {
+	height: auto;
+}
+.jsClubTeams .jsTeam .jsTeamName {
+	padding: 29px 10px;
+}
+.jsClubTeams .jsTeam .jsTeamLogo + .jsTeamName {
+	padding-left: 5px;
+	text-align: left;
+}
+.jsClubTeams .jsTeam .jsTeamName > div {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+#joomsport-container .jsClubTeams .jsTeamName h2 {
+	display: table-cell;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 700;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*--Match Page--*/
+.jsMatchResultSection {
+	margin-bottom: 30px;
+}
+.jsMatchHeader {
+	border-bottom: 1px solid #eeeeee;
+	padding: 10px 15px;
+	background-color: #f5f5f5;
+}
+.jsMatchResults {
+	padding: 40px 0;
+}
+#jsMatchViewID .jsMatchHeader .jscenter {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.matchdtime {
+	color: #0f87cf;
+	text-align: left;
+}
+.jsmatchday {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.matchvenue {
+	display: table;
+	text-align:right;
+}
+.matchdtime > *, .matchvenue > *, .jsmatchday > * {
+	line-height: 1;
+	vertical-align: middle;
+}
+#jsMatchViewID .matchdtime img {
+	display: inline-block;
+	margin: 0;
+	margin-right: 5px;
+}
+.matchvenue > div {
+	display: table-cell;
+}
+.matchvenue span {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+#jsMatchViewID .matchvenue a {
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #dc617b;
+}
+#jsMatchViewID .matchvenue img {
+	display: table-cell;
+	min-width: 18px;
+	margin: 0;
+	margin-left: 5px;
+}
+.jsMatchScore > .jsScoreDivM {
+	position: relative;
+	width: 100%;
+	max-width: 158px;
+	margin: 0 auto;
+}
+.jsMatchScore .jsMatchExtraTime {
+	margin-bottom: 5px;
+	text-align: center;
+}
+.jsMatchExtraTime > span {
+	display:inline-block;
+	width: 28px;
+	height: 28px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 28px;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+}
+.aetSmDivScoreH {
+	margin-right: 5px;
+	background-color: #bdbdbd; /*primary color*/
+}
+.aetSmDivScoreA {
+	margin-left: 5px;
+	background-color: #9e9e9e; /*secondary color*/
+}
+.jsScoreDivM > .BigMScore1, .jsScoreDivM > .BigMScore2 {
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	padding: 15px 0;
+	font-size: 35px;
+	font-weight: 700;
+	text-align: center;
+	color: #ffffff;
+}
+.BigMScore1 {
+	background-color: #bdbdbd; /*primary color*/
+}
+.BigMScore2 {
+	background-color: #9e9e9e; /*secondary color*/
+}
+.customStatusBig {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color: #9e9e9e;
+}
+.jsScoreDivM > div > div {
+	position: absolute;
+	bottom: 4px;
+	font-size: 10px;
+	line-height: 1;
+}
+.jsHmBonus {
+	right: 4px;
+}
+.jsAwBonus {
+	left: 4px;
+}
+.jscalendarLiveBig {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-bottom: 0;
+	margin-left: -20px;
+	border: none;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 4px 10px;
+	font-size: 11px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #e53935;
+	animation: shadow-pulse 1s infinite;
+	z-index: 2;
+}
+@keyframes shadow-pulse {
+	0% {
+		box-shadow: 0 0 0 0px rgba(229, 57, 53, 1);
+	}
+	100% {
+		box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+	}
+}
+.jsMatchScore > .jsScoreDivM > span {
+	padding: 0 5px;
+}
+.jsMatchTeam .jsMatchPartName span {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	font-size: 16px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+.jsMatchHomeTeam .jsMatchPartName span {
+	text-align: left;
+}
+.jsMatchAwayTeam .jsMatchPartName span {
+	text-align: right;
+}
+.jsMatchTeam .jsMatchPartName a {
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+}
+.jsMatchResults .jsMatchEmbl {
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+.jsMatchResults .jsMatchTeam .jsMatchEmbl img {
+	max-width: 100%!important;
+}
+.jsMatchStages {
+	margin-top: 5px;
+}
+.jsScoreDivMap {
+	display: inline-block;
+	min-width: 70px;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	color: #9e9e9e;
+}
+#jsMatchViewID .table {
+	margin-bottom: 0;
+}
+#jsMatchViewID .jsMatchStatHeader h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #616161;
+}
+#jsMatchViewID .jsMatchStatHeader i {
+	display: inline-block;
+	margin-top: 3px;
+	padding-left: 5px;
+	vertical-align: top;
+}
+#jsMatchViewID .jsMatchStatHeader + * {
+	margin-top: 20px;
+}
+.jsPlayerStatMatchDiv .jsMatchStageTitle {
+	display: table;
+	margin: 20px auto 0;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	color: #9e9e9e;
+}
+#jsMatchViewID .jsMatchStageTitle + table {
+	margin-top: 0;
+}
+#jsMatchViewID .jsMatchStageTitle + div {
+	margin-top: 10px;
+}
+#joomsport-container #jsMatchViewID .tab-content {
+	padding: 0px;
+}
+.jsMatchContentSection .table-responsive > div {
+	margin-bottom: 25px;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 25px;
+}
+.jsMatchContentSection .table-responsive > div:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.jsMatchStatTeams {
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+#jsMatchViewID .jsMatchStatTeams > div:first-child {
+	padding-right: 5px;
+}
+#jsMatchViewID .jsMatchStatTeams > div:last-child {
+	padding-left: 5px;
+}
+.jsMatchStatTeams .jsMatchTeam {
+	position: relative;
+	background-color: #eeeeee;
+	cursor: pointer;
+}
+.jsMatchStatTeams .jsMatchTeam:before {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	display: block;
+	width: 100%;
+	height: 3px;
+}
+.jsMatchStatTeams .jsMatchTeam.jsactive:before {
+	background-color: #e0e0e0;
+}
+.jsMatchStatTeams .jsMatchStatHome.jsactive:before {
+	background-color: #bdbdbd; /*primary color*/
+}
+.jsMatchStatTeams .jsMatchStatAway.jsactive:before {
+	background-color: #9e9e9e; /*secondary color*/
+}
+.jsMatchStatTeams .jsMatchTeam > div {
+	padding: 5px
+}
+.jsMatchStatTeams .jsMatchTeamPos > div {
+	padding: 21px 5px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+}
+.jsMatchStatTeams .jsMatchTeam .jsMatchTeamLogo {
+	width: 60px;
+	text-align: center;
+}
+.jsMatchStatTeams .jsMatchStatHome .jsMatchTeamName {
+	text-align: left;
+}
+.jsMatchStatTeams .jsMatchStatAway .jsMatchTeamName {
+	text-align: right;
+}
+.jsMatchStatTeams .jsMatchTeamName > div {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.jsMatchStatTeams .jsMatchTeamName > div > span {
+	display: table-cell;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#jsMatchViewID .jsColTeamEvents {
+	background-color: transparent;
+}
+.jsColTeamEvents .jsCol5 {
+	width: 38%;
+	padding: 5px 0;
+}
+.jsColTeamEvents .jsCol6 {
+	width: 24%;
+	padding: 5px 15px;
+	text-align: center;
+}
+.jsCol6 span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.jsCol6 img {
+	display: inline-block;
+	margin-right: 5px;
+}
+.teamEventGraph {
+	background-color: #f6f6f6;
+}
+.teamEventGraphHome {
+	float: right;
+	text-align: right;
+	background-color: #bdbdbd; /*primary color*/
+}
+.teamEventGraphAway {
+	text-align: left;
+	background-color: #9e9e9e; /*secondary color*/
+}
+.teamEventGraph > div > span {
+	display: inline-block;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.teamEventGraph > div[style="width:0%"] > span {
+	color: #bdbdbd;
+}
+.jsExtraField, .jsExtraField > div {
+	display: inline-block;
+}
+.jsExtraField {
+	padding: 5px 10px;
+}
+.jsLabelEField {
+	padding-right: 2px;
+	font-weight: 700;
+}
+.jsLabelEField:after {
+	content: ':';
+}
+.jsSquadContent {
+	position: relative;
+}
+.jsSquadContent:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	margin-left: -0.5px;
+	border-right: 1px solid #e0e0e0;
+}
+#jsMatchViewID .jsSquadContent > div:first-child {
+	padding-left: 0;
+}
+#jsMatchViewID .jsSquadContent > div:last-child {
+	padding-right: 0;
+}
+#stab_squad .jstable-row {
+	background-color: transparent;
+}
+#stab_squad .jstable-row:first-child > .jstable-cell {
+	border-top: none;
+}
+.jsSquadContent .jstable-row > .jsSquadField:first-child {
+	width: 35px;
+}
+.jsSquadContent .jstable-row > .jsSquadPlayerImg {
+	width: 55px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.jsSquadContent .jstable-row > .jsSquadPlayerName div:first-child {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	line-height: 1.2;
+	white-space: nowrap;
+}
+.jsSquadContent .jstable-row > .jsSquadPlayerName a {
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.jsSquadContent .jsSquadExField {
+	padding-top: 5px;
+	font-size: 0.9em;
+	line-height: 1;
+	color: #757575;
+}
+.jsSquadContent .jstable-row > .jsSquadSubs {
+	width: 75px;
+	text-align: left;
+}
+.jsSquadContent .jstable-row > .jsSquadSubs > span {
+	display: inline-block;
+	padding: 2px
+}
+/*Head to head*/
+#jsMatchViewID .jsHHMatchDiv table {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#jsMatchViewID .jsHHMatchDiv table tr, #jsMatchViewID .jsHHMatchDiv table td {
+	background: none;
+}
+.jsHHMatchDiv > div {
+	margin-bottom: 15px;
+}
+.jspBlockTitle {
+	cursor: pointer;
+}
+.centrikLDWinner {
+	margin-bottom: 20px;
+}
+.centrikLDWinnerTitle {
+	display: table;
+	margin: 0 auto 15px;
+	line-height: 1;
+}
+.divTabfade {
+	display: table-cell;
+}
+#joomsport-container #jsMatchViewID .divTabfade > a {
+	display: block;
+	border: 1px solid #1e88e5;
+	padding: 10px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #555;
+}
+#joomsport-container #jsMatchViewID .divTabfade > a.jsTabActive {
+	background-color: #1e88e5;
+	color: #fff;
+}
+#jsMatchViewID .divTabfade:first-child > a {
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+#jsMatchViewID .divTabfade:last-child > a {
+	-webkit-border-radius: 0 4px 4px 0 ;
+	border-radius: 0 4px 4px 0 ;
+}
+#jsMatchViewID .jspBlockSection .jsTeamAnalytics {
+	padding: 0;
+}
+.divCntWLD {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+	border-radius: 2px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #ffff;
+}
+.winWLD {
+	background-color: #01a252;
+}
+.drawWLD {
+	background-color: #FBDE2D;
+}
+.lostWLD {
+	background-color: #E83737;
+}
+.jspBlockTitleSmall {
+	padding: 5px;
+}
+#jsMatchViewID .jspBlockTitleSmall > h4 {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+#jsMatchViewID .divLastMatches {
+	max-width: 350px;
+}
+#jsMatchViewID .divLastMatches > tbody > tr > td {
+	padding: 5px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#jsMatchViewID .divLastMatches > tbody > tr:first-child > td {
+	border-top: none;
+}
+.divLastMatches .jsMatchDate {
+	min-width: 72px;
+	text-align: center;
+}
+#jsMatchViewID .divLastMatches > tbody > tr > .jsMatchTeamLogo {
+	width: 30px;
+	padding-left: 0;
+	padding-right: 0;
+}
+#jsMatchViewID .divLastMatches .jsMatchTeamLogo img {
+	min-width: auto;
+	max-width: 30px!important;
+}
+.jsMatchTeamName .js_div_particName {
+	display: table;
+	width: 100%;
+	padding-left: 0;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+.jsMatchTeamName .js_div_particName > a {
+	display: table-cell;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.jsHomeTeamAnalytics .js_div_particName {
+	text-align: left;
+}
+.jsAwayTeamAnalytics .js_div_particName {
+	text-align: right;
+}
+#jsMatchViewID .divLastMatches > tbody > tr > .jsMatchPlayedStatus {
+	width: 17px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.divLastMatches .jsMatchPlayedStatus .jsform_none {
+	margin: 0;
+}
+.divLastMatches .jsMatchPlayedScore {
+	width: 63px;
+}
+.divLastMatches .jsMatchPlayedScore > .jsScoreDiv {
+	width: auto;
+	min-height: auto;
+	line-height: 1;
+}
+#jsMatchViewID .divLastMatches .jsMatchPlace {
+	width: 23px;
+	font-size: 14px;
+}
+#jsMatchViewID .jsAnalyticBlock table {
+	max-width: 300px;
+}
+#jsMatchViewID .jsEventsAnalytic tbody > tr > td {
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+#jsMatchViewID .jsEventsAnalytic tbody > tr:first-child > td {
+	border-top: none;
+}
+.jsEventsAnalytic .jsEventType {
+	font-weight: 700;
+}
+.jsEventsAnalytic .jsEventType img {
+	margin: 0 auto;
+}
+#jsMatchViewID .jsGoalsAnalytic table .jsVertHead {
+	width: 40px;
+	padding: 10px 0;
+	text-align: center;
+}
+.jsGoalsAnalytic table .jsVertHead > span {
+	max-height: 70px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	vertical-align: middle;
+	white-space: normal;
+	text-transform: uppercase;
+	color: #9a9da2;
+}
+.jsVertHead > span {
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+	text-align: center;
+}
+.tdValignBottom {
+	border-bottom: 1px solid #424242!important;
+	text-align: center!important;
+	vertical-align: bottom!important;
+}
+#jsMatchViewID .tdValignTop {
+	padding-bottom: 5px;
+	text-align: center!important;
+	vertical-align: top!important;
+}
+.avgGoalBar {
+	width: 30px;
+	margin: 0 auto;
+}
+#jsMatchViewID .jsHomeScoreAnalytic {
+	width: 50px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #bdbdbd; /*primary color*/
+}
+#jsMatchViewID .jsAwayScoreAnalytic {
+	width: 50px;
+	font-size: 12px;
+	font-weight: 700;
+	color: #9e9e9e; /*secondary color*/
+}
+.jsHomeScoreAnalytic > div {
+	background-color: #bdbdbd; /*primary color*/
+}
+.jsAwayScoreAnalytic > div {
+	background-color: #9e9e9e; /*secondary color*/
+}
+#jsMatchViewID .jsGoalsAnalytic .tdAvgTotal {
+	border-top: 1px solid #ddd!important;
+	padding: 10px 5px 0;
+	font-weight: 700;
+	text-align: center!important;
+	text-transform: uppercase;
+}
+.jsHHMatches .jsSeasonName > td {
+	font-size: 13px;
+	font-weight: 700;
+}
+#jsMatchViewID .jsHHMatches table {
+	max-width: 380px;
+}
+#jsMatchViewID .jsHHMatches table > tbody > tr > td {
+	padding: 5px 8px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+#jsMatchViewID .jsHHMatches table > tbody > .jsSeasonName > td,
+#jsMatchViewID .jsHHMatches table > tbody > .jsSeasonName + tr > td {
+	border-top: none;
+}
+#jsMatchViewID .jsHHMatches table > tbody > tr + .jsSeasonName > td {
+	padding-top: 15px;
+}
+.jsHHMatches .jsMatchDate {
+	width: 80px;
+	text-align: center;
+}
+#jsMatchViewID .jsHHMatches table > tbody > tr > .jsMatchPlayedScore {
+	width: 70px;
+	padding-left: 0;
+	padding-right: 0;
+}
+.jsHHMatches .jsMatchPlayedScore > .jsScoreDiv {
+	width: auto;
+	min-height: auto;
+	line-height: 1;
+}
+.jsHHMatches .jsMatchTeam {
+	text-align: center;
+}
+.jsHHMatches table img {
+	max-width: 30px!important;
+}
+.divLeaguePos {
+	position: relative;
+	max-width: 80px;
+	margin: 0 auto;
+}
+.divLeaguePosHT, .divLeaguePosAT {
+	position: absolute;
+	width: 14px;
+	margin-top: 1px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+}
+.divLeaguePosAT:before, .divLeaguePosHT:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.divLeaguePosHT:before {
+	right: -8px;
+	border-left: 5px solid #9a9da2;
+}
+.divLeaguePosAT:before {
+	left: -8px;
+	border-right: 5px solid #9a9da2;
+}
+.divLeaguePosHT {
+	left: -5px;
+}
+.divLeaguePosAT {
+	right: -5px;
+}
+.posDivelContainer {
+	width: 25px;
+	margin: 0 auto 1px;
+	line-height: 1;
+}
+.posDivelContainer:last-child {
+	margin-bottom: 0;
+}
+.posDivelLeft {
+	display: inline-block;
+	width:2px;
+	height:12px;
+}
+.posDivel {
+	display: inline-block;
+	width: 21px;
+	height:12px;
+	margin-left: 2px;
+	background-color: #ccc;
+}
+.posDivelRight {
+	display: inline-block;
+	width:2px;
+	height:10px;
+}
+.jsTeamPosAnalytics > div:last-child {
+	margin-top: 5px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+}
+.jsHHPercentage > table {
+	position: relative;
+}
+.circleHmWinText {
+	position: absolute;
+	top: 1em;
+	width: 50%;
+	font-size: 13px;
+	line-height: 1;
+	text-align: center;
+}
+.circleHmWinText > div {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	white-space: nowrap;
+}
+.circleHmWinText .jsTeamName {
+	display: table-cell;
+	overflow: hidden;
+	font-weight: 700;
+	text-overflow: ellipsis;
+}
+.circleHmWinText:first-child {
+	left: 0;
+	padding-right: 10px;
+}
+.circleHmWinText:last-child {
+	right: 0;
+	padding-left: 10px;
+}
+.circle {
+	position: relative;
+	width: 7em;
+	height: 7em;
+	margin: 3em auto;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: 1px solid #bdbdbd; /*primary color*/
+}
+.arc, .arc2 {
+	position: absolute;
+	top: -0.5em;
+	bottom: 50%;
+	right: 50%;
+	left: -0.5em;
+	overflow: hidden;
+	transform-origin: 100% 100%;
+}
+.arc {
+	-webkit-transform: rotate(30deg) skewX(30deg);
+	transform: rotate(30deg) skewX(30deg);
+}
+.arc2 {
+	-webkit-transform: rotate(90deg) skewX(30deg);
+	transform: rotate(90deg) skewX(30deg);
+}
+.arc:before, .arc2:before {
+	content: '';
+	display: block;
+	width: 200%;
+	height: 200%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+}
+.arc:before {
+	border: 1em solid #9e9e9e; /*secondary color*/
+}
+.arc2:before {
+	border: 1em solid #bdbdbd; /*primary color*/
+}
+.circleInnerDraw{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	margin: 0;
+	margin-top: -12px;
+	margin-left: -20px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+}
+@media screen and (min-width: 992px) {
+	#jsMatchViewID .jsMatchResults > .row, #jsMatchViewID .jsMatchResults .jsMatchTeam > div {
+		display: table;
+	}
+	#jsMatchViewID .jsMatchResults > .row > div, #jsMatchViewID .jsMatchResults .jsMatchTeam > div > div {
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
+}
+@media screen and (max-width: 991px) {
+	#jsMatchViewID .jsMatchResults .jsMatchTeam > div {
+		margin: 0;
+	}
+	.jsMatchTeam .jsMatchPartName span {
+		text-align: center;
+	}
+	.jsMatchResults .jsMatchScore {
+		margin-top: 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.jsClubTeams .jsTeam {
+		margin-bottom: 20px;
+	}
+	#jsMatchViewID .jsMatchResults > .row {
+		margin: 0;
+	}
+	#jsMatchViewID .jsSquadContent:before {
+		content: none;
+	}
+	#jsMatchViewID .jsSquadMatchDiv .jsSquadContent > div {
+		display: none;
+		padding: 0 15px;
+	}
+	#jsMatchViewID .jsMatchTeam .jsMatchTeamLogo > img {
+		max-width: 45px!important;
+	}
+	.jsHHSeasonAnalytics .jspBlockSection > div {
+		display: none;
+	}
+	#jsMatchViewID .jspBlockSection .jsTeamAnalytics {
+		max-width: 360px;
+		margin: 0 auto;
+		float: none;
+	}
+	.circle {
+		width: 9em;
+		height: 9em;
+		margin-bottom: 1em;
+	}
+	#jsMatchViewID .jsAnalyticBlock, #jsMatchViewID .jsHHBlock {
+		padding: 0;
+	}
+	.jsHHAnalytics .jsHHMatches {
+		margin-top: 15px;
+		border-top: 1px dashed #e0e0e0;
+		padding-top: 15px;
+	}
+	.jsMatchStatMatchDiv .jsTeamStat {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#jsMatchViewID .jsPredictStatMatchDiv .jsPredStat > div {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	#jsMatchViewID .jsPredictStatMatchDiv .jsPredStat > div > div {
+		margin: 0;
+	}
+}
+@media screen and (max-width: 479px) {
+	#jsMatchViewID .jsAnalyticBlock .jspBlockSection > div {
+		width: 100%;
+	}
+	#jsMatchViewID .jsMatchHeader > div {
+		width: 100%;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	.jsAnalyticBlock .jsGoalsAnalytic {
+		margin-top: 15px;
+		border-top: 1px dashed #e0e0e0;
+		padding-top: 15px;
+	}
+	#jsMatchViewID .matchvenue {
+		margin: 0 auto;
+	}
+	.matchvenue > div {
+		max-width: 260px;
+	}
+	.matchdtime {
+		text-align: center;
+	}
+}
+.jsactive {
+	display: block!important;
+}
+.jstable.jsactive, table.jsactive {
+	display: table!important;
+}
+.jsHHide {
+	display: none;
+}
+.single-joomsport_team .jsposthumb {
+	display: none!important;
+}
+
+/*MatchDay shortcode*/
+.jsSjLoading{
+	opacity: 0.5;
+}
+.shrtMdNav {
+	margin-bottom: 25px;
+}
+.shrtMdMatches .jsmainscroll {
+	/*border: 1px solid #e0e0e0;*/
+	border-radius: 3px;
+	overflow: hidden;
+}
+.shrtMdMatches .jsmatchcont .jsmatchdate {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	color: #31404b;
+	background-color: #f5f5f5; 
+}
+#joomsport-container .shrtMdMatches table td:not([colspan="5"]) {
+	padding: 10px 5px;
+}
+#joomsport-container .shrtMdMatches table tr:not(:last-child) td {
+	border-bottom: 1px solid #e0e0e0;
+}
+.shrtMdMatches table td.jsseason-container {
+	display: none;
+}
+.shrtMdMatches table td.tdminwdt {
+	width: 35%;
+}
+.shrtMdMatches table td.jsmatchtime > span {
+	display: inline-block;
+	min-width: 35px;
+	text-align: center;
+}
+.shrtMdMatches table .tdminwdt > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+.shrtMdMatches table .tdminwdt .js_div_particName {
+	padding: 5px 0 0;
+}
+.shrtMdMatches .jsmainscroll .jsview2 table td.jstdhometeam > div {
+	flex-direction: row;
+}
+.shrtMdMatches .jsmainscroll table .jsScoreDiv {
+	font-size: 12px;
+}
+.shrtMdMatches .jsmatchvenue {
+	min-width: 28px;
+}
+.shrtMdMatches .jsmatchvenue > div {
+	display: table;
+	text-align: right;
+}
+.shrtMdMatches .jsmatchvenue a > span {
+	display: none;
+}
+#joomsport-container .shrtMdMatches .jsmatchvenue a {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+.shrtMdMatches .jsmatchvenue img {
+	min-width: 18px;
+}
+@media screen and (min-width: 768px) {
+	#joomsport-container .shrtMdMatches table td.jsmatchvenue {
+		width: 30%;
+		padding-right: 28px;
+	}
+	.shrtMdMatches .jsmatchvenue > div > div {
+		display: table-cell;
+	}
+	#joomsport-container .shrtMdMatches .jsmatchvenue div + img {
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.shrtMdMatches .jsmatchvenue a > span {
+		display: table-cell;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #dc617b;
+	}
+	.shrtMdMatches .jsmatchvenue a > span + img {
+		margin-left: 5px;
+	}
+	.shrtMdMatches table td.tdminwdt {
+		min-width: 167px;
+	}
+	.shrtMdMatches table .tdminwdt > div {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: center;
+	}
+	.shrtMdMatches table .tdminwdt.jstdhometeam > div {
+		direction: rtl;
+	}
+	.shrtMdMatches table .jstdhometeam > div > .js_div_particName {
+		padding-left: 0;
+		padding-right: 10px;
+		text-align: right;
+	}
+	.shrtMdMatches table .jstdawayteam > div > .js_div_particName {
+		padding-left: 10px;
+		padding-right: 0;
+		text-align: left;
+	}
+}
+
+.js-event-quantity, .js-event-type {
+	width: 5%;
+}
+.single-joomsport_season .tooltip {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 5px 10px;
+	line-height: 1.2;
+	font-size: 12px;
+	background-color: #eeeeee;
+}
+#joomsport-container .wdgtLegend {
+	margin-top: 25px;
+}
+/*moderator*/
+.jsmoderTabs{
+	padding:10px;
+}
+.jsmoderTabs span{
+	padding:5px 10px;
+	cursor: pointer;
+}
+.jsmoderContainer .fa{
+	cursor: pointer;
+}

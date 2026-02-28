@@ -1,0 +1,712 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart-Framework\n"
+"POT-Creation-Date: 2021-07-29 08:21+0700\n"
+"PO-Revision-Date: 2017-02-18 15:35+0700\n"
+"Last-Translator: \n"
+"Language-Team: G5Theme <g5plus@outlook.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;_x:1,2c;esc_html;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"esc_attr;esc_attr__;esc_attr_e;esc_attr_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;"
+"_n_noop:1,2;_nx_noop:1,2,3c;__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/templates/icons-popup.tpl.php:6
+#: core/icons-popup/templates/icons-popup.tpl.php:6
+msgid "Search Icon..."
+msgstr ""
+
+#: admin/templates/icons-popup.tpl.php:22 admin/templates/icons-popup.tpl.php:41
+#: admin/templates/icons-popup.tpl.php:42
+#: core/icons-popup/templates/icons-popup.tpl.php:21
+#: core/icons-popup/templates/icons-popup.tpl.php:40
+#: core/icons-popup/templates/icons-popup.tpl.php:41
+msgid "All Icons"
+msgstr ""
+
+#: admin/templates/icons-popup.tpl.php:35
+#: core/icons-popup/templates/icons-popup.tpl.php:34
+msgid "Select An Icon"
+msgstr ""
+
+#: admin/templates/icons-popup.tpl.php:42
+#: core/icons-popup/templates/icons-popup.tpl.php:41
+msgid "Search result for \"{0}\""
+msgstr ""
+
+#: admin/templates/preset-popup.php:3 admin/templates/theme-options-start.php:67
+msgid "Create Preset Options"
+msgstr ""
+
+#: admin/templates/preset-popup.php:6
+msgid "Enter your preset:"
+msgstr ""
+
+#: admin/templates/preset-popup.php:9
+msgid "Create Preset"
+msgstr ""
+
+#: admin/templates/theme-options-end.php:3
+msgid "Import/Export"
+msgstr ""
+
+#: admin/templates/theme-options-end.php:5
+msgid "Reset Section"
+msgstr ""
+
+#: admin/templates/theme-options-end.php:7
+msgid "Reset Options"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:36
+msgid "version"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:44
+msgid "Make Default Options"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:45
+msgid "Delete Preset"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:46
+msgid "Preview"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:57
+msgid "Select Preset Options..."
+msgstr ""
+
+#: admin/templates/theme-options-start.php:61
+msgid "Default Options"
+msgstr ""
+
+#: admin/templates/theme-options-start.php:71
+msgid "Save Options"
+msgstr ""
+
+#: core/fonts/fonts.class.php:54 core/fonts/fonts.class.php:55
+#: core/fonts/templates/fonts.php:6
+msgid "Fonts Management"
+msgstr ""
+
+#: core/fonts/fonts.class.php:86
+msgid "Are you sure delete custom font?"
+msgstr ""
+
+#: core/fonts/fonts.class.php:87
+msgid "Are you sure remove this font?"
+msgstr ""
+
+#: core/fonts/fonts.class.php:88
+msgid "Are you sure reset active fonts?"
+msgstr ""
+
+#: core/fonts/fonts.class.php:274
+msgid "Google Fonts"
+msgstr ""
+
+#: core/fonts/fonts.class.php:275 inc/admin-ajax.class.php:108
+msgid "Standard Fonts"
+msgstr ""
+
+#: core/fonts/fonts.class.php:276
+msgid "Custom Fonts"
+msgstr ""
+
+#: core/fonts/fonts.class.php:528 core/fonts/fonts.class.php:671
+#: core/fonts/fonts.class.php:699 core/fonts/fonts.class.php:736
+#: core/fonts/fonts.class.php:755 core/fonts/fonts.class.php:778
+#: core/fonts/fonts.class.php:816
+msgid "Access deny!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:573 core/fonts/fonts.class.php:582
+msgid "Font Exist!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:605
+msgid "Missing css file!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:663
+msgid "Only allowed with 1 css file!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:688
+msgid "Font directory is not deleted"
+msgstr ""
+
+#: core/fonts/fonts.class.php:692 core/fonts/fonts.class.php:704
+msgid "Delete custom font done!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:744
+msgid "Fonts already exists!"
+msgstr ""
+
+#: core/fonts/fonts.class.php:809
+msgid "Save Done!"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:11 core/fonts/templates/custom.tpl.php:39
+#: core/fonts/templates/google.tpl.php:30 core/fonts/templates/standard.tpl.php:17
+msgid "Replace Font"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:14
+msgid "Remove font!"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:21
+msgid "Welcome to font preview!"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:28
+msgid "Variants"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:40
+msgid "Subsets"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:53
+msgid "Selector apply:"
+msgstr ""
+
+#: core/fonts/templates/active.tpl.php:61
+msgid "Save Changes"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:5 core/fonts/templates/custom.tpl.php:18
+msgid "Add Custom Font"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:9
+msgid "Font name:"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:13
+msgid "Fonts files (zip):"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:15
+msgid ""
+"File zip contains stylesheet.css and font files (accept: .woff, .eot, .svg, .ttf)"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:28
+msgid "Delete custom font"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:32 core/fonts/templates/google.tpl.php:22
+#: core/fonts/templates/standard.tpl.php:10
+msgid "Font activated"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:35 core/fonts/templates/google.tpl.php:25
+#: core/fonts/templates/standard.tpl.php:13
+msgid "Use this font"
+msgstr ""
+
+#: core/fonts/templates/custom.tpl.php:47
+msgid "Add Custom Fonts"
+msgstr ""
+
+#: core/fonts/templates/fonts.php:11
+msgid "Available Fonts"
+msgstr ""
+
+#: core/fonts/templates/fonts.php:12
+msgid "Search fonts..."
+msgstr ""
+
+#: core/fonts/templates/fonts.php:28
+msgid "Active Fonts"
+msgstr ""
+
+#: core/fonts/templates/fonts.php:28
+msgid "Reset Fonts"
+msgstr ""
+
+#: core/fonts/templates/google.tpl.php:18
+msgid "Preview font"
+msgstr ""
+
+#: core/fonts/templates/select-active.tpl.php:3
+msgid "Are you sure to change the font from \"{1}\" to \"{2}?\""
+msgstr ""
+
+#: core/fonts/templates/select-active.tpl.php:5
+msgid "Select font to replace"
+msgstr ""
+
+#: core/fonts/templates/select-active.tpl.php:12
+#: fields/select_popup/select_popup.class.php:45
+msgid "Change"
+msgstr ""
+
+#: core/icons-popup/templates/icons-popup.tpl.php:44
+msgid "Load more..."
+msgstr ""
+
+#: fields/background/background.class.php:101
+msgid "No background image"
+msgstr ""
+
+#: fields/background/background.class.php:104 fields/image/image.class.php:45
+msgid "Choose Image"
+msgstr ""
+
+#: fields/background/background.class.php:105 fields/file/file.class.php:26
+#: fields/image/image.class.php:47
+msgid "Remove"
+msgstr ""
+
+#: fields/background/background.class.php:108
+msgid "Background Image Properties"
+msgstr ""
+
+#: fields/border/border.class.php:63
+msgid "All"
+msgstr ""
+
+#: fields/border/border.class.php:72 fields/spacing/spacing.class.php:45
+msgid "Top"
+msgstr ""
+
+#: fields/border/border.class.php:81 fields/spacing/spacing.class.php:38
+msgid "Right"
+msgstr ""
+
+#: fields/border/border.class.php:90 fields/spacing/spacing.class.php:52
+msgid "Bottom"
+msgstr ""
+
+#: fields/border/border.class.php:99 fields/spacing/spacing.class.php:31
+msgid "Left"
+msgstr ""
+
+#: fields/dimension/dimension.class.php:29
+msgid "Width"
+msgstr ""
+
+#: fields/dimension/dimension.class.php:36
+msgid "Height"
+msgstr ""
+
+#: fields/field.php:345
+msgid "+ Add more"
+msgstr ""
+
+#: fields/file/file.class.php:14
+msgid "Select File"
+msgstr ""
+
+#: fields/file/file.class.php:15
+msgid "Use these files"
+msgstr ""
+
+#: fields/file/file.class.php:56
+msgid "+ Add File"
+msgstr ""
+
+#: fields/font/font.class.php:42 fields/typography/typography.class.php:54
+msgid "Font Family"
+msgstr ""
+
+#: fields/font/font.class.php:43 fields/typography/typography.class.php:55
+msgid "Select Font Family"
+msgstr ""
+
+#: fields/font/font.class.php:51 fields/typography/typography.class.php:72
+msgid "Font Size"
+msgstr ""
+
+#: fields/font/font.class.php:55 fields/typography/typography.class.php:76
+msgid "Font size"
+msgstr ""
+
+#: fields/font/font.class.php:72 fields/typography/typography.class.php:93
+msgid "Font Weight & Style"
+msgstr ""
+
+#: fields/font/font.class.php:80
+msgid "Font Subsets"
+msgstr ""
+
+#: fields/gallery/gallery.class.php:40
+msgid "+ Add Images"
+msgstr ""
+
+#: fields/icon/icon.class.php:22
+msgid "Select icon"
+msgstr ""
+
+#: fields/icon/icon.class.php:23 fields/icon/icon.class.php:28
+msgid "Remove icon"
+msgstr ""
+
+#: fields/icon/icon.class.php:24
+msgid "Search icon..."
+msgstr ""
+
+#: fields/icon/icon.class.php:27
+msgid "Set Icon"
+msgstr ""
+
+#: fields/image/image.class.php:37
+msgid "display:none"
+msgstr ""
+
+#: fields/image/image.class.php:42
+msgid "No image"
+msgstr ""
+
+#: fields/map/map.class.php:31
+msgid "Enter an address..."
+msgstr ""
+
+#: fields/map/map.class.php:40
+msgid "Find Address"
+msgstr ""
+
+#: fields/panel/panel.class.php:76
+msgid "+ Add "
+msgstr ""
+
+#: fields/select_ajax/select_ajax.class.php:43
+msgid "multiple"
+msgstr ""
+
+#: fields/select_popup/templates/popup.tpl.php:21
+msgid "Current"
+msgstr ""
+
+#: fields/selectize/selectize.class.php:176
+msgid "Edit"
+msgstr ""
+
+#: fields/selectize/selectize.class.php:179
+msgid "Add New"
+msgstr ""
+
+#: fields/switch/switch.class.php:16 fields/switch2/switch2.class.php:16
+msgid "On"
+msgstr ""
+
+#: fields/switch/switch.class.php:17 fields/switch2/switch2.class.php:17
+msgid "Off"
+msgstr ""
+
+#: fields/typography/typography.class.php:62
+msgid "(Not activated)"
+msgstr ""
+
+#: fields/typography/typography.class.php:99
+msgid "(Missing variant)"
+msgstr ""
+
+#: fields/typography/typography.class.php:124
+msgid "Align"
+msgstr ""
+
+#: fields/typography/typography.class.php:148
+msgid "Text Transform"
+msgstr ""
+
+#: fields/typography/typography.class.php:160
+msgid "Line Height"
+msgstr ""
+
+#: fields/typography/typography.class.php:168
+msgid "Letter Spacing"
+msgstr ""
+
+#: fields/typography/typography.class.php:193
+msgid "Color"
+msgstr ""
+
+#: inc/admin-ajax.class.php:111
+msgid "Google Webfonts"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:78 inc/admin-taxonomy.class.php:95
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:79 inc/admin-taxonomy.class.php:92
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:80
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:81 inc/admin-taxonomy.class.php:93
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:82 inc/admin-taxonomy.class.php:87
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:83 inc/admin-taxonomy.class.php:100
+#, php-format
+msgid "No %s found."
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:84
+#, php-format
+msgid "No %s found in Trash."
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:85 inc/admin-taxonomy.class.php:89
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:86
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:87
+#, php-format
+msgid "Insert into %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:88
+#, php-format
+msgid "Uploaded to this %s"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:89
+#, php-format
+msgid "Filter %s list"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:90 inc/admin-taxonomy.class.php:102
+#, php-format
+msgid "%s list navigation"
+msgstr ""
+
+#: inc/admin-meta-boxes.class.php:91 inc/admin-taxonomy.class.php:103
+#, php-format
+msgid "%s list"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:88
+#, php-format
+msgid "Popular %s"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:90
+#, php-format
+msgid "Parent %s"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:91
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:94
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:96
+#, php-format
+msgid "New %s New"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:97
+#, php-format
+msgid "Separate %s with commas"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:98
+#, php-format
+msgid "Add or remove %s"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:99
+#, php-format
+msgid "Choose from the most used %s"
+msgstr ""
+
+#: inc/admin-taxonomy.class.php:101
+#, php-format
+msgid "No %s"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:106
+msgid "Saving Options..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:107
+msgid "Resetting Options..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:108
+msgid "Resetting Section..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:109
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:110
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:111
+msgid "Reset theme options done"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:112
+msgid "Reset theme options error"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:113
+msgid "Reset section done"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:114
+msgid "Reset section error"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:115
+msgid ""
+"Are you sure?  This will overwrite all existing option values, please proceed "
+"with caution!"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:116
+msgid "Import option done"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:117
+msgid "Import option error"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:118
+msgid "Settings have changed, you should save them!"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:119
+msgid "Data saved successfully!"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:120
+msgid "Are you sure? The current preset will be deleted!"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:121
+msgid "Delete preset options done"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:122
+msgid "Delete preset options error"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:123
+msgid "Deleting Section..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:124
+msgid "Changes you made may not be saved. Do you want change options?"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:125
+msgid "Are you sure? Make this preset to default options."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:126
+msgid "Make this preset to default options..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:127
+msgid "Make this preset to default options error"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:508
+msgid "Import/Export Options"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:512
+msgid "Import Options"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:516 inc/admin-theme-options.class.php:517
+msgid "Import"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:517
+msgid "Importing..."
+msgstr ""
+
+#: inc/admin-theme-options.class.php:518
+msgid ""
+"WARNING! This will overwrite all existing option values, please proceed with "
+"caution!"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:522
+msgid "Export Options"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:525
+msgid "Download Data File"
+msgstr ""
+
+#: inc/admin-theme-options.class.php:540 inc/admin-theme-options.class.php:592
+msgid "Save options Done"
+msgstr ""
+
+#: inc/assets.class.php:56
+msgid "Clear"
+msgstr ""
+
+#: inc/assets.class.php:57
+msgid "Clear color"
+msgstr ""
+
+#: inc/assets.class.php:58
+msgid "Default"
+msgstr ""
+
+#: inc/assets.class.php:59
+msgid "Select default color"
+msgstr ""
+
+#: inc/assets.class.php:60
+msgid "Select Color"
+msgstr ""
+
+#: inc/assets.class.php:61
+msgid "Color value"
+msgstr ""
+
+#: inc/helper.class.php:445
+msgid "Font Awesome"
+msgstr ""
+
+#: smart-framework.php:161
+msgid "Smart Framework"
+msgstr ""

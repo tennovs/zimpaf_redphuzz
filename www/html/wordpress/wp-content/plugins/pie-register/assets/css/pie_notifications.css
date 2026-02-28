@@ -1,0 +1,181 @@
+#piereg-notifications {
+    position: relative;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    box-shadow: 0 5px 15px #0000000D;
+    border-radius: 6px;
+    opacity: 1;
+    min-height: 48px;
+    margin: 15px 20px;
+}
+#piereg-notifications * {
+    box-sizing: border-box;
+}
+#piereg-notifications .piereg-notifications-header {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid rgba(204, 208, 212, 0.5);
+}
+#piereg-notifications .piereg-notifications-header .piereg-notifications-bell {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+#piereg-notifications .piereg-notifications-header .piereg-notifications-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23282D;
+}
+#piereg-notifications .piereg-notifications-body {
+    position: relative;
+}
+#piereg-notifications .piereg-notifications-messages {
+    padding: 25px 100px 25px 25px;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-message {
+    display: none;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-message.current {
+    display: block;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-title {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    margin: 0;
+    color: #444;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-content {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px 0 48px 0;
+    color: #777777;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons {
+    margin: -30px 80px 0 0;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons a {
+    margin: 0 10px 0 0;
+    padding: 8px 10px;
+    line-height: 13px;
+    font-size: 13px;
+    min-height: unset;
+    background: #133950;
+    border-color: #133950;
+    color: #fff;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons .button-secondary {
+    border: 1px solid #133950;
+    background: #fff;
+    color: #133950;
+}
+#piereg-notifications .dismiss {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    color: #A0A5AA;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 16px;
+}
+#piereg-notifications .dismiss:hover {
+    color: #dc3232;
+}
+#piereg-notifications .dismiss i {
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+}
+#piereg-notifications .navigation {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    width: 63px;
+    height: 30px;
+}
+#piereg-notifications .navigation a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #7E8993;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #41454A;
+}
+#piereg-notifications .navigation a:hover {
+    background-color: #f1f1f1;
+}
+#piereg-notifications .navigation a .dashicons {
+    margin-top: 8px;
+    font-size: 12px;
+}
+#piereg-notifications .navigation .prev {
+    float: left;
+}
+#piereg-notifications .navigation .next {
+    float: right;
+}
+#piereg-notifications .navigation .disabled {
+    border-color: #dddddd;
+    color: #A0A5AA;
+    cursor: default;
+}
+#piereg-notifications .navigation .disabled:hover {
+    background-color: #ffffff;
+}
+.piereg-admin-bar-menu-notification-counter {
+    display: inline-block !important;
+    vertical-align: top !important;
+    box-sizing: border-box !important;
+    margin: 7px 0 0 2px !important;
+    padding: 0 5px !important;
+    min-width: 18px !important;
+    height: 18px !important;
+    border-radius: 9px !important;
+    background-color: #ca4a1f !important;
+    color: #fff !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+}
+.piereg-admin-bar-menu-notification-counter span {
+    line-height: 1 !important;
+    font-size: 11px !important;
+}
+.wp-menu-name .piereg-admin-bar-menu-notification-counter {
+    margin: 0px !important;
+}
+@media screen and (max-width: 768px) {
+    #piereg-notifications .piereg-notifications-messages {
+    padding: 15px 50px 20px 16px;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-title {
+    margin: 0 30px 0 0;
+    line-height: 22px;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-content {
+    font-size: 16px;
+    line-height: 22px;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons {
+    margin: -30px 80px 0 0;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons a {
+    margin: 0;
+    display: table;
+}
+#piereg-notifications .piereg-notifications-messages .piereg-notifications-buttons .button-secondary {
+    margin-top: 6px;
+}
+}

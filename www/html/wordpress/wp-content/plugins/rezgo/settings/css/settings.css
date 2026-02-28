@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* Rezgo Settings CSS */
+
+#rezgo_settings {
+	margin: 20px 0;
+}
+
+#rezgo_settings #rezgo-logo {
+	max-width: 250px;
+}
+
+#rezgo_settings ol {
+	padding-left:15px;
+}
+
+#rezgo_settings h1 {
+	font-weight:normal;
+	font-size:24px;
+}
+
+#rezgo_settings form {
+}
+
+#rezgo_settings form dt {
+   clear:both;
+   width:200px;
+   float:left;
+}
+
+#rezgo_settings form dl {
+   padding: 5px 15px;
+}
+
+#rezgo_settings form dt.note,	
+#rezgo_settings form div.note {
+	width:auto;
+	color:#21759B;
+	padding:12px 0;
+}
+
+#rezgo_settings form dd {
+   float:left;
+   margin:0 0 8px 4px;
+}
+
+#rezgo_settings .success {
+	background-color:#FF9;
+	padding:4px;
+	border:1px solid #900;
+	width:50%;
+}
+
+#rezgo_settings .field_frame {
+	background-color: #F8F8F8;
+	/*border: 1px solid #D5D5D5;*/
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	margin:20px 10px;
+	width:900px;
+	padding-bottom:20px;
+}
+
+#rezgo_settings legend {
+	font-weight:500;
+	font-size:15px;
+	padding: 10px;
+	color:#FFF;
+	width:880px;
+	background-image: linear-gradient(to bottom, #2EA2CC 0px, #0074A2 100%);
+	background-repeat: repeat-x;
+	border-bottom:1px solid #DDD;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+#rezgo_settings legend.account_info {
+}
+
+#rezgo_settings legend.recaptcha_key {
+}
+
+#rezgo_settings legend.general_settings {
+}
+
+#rezgo_settings .button-primary {
+	font-size:14px !important;
+}
+
+#rezgo_settings .api_box {
+	margin:5px 20px 5px 450px;
+	background:#EEE;
+	padding:10px;
+	overflow:hidden;
+	border:1px solid #4093B7;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	width:350px;
+}
+
+#rezgo_settings .api_box .ajax_success {
+	font-weight:bold;
+	color:#21759B;
+	font-size:14px;
+}
+
+#rezgo_settings .api_box .ajax_error, #rezgo_settings .api_box .ajax_error_message {
+	font-weight:bold;
+	color:#990000;
+}
+
+#rezgo_settings .api_box a {
+	display:block;
+	text-indent:20px;
+}
+
+#rezgo_settings .api_box span.ajax_success_message, #rezgo_settings .api_box span.ajax_error_message, #rezgo_settings .api_box span.required_missing {
+	text-indent:20px;
+	display:block;
+	font-weight:normal;
+}
+
+#template_select option {
+	padding-right:6px;
+}
+
+#template_description {
+	border:1px solid #4093B7;
+	background-color:#EEE;
+	margin:2px 0px 0px 15px;
+	padding:4px 6px;
+	float:right;
+	width:250px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}  
+
+#template_description h3 {
+	color:#21759B;
+	font-size:14px;
+	margin-bottom: 2px;
+	margin-top: 0;
+} 	
+
+.template_error {
+	font-weight:bold;
+	border:1px solid #990000 !important;
+	background-color:#F2DEDE !important;
+	width:290px !important;
+	color:#990000;
+}
+
+#toplevel_page_rezgo-settings .wp-menu-image img {
+	opacity: 1;
+}
+
+.rezgo-general-settings-wrp {
+	display: block;
+	padding: 0 15px;
+	margin-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.rezgo-general-settings-wrp:first-child {
+	border: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#rzg-use-tmp-msg .notice:last-child,
+#rzg-cus-tmp-msg .notice:last-child {
+	margin: 10px 0;
+}
+
+#rezgo_settings form dl.dl_general_settings {
+	padding: 5px 0;
+	margin-bottom: 0;
+}
+
+#rzg-msg-wrp {
+	display: block;
+	padding: 0 15px;
+}
+#rzg-tmp-error, #rzg-tmp-success {
+	height: 30px;
+	position: relative;
+}
+#rzg-tmp-error ul, 
+#rzg-tmp-error button,
+#rzg-tmp-success ul, 
+#rzg-tmp-success button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);	
+	margin-top: 2px;
+}
+#rzg-perm-error {
+	width: 65%;
+	padding: 5px;	
+}
+#rezgo_notices .notice {
+	width:90%;
+}

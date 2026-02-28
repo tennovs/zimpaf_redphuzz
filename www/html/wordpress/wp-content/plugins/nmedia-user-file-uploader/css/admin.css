@@ -1,0 +1,935 @@
+/*
+** file-meta.php styles
+*/
+
+.wpfm-settings-form-filemanager input[type=checkbox] {
+    zoom: 1.9;
+    padding-right: 10px !important;
+}
+
+.wpfm-settings-form-filemanager input[type=checkbox]:focus {
+    outline: 0px auto -webkit-focus-ring-color !important;
+    outline-offset: -2px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 45px !important;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #f7f7f7;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#form-meta-setting {
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    min-height: 100px;
+}
+
+#form-meta-bttons {
+    width: 20%;
+    float: left;
+}
+
+#form-meta-bttons table {
+    display: none;
+}
+
+#form-meta-bttons>p {
+    border: none;
+    text-align: justify
+}
+
+#form-meta-bttons #nm-input-types li {
+    height: 30px;
+    text-align: center;
+}
+
+#form-meta-bttons .top-heading-icons {
+    float: right;
+}
+
+#form-meta-setting h3 {
+    cursor: pointer;
+    background-color: #d6d6d6;
+    padding: 5px;
+    margin-top: 0;
+}
+
+#form-meta-setting .top-heading-text {
+    float: left;
+    padding: 0;
+    cursor: move;
+    display: block;
+    width: 90%;
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: none;
+}
+
+#form-meta-setting .top-heading-text:hover {
+    border: none;
+}
+
+#form-meta-setting .top-heading-icons {
+    float: right;
+}
+
+#form-meta-setting #file-meta-input-holder li.ui-draggable.ui-draggable-handle {
+    /*padding: 5px;*/
+    /*width: auto !important;*/
+    height: auto !important;
+}
+
+#form-meta-bttons #nm-input-types li div h3 {
+    margin: 0;
+}
+
+#form-meta-bttons #nm-input-types li div h3 .top-heading-icons {
+    display: none;
+}
+
+#form-meta-setting #file-meta-input-holder li table,
+#form-meta-bttons #nm-input-types li table {
+    display: none;
+}
+
+.add-field-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    max-width: 160px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.inputdata h3 {
+    margin: 0;
+}
+
+.inputdata table {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.inputdata table td {
+    padding: 5px;
+}
+
+.table-column-title {
+    width: 20%;
+}
+
+.table-column-input {
+    width: 30%;
+}
+
+.table-column-desc {
+    width: 50%;
+}
+
+#file-meta-input-holder {
+    background-color: #f1f1f1;
+}
+
+#file-meta-input-holder .table-column-input input[type=text],
+#file-meta-input-holder .table-column-input input[type=search],
+#file-meta-input-holder .table-column-input input[type=tel],
+#file-meta-input-holder .table-column-input input[type=time],
+#file-meta-input-holder .table-column-input input[type=url],
+#file-meta-input-holder .table-column-input input[type=week],
+#file-meta-input-holder .table-column-input input[type=password],
+#file-meta-input-holder .table-column-input input[type=date],
+#file-meta-input-holder .table-column-input input[type=datetime],
+#file-meta-input-holder .table-column-input input[type=datetime-local],
+#file-meta-input-holder .table-column-input input[type=email],
+#file-meta-input-holder .table-column-input input[type=month],
+#file-meta-input-holder .table-column-input textarea,
+#file-meta-input-holder .table-column-input input[type=number] {
+    width: 100%;
+}
+
+#file-meta-input-holder .table-column-input select[name=date_formats],
+#file-meta-input-holder .table-column-input select[name=width],
+#file-meta-input-holder .table-column-input select[name=palettes_mode],
+#file-meta-input-holder .table-column-input select[name=language_opt],
+#file-meta-input-holder .table-column-input select[name=viewport_type],
+#file-meta-input-holder .table-column-input select[name=discount_type],
+#file-meta-input-holder .table-column-input select[name=open_style] {
+    width: 100%!important;
+}
+
+.produc-basic-settings {
+    cursor: pointer;
+}
+
+#file-meta-input-holder li {
+    margin: 10px;
+}
+
+.product-table-header {
+    margin: 10px;
+}
+
+#delete_selected_products_btn {
+    margin-left: 20px;
+}
+
+.ppom-option-textrea {
+    width: 70%;
+    min-height: 100px;
+}
+
+#form-meta-setting {
+    float: right;
+    width: 75%;
+    border: 1px solid #d3d3d3;
+    min-height: 350px;
+}
+
+#form-meta-setting .top-heading-text {
+    float: left;
+    padding: 0;
+    cursor: move;
+    display: block;
+    width: 90%;
+}
+
+#form-meta-setting .top-heading-icons {
+    float: right;
+}
+
+
+#form-meta-setting {
+    float: right;
+    width: 75%;
+    border: 1px solid #d3d3d3;
+    min-height: 350px;
+}
+
+#form-meta-setting table {
+    display: table-cell;
+}
+
+#form-meta-setting table tr {
+    line-height: 15px
+}
+
+
+
+#form-meta-setting h3:first {
+    background-color: none;
+}
+
+#form-meta-setting ul {
+    min-height: 300px;
+}
+
+.save-settings {
+    margin-top: 10px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.pull-right {
+    float: right;
+}
+
+.ui-helper {
+    width: 90%;
+}
+
+.ui-helper table {
+    display: none;
+}
+
+/*
+** file-meta.php styles end
+*/
+
+/*
+** userfiels admin css for modal
+*/
+
+.modal {
+    z-index: 9999!important;
+}
+
+.modal .modal-full {
+    width: 97%;
+    margin-top: 45px;
+}
+
+.title_dec_adit_wrapper {
+    display: none;
+    margin: 10px 0;
+}
+
+.file-title-dec-save-btn,
+.file-title-dec-cancel-adit-btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.download-file-btn {
+    margin-bottom: 10px !important;
+}
+
+.fade-scale {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.detail-icon {
+    margin-top: 4px;
+}
+
+
+
+/* new css for fields */
+
+/**
+CSS apply on all meta
+**/
+
+/*---------------------------------
+Css apply on the form category meta
+-----------------------------------*/
+
+.the-button {
+    margin-top: 25px !important;
+}
+
+.form-type-li a {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 30px 25px !important;
+    text-align: center;
+    font-size: 14px;
+    transition: all .2s linear;
+    text-decoration: none;
+    color: #666;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-type-li a:hover {
+    width: 25%;
+    float: left;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 30px 25px !important;
+    border: 1px solid #d4b7bc;
+    text-align: center;
+    font-size: 14px;
+    transition: all .2s linear;
+    text-decoration: none;
+    color: #666;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    border-radius: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form_type_bg {
+    background-color: #f8f8f8;
+}
+
+.form_type_rd {
+    display: none !important;
+}
+
+/*--------------------------------------
+Css apply on the registration field meta
+----------------------------------------*/
+
+.card-design {
+    max-width: 100%;
+    background-color: #d4cfcf5c;
+}
+
+.inner-card-popup {
+    text-align: center;
+    font-size: 28px;
+    color: #75664f;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #43abe46e;
+    max-width: 11%;
+    border-radius: 11px;
+    padding: 9px;
+}
+
+
+/*-------------------------------
+Css apply on the design form meta
+---------------------------------*/
+
+.label-color {
+    color: #3ca8e4;
+    cursor: pointer;
+}
+
+.wpfm-select {
+    width: 100%;
+    background-color: #b5c7c7;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    background-image: -moz-linear-gradient(#eee 20%, #fff 80%);
+    background-image: -o-linear-gradient(#eee 20%, #fff 80%);
+    background-image: linear-gradient(#eee 20%, #fff 80%);
+    box-shadow: 0 1px 0 #fff inset;
+}
+
+.wpfm-select option {
+    background-color: #fff;
+}
+
+/*-----------------------------------
+Css apply on the general setting meta
+-------------------------------------*/
+
+.wpfm-wrap label {
+    float: left;
+    width: 41%;
+    margin-top: 7px;
+    cursor: default;
+}
+
+.bs-setting {
+    width: 52%;
+    margin-top: 7px;
+}
+
+.wpfm-switch {
+    width: 23%;
+}
+
+
+/*-----------------------------------
+Css apply on the email template meta
+-------------------------------------*/
+
+.bs-ht {
+    min-height: 100px;
+}
+
+/*--------------------------------
+Css apply on the redirections meta
+----------------------------------*/
+
+/*.....................................*/
+
+/*-------------------------------
+Css apply on the input.class file
+---------------------------------*/
+
+.wpfm-slider {
+    background-color: rgb(187, 187, 186);
+    padding: 7px;
+    margin: 4px;
+    cursor: move;
+}
+
+.wpfm-slider-inner {
+    background-color: white;
+    margin-top: 12px;
+    cursor: default;
+    overflow: auto;
+}
+
+.wpfm-span {
+    float: right;
+    font-size: 23px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-right: -8px;
+    padding: 4px;
+    margin-top: -3px;
+}
+
+.wpfm-span i {
+    padding: 2px;
+    margin-top: -4px;
+}
+
+.wpfm-span i:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.meta-desc {
+    padding-top: 11px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.wpfm-pd td {
+    padding: 6px 10px;
+
+}
+
+.wqt-select-design {
+    border-color: #5e5959;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #aaa;
+    background-image: -moz-linear-gradient(#eee 20%, #fff 80%);
+    background-image: -o-linear-gradient(#eee 20%, #fff 80%);
+    background-image: linear-gradient(#eee 20%, #fff 80%);
+    box-shadow: 0 1px 0 #fff inset;
+}
+
+.field-heading {
+    letter-spacing: normal;
+    font-size: 25px;
+    font-family: serif !important;
+    font-variant: traditional;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.col-title {
+    width: 22%;
+    font-weight: 600;
+    font-family: sans-serif !important;
+}
+
+.wpfm_inputs_design {
+    border-color: #000000 !important;
+    border-radius: 4px;
+    height: 32px;
+    /*width: 100%;*/
+}
+
+/*................................*/
+
+/* Switch button on and off css */
+
+.btn-default.btn-on.active {
+    background-color: #5BB75B;
+    color: white;
+}
+
+.btn-default.btn-off.active {
+    background-color: #DA4F49;
+    color: white;
+}
+
+/*................................*/
+
+/*fields*/
+
+.wpfm-fields-control {
+    max-width: 100%;
+    background-color: hsla(172, 76%, 87%, 0.44);
+}
+
+
+/*-------------------------------
+Css apply on registration field model file
+---------------------------------*/
+
+/*.wpfm_fields_hidden{
+    display: none;
+}*/
+
+.wpfm-loader {
+    display: none;
+}
+
+.field-text {
+    float: left;
+    margin-left: 6px;
+}
+
+.rm-fields .radio .checkbox {
+    margin-top: 0px;
+
+}
+
+.raise {
+    width: 32%;
+    background-color: #a7bfd447;
+    margin: 1px;
+    margin-left: 4px;
+    text-align: center;
+    font-size: 13px !important;
+    cursor: pointer;
+    border-radius: unset !important;
+}
+
+.raise:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    text-decoration: none;
+    color: white;
+    background-color: #0d008ab5;
+}
+
+.wpfm-fields-icon {
+    font-size: 18px;
+    color: #169cc5;
+}
+
+.push_button {
+    position: relative;
+    height: 40px;
+}
+
+.push_button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.red {
+    background: #9999999e;
+    border: 1px solid #00a0d2;
+}
+
+.fields_title_show {
+    font-size: 15px;
+    color: #565151;
+    margin-left: 8px;
+}
+
+/*.privacy_display{
+    display: none !important;
+}*/
+
+/*................................*/
+
+/*loader css*/
+
+/*.sk-cube-grid {*/
+
+/*  width: 50px;*/
+
+/*  height: 40px;*/
+
+/*  margin: 100px auto;*/
+
+/*}*/
+
+/*.sk-cube-grid .sk-cube {*/
+
+/*  width: 33%;*/
+
+/*  height: 33%;*/
+
+/*  background-color: #fd0659cc;*/
+
+/*  float: left;*/
+
+/*  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;*/
+
+/*          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; */
+
+/*}*/
+
+/*.sk-cube-grid .sk-cube1 {*/
+
+/*  -webkit-animation-delay: 0.2s;*/
+
+/*          animation-delay: 0.2s; }*/
+
+/*.sk-cube-grid .sk-cube2 {*/
+
+/*  -webkit-animation-delay: 0.3s;*/
+
+/*          animation-delay: 0.3s; }*/
+
+/*.sk-cube-grid .sk-cube3 {*/
+
+/*  -webkit-animation-delay: 0.4s;*/
+
+/*          animation-delay: 0.4s; }*/
+
+/*.sk-cube-grid .sk-cube4 {*/
+
+/*  -webkit-animation-delay: 0.1s;*/
+
+/*          animation-delay: 0.1s; }*/
+
+/*.sk-cube-grid .sk-cube5 {*/
+
+/*  -webkit-animation-delay: 0.2s;*/
+
+/*          animation-delay: 0.2s; }*/
+
+/*.sk-cube-grid .sk-cube6 {*/
+
+/*  -webkit-animation-delay: 0.3s;*/
+
+/*          animation-delay: 0.3s; }*/
+
+/*.sk-cube-grid .sk-cube7 {*/
+
+/*  -webkit-animation-delay: 0s;*/
+
+/*          animation-delay: 0s; }*/
+
+/*.sk-cube-grid .sk-cube8 {*/
+
+/*  -webkit-animation-delay: 0.1s;*/
+
+/*          animation-delay: 0.1s; }*/
+
+/*.sk-cube-grid .sk-cube9 {*/
+
+/*  -webkit-animation-delay: 0.2s;*/
+
+/*          animation-delay: 0.2s; }*/
+
+/*@-webkit-keyframes sk-cubeGridScaleDelay {*/
+
+/*  0%, 70%, 100% {*/
+
+/*    -webkit-transform: scale3D(1, 1, 1);*/
+
+/*            transform: scale3D(1, 1, 1);*/
+
+/*  } 35% {*/
+
+/*    -webkit-transform: scale3D(0, 0, 1);*/
+
+/*            transform: scale3D(0, 0, 1); */
+
+/*  }*/
+
+/*}*/
+
+/*@keyframes sk-cubeGridScaleDelay {*/
+
+/*  0%, 70%, 100% {*/
+
+/*    -webkit-transform: scale3D(1, 1, 1);*/
+
+/*            transform: scale3D(1, 1, 1);*/
+
+/*  } 35% {*/
+
+/*    -webkit-transform: scale3D(0, 0, 1);*/
+
+/*            transform: scale3D(0, 0, 1);*/
+
+/*  } */
+
+/*}*/
+
+/*loader css end*/
+
+/*helper css */
+
+
+.entry:not(:first-of-type) {
+    margin-top: 1px;
+}
+
+.glyphicon1 {
+    font-size: 12px;
+}
+
+.add-option-design {
+    background-color: #f3f3f3;
+    padding: 4px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+/*helper css end*/
+
+/*font icons css*/
+
+.wpfm-admin-icons {
+    padding: 6px 0 10px 19px;
+    float: left;
+}
+
+.wpfm-admin-icons span {
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    color: #777;
+    border: 4px solid #eee;
+    border-radius: 3px;
+}
+
+.wpfm-admin-icons span:hover {
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    color: #c19f4c;
+    border: 4px solid #c19f4c;
+    border-radius: 3px;
+}
+
+.wpfm-admin-icons i {
+    vertical-align: middle !important;
+    font-size: 20px;
+    width: 62px;
+    text-align: center !important;
+    padding: 13px 22px;
+    display: inline-block;
+}
+
+.icon-model-scrol {
+    padding: 0;
+    max-height: 435px;
+    overflow-x: auto;
+}
+
+.wpfm-admin-metabox #_icon_search {
+    width: 93% !important;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+
+.wpfm-admin-metabox {
+    padding-bottom: 20px !important;
+}
+
+.wpfm-admin-icons .highlighted {
+    color: #c19f4c;
+    border-color: #c19f4c;
+}
+
+._icon_add {
+    float: right;
+}
+
+.remove_icon_design {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff0039c4;
+}
+
+.remove_icon_design:hover {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: red;
+}
+
+.icon-append-design {
+    display: block;
+    font-size: 19px;
+    float: left;
+    font-family: serif;
+    margin-left: 4px;
+    color: #0f92bb;
+}
+
+.model_btn {
+    float: left;
+}
+
+.edit-rol {
+    display: inline;
+    width: 100%;
+    float: left;
+    margin-left: 0px !important;
+}
+
+.wpfm-shorcode {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background: #dcd4d4ab;
+}
+
+.save-file-meta-btn {
+    margin-left: 12px !important;
+}
+
+.meta-edit-from {
+    padding-bottom: 6px;
+}
+
+.save-meta-btn {
+    margin-top: 20px!important;
+    float: right;
+}
+
+.loading-area {
+    display: none;
+    margin-top: 20px!important;
+}
+
+.loading-image {
+    display: none;
+    margin: 15px 0;
+}
+
+.title {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.add_price_filter {
+    float: right;
+}
+
+.add_price_filter input {
+    height: 30px;
+    margin-right: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+}
+
+/*#filemanager-tabs>.ui-tabs-nav>li:last-child {
+    */
+    /*    margin-top: 5px !important;*/
+    /*}*/
+
+.wpfm-legend {
+    border: 2px dotted #999;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.wpfm-legend-th {
+    padding-left: 30px !important;
+    display: unset;
+}
+
+.wpfm-legend th:first-child {
+    padding-left: 30px !important;
+}
+
+.wpfm-legend th:first-child>table>tbody>tr:first-child>th {
+    background: #e9e9e9;
+    color: #100f0f;
+    padding: 4px 6px 6px 4px;
+    margin-left: 28px;
+    margin-bottom: 20px;
+    display: block;
+}

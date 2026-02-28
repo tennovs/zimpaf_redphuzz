@@ -1,0 +1,434 @@
+.wpda_gall_cs_go_back_button {
+	position: relative;
+	padding: 2px 7px !important;
+	font-size:inherit !important;
+	font: 1em arial !important;
+}
+.wpda_gall_cs_sort_mode_select {
+	position: relative;
+	font: 1em arial, sans-serif;
+	font-size:16px !important;
+	padding: 1px 0px 0px 0px;
+	display: none !important;
+}
+.wpda_gall_cs_button_for_add_images_in_main_conteiner_lover1 {
+	margin: 5px 2px;
+	padding: 2px 7px;
+	bottom: 0px;	
+}			 
+.wpda_gall_cs_open_gallery_button {
+	padding: 2px 7px;
+	display: none;	
+    color: #fff;
+    background-color: #d9534f;
+	border:solid #d43f3a 1px;
+}
+.wpda_gall_cs_open_gallery_button:hover {
+    background-color: #c9302c;
+	border:solid #ac2925 1px;	
+}
+.wpda_gall_cs_elements_title_bar1 {
+	line-height: 0.9em !important;
+	position: absolute;
+	padding:10px;			
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 100%;
+		
+	box-shadow: #000000 0px 0px 1px;
+	text-align: left;
+	display: block;
+	z-index: 5;
+	overflow: hidden;	
+}
+			
+.wpda_gall_cs_rotate0 {
+	-ms-transform: rotate(-6deg); 
+	-webkit-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+	z-index: 0;
+}
+.wpda_gall_cs_rotate1 {
+	-ms-transform: rotate(-2deg); 
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	z-index: 1;	
+}
+.wpda_gall_cs_rotate2 {
+	-ms-transform: rotate(2deg); 
+	-webkit-transform: rotate(2deg);
+	transform: rotate(2deg);
+	z-index: 2;	
+}
+.wpda_gall_cs_rotate3 {
+	-ms-transform: rotate(6deg); 
+	-webkit-transform: rotate(6deg);
+	transform: rotate(6deg);
+	z-index: 3;	
+}
+
+
+.wpda_gall_cs_gal_kazm0 {
+	-ms-transform: rotateY(0deg);
+	-webkit-transform: rotateY(0deg);   
+	transform: rotateY(0deg);
+	 z-index: 0;
+}
+.wpda_gall_cs_gal_rotate0 {
+	-ms-transform: rotateY(-22deg);
+	-webkit-transform: rotateY(-22deg);    
+	transform: rotateY(-22deg);
+	 z-index: 1;
+}
+.wpda_gall_cs_gal_rotate1 {
+	-ms-transform: rotateY(-34deg);
+	-webkit-transform: rotateY(-34deg);   
+	transform: rotateY(-34deg);    
+	 z-index: 2;    
+}
+.wpda_gall_cs_gal_rotate2 {
+	-ms-transform: rotateY(-46deg);
+	-webkit-transform: rotateY(-46deg);   
+	transform: rotateY(-46deg);    
+	z-index: 3;
+}
+.wpda_gall_cs_gal_rotate3 {
+	-ms-transform: rotateY(-58deg);
+	-webkit-transform: rotateY(-58deg);    
+	transform: rotateY(-58deg);
+	z-index: 4;       
+}
+.wpda_gall_cs_gal_kazm1 {
+	-ms-transform: rotateY(-70deg);
+	-webkit-transform: rotateY(-70deg);    
+	transform: rotateY(-70deg);
+	z-index: 5;       		
+}
+
+/* sorts for gallery,album,image */
+
+.wpda_gall_cs_kirpich, .wpda_gall_cs_kirpich_, .wpda_gall_cs_masony, .wpda_gall_cs_masony_, .wpda_gall_cs_mosaik, .wpda_gall_cs_mosaik_, .wpda_gall_cs_tumbnails, .wpda_gall_cs_tumbnails_, .wpda_gall_cs_column {
+    position: relative;		
+	background-repeat: no-repeat;	
+	background-position: center; 
+	background-size: cover;
+	z-index: 5;	
+}
+.wpda_gall_cs_kirpich, .wpda_gall_cs_kirpich_, .wpda_gall_cs_masony, .wpda_gall_cs_masony_, .wpda_gall_cs_mosaik, .wpda_gall_cs_mosaik_, .wpda_gall_cs_tumbnails, .wpda_gall_cs_tumbnails_ {	
+	overflow:hidden;
+}
+.wpda_gall_cs_kirpich, .wpda_gall_cs_kirpich_ {	
+	float:left;
+} 																		
+.wpda_gall_cs_masony, .wpda_gall_cs_masony_, .wpda_gall_cs_mosaik, .wpda_gall_cs_mosaik_ {	
+	position: absolute;			
+}
+.wpda_gall_cs_tumbnails, .wpda_gall_cs_tumbnails_ {
+	display: inline-block;		
+}
+.wpda_gall_cs_column {
+	margin-bottom: 0px !important;			
+	display: inline-block;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;	
+	box-sizing: content-box !important;			
+}
+.wpda_gall_cs_column:hover {
+	-ms-transform: rotate(0deg) !important;
+	-webkit-transform: rotate(0deg) !important;
+	transform: rotate(0deg) !important;		
+}
+/* sorts:hover for gallery,album,image */			
+.wpda_gall_cs_kirpich:hover, .wpda_gall_cs_kirpich_:hover, .wpda_gall_cs_masony:hover, .wpda_gall_cs_masony_:hover, .wpda_gall_cs_mosaik:hover, .wpda_gall_cs_mosaik_:hover, .wpda_gall_cs_tumbnails:hover, .wpda_gall_cs_tumbnails_:hover, .wpda_gall_cs_column:hover {
+	cursor: pointer;
+}
+		
+
+    /***********************************   pagination_buttons_bar_clas    buttons   ***********************************************/		
+
+
+@-webkit-keyframes mymove {
+	from {-webkit-transform:scale(1);transform:scale(1);}
+	to {-webkit-transform:scale(1.05);transform:scale(1.05);}
+}
+@keyframes mymove {
+	from {transform:scale(1);}
+	to {transform:scale(1.05);}
+}
+
+
+
+/* 12-09-2017*/
+.youtube_icon{
+	position:absolute;
+	margin-top:-15px;
+	margin-left:-15px;
+	left:50%;
+	top:50%;
+	display:none;
+}
+
+
+
+
+
+
+/*POPUP PARAMETRS*/
+.wpda_gall_bg_color {
+    background-color:   rgb(0, 0, 0);
+}
+.wpda_gall_progress_bar {
+    height:             4px;
+    background-color:   rgb(255, 0, 0);
+	position:           absolute;
+	left:               0%; 
+	top:                0%;
+	text-align:         center;
+	width:              100%;
+}
+.wpda_gall_progress_bar_buttons {                          
+	position:           relative;
+	float:              left;
+	height:             100%;
+	width:              100%;
+	top:                0px; 								
+}
+.wpda_gall_progress_bar_buttons_:hover {                          
+	-webkit-animation: mymove2 0.1s 2 alternate; 
+    animation: mymove2 0.1s 2 alternate; 								
+}
+.wpda_gall_left_bar_icons_grad0 {    
+    background:        -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+    background:        -o-linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+    background:        -moz-linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+    background:        linear-gradient(180deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+}		   
+.wpda_gall_left_bar_icons_grad1 {    
+    background:       -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+    background:       -o-linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0 ,0, 0, 0.5)); 
+    background:       -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));  
+    background:       linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)); 
+}				   	
+.wpda_gall_display_none {
+	display:          none;
+}
+
+
+
+
+
+
+
+/*popup aditional */
+
+
+
+
+
+
+
+
+
+
+#wpda_gall_overlay{  
+	position:fixed;
+    width:100%;
+	height:100%;
+	left:0%;
+	top:0%;
+	z-index:99999;
+	cursor:pointer;
+}
+.wpda_gall_popup_parent {
+	width:0px;
+	height:0px;
+	z-index:100002;
+	-webkit-transition-property: left, top, transform;
+    transition-property: left, top, transform;	
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+	perspective: 2000px;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;	
+	box-sizing: content-box !important;
+}
+.wpda_gall_popup{
+	z-index: 0; 
+	overflow:hidden !important;
+	-moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;		
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);		 
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;	
+	box-sizing: content-box !important;
+	width:0px;
+	height:0px;
+	visibility: hidden;
+	background-clip: padding-box;
+}
+.wpda_gall_popup_description {
+	text-align:center;
+    -ms-transform:rotateY(-180deg);
+	-webkit-transform:rotateY(-180deg); 
+	transform:rotateY(-180deg);	
+    z-index:-1;
+	transition:all 0s;
+	-webkit-transition:all 0s;
+}
+.wpda_gall_popup_img0 {
+	position:absolute;
+    left:0px;
+	top:0px;
+	z-index:1;
+	border:none; 
+}
+
+.wpda_gall_popup_icon_left_bar {
+	position:absolute;
+	left:0%;
+	top:0%;
+	opacity:0;
+	width:30%;
+	height:100%;
+	z-index:10;
+	display:none;
+}
+.wpda_gall_popup_icon_left_bar:hover {   
+    opacity: 1;
+} 
+
+.wpda_gall_popup_icon_left {
+	top:50%; 
+	position:absolute;
+	cursor:pointer;
+}
+.wpda_gall_popup_icon_right_bar {
+	position:absolute;
+	opacity:0;
+	left:30%;
+	top:0%;
+	width:70%;
+	height:100%;
+	z-index:10;
+	display:none;
+}
+.wpda_gall_popup_icon_right_bar:hover {  
+    opacity:1;
+}    
+
+.wpda_gall_popup_icon_right {
+	top:50%;   
+	position:absolute;
+	cursor:pointer;
+}
+.wpda_gall_opasity_0 {            
+    opacity:0;
+} 
+.wpda_gall_left_bar_icons { 
+	position:absolute; 
+	width:100%;
+	left:0px;
+	bottom:0px;
+	z-index:11;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;	
+	box-sizing: content-box !important;	
+}
+.wpda_gall_left_bar_icons:hover { 
+    opacity:1;
+}
+.wpda_gall_right_bar_icons {  
+	position:           absolute;
+	height:             100%;
+	top:                0px;
+	right:              0px;
+	display:            inline-block;
+	z-index:            1;
+	overflow:           hidden;
+}
+.wpda_gall_number_image { 
+	display:            inline-block;
+
+}
+.wpda_gall_class_icon {
+	background-color:   transparent;
+	display:            inline-block;
+
+	cursor:             pointer;
+	transition:         all 100ms;
+	-webkit-transition: all 100ms;
+}
+.wpda_gall_class_icon:hover { 
+	opacity:            1;
+}
+.wpda_gall_progress_bar_base {
+	cursor: pointer;
+	position:absolute;
+    top:-4px;
+	height:0px;	
+	z-index:2;
+	text-align:center;
+}
+.wpda_gall_progress_bar_buttons_ {
+	position:relative;
+	float:left; 
+	height:100%;
+	top:0px;
+}
+.wpda_gall_scrubber {
+	position:absolute; 
+	left:0px; 
+	height:100%;
+	width:100%;
+}
+.wpda_gall_progress_bar_screen {
+	position:absolute;
+	display:none;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+}
+.wpda_gall_progress_bar_count_screen  {
+	bottom:0px;
+	position:absolute;
+	text-align:center;
+	display:table;
+}
+.wpda_gall_progress_bar_count_screen span{
+	display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+} 
+
+.wpda_gall_icons_outBar {
+ 	z-index:100003;
+	display:none;
+	-webkit-box-sizing: content-box !important;
+	-moz-box-sizing: content-box !important;	
+	box-sizing: content-box !important;
+}
+@-webkit-keyframes mymove1 {
+    from {-webkit-transform:scale(1);}
+    to {-webkit-transform:scale(1.5);}
+}
+@keyframes mymove1 {
+    from {transform:scale(1);}
+    to {transform:scale(1.5);}
+}
+.wpda_gall_parent_icon {
+	height:100%;
+	display:inline-block;	
+	vertical-align:middle;	
+}
+/*16-08-2017*/
+.wpda_gall_anim {
+	background-color: #EBE7E7 !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-image: url(../../../assets/img/WebResource.gif);
+}

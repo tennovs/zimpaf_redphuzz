@@ -1,0 +1,1 @@
+{"errno":2,"errstr":"mysqli_query(): (42000\/1064): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''2%g''' at line 1","errfile":"\/var\/www\/instr\/overrides.d\/02_mysql.php","errline":13}

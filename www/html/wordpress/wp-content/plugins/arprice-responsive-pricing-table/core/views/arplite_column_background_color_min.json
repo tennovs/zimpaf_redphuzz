@@ -1,0 +1,2913 @@
+{
+    "arp_column_section_background_color": {
+        "arplitetemplate_1": {
+            "multicolor": {
+                "arp_header_background": ["#ffffff", "#6dae2e", "#fbb400", "#ea6d00", "#c32929", "#e52937"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#528a1b", "#c28a01", "#b44404", "#a50b0b", "#bc0210"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#6dae2e", "#fbb400", "#ea6d00", "#c32929", "#e52937"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#FFFFFF"],
+                "arp_body_even_row_background_color": ["#F1F1F1", "#E9E9E9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#F6F4F5"],
+                "arp_body_caption_even_row_bg_color": ["#F1F1F1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#4C7A20", "#B07E00", "#A44C00", "#8C1E1E", "#A01D27"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#6dae2e", "#fbb400", "#ea6d00", "#c32929", "#e52937"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#528a1b", "#c28a01", "#b44404", "#a50b0b", "#bc0210"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#FFFFFF"],
+                    "arp_body_even_row_hover_background_color": ["#F1F1F1", "#E9E9E9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "green": {
+                "arp_header_background": ["#ffffffff", "#85d538FF", "#7cc635ff", "#6dae2eff", "#619c26ff", "#4e8619ff"],
+                "arp_header_font_color": ["", "#ffffffff"],
+                "arp_price_background": ["", "#70b828ff", "#62a323ff", "#528a1bff", "#497e16ff", "#3d6c0eff"],
+                "arp_price_value_color": ["", "#ffffffff"],
+                "arp_button_background": ["", "#85d538ff", "#7cc635ff", "#6dae2eff", "#619c26ff", "#4e8619ff"],
+                "arp_button_font_color": ["", "#ffffffff"],
+                "arp_footer_background": ["#e3e3e3ff", "#e3e3e3ff", "#e3e3e3ff", "#e3e3e3ff", "#e3e3e3ff", "#e3e3e3ff"],
+                "arp_footer_font_color": ["", "#364762ff"],
+                "arp_body_odd_row_background_color": ["#ffffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1ff", "#e9e9e9ff"],
+                "arp_body_font_color": ["", "#364762ff"],
+                "arp_body_even_font_color": ["", "#364762ff"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5ff"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1ff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#5D9527ff", "#6BAB2Eff", "#4C7A20ff", "#446D1Bff", "#375E12ff"],
+                    "arp_button_hover_font_color": ["", "#ffffffff"],
+                    "header_bg_color": ["", "#85d538ff", "#7cc635ff", "#6dae2eff", "#619c26ff", "#4e8619ff"],
+                    "arp_header_hover_font_color": ["", "#ffffffff"],
+                    "price_bg_color": ["", "#70b828ff", "#62a323ff", "#528a1bff", "#497e16ff", "#3d6c0eff"],
+                    "arp_price_value_hover_color": ["", "#ffffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1ff", "#e9e9e9ff"],
+                    "arp_body_font_hover_color": ["", "#364762ff"],
+                    "arp_body_even_font_hover_color": ["", "#364762ff"],
+                    "footer_bg_color": ["#e3e3e3ff"],
+                    "arp_footer_hover_font_color": ["", "#364762ff"]
+                }
+            },
+            "yellow": {
+                "arp_header_background": ["#ffffff", "#fbce59", "#ffc327", "#fbb400", "#e39002", "#cb8202"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#edbc3c", "#ecb014", "#dea001", "#c98204", "#b87502"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#fbce59", "#ffc327", "#fbb400", "#e39002", "#cb8202"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#B0903E", "#B3891B", "#D49800", "#9F6501", "#8F5C01"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#fbce59", "#ffc327", "#fbb400", "#e39002", "#cb8202"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#edbc3c", "#ecb014", "#dea001", "#c98204", "#b87502"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "darkorange": {
+                "arp_header_background": ["#ffffff", "#ff902e", "#fa7701", "#e75c01", "#cd4a02", "#bd3c03"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#e17616", "#df610c", "#cb5404", "#b64509", "#a03201"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#ff902e", "#fa7701", "#e75c01", "#cd4a02", "#bd3c03"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#BE6B22", "#B35501", "#A24001", "#B64202", "#842A02"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#ff902e", "#fa7701", "#e75c01", "#cd4a02", "#bd3c03"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#e17616", "#df610c", "#cb5404", "#b64509", "#a03201"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "darkred": {
+                "arp_header_background": ["#ffffff", "#e42c2c", "#c32929", "#a41a1a", "#900808", "#760000"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#c41818", "#a50b0b", "#89090a", "#780202", "#5b0000"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#e42c2c", "#c32929", "#a41a1a", "#900808", "#760000"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#A01F1F", "#891d1d", "#731212", "#650606", "#560000"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#e42c2c", "#c32929", "#a41a1a", "#900808", "#760000"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#c41818", "#a50b0b", "#89090a", "#780202", "#5b0000"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "red": {
+                "arp_header_background": ["#ffffff", "#fa303e", "#e52937", "#cb2330", "#aa1823", "#8a0b14"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#e01d2d", "#bc0210", "#a8000d", "#870813", "#6e0107"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#fa303e", "#e52937", "#cb2330", "#aa1823", "#8a0b14"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#AF222B", "#A01D27", "#8E1922", "#771119", "#61080E"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#fa303e", "#e52937", "#cb2330", "#aa1823", "#8a0b14"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#e01d2d", "#bc0210", "#a8000d", "#870813", "#6e0107"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "violet": {
+                "arp_header_background": ["#ffffff", "#922cbc", "#713887", "#5a2e6d", "#451e55", "#2e0e3d"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#6b1b8c", "#4d1465", "#400e53", "#340f42", "#20052d"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#922cbc", "#713887", "#5a2e6d", "#451e55", "#2e0e3d"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#661F84", "#4F275F", "#3F204C", "#30153C", "#200A2B"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#922cbc", "#713887", "#5a2e6d", "#451e55", "#2e0e3d"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#6b1b8c", "#4d1465", "#400e53", "#340f42", "#20052d"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "pink": {
+                "arp_header_background": ["#ffffff", "#ff5792", "#ff287d", "#eb005c", "#cf0251", "#b90149"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#eb3b7b", "#db1864", "#c9004e", "#b00146", "#99013c"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#ff5792", "#ff287d", "#eb005c", "#cf0251", "#b90149"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#b33d66", "#b31c58", "#a50040", "#910139", "#820133"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["#ffffff", "#ff5792", "#ff287d", "#eb005c", "#cf0251", "#b90149"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#eb3b7b", "#db1864", "#c9004e", "#b00146", "#99013c"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "blue": {
+                "arp_header_background": ["#ffffff", "#2eb5ed", "#29a1d3", "#248fbb", "#1878a2", "#0b5b7c"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#0b92ca", "#0981b3", "#06719d", "#046085", "#014c6b"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#2eb5ed", "#29a1d3", "#248fbb", "#1878a2", "#0b5b7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#207fa6", "#1d7194", "#196483", "#115471", "#084057"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#2eb5ed", "#29a1d3", "#248fbb", "#1878a2", "#0b5b7c"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#0b92ca", "#0981b3", "#06719d", "#046085", "#014c6b"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "darkblue": {
+                "arp_header_background": ["#ffffff", "#444db2", "#2f3687", "#23286c", "#141950", "#090d3c"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#303996", "#23264f", "#191c3f", "#080c29", "#030627"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#444db2", "#2f3687", "#23286c", "#141950", "#090d3c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#30367d", "#21265f", "#191c4c", "#0e1238", "#06092a"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#444db2", "#2f3687", "#23286c", "#141950", "#090d3c"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#303996", "#23264f", "#191c3f", "#080c29", "#030627"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "lightgreen": {
+                "arp_header_background": ["#ffffff", "#23cd53", "#1dbb4c", "#1ba341", "#0f8c31", "#027822"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#0bb53b", "#0c9d34", "#0a892e", "#087826", "#026a1f"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#23cd53", "#1dbb4c", "#1ba341", "#0f8c31", "#027822"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#19903a", "#148335", "#13722e", "#0b6222", "#015418"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#23cd53", "#1dbb4c", "#1ba341", "#0f8c31", "#027822"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#0bb53b", "#0c9d34", "#0a892e", "#087826", "#026a1f"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "darkestblue": {
+                "arp_header_background": ["#ffffff", "#42607a", "#395266", "#2f4251", "#223544", "#152837"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#384e63", "#2f4251", "#223544", "#162938", "#0b1d2b"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#42607a", "#395266", "#2f4251", "#223544", "#152837"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#E9E9E9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#2e4355", "#283947", "#212e39", "#182530", "#0f1c27"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#42607a", "#395266", "#2f4251", "#223544", "#152837"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#384e63", "#2f4251", "#223544", "#162938", "#0b1d2b"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#E9E9E9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "cyan": {
+                "arp_header_background": ["#ffffff", "#0cb691", "#009e7b", "#0b866a", "#0a725b", "#065f4b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#0b8d71", "#027057", "#096651", "#075643", "#024939"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#0cb691", "#009e7b", "#0b866a", "#0a725b", "#065f4b"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#F1F1F1", "#e9e9e9", "#F1F1F1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#087f66", "#006f56", "#085e4a", "#075040", "#044335"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#0cb691", "#009e7b", "#0b866a", "#0a725b", "#065f4b"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#0b8d71", "#027057", "#096651", "#075643", "#024939"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "black": {
+                "arp_header_background": ["#ffffff", "#828282", "#6e6e6e", "#5c5c5c", "#4a4a4a", "#383838"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_background": ["", "#707070", "#5b5b5b", "#4c4c4c", "#3c3c3c", "#2d2d2d"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_background": ["", "#828282", "#6e6e6e", "#5c5c5c", "#4a4a4a", "#383838"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_footer_background": ["#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3", "#e3e3e3"],
+                "arp_footer_font_color": ["", "#364762"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f1f1f1", "#e9e9e9"],
+                "arp_body_font_color": ["", "#364762"],
+                "arp_body_even_font_color": ["", "#364762"],
+                "arp_body_caption_odd_row_bg_color": ["#f6f4f5"],
+                "arp_body_caption_even_row_bg_color": ["#f1f1f1"],
+                "arp_hover_color": {
+                    "button_bg_color": ["", "#5b5b5b", "#4d4d4d", "#404040", "#343434", "#272727"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "header_bg_color": ["", "#828282", "#6e6e6e", "#5c5c5c", "#4a4a4a", "#383838"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "price_bg_color": ["", "#707070", "#5b5b5b", "#4c4c4c", "#3c3c3c", "#2d2d2d"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f1f1f1", "#e9e9e9"],
+                    "arp_body_font_hover_color": ["", "#364762"],
+                    "arp_body_even_font_hover_color": ["", "#364762"],
+                    "footer_bg_color": ["#e3e3e3"],
+                    "arp_footer_hover_font_color": ["", "#364762"]
+                }
+            },
+            "custom_skin": {
+                "arp_header_background": "",
+                "arp_header_font_color": "",
+                "arp_price_background": "",
+                "arp_price_value_color": "",
+                "arp_button_background": "",
+                "arp_button_font_color": "",
+                "arp_footer_background": "",
+                "arp_footer_font_color": "",
+                "arp_body_odd_row_background_color": "",
+                "arp_body_even_row_background_color": "",
+                "arp_body_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_body_caption_odd_row_bg_color": "",
+                "arp_body_caption_even_row_bg_color": "",
+                "arp_hover_color": {
+                    "button_bg_color": "",
+                    "arp_button_hover_font_color": "",
+                    "header_bg_color": "",
+                    "arp_header_hover_font_color": "",
+                    "price_bg_color": "",
+                    "arp_price_value_hover_color": "",
+                    "arp_body_odd_row_hover_background_color": "",
+                    "arp_body_even_row_hover_background_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": "",
+                    "footer_bg_color": "",
+                    "arp_footer_hover_font_color": ""
+                }
+            }
+        },
+        "arplitetemplate_2": {
+            "blue": {
+                "arp_column_background": ["#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#02a3ff"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff", "#02a3ff"],
+                    "arp_shortcode_hover_font_color": ["", "#02a3ff"]
+                }
+            },
+            "lightviolet": {
+                "arp_column_background": ["#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#6c62d3"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3", "#6c62d3"],
+                    "arp_shortcode_hover_font_color": ["", "#6c62d3"]
+                }
+            },
+            "yellow": {
+                "arp_column_background": ["#ffba00", "#ffba00", "#ffba00", "#ffba00", "#ffba00"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#ffba00", "#ffba00", "#ffba00", "#ffba00", "#ffba00"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffba00"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffba00", "#ffba00", "#ffba00", "#ffba00", "#ffba00", "#ffba00"],
+                    "arp_shortcode_hover_font_color": ["", "#ffba00"]
+                }
+            },
+            "limegreen": {
+                "arp_column_background": ["#6ed563", "#6ed563", "#6ed563", "#6ed563", "#6ed563"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#6ed563", "#6ed563", "#6ed563", "#6ed563", "#6ed563"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#6ed563"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#6ed563", "#6ed563", "#6ed563", "#6ed563", "#6ed563", "#6ed563"],
+                    "arp_shortcode_hover_font_color": ["", "#6ed563"]
+                }
+            },
+            "orange": {
+                "arp_column_background": ["#ff9525", "#ff9525", "#ff9525", "#ff9525", "#ff9525"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#ff9525", "#ff9525", "#ff9525", "#ff9525", "#ff9525"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ff9525"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ff9525", "#ff9525", "#ff9525", "#ff9525", "#ff9525", "#ff9525"],
+                    "arp_shortcode_hover_font_color": ["", "#ff9525"]
+                }
+            },
+            "softblue": {
+                "arp_column_background": ["#4476d9", "#4476d9", "#4476d9", "#4476d9", "#4476d9"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#4476d9", "#4476d9", "#4476d9", "#4476d9", "#4476d9"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#4476d9"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#4476d9", "#4476d9", "#4476d9", "#4476d9", "#4476d9", "#4476d9"],
+                    "arp_shortcode_hover_font_color": ["", "#4476d9"]
+                }
+            },
+            "limecyan": {
+                "arp_column_background": ["#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#37ba5a"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a", "#37ba5a"],
+                    "arp_shortcode_hover_font_color": ["", "#37ba5a"]
+                }
+            },
+            "brightred": {
+                "arp_column_background": ["#f34044", "#f34044", "#f34044", "#f34044", "#f34044"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#f34044", "#f34044", "#f34044", "#f34044", "#f34044"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#f34044"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#f34044", "#f34044", "#f34044", "#f34044", "#f34044", "#f34044"],
+                    "arp_shortcode_hover_font_color": ["", "#f34044"]
+                }
+            },
+            "red": {
+                "arp_column_background": ["#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#de1a4c"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c", "#de1a4c"],
+                    "arp_shortcode_hover_font_color": ["", "#de1a4c"]
+                }
+            },
+            "pink": {
+                "arp_column_background": ["#de199a", "#de199a", "#de199a", "#de199a", "#de199a"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#de199a", "#de199a", "#de199a", "#de199a", "#de199a"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#de199a"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#de199a", "#de199a", "#de199a", "#de199a", "#de199a", "#de199a"],
+                    "arp_shortcode_hover_font_color": ["", "#de199a"]
+                }
+            },
+            "lightblue": {
+                "arp_column_background": ["#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#1a5fde"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde", "#1a5fde"],
+                    "arp_shortcode_hover_font_color": ["", "#1a5fde"]
+                }
+            },
+            "darkpink": {
+                "arp_column_background": ["#a51143", "#a51143", "#a51143", "#a51143", "#a51143"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#a51143", "#a51143", "#a51143", "#a51143", "#a51143", "#a51143"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#a51143"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#a51143", "#a51143", "#a51143", "#a51143", "#a51143", "#a51143"],
+                    "arp_shortcode_hover_font_color": ["", "#a51143"]
+                }
+            },
+            "darkcyan": {
+                "arp_column_background": ["#11a599", "#11a599", "#11a599", "#11a599", "#11a599"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#313234"],
+                "arp_footer_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "column_bg_color": ["#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6", "#F6F6F6"],
+                    "button_bg_color": ["#11a599", "#11a599", "#11a599", "#11a599", "#11a599", "#11a599"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#11a599"],
+                    "arp_price_value_hover_color": ["", "#000000"],
+                    "arp_price_duration_hover_color": ["", "#000000"],
+                    "arp_body_font_hover_color": ["", "#000000"],
+                    "arp_body_even_font_hover_color": ["", "#000000"],
+                    "arp_footer_hover_font_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#11a599", "#11a599", "#11a599", "#11a599", "#11a599", "#11a599"],
+                    "arp_shortcode_hover_font_color": ["", "#11a599"]
+                }
+            },
+            "custom_skin": {
+                "arp_column_background": "",
+                "arp_button_background": "",
+                "arp_header_font_color": "",
+                "arp_price_value_color": "",
+                "arp_button_font_color": "",
+                "arp_footer_font_color": "",
+                "arp_body_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_shortcode_background": "",
+                "arp_shortcode_font_color": "",
+                "arp_hover_color": {
+                    "column_bg_color": "",
+                    "button_bg_color": "",
+                    "arp_button_hover_font_color": "",
+                    "arp_header_hover_font_color": "",
+                    "arp_price_value_hover_color": "",
+                    "arp_price_duration_hover_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": "",
+                    "arp_footer_hover_font_color": "",
+                    "arp_shortcode_hover_background": "",
+                    "arp_shortcode_hover_font_color": ""
+                }
+            }
+        },
+        "arplitetemplate_7": {
+            "blue": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#3473dc"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "black": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#3e3e3c"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "cyan": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#1eae8b"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "lightblue": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#1bace1"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "red": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#f33c3e"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "yellow": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#ffa800"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "olive": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#8fb021"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "darkpurple": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#5b48a2"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "darkred": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#79302a"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "pink": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#ed1374"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "brown": {
+                "arp_header_background": ["#000000"],
+                "arp_button_background": ["#b11d00"],
+                "arp_desc_background": ["#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f2f2f2"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#3e3e3c"],
+                "arp_price_duration_color": ["", "#898989"],
+                "arp_desc_font_color": ["", "#7c7c7c"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#3E3E3C"],
+                    "header_bg_color": ["#000000"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#f2f2f2"],
+                    "arp_desc_hover_background": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#3e3e3c"],
+                    "arp_price_duration_hover_color": ["", "#898989"],
+                    "arp_desc_hover_font_color": ["", "#7c7c7c"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"]
+                }
+            },
+            "custom_skin": {
+                "arp_header_background": "",
+                "arp_button_background": "",
+                "arp_desc_background": "",
+                "arp_body_odd_row_background_color": "",
+                "arp_body_even_row_background_color": "",
+                "arp_header_font_color": "",
+                "arp_price_value_color": "",
+                "arp_price_duration_color": "",
+                "arp_desc_font_color": "",
+                "arp_button_font_color": "",
+                "arp_body_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_hover_color": {
+                    "button_bg_color": "",
+                    "header_bg_color": "",
+                    "arp_body_odd_row_hover_background_color": "",
+                    "arp_body_even_row_hover_background_color": "",
+                    "arp_desc_hover_background": "",
+                    "arp_button_hover_font_color": "",
+                    "arp_header_hover_font_color": "",
+                    "arp_price_value_hover_color": "",
+                    "arp_price_duration_hover_color": "",
+                    "arp_desc_hover_font_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": ""
+                }
+            }
+        },
+        "arplitetemplate_8": {
+            "multicolor": {
+                "arp_header_background": ["#e92a4b", "#21c77b", "#ffc000", "#52c4ff", "#528fff"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#e92a4b", "#21c77b", "#ffc000", "#52c4ff", "#528fff"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "purple": {
+                "arp_header_background": ["#A461D4", "#A461D4", "#A461D4", "#A461D4", "#A461D4"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#A461D4", "#A461D4", "#A461D4", "#A461D4", "#A461D4"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "skyblue": {
+                "arp_header_background": ["#3AAFE2", "#3AAFE2", "#3AAFE2", "#3AAFE2", "#3AAFE2"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#3AAFE2", "#3AAFE2", "#3AAFE2", "#3AAFE2", "#3AAFE2"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "red": {
+                "arp_header_background": ["#EE4546", "#EE4546", "#EE4546", "#EE4546", "#EE4546"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#EE4546", "#EE4546", "#EE4546", "#EE4546", "#EE4546"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "green": {
+                "arp_header_background": ["#6CB03B", "#6CB03B", "#6CB03B", "#6CB03B", "#6CB03B"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#6CB03B", "#6CB03B", "#6CB03B", "#6CB03B", "#6CB03B"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "blue": {
+                "arp_header_background": ["#4448A9", "#4448A9", "#4448A9", "#4448A9", "#4448A9"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#4448A9", "#4448A9", "#4448A9", "#4448A9", "#4448A9"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "orange": {
+                "arp_header_background": ["#FF5830", "#FF5830", "#FF5830", "#FF5830", "#FF5830"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#ffffff"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#FF5830", "#FF5830", "#FF5830", "#FF5830", "#FF5830"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "darkcyan": {
+                "arp_header_background": ["#41C0A1", "#41C0A1", "#41C0A1", "#41C0A1", "#41C0A1"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#41C0A1", "#41C0A1", "#41C0A1", "#41C0A1", "#41C0A1"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "yellow": {
+                "arp_header_background": ["#FFBF3B", "#FFBF3B", "#FFBF3B", "#FFBF3B", "#FFBF3B"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#FFBF3B", "#FFBF3B", "#FFBF3B", "#FFBF3B", "#FFBF3B"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "pink": {
+                "arp_header_background": ["#E9338C", "#E9338C", "#E9338C", "#E9338C", "#E9338C"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#E9338C", "#E9338C", "#E9338C", "#E9338C", "#E9338C"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "teal": {
+                "arp_header_background": ["#1EC9D1", "#1EC9D1", "#1EC9D1", "#1EC9D1", "#1EC9D1"],
+                "arp_button_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_odd_row_background_color": ["#ffffff"],
+                "arp_body_even_row_background_color": ["#f7f8fa"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#323232"],
+                "arp_body_font_color": ["", "#333333"],
+                "arp_body_even_font_color": ["", "#333333"],
+                "arp_body_label_font_color": ["", "#000000"],
+                "arp_shortcode_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "header_bg_color": ["#1EC9D1", "#1EC9D1", "#1EC9D1", "#1EC9D1", "#1EC9D1"],
+                    "arp_body_odd_row_hover_background_color": ["#ffffff"],
+                    "arp_body_even_row_hover_background_color": ["#ffffff"],
+                    "arp_button_hover_font_color": ["", "#323232"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#333333"],
+                    "arp_body_even_font_hover_color": ["", "#333333"],
+                    "arp_body_label_font_hover_color": ["", "#000000"],
+                    "arp_shortcode_hover_background": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "custom_skin": {
+                "arp_header_background": "",
+                "arp_button_background": "",
+                "arp_body_odd_row_background_color": "",
+                "arp_body_even_row_background_color": "",
+                "arp_header_font_color": "",
+                "arp_price_value_color": "",
+                "arp_price_duration_color": "",
+                "arp_button_font_color": "",
+                "arp_body_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_body_label_font_color": "",
+                "arp_shortcode_background": "",
+                "arp_shortcode_font_color": "",
+                "arp_hover_color": {
+                    "button_bg_color": "",
+                    "header_bg_color": "",
+                    "arp_body_odd_row_hover_background_color": "",
+                    "arp_body_even_row_hover_background_color": "",
+                    "arp_button_hover_font_color": "",
+                    "arp_header_hover_font_color": "",
+                    "arp_price_value_hover_color": "",
+                    "arp_price_duration_hover_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": "",
+                    "arp_body_label_font_hover_color": "",
+                    "arp_shortcode_hover_background": "",
+                    "arp_shortcode_hover_font_color": ""
+                }
+            }
+        },
+        "arplitetemplate_11": {
+            "yellow": {
+                "arp_button_background": ["#efa738"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#09B1F8", "#09B1F8", "#09B1F8", "#09B1F8", "#09B1F8"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "limegreen": {
+                "arp_button_background": ["#43b34d"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#09B1F8", "#09B1F8", "#09B1F8", "#09B1F8", "#09B1F8"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "red": {
+                "arp_button_background": ["#ff3241"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#FEA203", "#FEA203", "#FEA203", "#FEA203", "#FEA203"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "blue": {
+                "arp_button_background": ["#09b1f8"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#43B34D", "#43B34D", "#43B34D", "#43B34D", "#43B34D"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "pink": {
+                "arp_button_background": ["#e3328c"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#21B1B2", "#21B1B2", "#21B1B2", "#21B1B2", "#21B1B2"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "cyan": {
+                "arp_button_background": ["#11b0b6"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#F49600", "#F49600", "#F49600", "#F49600", "#F49600"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "lightpink": {
+                "arp_button_background": ["#f15f74"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#949494", "#949494", "#949494", "#949494", "#949494"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "violet": {
+                "arp_button_background": ["#8f4aff"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#CD448A", "#CD448A", "#CD448A", "#CD448A", "#CD448A"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "gray": {
+                "arp_button_background": ["#949494"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#F15F74", "#F15F74", "#F15F74", "#F15F74", "#F15F74"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "green": {
+                "arp_button_background": ["#78c335"],
+                "arp_header_background": ["#414045"],
+                "arp_desc_background": ["#37363b"],
+                "arp_body_odd_row_background_color": ["#313035"],
+                "arp_body_even_row_background_color": ["#37363b"],
+                "arp_header_font_color": ["", "#ffffff"],
+                "arp_price_value_color": ["", "#ffffff"],
+                "arp_price_duration_color": ["", "#ffffff"],
+                "arp_desc_font_color": ["", "#ffffff"],
+                "arp_button_font_color": ["", "#ffffff"],
+                "arp_body_font_color": ["", "#ffffff"],
+                "arp_body_even_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "button_bg_color": ["#FFB43D", "#FFB43D", "#FFB43D", "#FFB43D", "#FFB43D"],
+                    "header_bg_color": ["#51545D", "#51545D", "#51545D", "#51545D", "#51545D"],
+                    "price_bg_color": ["#46474C"],
+                    "arp_body_odd_row_hover_background_color": ["#3E4044"],
+                    "arp_body_even_row_hover_background_color": ["#46474C"],
+                    "arp_desc_hover_background": ["#46474C", "#46474C", "#46474C", "#46474C", "#46474C"],
+                    "arp_button_hover_font_color": ["", "#ffffff"],
+                    "arp_header_hover_font_color": ["", "#ffffff"],
+                    "arp_price_value_hover_color": ["", "#ffffff"],
+                    "arp_price_duration_hover_color": ["", "#ffffff"],
+                    "arp_body_font_hover_color": ["", "#ffffff"],
+                    "arp_body_even_font_hover_color": ["", "#ffffff"],
+                    "arp_desc_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "custom_skin": {
+                "arp_button_background": "",
+                "arp_header_background": "",
+                "arp_desc_background": "",
+                "arp_body_odd_row_background_color": "",
+                "arp_body_even_row_background_color": "",
+                "arp_header_font_color": "",
+                "arp_price_value_color": "",
+                "arp_price_duration_color": "",
+                "arp_desc_font_color": "",
+                "arp_button_font_color": "",
+                "arp_body_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_hover_color": {
+                    "button_bg_color": "",
+                    "header_bg_color": "",
+                    "price_bg_color": "",
+                    "arp_body_odd_row_hover_background_color": "",
+                    "arp_body_even_row_hover_background_color": "",
+                    "arp_desc_hover_background": "",
+                    "arp_button_hover_font_color": "",
+                    "arp_header_hover_font_color": "",
+                    "arp_price_value_hover_color": "",
+                    "arp_price_duration_hover_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": "",
+                    "arp_desc_hover_font_color": ""
+                }
+            }
+        },
+        "arplitetemplate_26": {
+            "blue": {
+                "arp_header_background": ["#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                    "arp_body_even_font_hover_color": ["#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                    "arp_shortcode_hover_background": ["#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff", "#2fb8ff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "red": {
+                "arp_header_background": ["#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#ff2d46", "#ff2d46", "#ff2d46"],
+                    "arp_body_even_font_hover_color": ["#ff2d46", "#ff2d46", "#ff2d46"],
+                    "arp_shortcode_hover_background": ["#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46", "#ff2d46"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "lightblue": {
+                "arp_header_background": ["#4196ff", "#4196ff", "#4196ff", "#4196ff", "#4196ff"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#4196ff", "#4196ff", "#4196ff", "#4196ff", "#4196ff"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#4196ff", "#4196ff", "#4196ff", "#4196ff", "#4196ff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#4196ff", "#4196ff", "#4196ff"],
+                    "arp_body_even_font_hover_color": ["#4196ff", "#4196ff", "#4196ff"],
+                    "arp_shortcode_hover_background": ["#4196ff", "#4196ff", "#4196ff", "#4196ff", "#4196ff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "cyan": {
+                "arp_header_background": ["#00d29d", "#00d29d", "#00d29d", "#00d29d", "#00d29d"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#00d29d", "#00d29d", "#00d29d", "#00d29d", "#00d29d"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#00d29d", "#00d29d", "#00d29d", "#00d29d", "#00d29d", "#00d29d"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#00d29d", "#00d29d", "#00d29d"],
+                    "arp_body_even_font_hover_color": ["#00d29d", "#00d29d", "#00d29d"],
+                    "arp_shortcode_hover_background": ["#00d29d", "#00d29d", "#00d29d", "#00d29d", "#00d29d"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "yellow": {
+                "arp_header_background": ["#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#f1bc16", "#f1bc16", "#f1bc16"],
+                    "arp_body_even_font_hover_color": ["#f1bc16", "#f1bc16", "#f1bc16"],
+                    "arp_shortcode_hover_background": ["#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16", "#f1bc16"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "pink": {
+                "arp_header_background": ["#ff2476", "#ff2476", "#ff2476", "#ff2476", "#ff2476"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#ff2476", "#ff2476", "#ff2476", "#ff2476", "#ff2476"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#ff2476", "#ff2476", "#ff2476", "#ff2476", "#ff2476"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#ff2476", "#ff2476", "#ff2476"],
+                    "arp_body_even_font_hover_color": ["#ff2476", "#ff2476", "#ff2476"],
+                    "arp_shortcode_hover_background": ["#ff2476", "#ff2476", "#ff2476", "#ff2476", "#ff2476"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "lightviolet": {
+                "arp_header_background": ["#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#6b68ff", "#6b68ff", "#6b68ff"],
+                    "arp_body_even_font_hover_color": ["#6b68ff", "#6b68ff", "#6b68ff"],
+                    "arp_shortcode_hover_background": ["#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff", "#6b68ff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "gray": {
+                "arp_header_background": ["#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                    "arp_body_even_font_hover_color": ["#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                    "arp_shortcode_hover_background": ["#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb", "#b7bdcb"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "orange": {
+                "arp_header_background": ["#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#fd9a25", "#fd9a25", "#fd9a25"],
+                    "arp_body_even_font_hover_color": ["#fd9a25", "#fd9a25", "#fd9a25"],
+                    "arp_shortcode_hover_background": ["#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25", "#fd9a25"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "darkblue": {
+                "arp_header_background": ["#337cff", "#337cff", "#337cff", "#337cff", "#337cff"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#337cff", "#337cff", "#337cff", "#337cff", "#337cff"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#337cff", "#337cff", "#337cff", "#337cff", "#337cff"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#337cff", "#337cff", "#337cff"],
+                    "arp_body_even_font_hover_color": ["#337cff", "#337cff", "#337cff"],
+                    "arp_shortcode_hover_background": ["#337cff", "#337cff", "#337cff", "#337cff", "#337cff"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "turquoise": {
+                "arp_header_background": ["#00dbef", "#00dbef", "#00dbef", "#00dbef", "#00dbef"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#00dbef", "#00dbef", "#00dbef", "#00dbef", "#00dbef"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#00dbef", "#00dbef", "#00dbef", "#00dbef", "#00dbef"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#00dbef", "#00dbef", "#00dbef"],
+                    "arp_body_even_font_hover_color": ["#00dbef", "#00dbef", "#00dbef"],
+                    "arp_shortcode_hover_background": ["#00dbef", "#00dbef", "#00dbef", "#00dbef", "#00dbef"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "grayishyellow": {
+                "arp_header_background": ["#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                    "arp_body_even_font_hover_color": ["#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                    "arp_shortcode_hover_background": ["#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1", "#cfc5a1"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "green": {
+                "arp_header_background": ["#16d784", "#16d784", "#16d784", "#16d784", "#16d784"],
+                "arp_column_background": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                "arp_button_background": ["#16d784", "#16d784", "#16d784", "#16d784", "#16d784"],
+                "arp_header_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_button_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_body_even_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                "arp_shortcode_background": ["#16d784", "#16d784", "#16d784", "#16d784", "#16d784"],
+                "arp_shortcode_font_color": ["", "#ffffff"],
+                "arp_hover_color": {
+                    "header_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "column_bg_color": ["#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37", "#2B2E37"],
+                    "button_bg_color": ["#08090B", "#08090B", "#08090B", "#08090B", "#08090B"],
+                    "arp_button_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_header_hover_font_color": ["#ffffff", "#ffffff", "#ffffff"],
+                    "arp_body_font_hover_color": ["#16d784", "#16d784", "#16d784"],
+                    "arp_body_even_font_hover_color": ["#16d784", "#16d784", "#16d784"],
+                    "arp_shortcode_hover_background": ["#16d784", "#16d784", "#16d784", "#16d784", "#16d784"],
+                    "arp_shortcode_hover_font_color": ["", "#ffffff"]
+                }
+            },
+            "custom_skin": {
+                "arp_header_background": "",
+                "arp_column_background": "",
+                "arp_button_background": "",
+                "arp_header_font_color": "",
+                "arp_button_font_color": "",
+                "arp_body_font_color": "",
+                "arp_shortcode_background": "",
+                "arp_shortcode_font_color": "",
+                "arp_body_even_font_color": "",
+                "arp_hover_color": {
+                    "header_bg_color": "",
+                    "column_bg_color": "",
+                    "button_bg_color": "",
+                    "arp_button_hover_font_color": "",
+                    "arp_header_hover_font_color": "",
+                    "arp_body_font_hover_color": "",
+                    "arp_body_even_font_hover_color": "",
+                    "arp_shortcode_hover_background": "",
+                    "arp_shortcode_hover_font_color": ""
+                }
+            }
+        }
+    },
+    "arp_section_background_color": {
+        "arplitetemplate_1": {
+            "css": {
+                ".arppricetablecolumntitle": {
+                    "background": "{arp_header_background_color_input}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                ".arppricetablecolumnprice": {
+                    "background": "{arp_pricing_background_color_input}"
+                },
+                ".arp_price_wrapper": {
+                    "color": "{arp_price_value_color_input}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".arpcolumnfooter": {
+                    "background": "{arp_footer_background_color_input}"
+                },
+                "li.arp_odd_row": {
+                    "background": "{arp_body_odd_row_background_color}",
+                    "color": "{arp_body_font_color}"
+                },
+                "li.arp_even_row": {
+                    "background": "{arp_body_even_row_background_color}",
+                    "color": "{arp_body_even_font_color}"
+                },
+                ".arp_footer_content": {
+                    "color": "{arp_footer_font_color}"
+                }
+            },
+            "attribute": {
+                "input#header_bg_color_{col_id}___0": {
+                    "value": "{arp_header_background_color_input}"
+                },
+                "input#header_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_header_bg_custom_hover_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#price_bg_color_{col_id}___0": {
+                    "value": "{arp_pricing_background_color_input}"
+                },
+                "input#price_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_price_bg_custom_hover_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#footer_background_color_{col_id}___0": {
+                    "value": "{arp_footer_background_color_input}"
+                },
+                "input#footer_hover_background_color_{col_id}___0": {
+                    "value": "{arp_footer_bg_custom_hover_color}"
+                },
+                "input#footer_font_color_{col_id}___0": {
+                    "value": "{arp_footer_font_color}"
+                },
+                "input#footer_hover_font_color_{col_id}___0": {
+                    "value": "{arp_footer_hover_font_color}"
+                },
+                "input#content_even_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_background_color}"
+                },
+                "input#content_odd_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_background_color}"
+                },
+                "input#content_even_hover_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_hover_background_color}"
+                },
+                "input#content_odd_hover_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_hover_background_color}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                }
+            }
+        },
+        "arplitetemplate_2": {
+            "css": {
+                ".arp_column_content_wrapper": {
+                    "background-color": "{arp_column_background_color_input}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                ".arp_price_wrapper": {
+                    "color": "{arp_price_value_color_input}"
+                },
+                "li.arp_odd_row": {
+                    "color": "{arp_body_font_color}"
+                },
+                "li.arp_even_row": {
+                    "color": "{arp_body_even_font_color}"
+                },
+                ".arp_footer_content": {
+                    "color": "{arp_footer_font_color}"
+                },
+                ".rounded_corder": {
+                    "background": "{arp_shortcode_background_color_input}",
+                    "border-color": "{arp_shortcode_background_color_input}",
+                    "color": "{arp_shortcode_font_color}"
+                }
+            },
+            "attribute": {
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#column_bg_color_{col_id}___0": {
+                    "value": "{arp_column_background_color_input}"
+                },
+                "input#column_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_column_bg_custom_hover_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#footer_font_color_{col_id}___0": {
+                    "value": "{arp_footer_font_color}"
+                },
+                "input#footer_hover_font_color_{col_id}___0": {
+                    "value": "{arp_footer_hover_font_color}"
+                },
+                "input#shortcode_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_background_color_input}"
+                },
+                "input#shortcode_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_font_color}"
+                },
+                "input#shortcode_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_background_color_input}"
+                },
+                "input#shortcode_hover_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_font_color}"
+                }
+            }
+        },
+        "arplitetemplate_7": {
+            "css": {
+                ".arppricetablecolumntitle": {
+                    "background": "{arp_header_background_color_input_rgba^_^(0.7)}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".column_description": {
+                    "background": "{arp_desc_background_color_input}",
+                    "color": "{arp_desc_font_color}"
+                },
+                ".arppricetablecolumnprice": {
+                    "background": "{arp_desc_background_color_input}"
+                },
+                ".arp_price_wrapper": {
+                    "color": "{arp_price_value_color_input}"
+                },
+                "li.arp_odd_row": {
+                    "background": "{arp_body_odd_row_background_color}",
+                    "color": "{arp_body_font_color}"
+                },
+                "li.arp_even_row": {
+                    "background": "{arp_body_even_row_background_color}",
+                    "color": "{arp_body_even_font_color}"
+                }
+            },
+            "attribute": {
+                "input#header_bg_color_{col_id}___0": {
+                    "value": "{arp_header_background_color_input}"
+                },
+                "input#header_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_header_bg_custom_hover_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#column_desc_bg_color_{col_id}___0": {
+                    "value": "{arp_desc_background_color_input}"
+                },
+                "input#column_desc_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_desc_bg_custom_hover_color}"
+                },
+                "input#column_description_font_color_{col_id}___0": {
+                    "value": "{arp_desc_font_color}"
+                },
+                "input#column_description_hover_font_color_{col_id}___0": {
+                    "value": "{arp_desc_hover_font_color}"
+                },
+                "input#content_even_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_background_color}"
+                },
+                "input#content_odd_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_background_color}"
+                },
+                "input#content_even_hover_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_hover_background_color}"
+                },
+                "input#content_odd_hover_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_hover_background_color}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#price_text_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_color_input}"
+                },
+                "input#price_text_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_hover_font_color}"
+                }
+            }
+        },
+        "arplitetemplate_8": {
+            "css": {
+                ".arpcolumnheader": {
+                    "background-color": "{arp_header_background_color_input}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".arp_price_wrapper": {
+                    "color": "{arp_price_value_color_input}"
+                },
+                "li.arp_odd_row": {
+                    "background": "{arp_body_odd_row_background_color}",
+                    "color": "{arp_body_font_color}"
+                },
+                "li.arp_even_row": {
+                    "background": "{arp_body_even_row_background_color}",
+                    "color": "{arp_body_even_font_color}"
+                },
+                "li .caption_li": {
+                    "color": "{arp_body_label_font_color}"
+                },
+                ".rounded_corder": {
+                    "background": "{arp_shortcode_background_color_input}",
+                    "border-color": "{arp_shortcode_background_color_input}",
+                    "color": "{arp_shortcode_font_color}"
+                }
+            },
+            "attribute": {
+                "input#header_bg_color_{col_id}___0": {
+                    "value": "{arp_header_background_color_input}"
+                },
+                "input#header_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_header_bg_custom_hover_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#content_even_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_background_color}"
+                },
+                "input#content_odd_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_background_color}"
+                },
+                "input#content_even_hover_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_hover_background_color}"
+                },
+                "input#content_odd_hover_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_hover_background_color}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                },
+                "input#content_label_font_color_{col_id}___0": {
+                    "value": "{arp_body_label_font_color}"
+                },
+                "input#content_label_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_label_font_hover_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#price_text_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_color_input}"
+                },
+                "input#price_text_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_hover_font_color}"
+                },
+                "input#shortcode_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_background_color_input}"
+                },
+                "input#shortcode_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_font_color}"
+                },
+                "input#shortcode_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_background_color_input}"
+                },
+                "input#shortcode_hover_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_font_color}"
+                }
+            }
+        },
+        "arplitetemplate_11": {
+            "css": {
+                ".arppricetablecolumntitle": {
+                    "background": "{arp_header_background_color_input}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".arppricetablecolumnprice": {
+                    "background": "{arp_desc_background_color_input}"
+                },
+                ".arp_price_wrapper": {
+                    "color": "{arp_price_value_color_input}"
+                },
+                "li.arp_odd_row": {
+                    "background": "{arp_body_odd_row_background_color}",
+                    "color": "{arp_body_font_color}"
+                },
+                "li.arp_even_row": {
+                    "background": "{arp_body_even_row_background_color}",
+                    "color": "{arp_body_even_font_color}"
+                },
+                ".column_description": {
+                    "color": "{arp_desc_font_color}"
+                }
+            },
+            "attribute": {
+                "input#header_bg_color_{col_id}___0": {
+                    "value": "{arp_header_background_color_input}"
+                },
+                "input#header_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_header_bg_custom_hover_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#column_desc_bg_color_{col_id}___0": {
+                    "value": "{arp_desc_background_color_input}"
+                },
+                "input#column_desc_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_desc_bg_custom_hover_color}"
+                },
+                "input#column_description_font_color_{col_id}___0": {
+                    "value": "{arp_desc_font_color}"
+                },
+                "input#column_description_hover_font_color_{col_id}___0": {
+                    "value": "{arp_desc_hover_font_color}"
+                },
+                "input#content_even_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_background_color}"
+                },
+                "input#content_odd_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_background_color}"
+                },
+                "input#content_even_hover_color_{col_id}___0": {
+                    "value": "{arp_body_even_row_hover_background_color}"
+                },
+                "input#content_odd_hover_color_{col_id}___0": {
+                    "value": "{arp_body_odd_row_hover_background_color}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#price_text_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_color_input}"
+                },
+                "input#price_text_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_hover_font_color}"
+                }
+            }
+        },
+        "arplitetemplate_26": {
+            "css": {
+                "#column_header": {
+                    "background": "{arp_header_background_color_input}"
+                },
+                ".arp_column_content_wrapper": {
+                    "background-color": "{arp_column_background_color_input}"
+                },
+                ".bestPlanButton": {
+                    "background": "{arp_button_background_color_input}",
+                    "color": "{arp_button_font_color}"
+                },
+                ".bestPlanTitle": {
+                    "color": "{arp_header_font_color}"
+                },
+                "li.arp_even_row": {
+                    "color": "{arp_body_even_font_color}"
+                },
+                "li.arp_odd_row": {
+                    "color": "{arp_body_font_color}"
+                },
+                ".arp_footer_content": {
+                    "color": "{arp_footer_font_color}"
+                },
+                ".rounded_corder": {
+                    "background": "{arp_shortcode_background_color_input}",
+                    "border-color": "{arp_shortcode_background_color_input}",
+                    "color": "{arp_shortcode_font_color}"
+                }
+            },
+            "attribute": {
+                "input#header_bg_color_{col_id}___0": {
+                    "value": "{arp_header_background_color_input}"
+                },
+                "input#header_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_header_bg_custom_hover_color}"
+                },
+                "input#button_bg_color_{col_id}___0": {
+                    "value": "{arp_button_background_color_input}"
+                },
+                "input#button_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_button_bg_custom_hover_color}"
+                },
+                "input#column_bg_color_{col_id}___0": {
+                    "value": "{arp_column_background_color_input}"
+                },
+                "input#column_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_column_bg_custom_hover_color}"
+                },
+                "input#arp_column_bg_custom_color_{col_id}___0": {
+                    "value": "{arp_column_bg_custom_color}"
+                },
+                "input#header_font_color_{col_id}___0": {
+                    "value": "{arp_header_font_color}"
+                },
+                "input#header_hover_font_color_{col_id}___0": {
+                    "value": "{arp_header_hover_font_color}"
+                },
+                "input#price_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_color_input}"
+                },
+                "input#price_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_value_hover_color_input}"
+                },
+                "input#price_text_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_color_input}"
+                },
+                "input#price_text_hover_font_color_{col_id}___0": {
+                    "value": "{arp_price_duration_hover_font_color}"
+                },
+                "input#content_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_color}"
+                },
+                "input#content_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_font_hover_color}"
+                },
+                "input#content_even_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_color}"
+                },
+                "input#content_even_hover_font_color_{col_id}___0": {
+                    "value": "{arp_body_even_font_hover_color}"
+                },
+                "input#button_font_color_{col_id}___0": {
+                    "value": "{arp_button_font_color}"
+                },
+                "input#button_hover_font_color_{col_id}___0": {
+                    "value": "{arp_button_hover_font_color}"
+                },
+                "input#footer_font_color_{col_id}___0": {
+                    "value": "{arp_footer_font_color}"
+                },
+                "input#footer_hover_font_color_{col_id}___0": {
+                    "value": "{arp_footer_hover_font_color}"
+                },
+                "input#shortcode_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_background_color_input}"
+                },
+                "input#shortcode_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_font_color}"
+                },
+                "input#shortcode_hover_bg_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_background_color_input}"
+                },
+                "input#shortcode_hover_font_color_{col_id}___0": {
+                    "value": "{arp_shortcode_hover_font_color}"
+                }
+            }
+        }
+
+    },
+    "arp_navigation_section_array": {
+        "arplitetemplate_1": {
+            "header_level": {
+                "caption_column": ".arpcaptiontitle",
+                "other_columns": ".arppricetablecolumntitle"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ".arppricetablecolumnprice"
+            },
+            "footer_level": {
+                "caption_column": ".arpcolumnfooter",
+                "other_columns": ".arpcolumnfooter"
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            },
+            "row_level": {
+                "caption_column": ".arpbodyoptionrow",
+                "other_columns": ".arpbodyoptionrow"
+            }
+        },
+        "arplitetemplate_2": {
+            "header_level": {
+                "caption_column": "",
+                "other_columns": ".arp_header_selection_new"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ".arppricetablecolumnprice"
+            },
+            "row_level": {
+                "caption_column": "",
+                "other_columns": ".arpbodyoptionrow"
+            },
+            "footer_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            }
+        },
+        "arplitetemplate_7": {
+            "header_level": {
+                "caption_column": "",
+                "other_columns": ".arp_header_selection_new"
+            },
+            "description_level": {
+                "caption_column": "",
+                "other_columns": ".column_description"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ".arp_price_wrapper"
+            },
+            "row_level": {
+                "caption_column": "",
+                "other_columns": ".arpbodyoptionrow"
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            }
+        },
+        "arplitetemplate_8": {
+            "header_level": {
+                "caption_columns": "",
+                "other_columns": ".arp_header_selection_new"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ".arppricetablecolumnprice"
+            },
+            "row_level": {
+                "caption_column": "",
+                "other_columns": ".arpbodyoptionrow"
+            },
+            "footer_level": {
+                "caption_column": "",
+                "other_columns": ""
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            }
+        },
+        "arplitetemplate_11": {
+            "header_level": {
+                "caption_columns": "",
+                "other_columns": ".arppricetablecolumntitle"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ".arp_price_wrapper"
+            },
+            "description_level": {
+                "caption_column": "",
+                "other_columns": ".column_description"
+            },
+            "row_level": {
+                "caption_column": "",
+                "other_columns": ".arpbodyoptionrow"
+            },
+            "footer_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            }
+        },
+        "arplitetemplate_26": {
+            "header_level": {
+                "caption_columns": "",
+                "other_columns": ".arp_header_selection_new"
+            },
+            "price_level": {
+                "caption_column": "",
+                "other_columns": ""
+            },
+            "row_level": {
+                "caption_column": "",
+                "other_columns": ".arpbodyoptionrow"
+            },
+            "footer_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            },
+            "button_level": {
+                "caption_column": "",
+                "other_columns": ".arpcolumnfooter"
+            }
+        }
+    }
+}

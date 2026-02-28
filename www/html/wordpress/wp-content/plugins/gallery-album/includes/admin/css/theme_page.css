@@ -1,0 +1,360 @@
+.pro_feature {
+    font-size: 13px;
+    font-weight: bold;
+    color: #7052fb;
+}
+.wpda_galltheme_title{
+	display:inline-block;
+}
+.header_action_buttons{
+	display:inline-block;
+	float:right;
+	margin-top:14px;
+}
+.header{
+	width:100%;
+}
+.conteiner{
+	width:100%;
+	max-width:1280px;
+}
+.wpda_gallname{
+	padding: 0px 8px 0px 8px;
+	margin-bottom: 5px !important;
+	margin-top: 15px !important;
+	font-size: 1.7em;
+	height: 1.7em;
+	width: 100%;
+	outline: 0;
+	margin: 0;
+	background-color: #fff;
+}
+.all_options_panel table{
+	width: 100%;
+    background-color: white;
+    border-spacing: 0px;
+	border: 1px solid #9a9a9a;
+    margin: 0px;
+	position: relative;
+    bottom: 1px;
+}
+.main_div_of_the_wpda_gallanswer{	
+	vertical-align: top;
+    overflow: hidden;
+	position: relative;
+}
+.main_div_of_the_wpda_gallanswer:hover{
+	vertical-align: top;
+	overflow:hidden;
+	position: relative;
+}
+.pracents_of_the_poll {
+	height: 100%;
+	position: absolute;
+}
+.wpda_gallanswer_title{
+	position: relative;
+}
+.label{
+	float: left;
+}
+
+.tr_heading{
+	font-size: 18px;
+    height: 32px;
+	
+}
+.tr_heading > th{
+	font-size: 18px;
+    height: 32px;
+	border-bottom: 2px solid #9b9b9b;
+	color: #000;
+}
+.all_options_panel table tr{
+	display: none;
+}
+.all_options_panel table tr.active{
+	display:table-row;
+}
+.td_option_description{
+	position: relative;	
+}
+.td_option_description .wpdevart-title{
+	margin-left: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.tr_option{
+	height: 37px;
+}
+.tr_option:hover{ 
+	background-color:#e6e6e6;
+}
+.tr_option td{
+	border-bottom: 1px solid #9b9b9b;
+}
+
+.wpda_gall_color-picker{
+	position: relative;
+	height: 30px;
+}
+.wpda_gall_color-picker .wp-picker-container{
+	position: absolute;
+	top:3px;
+}
+.wpda_gall_color-picker .wp-picker-container.wp-picker-active{
+	z-index: 9;
+}
+/*tabs settings*/
+
+.wpda_gall_theme_link_tabs li{
+	display: inline-block;
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #9a9a9a;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+	margin-right: 3px;
+}
+.wpda_gall_theme_link_tabs li.active {
+    border-bottom: 1px solid #FFFFFF;
+    border-top-color: #1e8cbe;
+    border-top-width: 2px;
+}
+.wpda_gall_theme_link_tabs > ul{
+	margin: 0px;
+	padding-left: 10px;
+}
+/*range input styling*/
+.range_option_td output,.range_option_td small{
+	position: relative;
+	bottom: 2px;
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 145px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -5px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+
+
+
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+
+.wpdevart-info-container{
+display: inline-block;
+    position: absolute;
+	z-index: 4;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #7052fb;
+    border-radius: 100%;
+    right: 20px;
+    text-align: center;
+    line-height: 1;
+	cursor:pointer;
+	font-weight: bold;
+	color: #7052fb;
+}
+
+.wpdevart-info-container .wpdevart-info{
+    position: absolute;
+    display: none;
+  	left: 30px;
+    top: -7px;
+    background-color: #292D31;
+    padding: 7px;
+    z-index: 1;
+    min-width: 200px;
+    color: #C5D3D6;
+    box-shadow: 0 0 2px #000;
+    text-align: left;
+    line-height: 1.3;
+    font-size: 14px;
+	font-weight: normal;
+    font-style: italic;
+}
+
+.red-section .wpdevart-info{
+    color: red;
+}
+.wpdevart-info-container:hover .wpdevart-info{
+    display: block;
+}
+
+/*For Support link*/
+.wpdevart_plugins_header {
+    margin: 10px 20px 10px 0;
+	width:95%;
+}
+.wpdevart_plugins_get_pro {
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    float: left;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.04);
+}
+.wpdevart_plugins_get_pro_info {
+    float: left;
+    margin-right: 30px;
+}
+.wpdevart_plugins_get_pro_info h3 {
+    margin: 0 0 5px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.wpdevart_plugins_get_pro_info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+.wpdevart_support, .wpdevart_upgrade {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    background-image: linear-gradient(141deg, #7052fb, #00a0d2);
+}
+.wpdevart_upgrade {
+    float: left;
+    padding: 11px 25px 12px;
+    text-transform: uppercase;
+}
+.wpdevart_support {
+    float: right;
+    padding: 11px 20px 12px 50px;
+    margin-top: 15px;
+    position: relative;
+}
+.wpdevart_support:before {
+    content: "";
+    background: url(../images/support-white.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    top: 8px;
+    position: absolute;
+    left: 15px;
+}
+.div-for-clear:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.wpdevart_support:hover,
+.wpdevart_upgrade:hover,
+.wpdevart_support:focus,
+.wpdevart_upgrade:focus {
+    color:#ffffff;
+	opacity:0.85;
+	box-shadow: none;
+    outline: none;
+}
+#admin_form > h2{
+	height: 28px;
+	width: 95%;
+}
+#admin_form > h2 > .add-new-h2{
+	top:0px !important;
+}

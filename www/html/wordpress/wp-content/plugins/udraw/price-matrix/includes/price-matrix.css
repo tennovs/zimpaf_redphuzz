@@ -1,0 +1,82 @@
+.pm_radio_group_container {
+    margin: 5px 0px;
+}
+
+.pm_radio_group_container label {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.pm_radio_group_container span {
+    margin: auto;
+    padding: 0px 10px;
+}
+
+.pm_radio_group_container label:hover {
+    border: 2px solid rgb(116, 115, 115) !important;
+}
+
+.pm_radio_group_container label img {
+    padding: 3px;  
+}
+
+.pm_input_hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.pm_radio_label {
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.pm_radio_selected {
+    border: 2px solid rgb(51, 51, 51) !important;
+}
+
+.pm_checkbox {
+    width: 50px;
+    min-width: 50px;
+}
+
+.pm_switch {
+    display: none !important;
+}
+
+.pm_switch+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    max-width: 53px;
+    min-width: 53px;
+    height: 30px;
+    background: lightgray;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    transition: all 300ms ease-in;
+}
+
+.pm_switch+label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.pm_switch:checked+label {
+    background: #383838;
+}
+
+.pm_switch:checked+label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+}
+
+.switch+label:active:after {
+    width: 30px;
+}

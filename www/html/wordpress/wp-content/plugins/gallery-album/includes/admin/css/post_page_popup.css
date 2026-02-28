@@ -1,0 +1,143 @@
+.main_parametrs_group_div{
+	background-color:#fafafa;
+	display:inline-block;
+	width:100%;
+	box-sizing: border-box;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);	
+	margin-bottom: 5px;
+	padding: 0;
+	line-height: 1;
+}
+.main_parametrs_group_div:last-child{
+	margin-bottom: 0px;
+}
+.main_parametrs_group_div:hover{
+	border: 1px solid #D5D5D5;
+}
+.head_panel_div{
+	cursor:pointer;
+	border-bottom:1px solid #e5e5e5;
+	height: 31px;
+}
+.main_parametrs_group_div.closed_params .head_panel_div{
+	border-bottom:0px;
+}
+.title_parametrs_group{
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-weight:bold;
+	font-size: 15px;
+	padding: 3px 6px;
+	margin: 0;
+	line-height: 1.4;
+}
+.open_or_closed{
+	float:right;
+	height:20px;
+	right: 10px;
+	top:2px;
+	color: #aaa;
+	font: 400 20px/1 dashicons;
+	speak: none;	
+	display: inline-block;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none!important;
+}
+.head_panel_div:hover .open_or_closed{
+	color:#777
+}
+.open_or_closed:before{
+	content: '\f142';
+	
+}
+.inside_information_div{
+	background: #fff;
+	padding: 5px;
+}
+.main_parametrs_group_div.closed_params .open_or_closed:before{
+	content: '\f140';
+}
+.main_parametrs_group_div.closed_params .inside_information_div{
+	display:none;
+}
+.section_parametrs_table{
+	border:0px !important;
+}
+.section_parametrs_table td{
+	display: table-cell !important;
+}
+.section_parametrs_table > tbody > tr:nth-child(odd){
+	background-color:rgba(176, 176, 176, 0.07);
+}
+.section_parametrs_table > tbody > tr td{
+	vertical-align:middle !important;	
+}
+.section_parametrs_table > tbody > tr>td:nth-child(1){
+	width:42%;
+}
+/*Coming Soon description style*/
+.desription_class{
+	float: right;
+	cursor: default;
+	color: #0074a2;
+	font-size: 18px;
+	font-weight: bold;
+	border: 1px solid #000000;
+	border-radius: 200px;
+	height: 20px;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-left: 15px;
+}
+/*albom checkbox styles*/
+.ch_button.div label input {
+   margin-right:100px;
+}
+
+.ch_button {
+    margin:4px;
+    background-color:#EFEFEF;
+    border-radius:4px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    display: inline-block;
+}
+
+.ch_button:hover {
+    background:#86ffbd;
+}
+
+.ch_button label {
+    float:left;
+    width:9.8em;
+	cursor: pointer;
+}
+
+.ch_button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+.ch_button label input {
+    position:absolute;
+	visibility: hidden;
+}
+
+.ch_button input:checked + span {
+    background-color:#115d3c;
+    color:#fff;
+}
+.album_popup_select{
+	height: 22px;
+    width: 100px;
+    border: 0px;
+}

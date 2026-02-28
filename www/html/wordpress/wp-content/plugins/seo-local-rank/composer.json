@@ -1,0 +1,8 @@
+{
+    "name": "home",
+    "require": {
+        "serps/search-engine-google": "^0.4.7",
+        "guzzlehttp/psr7": "^1.6",
+        "serps/http-client-curl": "^0.2.3"
+    }
+}

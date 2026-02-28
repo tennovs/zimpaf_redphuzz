@@ -1,0 +1,1288 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP File Manager\n"
+"POT-Creation-Date: 2019-11-17 20:54-0800\n"
+"PO-Revision-Date: 2019-11-17 20:54-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wp-file-manager.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: inc/admin.php:85
+msgid "All options are updated"
+msgstr "Alle Optionen wurden aktualisiert"
+
+#: inc/admin.php:93 inc/admin.php:94 inc/classes/class.email.php:60
+#: inc/classes/class.meta.php:70 inc/classes/class.meta.php:72
+#: inc/classes/class.meta.php:104 inc/classes/class.meta.php:108
+#: inc/classes/class.meta.php:196 inc/file-detail.php:88 inc/file-detail.php:89
+#: inc/files.php:460 inc/shortcode.php:24 templates/admin/fields.php:41
+#: templates/admin/fields.php:43 templates/admin/fields.php:47
+#: templates/admin/settings.php:28 templates/admin/settings.php:79
+#: templates/wpfm-main.php:72 templates/wpfm-main.php:124
+#: templates/wpfm-main.php:148
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: inc/admin.php:249
+msgid "All Meta are save"
+msgstr "Alle Meta sind gespeichert"
+
+#: inc/arrays.php:13
+msgid "Choose File Button Label"
+msgstr "Wählen Sie das Datei-Button-Label"
+
+#: inc/arrays.php:19
+msgid "Save File Button"
+msgstr "Dateien speichern"
+
+#: inc/arrays.php:22
+msgid "Upload File"
+msgstr "Datei hochladen"
+
+#: inc/arrays.php:25
+msgid "Maximum Filesize"
+msgstr "Maximale Filesize"
+
+#: inc/arrays.php:26
+msgid "Enter maximum file size in mb"
+msgstr "Maximale Dateigröße in mb eingeben"
+
+#: inc/arrays.php:30
+msgid "In MB e.g: <strong>3mb</strong>"
+msgstr "In MB z.B.: <strong> 3mb </strong>"
+
+#: inc/arrays.php:33
+msgid "Allowed Filetypes"
+msgstr "Erlaubte Filetypen"
+
+#: inc/arrays.php:34
+msgid "Enter type of files to upload"
+msgstr "Geben Sie die Art der Dateien ein, um sie hochzuladen"
+
+#: inc/arrays.php:38
+msgid ""
+"e.g: <strong>jpg,png,gif,zip,pdf</strong> (Default types will be jpg,png,zip,"
+"pdf)"
+msgstr ""
+"z.B.: <strong> jpg, png, gif, zip, pdf </strong> (Standardtypen werden jpg, "
+"png, zip, pdf)"
+
+#: inc/arrays.php:40
+msgid "Do not load Bootstrap by Plugin?"
+msgstr "Laden Sie Bootstrap nicht per Plugin?"
+
+#: inc/arrays.php:41
+msgid "If your theme already has Bootstrap, disable this option."
+msgstr "Wenn Ihr Thema bereits Bootstrap hat, deaktivieren Sie diese Option."
+
+#: inc/arrays.php:46
+msgid "If your theme already has Bootstrap, Tick this option."
+msgstr "Wenn Ihr Thema bereits Bootstrap hat, klicken Sie diese Option."
+
+#: inc/arrays.php:49
+msgid "Hide breadcrumb?"
+msgstr "Verzeichnispfad ausblenden?"
+
+#: inc/arrays.php:50
+msgid "Hide breadcrumbs in fornt."
+msgstr "Brotkrumen in fornt verstecken."
+
+#: inc/arrays.php:55
+msgid "If you want to hide breadcrumbs, Tick this option."
+msgstr "Wenn Sie Brotkrumen ausblenden wollen, klicken Sie diese Option."
+
+#: inc/arrays.php:66
+msgid "File Saved"
+msgstr "Datei gespeichert"
+
+#: inc/arrays.php:70
+msgid "File(s) Uploaded!"
+msgstr "Datei (n) hochgeladen!"
+
+#: inc/arrays.php:71
+msgid "Show when file or directory is created."
+msgstr "Zeigen Sie, wann Datei oder Verzeichnis erstellt wird."
+
+#: inc/arrays.php:73
+msgid "Message for guests"
+msgstr "Nachricht für Gäste"
+
+#: inc/arrays.php:78
+msgid ""
+"This message will be displayed if user is not logged. If not provided user "
+"will be redirected to login page."
+msgstr ""
+"Diese Meldung wird angezeigt, wenn der Benutzer nicht protokolliert wird. "
+"Wenn der Benutzer nicht zur Verfügung gestellt wird, wird er auf die "
+"Anmeldeseite weitergeleitet."
+
+#: inc/arrays.php:110
+msgid "General Settings"
+msgstr "Allgemeine Einstellungen"
+
+#: inc/arrays.php:117
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: inc/arrays.php:119
+msgid "All user messages regarding file manager"
+msgstr "Alle Benutzermeldungen zum Dateimanager"
+
+#: inc/arrays.php:125
+msgid "How to use?"
+msgstr "Erste Schritte"
+
+#: inc/arrays.php:127
+msgid "Following guide is provided to use this plugin"
+msgstr ""
+"Folgende Anleitung wird zur Verfügung gestellt, um dieses Plugin zu verwenden"
+
+#: inc/arrays.php:161
+msgid "Files are being loaded ..."
+msgstr "Dateien werden geladen ..."
+
+#: inc/arrays.php:162
+msgid "Please wait ..."
+msgstr "Bitte warten ..."
+
+#: inc/arrays.php:163
+msgid "File(s) are being saved"
+msgstr "Datei (n) wird gespeichert"
+
+#: inc/arrays.php:164
+#, fuzzy
+#| msgid "Files Uploaded"
+msgid "File Upload Complete"
+msgstr "Dateien hochgeladen"
+
+#: inc/arrays.php:165
+#, fuzzy
+#| msgid "File is uploaded successfully"
+msgid "File Uploaded Successfully"
+msgstr "Datei wird erfolgreich hochgeladen"
+
+#: inc/arrays.php:166
+msgid "Sorry, but some error while uplaoding. Please try again"
+msgstr ""
+"Sorry, aber ein bisschen Fehler beim Uplaoding. Bitte versuchen Sie es noch "
+"einmal"
+
+#: inc/arrays.php:167
+msgid "Image Dimensions are Not Allowed, Required: \n"
+msgstr "Bilddimensionen sind nicht erlaubt, erforderlich:\n"
+
+#: inc/arrays.php:168
+msgid "File Size Not Allowed, Required: \n"
+msgstr "Dateigröße nicht erlaubt, erforderlich:\n"
+
+#: inc/arrays.php:169
+msgid "Are you sure?"
+msgstr "Sind Sie sicher?"
+
+#: inc/arrays.php:170
+msgid "Deleting file ..."
+msgstr "Fehler beim Löschen der Datei "
+
+#: inc/arrays.php:171
+msgid "File deleted"
+msgstr "Datei gelöscht"
+
+#: inc/arrays.php:172
+msgid "Updating file ..."
+msgstr "Aktualisierungsdatei ..."
+
+#: inc/arrays.php:173
+msgid "Creating directory ..."
+msgstr "Fehler beim Erstellen eines Verzeichnis. "
+
+#: inc/arrays.php:175
+msgid "Select Group"
+msgstr "Gruppe auswählen"
+
+#: inc/arrays.php:176
+msgid "Oops! Something wrong with server, please try again"
+msgstr "Oops! Etwas falsch mit dem Server, bitte versuchen Sie es noch einmal"
+
+#: inc/arrays.php:177
+#, php-format
+msgid "Allowed Types: %s"
+msgstr "Erlaubte Typen: %s"
+
+#: inc/arrays.php:178 inc/deactivate.class.php:100 inc/file-detail-old.php:83
+#: inc/file-detail.php:108 inc/file-detail.php:147 templates/wpfm-main.php:169
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: inc/arrays.php:179
+msgid "Yes"
+msgstr ""
+
+#: inc/arrays.php:180 inc/classes/class.meta.php:285 inc/file-detail-old.php:81
+#: inc/file-detail.php:106 inc/inputs/input.checkbox.php:48
+#: inc/inputs/input.date.php:53 inc/inputs/input.email.php:48
+#: inc/inputs/input.radio.php:48 inc/inputs/input.section.php:48
+#: inc/inputs/input.select.php:48 inc/inputs/input.text.php:48
+#: inc/inputs/input.textarea.php:48 templates/wpfm-main.php:161
+msgid "Description"
+msgstr "Beschreibung"
+
+#: inc/arrays.php:181 inc/classes/class.meta.php:265
+#: inc/inputs/input.checkbox.php:38 inc/inputs/input.date.php:43
+#: inc/inputs/input.email.php:38 inc/inputs/input.radio.php:38
+#: inc/inputs/input.section.php:43 inc/inputs/input.select.php:38
+#: inc/inputs/input.text.php:38 inc/inputs/input.textarea.php:38
+msgid "Title"
+msgstr "Titel"
+
+#: inc/arrays.php:191
+#, php-format
+msgid "Max. %d file(s) can be uploaded"
+msgstr "Max. % d-Datei (s) kann hochgeladen werden"
+
+#: inc/arrays.php:196 inc/arrays.php:237 inc/arrays.php:257
+#: templates/wpfm-downloads.php:40 templates/wpfm-main.php:58
+msgid "Home"
+msgstr "Startseite"
+
+#: inc/arrays.php:315 inc/arrays.php:316
+msgid "Files"
+msgstr "Button Label (Dateien auswählen)"
+
+#: inc/arrays.php:317
+msgid "Add New"
+msgstr "Neu hinzufügen"
+
+#: inc/arrays.php:318
+msgid "All Files"
+msgstr "Alle Dateien"
+
+#: inc/arrays.php:319
+msgid "Add Files"
+msgstr "Button Label (Dateien auswählen)"
+
+#: inc/arrays.php:320
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/arrays.php:321
+msgid "Edit Files"
+msgstr "Benutzerdateien bearbeiten"
+
+#: inc/arrays.php:322
+msgid "New Files"
+msgstr "Button Label (Dateien auswählen)"
+
+#: inc/arrays.php:323
+msgid "View"
+msgstr "Anzeigen"
+
+#: inc/arrays.php:324
+msgid "View Files"
+msgstr "Benutzerdateien anzeigen"
+
+#: inc/arrays.php:325 templates/wpfm-downloads.php:17
+#: templates/wpfm-main.php:27
+msgid "Search Files"
+msgstr "Suche nach Benutzerdateien"
+
+#: inc/arrays.php:326
+msgid "No Files found"
+msgstr "Keine Benutzerdateien gefunden"
+
+#: inc/arrays.php:327
+msgid "No Files found in Trash"
+msgstr "Keine Benutzerdateien im Papierkorb gefunden"
+
+#: inc/arrays.php:328
+msgid "Parent Files"
+msgstr "Elterndateien"
+
+#: inc/arrays.php:329
+msgid "File Manager"
+msgstr "Dateimanager"
+
+#: inc/callback-functions.php:29
+msgid "File is move successfully"
+msgstr "Datei erfolgreich gespeichert"
+
+#: inc/callback-functions.php:31
+msgid "Error while moveing file, please try again."
+msgstr "Fehler beim Aktualisieren der Datei, versuchen Sie es erneut"
+
+#: inc/callback-functions.php:55
+msgid "File updated"
+msgstr "Datei aktualisiert"
+
+#: inc/callback-functions.php:58
+msgid "Error while updating file, try again"
+msgstr "Fehler beim Aktualisieren der Datei, versuchen Sie es erneut"
+
+#: inc/callback-functions.php:75
+msgid "Email or Subject not given."
+msgstr "E-Mail oder Betreff nicht angegeben."
+
+#: inc/callback-functions.php:88 inc/hooks.php:262
+#, php-format
+msgid "<a href=\"%s\">Download %s</a>"
+msgstr "<a href = \" %s\" > Download %s </a>"
+
+#: inc/callback-functions.php:99
+msgid "File is shared successfully"
+msgstr "Datei wird erfolgreich geteilt"
+
+#: inc/classes/class.fields.php:32 inc/classes/class.fields.php:208
+msgid "Fields"
+msgstr "Felder"
+
+#: inc/classes/class.fields.php:33 inc/classes/class.fields.php:209
+msgid "Value"
+msgstr "Standardwert"
+
+#: inc/classes/class.meta.php:208
+msgid "Option"
+msgstr "Option"
+
+#: inc/classes/class.meta.php:266 inc/inputs/input.checkbox.php:39
+#: inc/inputs/input.date.php:44 inc/inputs/input.email.php:39
+#: inc/inputs/input.radio.php:39 inc/inputs/input.select.php:39
+#: inc/inputs/input.text.php:39 inc/inputs/input.textarea.php:39
+msgid "It will be shown as field label"
+msgstr "Es wird als Feldbeschriftung angezeigt werden"
+
+#: inc/classes/class.meta.php:275
+msgid "Field ID"
+msgstr "Feld ID"
+
+#: inc/classes/class.meta.php:276 inc/inputs/input.checkbox.php:44
+#: inc/inputs/input.date.php:49 inc/inputs/input.email.php:44
+#: inc/inputs/input.hidden.php:40 inc/inputs/input.radio.php:44
+#: inc/inputs/input.select.php:44 inc/inputs/input.text.php:44
+#: inc/inputs/input.textarea.php:44
+msgid ""
+"REQUIRED: The identification name of this field, that you can insert into "
+"body email configuration. Note:Use only lowercase characters and underscores."
+msgstr ""
+"ERFORDERLICH: Der ID-Name dieses Feldes, das Sie in der E-Mail Konfiguration "
+"einfügen können. Hinweis: benutzen Sie nur Kleinbuchstaben und Unterstriche."
+
+#: inc/classes/class.meta.php:286 inc/inputs/input.checkbox.php:49
+#: inc/inputs/input.date.php:54 inc/inputs/input.email.php:49
+#: inc/inputs/input.radio.php:49 inc/inputs/input.select.php:49
+#: inc/inputs/input.text.php:49 inc/inputs/input.textarea.php:49
+msgid "Small description, it will be diplay near name title."
+msgstr "Kurze Beschreibung, wird beim Titel angezeigt."
+
+#: inc/classes/class.meta.php:295 inc/inputs/input.checkbox.php:64
+#: inc/inputs/input.date.php:64 inc/inputs/input.email.php:59
+#: inc/inputs/input.radio.php:70 inc/inputs/input.select.php:70
+#: inc/inputs/input.text.php:59 inc/inputs/input.textarea.php:59
+msgid "Required"
+msgstr "Erforderlich"
+
+#: inc/classes/class.meta.php:296 inc/inputs/input.checkbox.php:65
+#: inc/inputs/input.date.php:65 inc/inputs/input.email.php:60
+#: inc/inputs/input.radio.php:71 inc/inputs/input.select.php:71
+#: inc/inputs/input.text.php:60 inc/inputs/input.textarea.php:60
+msgid "Select this if it must be required."
+msgstr "Wählen Sie diese Option, wenn es erforderlich ist ."
+
+#: inc/classes/class.meta.php:304 inc/inputs/input.checkbox.php:69
+#: inc/inputs/input.date.php:69 inc/inputs/input.email.php:64
+#: inc/inputs/input.radio.php:76 inc/inputs/input.select.php:76
+#: inc/inputs/input.text.php:64 inc/inputs/input.textarea.php:64
+msgid "Class"
+msgstr "Klasse"
+
+#: inc/classes/class.meta.php:305 inc/inputs/input.checkbox.php:70
+#: inc/inputs/input.date.php:70 inc/inputs/input.email.php:65
+#: inc/inputs/input.radio.php:77 inc/inputs/input.select.php:77
+#: inc/inputs/input.text.php:65 inc/inputs/input.textarea.php:65
+msgid ""
+"Insert an additional class(es) (separateb by comma) for more personalization."
+msgstr ""
+"Legen Sie eine weitere Klasse(n) (separiert durch Komma) für mehr "
+"Personalisierung an."
+
+#: inc/classes/class.meta.php:314 inc/inputs/input.checkbox.php:58
+#: inc/inputs/input.radio.php:59 inc/inputs/input.select.php:59
+msgid "Add options"
+msgstr "Option hinzufügen"
+
+#: inc/classes/class.meta.php:315
+msgid "Enter multiple options."
+msgstr "Geben Sie mehrere Optionen ein."
+
+#: inc/classes/class.meta.php:323
+msgid "Selected Option"
+msgstr "Ausgewählte option"
+
+#: inc/classes/class.meta.php:324 inc/inputs/input.select.php:65
+msgid "Type option name (given above) if you want already selected."
+msgstr ""
+"Geben Sie Optionsname (oben angegebenen), wenn Sie bereits ausgewählt werden "
+"sollen."
+
+#: inc/classes/class.meta.php:332 inc/inputs/input.checkbox.php:79
+msgid "Checked option(s)"
+msgstr "Geprüft Option (en)"
+
+#: inc/classes/class.meta.php:333 inc/inputs/input.checkbox.php:80
+msgid "Type option(s) name (given above) if you want already checked."
+msgstr "Geben Sie Option(en) Bezeichnung (oben), wenn Sie bereits überprüft."
+
+#: inc/classes/class.meta.php:341
+msgid "Min checked option(s)"
+msgstr "Min. aufgegebenes Option(en)"
+
+#: inc/classes/class.meta.php:342 inc/inputs/input.checkbox.php:86
+msgid ""
+"How many options can be checked by user e.g: 2. Leave blank for default."
+msgstr ""
+"Wie viele Optionen von Benutzer z.B. geprüft werden können: 2. standardmäßig "
+"leer lassen."
+
+#: inc/classes/class.meta.php:350
+msgid "Max checked option(s)"
+msgstr "Max. Geprüfte Option(en)"
+
+#: inc/classes/class.meta.php:351 inc/inputs/input.checkbox.php:92
+msgid ""
+"How many options can be checked by user e.g: 3. Leave blank for default."
+msgstr ""
+"Wie viele Optionen von Benutzer z.B. geprüft werden können: 3. standardmäßig "
+"leer lassen."
+
+#: inc/classes/class.meta.php:359
+msgid "Placeholder"
+msgstr "Platzhalter"
+
+#: inc/classes/class.meta.php:360
+msgid "Type field Placeholder."
+msgstr "Typ Feld Placeholder."
+
+#: inc/classes/class.meta.php:368
+msgid "Default value"
+msgstr "Standardwert"
+
+#: inc/classes/class.meta.php:369
+msgid "Type field Default value."
+msgstr "Geben Sie den Standardwert des Feldes ein."
+
+#: inc/classes/class.meta.php:377
+msgid "Everyone"
+msgstr "Jeder"
+
+#: inc/classes/class.meta.php:378
+msgid "Members(logged in)"
+msgstr "Mitglieder (angemeldet)"
+
+#: inc/classes/class.meta.php:379
+msgid "Specific roles"
+msgstr "Spezifische Rollen"
+
+#: inc/classes/class.meta.php:384
+msgid "Permission"
+msgstr "Berechtigung"
+
+#: inc/classes/class.meta.php:385
+msgid "select permissions for view fields."
+msgstr "Wählen Sie Berechtigungen für View-Felder aus."
+
+#: inc/classes/class.meta.php:393
+msgid "Member Roles"
+msgstr "Benutzerollen\t"
+
+#: inc/classes/class.meta.php:394
+msgid "Select the member roles that can view this field on the front-end."
+msgstr ""
+"Wählen Sie die Mitgliedsrollen aus, die dieses Feld am Frontend anzeigen "
+"können."
+
+#: inc/classes/class.meta.php:401
+msgid "Default - mm/dd/yy"
+msgstr "Default - mm/dd/yy"
+
+#: inc/classes/class.meta.php:402
+msgid "ISO 8601 - yy-mm-dd"
+msgstr "ISO 8601-yy-mm-dd"
+
+#: inc/classes/class.meta.php:403
+msgid "Short - d M, y"
+msgstr "Short-d M, y"
+
+#: inc/classes/class.meta.php:404
+msgid "Medium - d MM, y"
+msgstr "Medium-d MM, y"
+
+#: inc/classes/class.meta.php:405
+msgid "Full - DD, d MM, yy"
+msgstr "Full-DD, d MM, yy"
+
+#: inc/classes/class.meta.php:406
+msgid "With text - 'day' d 'of' MM 'in the year' yy"
+msgstr "Mit Text-\"Tag\" d ' von ' MM ' im Jahr ' yy"
+
+#: inc/classes/class.meta.php:411 inc/inputs/input.date.php:79
+msgid "Date formats"
+msgstr "Datumsformate"
+
+#: inc/classes/class.meta.php:412 inc/inputs/input.date.php:80
+msgid "Select date format."
+msgstr "Wählen Sie das Datumsformat."
+
+#: inc/classes/class.meta.php:425 inc/inputs/input.text.php:24
+msgid "Text Input"
+msgstr "Texteingabe"
+
+#: inc/classes/class.meta.php:426
+msgid "<i class=\"fa fa-pencil-square-o\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-pencil-square-o\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:427
+msgid "Textbox Field"
+msgstr "Textbox Field"
+
+#: inc/classes/class.meta.php:444
+msgid "Select Input"
+msgstr "Eingabe auswählen"
+
+#: inc/classes/class.meta.php:445
+msgid "<i class=\"fa fa-check\" aria-hidden=\"true\"></i> "
+msgstr "<i class = \"fa fa-check\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:446 templates/admin/fields.php:82
+msgid "Select Field"
+msgstr "Feld auswählen"
+
+#: inc/classes/class.meta.php:471 inc/inputs/input.radio.php:24
+msgid "Radio Input"
+msgstr "Auswahlkästchen"
+
+#: inc/classes/class.meta.php:472
+msgid "<i class=\"fa fa-dot-circle-o\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-dot-circle-o\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:473
+msgid "Radio Field"
+msgstr "Radio Feld"
+
+#: inc/classes/class.meta.php:490 inc/inputs/input.checkbox.php:24
+msgid "Checkbox Input"
+msgstr "CheckBox Eingabe"
+
+#: inc/classes/class.meta.php:491
+msgid "<i class=\"fa fa-check-square-o\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-check-square-o\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:492
+msgid "Checkbox Field"
+msgstr "Checkbox-Feld"
+
+#: inc/classes/class.meta.php:511 inc/inputs/input.date.php:24
+msgid "Date Input"
+msgstr "Datum Eingabe"
+
+#: inc/classes/class.meta.php:512
+msgid "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa-Fa-Kalender\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:513
+msgid "Date Field"
+msgstr "Datumsfeld"
+
+#: inc/classes/class.meta.php:544
+msgid "Color Input"
+msgstr "Farbeinhalt"
+
+#: inc/classes/class.meta.php:545 inc/classes/class.meta.php:573
+#: inc/classes/class.meta.php:591 inc/classes/class.meta.php:661
+msgid "<i class=\"fa fa-user-plus\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-user-plus\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:546
+msgid "Color Field"
+msgstr "Farbfeld"
+
+#: inc/classes/class.meta.php:563
+msgid "Show palletes"
+msgstr "Zeigen palletes"
+
+#: inc/classes/class.meta.php:564
+msgid "Tick if need to show a group of common colors beneath the square"
+msgstr ""
+"Ankreuzen, wenn eine Gruppe von häufig verwendeten Farben unter dem Platz "
+"zeigen müssen"
+
+#: inc/classes/class.meta.php:572 inc/inputs/input.email.php:24
+msgid "Email Input"
+msgstr "E-Mail Eingabe"
+
+#: inc/classes/class.meta.php:574
+msgid "Email Field"
+msgstr "E-Mail Feld"
+
+#: inc/classes/class.meta.php:590
+msgid "Url Input"
+msgstr "Url-Eingang"
+
+#: inc/classes/class.meta.php:592
+msgid "Url Field"
+msgstr "Urlfeld"
+
+#: inc/classes/class.meta.php:608
+msgid "Number Input"
+msgstr "Anzahl eingeben"
+
+#: inc/classes/class.meta.php:609
+msgid "<i class=\"fa fa-hashtag\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-hashtag\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:610
+msgid "Number Field"
+msgstr "Nummernfeld"
+
+#: inc/classes/class.meta.php:619
+msgid "Max. values"
+msgstr "Max. Werte"
+
+#: inc/classes/class.meta.php:620
+msgid "Max. values allowed, leave blank for default"
+msgstr "Max. Werte zulässig, für Standard-leer"
+
+#: inc/classes/class.meta.php:624
+msgid "Min. values"
+msgstr "Min. Werte"
+
+#: inc/classes/class.meta.php:625
+msgid "Min. values allowed, leave blank for default"
+msgstr "Min. Werte erlaubt, freilassen für Standard"
+
+#: inc/classes/class.meta.php:629
+msgid "Steps"
+msgstr "Schritte"
+
+#: inc/classes/class.meta.php:630
+msgid "specified legal number intervals"
+msgstr "angegebenen gesetzlichen Nummernintervalle"
+
+#: inc/classes/class.meta.php:642 inc/inputs/input.textarea.php:24
+msgid "Textarea Input"
+msgstr "Texteingabe Eingang"
+
+#: inc/classes/class.meta.php:643
+msgid "<i class=\"fa fa-file-text-o\" aria-hidden=\"true\"></i>"
+msgstr "<i class = \"fa fa-file-text-o\" aria-hidden = \"true\" > </i>"
+
+#: inc/classes/class.meta.php:644
+msgid "Textarea Field"
+msgstr "Textbereichfeld"
+
+#: inc/classes/class.meta.php:660
+msgid "Auto Complete"
+msgstr "Autovervollständigung"
+
+#: inc/classes/class.meta.php:662
+msgid "Auto Complete Field"
+msgstr "Auto Complete Field"
+
+#: inc/classes/class.meta.php:681
+msgid "Max Select"
+msgstr "Max Select"
+
+#: inc/classes/class.meta.php:682
+msgid "Enter number to maximum select options"
+msgstr "Geben Sie die Nummer ein, um die maximalen Auswahloptionen zu wählen"
+
+#: inc/cpt.php:98
+msgid "Thumbnail"
+msgstr "Vorschaubild"
+
+#: inc/cpt.php:99
+msgid "Tilte"
+msgstr "Tilte"
+
+#: inc/cpt.php:100
+msgid "Author"
+msgstr "Auther"
+
+#: inc/cpt.php:101
+msgid "Downloads"
+msgstr "Downloads"
+
+#: inc/cpt.php:102 templates/wpfm-downloads.php:50 templates/wpfm-main.php:82
+msgid "Type"
+msgstr "Dateityp nicht gültig- "
+
+#: inc/cpt.php:103
+msgid "Location"
+msgstr "Standort"
+
+#: inc/cpt.php:104
+msgid "size"
+msgstr "Größe: "
+
+#: inc/cpt.php:105
+msgid "Detail"
+msgstr "Detail"
+
+#: inc/cpt.php:106
+msgid "Date"
+msgstr "Datum"
+
+#: inc/cpt.php:110
+msgid "Meta"
+msgstr "Meta."
+
+#: inc/cpt.php:114
+msgid "File Groups"
+msgstr "Dateinruppen"
+
+#: inc/cpt.php:118
+msgid "Price"
+msgstr "Preis"
+
+#: inc/deactivate.class.php:87
+msgid "Please Help Us to Make it Better for You."
+msgstr ""
+
+#: inc/deactivate.class.php:99
+msgid "Submit & Deactivate"
+msgstr ""
+
+#: inc/deactivate.class.php:170
+msgid "Temporarily Disabled for Debugging."
+msgstr ""
+
+#: inc/deactivate.class.php:172
+msgid "Have used it successfully and aint in need of it anymore"
+msgstr ""
+
+#: inc/deactivate.class.php:176
+msgid "I couldn't understand how to make it work"
+msgstr ""
+
+#: inc/deactivate.class.php:178
+msgid "Would you like us to assist you?"
+msgstr ""
+
+#: inc/deactivate.class.php:182
+msgid "I found a better plugin"
+msgstr ""
+
+#: inc/deactivate.class.php:184
+msgid "Which plugin?"
+msgstr ""
+
+#: inc/deactivate.class.php:188
+msgid "The plugin is great, but I need specific feature that you don't support"
+msgstr ""
+
+#: inc/deactivate.class.php:190
+msgid "Could you tell us more about that feature?"
+msgstr ""
+
+#: inc/deactivate.class.php:194
+msgid "The plugin is not working"
+msgstr ""
+
+#: inc/deactivate.class.php:196
+msgid "Could you tell us a bit more whats not working?"
+msgstr ""
+
+#: inc/deactivate.class.php:200
+msgid "It's not what I was looking for"
+msgstr ""
+
+#: inc/deactivate.class.php:202 inc/deactivate.class.php:214
+msgid "Could you tell us a bit more?"
+msgstr ""
+
+#: inc/deactivate.class.php:206
+msgid "The plugin didn't work as expected"
+msgstr ""
+
+#: inc/deactivate.class.php:208
+msgid "What did you expect?"
+msgstr ""
+
+#: inc/deactivate.class.php:212
+msgid "I rather wouldn't say"
+msgstr ""
+
+#: inc/file-detail-old.php:27 inc/file-detail.php:41
+msgid "File Name"
+msgstr "Dateiname"
+
+#: inc/file-detail-old.php:33 inc/file-detail.php:47
+msgid "File Size"
+msgstr "Dateigröße"
+
+#: inc/file-detail-old.php:39 inc/file-detail.php:53
+msgid "File ID"
+msgstr "Datei-ID"
+
+#: inc/file-detail-old.php:45 inc/file-detail.php:64
+msgid "Total Downloads"
+msgstr "Downloads Gesamt"
+
+#: inc/file-detail-old.php:51 inc/file-detail.php:70
+msgid "Post Date"
+msgstr "Beitragsdatum"
+
+#: inc/file-detail-old.php:70
+msgid "Edit Title and Description"
+msgstr "Titel und Beschreibung bearbeiten"
+
+#: inc/file-detail-old.php:76 inc/file-detail.php:101
+msgid "File Data"
+msgstr "Daten"
+
+#: inc/file-detail-old.php:83 inc/file-detail.php:108
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: inc/file-detail-old.php:89 inc/file-detail.php:129
+msgid "File Meta"
+msgstr "Datei Meta"
+
+#: inc/file-detail-old.php:107 inc/file-detail.php:162
+msgid "Send File"
+msgstr "Senden Datei"
+
+#: inc/file-detail-old.php:114 inc/file-detail.php:169
+msgid "Email"
+msgstr "Geben Sie Ihre E-Mail-Adresse ein"
+
+#: inc/file-detail-old.php:118 inc/file-detail.php:173
+msgid "Subject"
+msgstr "Betreff"
+
+#: inc/file-detail-old.php:122 inc/file-detail.php:177
+msgid "Message (optional)"
+msgstr "Nachricht (optional)"
+
+#: inc/file-detail-old.php:126 inc/file-detail.php:181
+msgid "Send"
+msgstr "Senden"
+
+#: inc/file-detail-old.php:127 inc/file-detail.php:182
+msgid "Sending file ..."
+msgstr "Senden Sie Datei ..."
+
+#: inc/file-detail-old.php:133 inc/file-detail-old.php:154
+#: inc/file-detail.php:80 templates/admin/fields.php:117
+msgid "Close"
+msgstr "Schließen"
+
+#: inc/file-detail.php:93
+msgid "Edit Title"
+msgstr "Titel bearbeiten"
+
+#: inc/file-detail.php:138 inc/file-detail.php:143
+msgid "Edit Meta"
+msgstr "Meta bearbeiten"
+
+#: inc/file-detail.php:146 templates/admin/fields.php:71
+msgid "Save Meta"
+msgstr "Speichern von Meta"
+
+#: inc/file.class.php:468
+#, fuzzy
+#| msgid "Upload File"
+msgid "Update File"
+msgstr "Datei hochladen"
+
+#: inc/file.class.php:486
+#, fuzzy
+#| msgid "Send File"
+msgid "Revisions File"
+msgstr "Senden Datei"
+
+#: inc/file.class.php:527 inc/files.php:763 inc/files.php:767
+msgid "Download"
+msgstr "Download \"%s\";"
+
+#: inc/files.php:61 inc/files.php:403
+msgid "User object not found"
+msgstr "Benutzerobjekt nicht gefunden"
+
+#: inc/files.php:80
+msgid "Directory created successfully"
+msgstr "Verzeichnis erfolgreich erstellt"
+
+#: inc/files.php:104
+msgid "Error while creating directory"
+msgstr "Fehler beim Erstellen eines Verzeichnis. "
+
+#: inc/files.php:143
+msgid "File type not valid"
+msgstr "Dateityp nicht gültig- "
+
+#: inc/files.php:683
+#, php-format
+msgid "%s Successfully Removed"
+msgstr "%s ist erfolgreich reduziert"
+
+#: inc/files.php:689
+#, php-format
+msgid "Error while deleting %s, Try again."
+msgstr "Fehler beim Löschen von %s, versuchen Sie es erneut."
+
+#: inc/files.php:729
+msgid "File Meta save successfully"
+msgstr "Datei Meta erfolgreich speichern"
+
+#: inc/files.php:731
+#, fuzzy
+#| msgid "File Meta save successfully"
+msgid "File Meta not save successfully"
+msgstr "Datei Meta erfolgreich speichern"
+
+#: inc/files.php:805
+#, php-format
+msgid "no file found at %s"
+msgstr "Keine Datei gefunden bei %s"
+
+#: inc/helpers.php:54 inc/helpers.php:66
+#, php-format
+msgid " %s"
+msgstr "%s"
+
+#: inc/helpers.php:317
+msgid "File saved successfully"
+msgstr "Datei erfolgreich gespeichert"
+
+#: inc/helpers.php:459
+#, php-format
+msgid " My Files (%d Items)"
+msgstr "Meine Dateien (% d Items)"
+
+#: inc/helpers.php:468
+msgid " Files"
+msgstr "Button Label (Dateien auswählen)"
+
+#: inc/helpers.php:968
+msgid "« prev"
+msgstr ""
+
+#: inc/helpers.php:969
+msgid "next »"
+msgstr ""
+
+#: inc/hooks.php:252
+msgid "Files Uploaded"
+msgstr "Dateien hochgeladen"
+
+#: inc/hooks.php:280
+#, php-format
+msgid "%d File uploaded by %s"
+msgid_plural "%d Files uploaded by %s"
+msgstr[0] "% d Datei hochgeladen durch %s"
+msgstr[1] "% d Dateien hochgeladen um %s"
+
+#: inc/hooks.php:311
+msgid " Logout"
+msgstr "Logout Seite"
+
+#: inc/inputs/input.checkbox.php:25
+msgid "regular checkbox input"
+msgstr "reguläre Checkbox Eingabe"
+
+#: inc/inputs/input.checkbox.php:43 inc/inputs/input.date.php:48
+#: inc/inputs/input.email.php:43 inc/inputs/input.hidden.php:39
+#: inc/inputs/input.radio.php:43 inc/inputs/input.select.php:43
+#: inc/inputs/input.text.php:43 inc/inputs/input.textarea.php:43
+msgid "Data name"
+msgstr "Datenname"
+
+#: inc/inputs/input.checkbox.php:53 inc/inputs/input.date.php:58
+#: inc/inputs/input.email.php:53 inc/inputs/input.radio.php:53
+#: inc/inputs/input.select.php:53 inc/inputs/input.text.php:53
+#: inc/inputs/input.textarea.php:53
+msgid "Error message"
+msgstr "Fehlermeldung"
+
+#: inc/inputs/input.checkbox.php:54 inc/inputs/input.date.php:59
+#: inc/inputs/input.email.php:54 inc/inputs/input.radio.php:54
+#: inc/inputs/input.select.php:54 inc/inputs/input.text.php:54
+#: inc/inputs/input.textarea.php:54
+msgid "Insert the error message for validation."
+msgstr "Legen Sie die Fehlermeldung für die Validierung fest."
+
+#: inc/inputs/input.checkbox.php:59 inc/inputs/input.radio.php:60
+#: inc/inputs/input.select.php:60
+msgid "Type each option per line"
+msgstr "Geben Sie eine Option pro Zeile ein"
+
+#: inc/inputs/input.checkbox.php:74 inc/inputs/input.date.php:74
+#: inc/inputs/input.email.php:69 inc/inputs/input.radio.php:81
+#: inc/inputs/input.select.php:81 inc/inputs/input.text.php:69
+#: inc/inputs/input.textarea.php:69
+msgid "Width"
+msgstr "Breite"
+
+#: inc/inputs/input.checkbox.php:75 inc/inputs/input.date.php:75
+#: inc/inputs/input.email.php:70 inc/inputs/input.radio.php:82
+#: inc/inputs/input.select.php:82 inc/inputs/input.text.php:70
+#: inc/inputs/input.textarea.php:70
+msgid "Type field width in % e.g: 50%"
+msgstr "Geben Sie die Feldbreite in % z.B.: 50 %"
+
+#: inc/inputs/input.checkbox.php:85
+msgid "Min. Checked option(s)"
+msgstr "Min. aufgegebenes Option(en)"
+
+#: inc/inputs/input.checkbox.php:91
+msgid "Max. Checked option(s)"
+msgstr "Max. Geprüfte Option(en)"
+
+#: inc/inputs/input.date.php:25
+msgid "regular date input"
+msgstr "reguläre Datum Eingang"
+
+#: inc/inputs/input.email.php:25
+msgid "regular email input"
+msgstr "reguläre E-Mail Eingabe"
+
+#: inc/inputs/input.email.php:75
+msgid "Send email"
+msgstr "E-Mail senden"
+
+#: inc/inputs/input.email.php:76
+msgid "Select this if you want user get this form."
+msgstr ""
+"Wählen Sie diese Option, wenn Sie dieses Formular Benutzer erhalten möchten."
+
+#: inc/inputs/input.email.php:80
+msgid "Enable conditional logic"
+msgstr "Bedingungsgesteuerte Logik aktivieren"
+
+#: inc/inputs/input.email.php:81 inc/inputs/input.email.php:86
+msgid "Tick it to turn conditional logic to work below"
+msgstr "Kreuzen sie bedingte Logik zu drehen unten zu arbeiten"
+
+#: inc/inputs/input.email.php:85
+msgid "Conditions"
+msgstr "Bedingungen"
+
+#: inc/inputs/input.hidden.php:24
+msgid "Hidden Input"
+msgstr "Verdeckte Eingabe"
+
+#: inc/inputs/input.hidden.php:25
+msgid "regular hidden input"
+msgstr "reguläre versteckte Eingabe"
+
+#: inc/inputs/input.hidden.php:44
+msgid "Field value"
+msgstr "Feld Wert"
+
+#: inc/inputs/input.hidden.php:45
+msgid "you can pre-set the value of this hidden input."
+msgstr "sie können den Wert dieser versteckten Eingabe vor programmieren."
+
+#: inc/inputs/input.radio.php:25
+msgid "regular radio input"
+msgstr "reguläre Radio Eingabe"
+
+#: inc/inputs/input.radio.php:64 inc/inputs/input.select.php:64
+msgid "Selected option"
+msgstr "Ausgewählte option"
+
+#: inc/inputs/input.radio.php:65
+msgid "Type option name (given above) if you want already radioed."
+msgstr "Geben Sie Optionsname (oben angegebenen), wenn Sie bereits funkte."
+
+#: inc/inputs/input.section.php:29
+msgid "Section"
+msgstr "Abschnitt"
+
+#: inc/inputs/input.section.php:30
+msgid "Form section"
+msgstr "Form-Abschnitt"
+
+#: inc/inputs/input.section.php:44
+msgid "It will as section heading wrapped in h2"
+msgstr "Es wird als Abschnittsüberschrift eingewickelt in h2"
+
+#: inc/inputs/input.section.php:49
+msgid "Type description, it will be diplay under section heading."
+msgstr "Geben Sie Beschreibung, es werden Diplay unter Abschnittsüberschrift."
+
+#: inc/inputs/input.select.php:24
+msgid "Select-box Input"
+msgstr "reguläre Select-Box Eingabe"
+
+#: inc/inputs/input.select.php:25
+msgid "regular select-box input"
+msgstr "reguläre Select-Box Eingabe"
+
+#: inc/inputs/input.select.php:103
+msgid "Select option"
+msgstr "Option auswählen"
+
+#: inc/inputs/input.text.php:25
+msgid "regular text input"
+msgstr "reguläre Text Eingabe"
+
+#: inc/inputs/input.textarea.php:25
+msgid "regular textarea input"
+msgstr "reguläre Textbereich Eingabe"
+
+#: templates/admin/file-access.php:19 templates/admin/file-sources.php:26
+msgid "Select User Roles"
+msgstr "Nutzerrollen auswählen"
+
+#: templates/admin/file-access.php:20
+msgid "Leave blank to allow access every user including guests"
+msgstr ""
+"Lassen Sie leer, um jedem Benutzer einschließlich der Gäste Zugang zu "
+"ermöglichen"
+
+#: templates/admin/file-access.php:25
+msgid "Selec User"
+msgstr "Selec-Nutzer"
+
+#: templates/admin/file-access.php:26
+msgid "Select users one by one"
+msgstr "Nutzer einzeln auswählen"
+
+#: templates/admin/file-access.php:37
+msgid "Allow Guests"
+msgstr "Gäste zulassen"
+
+#: templates/admin/file-access.php:41
+msgid "Allow all public users to access these downloads"
+msgstr ""
+"Erlauben Sie allen öffentlichen Nutzern, auf diese Downloads zuzugreifen"
+
+#: templates/admin/file-sources.php:20
+msgid "Select Groups"
+msgstr "Gruppen wählen"
+
+#: templates/admin/file-sources.php:21
+msgid "Select file groups to include files on download page"
+msgstr ""
+"Wählen Sie Dateigruppen aus, um Dateien auf der Download-Seite einzufügen"
+
+#: templates/admin/file-sources.php:27
+msgid "Select user roles to include their files on download page"
+msgstr ""
+"Wählen Sie die Benutzerrollen aus, um ihre Dateien auf der Download-Seite "
+"einzufügen."
+
+#: templates/admin/file-sources.php:32
+msgid "Selec Users"
+msgstr "elec User"
+
+#: templates/admin/file-sources.php:33
+msgid "Select users to include their files on download page"
+msgstr ""
+"Wählen Sie Benutzer aus, die ihre Dateien auf der Download-Seite einfügen"
+
+#: templates/admin/file-sources.php:54
+msgid "Current User Files"
+msgstr "Aktuelle Benutzerdateien"
+
+#: templates/admin/file-sources.php:58
+msgid "It will also include current user files."
+msgstr "Es wird auch aktuelle Benutzerdateien enthalten."
+
+#: templates/admin/ftp-files.php:10
+msgid "Sync FTP Files"
+msgstr "FTP-Dateien synchronisieren"
+
+#: templates/admin/ftp-files.php:16
+msgid "Post FTP files"
+msgstr "FTP-Dateien"
+
+#: templates/admin/settings.php:101
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: templates/wpfm-downloads.php:47 templates/wpfm-main.php:79
+msgid "Sorted by"
+msgstr "Sortiert nach"
+
+#: templates/wpfm-downloads.php:49 templates/wpfm-main.php:81
+msgid "Name"
+msgstr "Name."
+
+#: templates/wpfm-downloads.php:55 templates/wpfm-main.php:87
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: templates/wpfm-downloads.php:61 templates/wpfm-main.php:93
+msgid "Descending"
+msgstr "Absteigend"
+
+#: templates/wpfm-main.php:66
+msgid "Filter by grouped :"
+msgstr "Filter nach Gruppen:"
+
+#: templates/wpfm-main.php:68
+msgid "All"
+msgstr "Alle Optionen wurden aktualisiert"
+
+#: templates/wpfm-main.php:132
+msgid "Create Directory"
+msgstr "Verzeichnis schaffen"
+
+#: templates/wpfm-main.php:154
+msgid "Directory Name"
+msgstr "Verzeichnisname"
+
+#: templates/wpfm-main.php:168
+msgid "Create"
+msgstr "Erstellen"
+
+#. Plugin Name of the plugin/theme
+msgid "WP File Manager"
+msgstr "WP File Manager"
+
+#. Plugin URI of the plugin/theme
+msgid "https://najeebmedia.com/"
+msgstr "https://najeebmedia.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WordPress File Manager Plugin allow members and guest users to upload and "
+"manage their files on front-end."
+msgstr ""
+"N-Media Frontend File Manager Plugin ermöglicht es den Nutzern der Website, "
+"Dateien hochzuladen und mit Admin zu teilen."
+
+#. Author of the plugin/theme
+msgid "N-Media"
+msgstr "N-Media"
+
+#. Author URI of the plugin/theme
+msgid "najeebmedia.com"
+msgstr "najeebmedia.com"
+
+#~ msgid "User Files"
+#~ msgstr "Benutzer-Dateien"
+
+#~ msgid "Add User Files"
+#~ msgstr "Benutzerdateien hinzufügen"
+
+#~ msgid "New User Files"
+#~ msgstr "Neue Benutzerdateien"
+
+#~ msgid "Sorry, no posts matched your criteria."
+#~ msgstr "Keine passenden Beiträge gefunden."

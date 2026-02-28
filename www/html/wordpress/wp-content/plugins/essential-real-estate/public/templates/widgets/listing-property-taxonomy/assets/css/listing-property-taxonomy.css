@@ -1,0 +1,49 @@
+.ere-widget-listing-property-taxonomy ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.ere-widget-listing-property-taxonomy ul li {
+	width: 100%;
+	margin-bottom: 6px;
+}
+.ere-widget-listing-property-taxonomy ul li a {
+	display: block;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	color: #fff;
+	position: relative;
+}
+.ere-widget-listing-property-taxonomy ul li a .item-count {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0;
+	display: inline-block;
+	font-size: 12px;
+}
+.ere-widget-listing-property-taxonomy ul li a:hover {
+	color: #fb6a19 !important;
+	padding-left: 5px;
+}
+.ere-widget-listing-property-taxonomy ul li:last-child {
+	margin-bottom: 0;
+}
+.ere-widget-listing-property-taxonomy.taxonomy-2-columns ul li {
+	width: 50%;
+	float: left;
+	padding-right: 10px;
+}
+.ere-widget-listing-property-taxonomy.taxonomy-2-columns ul li:nth-child(2n) {
+	padding-right: 0;
+}
+.ere-widget-listing-property-taxonomy.scheme-light ul li a {
+	color: #222;
+}

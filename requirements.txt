@@ -1,0 +1,8 @@
+requests
+sqlglot
+sqlparse
+bleach
+esprima
+beautifulsoup4
+pymysql
+rstr

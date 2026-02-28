@@ -1,0 +1,159 @@
+.agency-single-info .agency-logo-inner {
+	padding: 50px 0;
+	border: 1px solid #ededed;
+	background-color: #fafafa;
+	text-align: center;
+}
+.agency-single-info .agency-data-item {
+	display: inline-block;
+	margin-right: 50px;
+}
+.agency-single-info .agency-info-item {
+	margin-bottom: 20px;
+}
+.agency-single-info i {
+	width: 20px;
+}
+.agency-single-info .agency-social a {
+	width: 35px;
+	height: 35px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	margin-bottom: 10px;
+	background: #222;
+}
+.agency-single-info .agency-social a i {
+	color: #fff;
+	line-height: 35px;
+}
+.agency-single-info .agency-social a + a {
+	margin-left: 2px;
+}
+.agency-single-info .agency-social a:hover {
+	background: #fb6a19;
+}
+.agency-single-info .contact-agency input[type="text"],
+.agency-single-info .contact-agency input[type="email"],
+.agency-single-info .contact-agency textarea {
+	-webkit-border-radius: 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 0;
+	-moz-background-clip: padding;
+	border-radius: 0;
+	background-clip: padding-box;
+}
+.agency-single-info .agent-contact-btn {
+	background-color: #222;
+	border-color: #222;
+}
+.agency-single-info .agent-contact-btn:hover {
+	background-color: transparent;
+	border-color: #fb6a19;
+}
+.agency-details-tab {
+	position: relative;
+}
+.agency-details-tab .nav-tabs {
+	border-bottom: none;
+	background-color: #222;
+	margin: 0;
+}
+.agency-details-tab .nav-tabs li {
+	margin-bottom: 0;
+}
+.agency-details-tab .nav-tabs li a {
+	margin-right: 0;
+	border: none !important;
+	color: #8f8f8f;
+	padding: 20px 30px;
+	-webkit-border-radius: 0;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 0;
+	-moz-background-clip: padding;
+	border-radius: 0;
+	background-clip: padding-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	font-weight: 500;
+}
+.agency-details-tab .nav-tabs li.active a,
+.agency-details-tab .nav-tabs li:hover a {
+	background-color: #fb6a19;
+	color: #fff;
+}
+.agency-details-tab .tab-content {
+	position: relative;
+	z-index: 2;
+}
+.agency-details-tab .tab-content > .tab-pane {
+	padding: 30px;
+	background-color: #fff;
+}
+@media (max-width: 767px) {
+	.beyot-class .agency-details-tab:before {
+		display: none;
+	}
+}
+@media (max-width: 599px) {
+	.agency-details-tab.sm-pd-bottom-40 {
+		padding-bottom: 0 !important;
+	}
+	.agency-details-tab .nav-tabs li {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.agency-details-tab .tab-content > .tab-pane {
+		padding: 0;
+		padding-top: 30px;
+		background-color: transparent;
+	}
+	.agency-details-tab:before {
+		display: none;
+	}
+}
+.ere-agency-single-wrap .panel-title>a{
+	display: block;
+}
+.agency-content-top
+{
+	margin-bottom: 25px;
+}
+.agency-title
+{
+	font-size: 21px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.agency-data-item-title
+{
+	font-weight: bold;
+}
+.agency-data
+{
+	margin-bottom: 30px;
+}
+.agency-agent,.agency-details-tab
+{
+	margin-top: 60px;
+}
+.agency-details-tab
+{
+	padding-bottom: 30px;
+}
+@media (max-width: 768px) {
+	.agency-agent,.agency-details-tab
+	{
+		margin-top: 40px;
+	}
+}

@@ -1,0 +1,148 @@
+.home-page-info {
+	border-bottom: 1px solid;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.property-heading {
+	margin-bottom: 20px;
+}
+
+#property-print-wrap .property-info {
+	margin-bottom: 30px;
+}
+
+#property-print-wrap .property-info > div {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#property-print-wrap .property-info > div:last-child {
+	margin-right: 0;
+}
+
+#property-print-wrap .property-info > div > span,
+#property-print-wrap .property-info > div > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+#property-print-wrap .property-info > div p {
+	margin-bottom: 0;
+}
+
+#property-print-wrap .property-info > div > span {
+	font-size: 18px;
+	padding-right: 15px;
+}
+.property-block {
+	margin-top: 30px;
+}
+
+.agent-block > div {
+	display: table-cell;
+	vertical-align: top;
+	padding-right: 40px;
+}
+
+.agent-block > div:last-child {
+	padding-right: 0;
+}
+.agent-info,
+.property-block-title {
+	margin-top: 0;
+}
+.property-block-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.agent-info ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.description-block {
+	text-align: justify;
+}
+
+.overview-block .overview-table,
+.location-block .location-table{
+	width: 50%;
+	float: left;
+}
+
+.features-block .feature-item {
+	width: 25%;
+	float: left;
+	padding-right: 15px;
+}
+
+.floors-block .property-block-title {
+	margin-bottom: 20px;
+}
+.floor-item {
+	margin-bottom: 40px;
+}
+.floor-info {
+	margin-bottom: 10px;
+}
+.floor-info h4 {
+	display: inline-block;
+	position: relative;
+	top: -10px;
+}
+.floor-main-info > div {
+	display: inline-block;
+	margin-right: 20px;
+}
+.floor-main-info > div:last-child {
+	margin-right: 0;
+}
+.floor-info-title {
+	font-weight: bold;
+}
+.floor-image img {
+	width: 100%;
+}
+.floor-description {
+	margin-top: 30px;
+	text-align: justify;
+}
+.list-2-col {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+.list-2-col li{
+	display: block;
+	-moz-column-break-inside:avoid;
+	-webkit-column-break-inside:avoid;
+	column-break-inside:avoid;
+}
+ul.ere-property-list
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ul.ere-property-list strong
+{
+	display: inline-block;
+	width: 50%;
+}
+ul.ere-property-list span
+{
+	display: inline;
+	width: 50%;
+}
+ul.ere-property-list li
+{
+	padding: 8px 0;
+}
+ul.ere-property-list li:nth-child(odd) {
+	background-color: #f8f8f8;
+}
+.property-contact-agent i{
+	margin-right: 15px;
+}

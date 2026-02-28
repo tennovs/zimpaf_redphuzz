@@ -1,0 +1,27 @@
+.custom-comments {
+    list-style: outside none none;
+}
+.custom-comments .avatar-custom {
+    float: left;
+    width: 15%;
+}
+.custom-comments .custom-comment-wrap {
+    float: left;
+    width: 85%;
+}
+.custom-comments li {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+.custom-navigation {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.custom-navigation .page-numbers {
+    padding: 10px;
+}
+.custom-comments h4 {
+    margin-top: 0 !important;
+}

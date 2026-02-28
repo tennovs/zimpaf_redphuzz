@@ -1,0 +1,174 @@
+.pieregister-page #wpfooter{
+    position: relative;
+}
+.pieregister-admin.aboutus-page-admin *{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pieregister-admin.aboutus-page-admin .aboutus-page .aboutus-header{
+    padding: 40px 0 40px 30px;
+}
+.pieregister-admin.aboutus-page-admin .aboutus-menu-tabs{
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    background: #c6d3e0;
+    display: table;
+}
+.pieregister-admin.aboutus-page-admin ul.aboutus-menu-tabs>li{
+    float: left;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #5f839f;
+    height: 52px;
+}
+.pieregister-admin.aboutus-page-admin ul.aboutus-menu-tabs>li>a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    background: #5f839f;
+    padding: 15px 35px;
+}
+.pieregister-admin.aboutus-page-admin .about-pr-docs{
+    margin-top: 18px;
+}
+.pieregister-admin.aboutus-page-admin .about-pr-docs img{
+    width: 100%;
+}
+.pieregister-admin.aboutus-page-admin .pane{
+    margin: 40px 20px 20px;
+    padding: 30px;
+    background: #fff;
+}
+.pieregister-admin.aboutus-page-admin h3.welcome-to-pr{
+    font-size: 18px;
+    line-height: 32px;
+    color: #1a283a;
+    font-weight: 500;
+}
+.pieregister-admin.aboutus-page-admin p.about-us-p{
+    font-size: 18px;
+    color: #1a283a;
+    font-weight: 400;
+    margin: 0px;
+}
+.pieregister-admin.aboutus-page-admin ul.resourceful-links{
+    display: flex;
+    font-size: 16px;
+}
+.pieregister-admin.aboutus-page-admin ul.resourceful-links > li{
+    padding-right: 10px;
+}
+.pieregister-admin.aboutus-page-admin ul.resourceful-links > li:not(:first-of-type){
+    padding-left: 10px;
+}
+.pieregister-admin.aboutus-page-admin ul.resourceful-links > li:not(:last-of-type){
+    border-right: solid 1px #bc0511;
+}
+.pieregister-admin.aboutus-page-admin ul.resourceful-links > li > a, .pieregister-admin.aboutus-page-admin a.red-anchor{
+    color: #bc0511;
+}
+.pieregister-admin.aboutus-page-admin .content-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pieregister-admin.aboutus-page-admin .about-content{
+    width: 55%;
+    padding-right: 5%;
+}
+.pieregister-admin.aboutus-page-admin .about-links{
+    width: 45%;
+}
+.pieregister-admin.aboutus-page-admin .genetech-resource{
+    padding: 6% 0px;
+}
+.about-pr-video iframe{
+    border-radius: 6px;
+}
+.pieregister-admin.aboutus-page-admin .pieregister-sib-products{
+    padding: 0 30px;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-container{
+    padding: 0 10px;
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 20px;
+}
+.pieregister-admin.aboutus-page-admin .pieregister-sib-products .sib-products{
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.pieregister-admin.aboutus-page-admin .sib-product{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 0;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-detail{
+    height: 163px;
+    padding: 20px;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-action{
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    min-height: 75px;
+    position: relative;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-detail img{
+    padding: 10px;
+    border: 1px solid #eee;
+    float: left;
+    max-width: 75px;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-detail h5{
+    margin: 0 0 10px 100px;
+    font-size: 16px;
+}
+.pieregister-admin.aboutus-page-admin .sib-product-detail p{
+    margin: 0 0 0 100px;
+}
+.pieregister-admin.aboutus-page-admin .product-status{
+    flex-grow: 1;
+}
+.pieregister-admin.aboutus-page-admin .status-label{
+    font-weight: 600;
+}
+.pieregister-admin.aboutus-page-admin .status-active{
+    color: green;
+}
+.pieregister-admin.aboutus-page-admin .status-label.status-inactive{
+    color: red;
+}
+@media (max-width:1398px) and (min-width:980px){
+    .pieregister-admin.aboutus-page-admin .sib-product-container{
+        width: 50%;
+    }
+}
+@media (max-width:980px){
+    .pieregister-admin.aboutus-page-admin .about-links{
+        width: 100%;
+        margin-top: 8%;
+    }
+    .pieregister-admin.aboutus-page-admin .about-content{
+        width: 100%;
+    }
+    .pieregister-admin.aboutus-page-admin .sib-product-container{
+        width: 100%;
+    }
+}
+@media (max-width:460px){
+    .pieregister-admin.aboutus-page-admin ul.resourceful-links{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:430px){
+    .pieregister-admin.aboutus-page-admin ul.resourceful-links{
+        flex-wrap: wrap;
+    }
+}

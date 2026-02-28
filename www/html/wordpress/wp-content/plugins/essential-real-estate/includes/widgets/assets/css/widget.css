@@ -1,0 +1,69 @@
+.widget-media-field-wrap {
+    padding: 5px;
+    border: 2px dotted #ddd;
+    margin-top: 3px;
+}
+
+.widget-media-field-wrap .none {
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.widget-media-field  span{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    position: relative;
+    margin: 2px;
+    padding: 3px;
+    border: solid 1px #EFEFEF;
+}
+.widget-media-field.image {
+    text-align: center;
+}
+.widget-media-field.image > span{
+    width: 150px;
+    height: auto;
+}
+
+.widget-media-field span.close{
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.widget-media-field img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.widget-media-field span.widget-media-field-highlight {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border: 1px dotted #bbbbbb;
+    background: #eeeeee;
+}
+
+.widget-media-field > span:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.ere-widget-checkbox-field input {
+    display: inline-block !important;
+}

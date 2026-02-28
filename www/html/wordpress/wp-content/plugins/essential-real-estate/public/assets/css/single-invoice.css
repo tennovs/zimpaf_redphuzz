@@ -1,0 +1,58 @@
+/* Invoice */
+.single-invoice-wrap .agent-info {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #eee;
+	margin-bottom: 40px;
+}
+
+.single-invoice-wrap .agent-info span {
+	display: inline-block;
+}
+.single-invoice-wrap .billing-info table {
+	width: 100%;
+}
+.single-invoice-wrap .billing-info table tr {
+	border-bottom: 1px solid #eee;
+}
+.single-invoice-wrap .billing-info table tr:last-of-type {
+	border-bottom: none;
+}
+.single-invoice-wrap .billing-info table th,
+.single-invoice-wrap .billing-info table td {
+	padding: 15px 0;
+}
+.single-invoice-action {
+	text-align: right;
+	margin-top: 40px;
+}
+.single-invoice-action a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #222;
+	-webkit-border-radius: 50%;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 50%;
+	-moz-background-clip: padding;
+	border-radius: 50%;
+	background-clip: padding-box;
+	margin-right: 6px;
+	color: #fff;
+	font-size: 18px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+}
+.single-invoice-action a i {
+	line-height: 40px;
+}
+.single-invoice-action a:last-of-type {
+	margin-right: 0;
+}
+.single-invoice-action a:hover {
+	background-color: #fb6a19;
+}

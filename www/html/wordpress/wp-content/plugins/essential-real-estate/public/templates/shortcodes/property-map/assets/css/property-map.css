@@ -1,0 +1,90 @@
+#map-property-single .infoBox {
+  overflow: inherit !important;
+  position: relative;
+  border: 5px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 13px rgba(0, 0, 0, 0.22);
+}
+#map-property-single .infoBox > img {
+  z-index: 5;
+  padding: 3px 3px 0 0;
+  width: auto !important;
+}
+#map-property-single .infoBox:after {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: -50px;
+  left: 50%;
+  width: 0;
+  border-width: 22px;
+  border-top-color: rgba(0, 0, 0, 0.05);
+  -moz-transform: translate(-50%, 0);
+  z-index: 0;
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#map-property-single .marker-content {
+  background-color: #fff;
+  padding: 22px 20px;
+  text-align: left;
+}
+#map-property-single .marker-content:after {
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: -40px;
+  left: 50%;
+  z-index: 2;
+  width: 0;
+  border-width: 20px;
+  border-top-color: #fff;
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+#map-property-single .marker-content-item {
+  overflow: hidden;
+}
+#map-property-single .item-thumb {
+  display: inline-block;
+  float: left;
+  margin-right: 12px;
+}
+#map-property-single .item-thumb img {
+  float: left;
+}
+#map-property-single .item-body {
+  overflow: hidden;
+}
+#map-property-single .item-body .title-marker,
+#map-property-single .item-body .price-marker {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #222;
+  text-transform: capitalize;
+}
+#map-property-single .item-body .price-marker {
+  font-weight: 600;
+}
+#map-property-single .item-body .address-marker {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+#map-property-single .item-body .address-marker i {
+  margin-right: 10px;
+}
+#map-property-single .item-body a:hover {
+  color: #fb6a19;
+}

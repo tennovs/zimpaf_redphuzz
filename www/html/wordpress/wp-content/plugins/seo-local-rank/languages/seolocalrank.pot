@@ -1,0 +1,711 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Seolocalrank\n"
+"POT-Creation-Date: 2019-08-26 "
+"11:30+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name "
+"<you@example.com>\n"
+"Language-Team: "
+"Optimizza<proyectos@optimizza."
+"com>\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; "
+"charset=UTF-8\n"
+"Content-Transfer-Encoding: "
+"8bit\n"
+"Plural-Forms: nplurals=2; "
+"plural=n != 1;\n"
+"X-Textdomain-Support: yesX-"
+"Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;"
+"esc_html_e;esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_attr__;"
+"_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-seolocalrank-admin.php:158
+msgid ""
+"Do you want to delete the "
+"keyword tracking?"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:159
+msgid "Ha ocurrido un error"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:160
+msgid "Today"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:161
+msgid ""
+"Do you want to delete this "
+"domain?"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:201
+#: admin/class-seolocalrank-admin.php:206
+msgid "My domains"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:214
+#: admin/partials/seolocalrank-admin-upgrade.php:39
+#: admin/partials/seolocalrank-admin-upgrade.php:136
+msgid "Upgrade"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:215
+#: admin/partials/seolocalrank-admin-settings.php:41
+msgid "Settings"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:216
+#: admin/partials/seolocalrank-admin-help.php:44
+msgid "Help"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:334
+msgid ""
+"You do not have enough "
+"permissions to work with SEO "
+"Local Rank"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:416
+#: admin/class-seolocalrank-admin.php:447
+msgid ""
+"Ther was an error with domain "
+"identificator"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:456
+#: admin/partials/seolocalrank-admin-add-keyword.php:107
+msgid ""
+"You are currently using all "
+"the keywords that your plan "
+"supports. Get a superior plan "
+"and add more keywords."
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:478
+msgid ""
+"Ther was an error getting "
+"keyword stats"
+msgstr ""
+
+#: admin/class-seolocalrank-admin.php:485
+msgid ""
+"Ther was an error with "
+"keyword identificator"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:35
+#: admin/partials/seolocalrank-admin-domains-list.php:20
+#: admin/partials/seolocalrank-admin-project-domain-display.php:71
+msgid "Domains list"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:36
+#: admin/partials/seolocalrank-admin-add-domain.php:47
+#: admin/partials/seolocalrank-admin-add-domain.php:75
+#: admin/partials/seolocalrank-admin-domains-list.php:21
+msgid "Add domain"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:53
+msgid ""
+"add a new domain to track "
+"their keywords "
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:60
+msgid "Domain name"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:64
+msgid ""
+"Enter a valid domain please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:65
+msgid ""
+"Enter the name of your "
+"domain. Do not enter before "
+"of the name \"http://\" or "
+"\"https://\" as it is not "
+"necessary for our system."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:83
+msgid ""
+"We are adding the domain at "
+"your project"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-domain.php:84
+#: admin/partials/seolocalrank-admin-add-keyword.php:132
+msgid ""
+"This process may take a few "
+"minutes"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:31
+#: admin/partials/seolocalrank-admin-project-domain-display.php:34
+msgid ""
+"Welcome to SEO Local Rank!!"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:32
+#: admin/partials/seolocalrank-admin-project-domain-display.php:35
+msgid ""
+"You can track your websites "
+"keywords and view the "
+"positions of this in Google."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:40
+#: admin/partials/seolocalrank-admin-keyword.php:19
+#: admin/partials/seolocalrank-admin-project-domain-display.php:43
+msgid "Keywords list"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:41
+#: admin/partials/seolocalrank-admin-add-keyword.php:116
+#: admin/partials/seolocalrank-admin-keyword.php:21
+#: admin/partials/seolocalrank-admin-project-domain-display.php:45
+msgid "Add keyword"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:57
+msgid ""
+"Add new keyword at domain"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:64
+msgid "Keyword"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:68
+msgid ""
+"Enter a valid keyword please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:74
+msgid "Country"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:79
+msgid "Choose country"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:90
+msgid "Choose a country please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:91
+msgid ""
+"Choose the country of the "
+"city where you want to track "
+"the keywords"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:97
+msgid "Cities"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:101
+msgid "Choose cities"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:104
+msgid ""
+"Choose the citie or the "
+"cities where you want "
+"tracking the keyword"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:105
+msgid ""
+"Choose the cities where you "
+"want to track the keywords"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:106
+msgid ""
+"Before you need to choose a "
+"country"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-add-keyword.php:131
+msgid ""
+"We are calculating the "
+"position of the keywords you "
+"just entered"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:38
+msgid "Projects"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:40
+msgid ""
+"Here is the list of your "
+"projects. Within a project "
+"you can add several domains."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:41
+msgid ""
+"For example, you can have a "
+"project called clothing store "
+"and within the domains of "
+"various clothing stores."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:58
+msgid "Add new project"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:74
+msgid "domains"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-dashboard-display.php:78
+msgid "View project domains"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:39
+msgid ""
+"Learn how your keywords "
+"behave in different cities"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:41
+msgid ""
+"Welcome to Seo Local Rank. "
+"With this plugin you can know "
+"in what position your website "
+"is with your keywords in the "
+"cities of the world you want. "
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:42
+msgid ""
+"You can track your website "
+"daily to find out if you win "
+"or lose positions on Google. "
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:43
+msgid ""
+"Also know who are your main "
+"competitors in each city, "
+"study them and improve your "
+"strategy to overcome them."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:46
+msgid ""
+"Seo Local Rank is the only "
+"plugin that gives you your "
+"real Google position in each "
+"city. We do not use any type "
+"of proxy server. We have "
+"thousands of devices and "
+"servers all over the world "
+"that are in charge of doing "
+"this kind of queries so that "
+"our artificial intelligence "
+"algorithm gives you the exact "
+"results."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:54
+msgid ""
+"1. Activate SEO Local Rank"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:58
+msgid ""
+"Enter your email to start."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:65
+msgid "Enter your email"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:66
+msgid "Start Seo Local Rank"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:68
+msgid ""
+"Enter a valid email please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:80
+msgid ""
+"2. Enter your personal API key"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:82
+msgid ""
+"Copy the API key that we have "
+"sent to your email and paste "
+"it below."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:89
+msgid "Copy here your API key"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-display.php:90
+msgid "Check API key"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-domains-list.php:36
+msgid "Domains List"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-domains-list.php:45
+msgid "Domain"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-domains-list.php:47
+msgid "Tracking keywords number"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:50
+msgid ""
+"If you need help you can "
+"contact with us from next form"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:57
+msgid "Subject"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:61
+msgid ""
+"Enter a valid subject please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:62
+msgid ""
+"Enter the subject of your "
+"question"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:69
+msgid "Message"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:73
+msgid ""
+"Enter a valid message please"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:74
+msgid ""
+"Describe your doubt or your "
+"problem"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:84
+msgid "Send"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:92
+msgid "We are sending your form"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:93
+msgid ""
+"This process may take a few "
+"seconds"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:98
+msgid "Form sent success"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:100
+msgid ""
+"We will contact you as soon "
+"as possible by answering your "
+"question to the email"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-help.php:101
+msgid ""
+"The response usually takes "
+"less than 24 hours."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:20
+#: admin/partials/seolocalrank-admin-project-domain-display.php:44
+msgid "Keyword stats"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:39
+msgid ""
+"Position of your keyword in "
+"the selected location over "
+"time"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:44
+msgid "Best page"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:53
+msgid "Best positions"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:59
+msgid "position"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:60
+msgid "domain"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-keyword.php:61
+msgid "url"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:59
+msgid "Add new keyword"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:80
+msgid "keyword"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:81
+msgid "City / Location"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:82
+msgid "Position"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:83
+msgid "In first position"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:84
+msgid "Update at"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:85
+#: admin/partials/seolocalrank-admin-upgrade.php:187
+msgid "Automatic tracking"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-project-domain-display.php:102
+msgid "Pending"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:54
+msgid "Plugin version"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:64
+msgid "Email account"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:68
+msgid ""
+"Email associated with your "
+"Seo Local Rank account"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:75
+msgid "Current plan"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:78
+#: admin/partials/seolocalrank-admin-upgrade.php:79
+msgid "Keywords"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:80
+msgid ""
+"Your plan will be self-"
+"renewed on the following date:"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:87
+msgid "Privacy policy"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:91
+msgid "Visit privacy policy"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:98
+msgid ""
+"Sign out from Seo Local Rank"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-settings.php:102
+msgid "Sign out"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:21
+#: admin/partials/seolocalrank-admin-upgrade.php:63
+msgid "Per month"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:23
+#: admin/partials/seolocalrank-admin-upgrade.php:60
+msgid "Per year"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:23
+msgid "save 30%"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:42
+msgid ""
+"Take advantage of Seo Local "
+"Rank and improve the SEO of "
+"your website with the data we "
+"collect."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:43
+msgid ""
+"Study the position of your "
+"keywords in the cities you "
+"want and know and study your "
+"competition in them."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:74
+msgid "Recommended"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:88
+#: admin/partials/seolocalrank-admin-upgrade.php:182
+msgid "Daily position update"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:97
+msgid ""
+"Automatic tracking for "
+"keywords"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:106
+msgid ""
+"Positions of your competition"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:116
+msgid "SEO support"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:163
+msgid ""
+"Seo Local Rank Adventages"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:167
+msgid "Product warranty"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:168
+msgid ""
+"If you do not get the results "
+"you expect, do not worry, we "
+"will refund your money."
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:172
+msgid "More than 40 countries"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:173
+msgid ""
+"Choose among the cities of "
+"more than 40 countries. If "
+"your country is not there, "
+"contact us and we will add it"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:177
+msgid "More than 20.000 cities"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:178
+msgid ""
+"Find out the position of your "
+"website in any city in the "
+"world. Is not your city? "
+"Contact us and we will solve "
+"it"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:183
+msgid ""
+"We update your keyword data "
+"every day. Track your "
+"business performance exactly"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:188
+msgid ""
+"You do not have to manually "
+"update your keywords's data. "
+"Every day the application "
+"gets the results for you"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:192
+msgid "Know your competition"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:193
+msgid ""
+"Know who your main "
+"competitors are in each city. "
+"Study your strategy and "
+"surpass them in the Google "
+"ranking"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:197
+msgid "No permanence compromise"
+msgstr ""
+
+#: admin/partials/seolocalrank-admin-upgrade.php:198
+msgid ""
+"You can unsubscribe at any "
+"time from the settings screen "
+"in the main menu. Also, if "
+"you delete your account your "
+"subscription will be "
+"automatically unsubscribede"
+msgstr ""

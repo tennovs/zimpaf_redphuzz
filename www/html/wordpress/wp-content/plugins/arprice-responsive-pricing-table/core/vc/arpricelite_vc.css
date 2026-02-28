@@ -1,0 +1,21 @@
+.arpricelite_vc_icon
+{
+	background-image:url(arpricelite-icon32x32.png) !important;
+}
+.vc_panel { left:25% !important; top:50px !important; width:750px !important; }
+
+.arp_param_block .arp_vc_title{float: left; font-size: 17px; margin: 0 0 10px; width: 100%; font-weight: bold;}
+
+.arp_param_block{width:666px; margin:20px auto;}
+
+.arp_vd_img_list{margin:5px; padding:5px; float: left; cursor: pointer; border:1px solid #cccccc; opacity:}
+
+.arp_vd_img_list img{opacity:0.7}
+
+.arp_vd_img_list img:hover, .arp_vd_img_list img.arp_active{
+	opacity:1;
+	box-shadow:0 0 0 3px rgba(86,178,11, 1);
+	 -webkit-box-shadow:0 0 0 3px rgba(86,178,11, 1);
+	 -moz-box-shadow:0 0 0 3px rgba(86,178,11, 1);
+	 -o-box-shadow:0 0 0 3px rgba(86,178,11, 1);
+}

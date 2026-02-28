@@ -1,0 +1,40 @@
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../../../assets/fonts/woff/IRANSansWeb_Black.woff') format('woff'),
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../../../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../../../assets/fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../../../assets/fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../../../assets/fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../assets/fonts/woff/IRANSansWeb.woff') format('woff'),
+}
+.CSFTICKET-title{
+    font-family: IRANSans !important;
+}
+.CSFTICKET{margin-left:20px;margin-right:0}.CSFTICKET-header h1{float:right}.CSFTICKET-header fieldset{float:left}.CSFTICKET-buttons{float:left;direction:ltr}.CSFTICKET-header-left{float:right}.CSFTICKET-header-right{float:left}.CSFTICKET-nav{float:right}.CSFTICKET-nav ul{clear:right}.CSFTICKET-nav ul li .CSFTICKET-section-active:after{right:auto;left:0;border-left-color:#fff;border-right-color:transparent}.CSFTICKET-nav ul li .CSFTICKET-arrow:after{content:"\f053";right:auto;left:10px}.CSFTICKET-nav ul li.CSFTICKET-tab-active .CSFTICKET-arrow:after{-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}.CSFTICKET-nav ul ul li a{padding-right:25px;padding-left:15px}.CSFTICKET-nav ul ul:before{left:auto;right:15px}.CSFTICKET-nav .fa{margin-left:5px;margin-right:0}.CSFTICKET-nav-background{left:auto;right:0}.CSFTICKET-content{margin-left:0;margin-right:225px}.CSFTICKET-sections{float:right}.CSFTICKET-show-all .CSFTICKET-content{margin-right:0;overflow:hidden}.CSFTICKET-expand-all{float:right;right:auto;left:40px;margin-right:0;margin-left:4px}.CSFTICKET-search{float:right}.CSFTICKET-search input{margin:0 0 0 5px}.CSFTICKET-copyright{float:right}.CSFTICKET-metabox{margin:-6px -12px -12px -12px}.CSFTICKET-metabox .CSFTICKET-section-title{padding:20px}.CSFTICKET-metabox .CSFTICKET-section-title .fa{margin-left:5px;margin-right:0}.CSFTICKET-section-title .fa{margin-left:5px;margin-right:0}.CSFTICKET-field .CSFTICKET-title{float:right}.CSFTICKET-field .CSFTICKET-fieldset{float:left}.CSFTICKET-pseudo-field{padding:0 0 0 5px!important}.CSFTICKET-field-typography select{margin:0;width:100%}.CSFTICKET-field-typography .CSFTICKET--blocks-inputs .CSFTICKET--blocks{flex-direction:row-reverse}.CSFTICKET-field-checkbox .CSFTICKET--inline-list li,.CSFTICKET-field-radio .CSFTICKET--inline-list li{margin-right:0;margin-left:15px}.CSFTICKET-field-switcher .CSFTICKET--switcher{float:right}.CSFTICKET-field-switcher .CSFTICKET--label{float:right;margin-left:0;margin-right:5px}.CSFTICKET-field-upload .CSFTICKET--button,.CSFTICKET-field-upload .CSFTICKET--remove{margin-left:0;margin-right:5px}.CSFTICKET-field-group .CSFTICKET-cloneable-title{padding:15px 10px 15px 65px}.CSFTICKET-field-group .CSFTICKET-cloneable-helper{right:auto;left:10px}.CSFTICKET-field-repeater .CSFTICKET-repeater-helper{border-left:0;border-right:1px solid #eee}.CSFTICKET-help{right:auto;left:5px}.CSFTICKET-field-icon .button{margin-right:0;margin-left:5px}.CSFTICKET-field-icon .CSFTICKET-icon-preview i{margin-right:0;margin-left:5px}.CSFTICKET-field-gallery ul li{margin-right:0;margin-left:5px}.CSFTICKET-field-gallery .button{margin-right:0;margin-left:5px}.CSFTICKET-field-tabbed .CSFTICKET-tabbed-nav .CSFTICKET--icon{padding-right:0;padding-left:5px}.CSFTICKET-field-tabbed .CSFTICKET-tabbed-nav a{margin-right:0;margin-left:5px}.CSFTICKET-field-media .button{margin-left:0;margin-right:7px}.CSFTICKET-field-media .hidden+.button{margin-right:0}.CSFTICKET-notice{border-left:none;border-right-style:solid;border-right-width:4px}.CSFTICKET-field-border .CSFTICKET--input,.CSFTICKET-field-border .CSFTICKET-fieldset,.CSFTICKET-field-dimensions .CSFTICKET--input,.CSFTICKET-field-dimensions .CSFTICKET-fieldset,.CSFTICKET-field-spacing .CSFTICKET--input,.CSFTICKET-field-spacing .CSFTICKET-fieldset{direction:ltr}.CSFTICKET-field-border .CSFTICKET--color,.CSFTICKET-field-border .CSFTICKET--inputs,.CSFTICKET-field-dimensions .CSFTICKET--color,.CSFTICKET-field-dimensions .CSFTICKET--inputs,.CSFTICKET-field-spacing .CSFTICKET--color,.CSFTICKET-field-spacing .CSFTICKET--inputs{float:right}.CSFTICKET-field-border .CSFTICKET--color,.CSFTICKET-field-dimensions .CSFTICKET--color,.CSFTICKET-field-spacing .CSFTICKET--color{margin-right:4px;direction:rtl}.CSFTICKET-field-background .CSFTICKET--block{float:right}.CSFTICKET-field-background .CSFTICKET--media,.CSFTICKET-field-background .CSFTICKET--select{padding-right:0}.CSFTICKET-field-background .CSFTICKET--title{margin-right:0;margin-left:5px}.CSFTICKET-field-spinner .CSFTICKET--spin{float:right;direction:ltr}.CSFTICKET-field-slider .CSFTICKET-slider-ui{direction:ltr;margin-right:0;margin-left:15px}.CSFTICKET-field-slider .CSFTICKET--input{direction:ltr}.CSFTICKET-field-button_set .CSFTICKET--button-group{float:right}.CSFTICKET-field-link_color .CSFTICKET--left{float:right;margin-right:0;margin-left:10px}.CSFTICKET-field-color_group .CSFTICKET--left{float:right;margin-right:0;margin-left:10px}.CSFTICKET-field-palette .CSFTICKET--palette{margin-right:0;margin-left:10px}.CSFTICKET-field-accordion .CSFTICKET--icon{margin-right:0;margin-left:2px}.CSFTICKET-field-date .CSFTICKET--to{margin-left:0;margin-right:7px}.CSFTICKET-field-map .CSFTICKET--map-input:last-child{padding-left:0;padding-right:10px}.CSFTICKET-field-sortable .CSFTICKET--sortable-helper{border-left:none;border-right:1px solid #eee}.CSFTICKET-field-number .CSFTICKET--wrap{float:right}.CSFTICKET-taxonomy-add-fields .CSFTICKET-field>.CSFTICKET-fieldset>.CSFTICKET-help{left:-5px;right:auto}.CSFTICKET-taxonomy-edit-fields .CSFTICKET-field>.CSFTICKET-fieldset>.CSFTICKET-help{right:auto;left:-5px}.CSFTICKET-profile>h2>.fa{padding-right:0;padding-left:7px}.CSFTICKET-profile>.CSFTICKET-field>.CSFTICKET-fieldset>.CSFTICKET-help{left:-5px;right:auto}.CSFTICKET-modal-content .CSFTICKET-field{padding:15px 15px 15px 30px}.CSFTICKET-modal-title{padding:0 16px 0 36px}.CSFTICKET-modal-close{right:auto;left:0}.control-section .CSFTICKET-field .CSFTICKET-fieldset{margin-right:0}@media only screen and (max-width:1200px){.CSFTICKET-metabox .CSFTICKET-field .CSFTICKET-fieldset{margin-left:0}}@media only screen and (max-width:782px){.CSFTICKET .CSFTICKET-content,.CSFTICKET .CSFTICKET-fieldset{margin-right:0}}.CSFTICKET-field .CSFTICKET--transparent-slider{margin-left:0;margin-right:2px}.CSFTICKET-field .CSFTICKET--transparent-slider .ui-slider-handle{margin:0 -11px}.CSFTICKET-field .CSFTICKET--transparent-offset{background-position:center right}.CSFTICKET-field .CSFTICKET--transparent-text{right:auto;left:10px}

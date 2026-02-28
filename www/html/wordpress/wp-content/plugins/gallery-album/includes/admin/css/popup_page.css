@@ -1,0 +1,621 @@
+.pro_feature {
+    font-size: 13px;
+    font-weight: bold;
+    color: #7052fb;
+}
+/* notification*/
+#setting-error-settings_updated{
+	padding-right: 38px;
+    position: relative;
+    width: 87%;
+    margin-left: 0px;
+}
+/*######################################### Popup page ###################################*/
+/*######################################### Popup page ###################################*/
+/*######################################### Popup page ###################################*/
+.wpda_gall_content{
+	box-sizing: border-box;
+	min-width: 1040px;
+	width: 90%
+}
+@media only screen and (max-width: 1280px) {
+   .wpda_gall_content{
+        width: 99%;
+    }
+}
+.wpda_gall_tabs_content{
+	border: 1px solid #32373c;
+    margin-bottom: 5px;
+    padding: 6px;
+    background: white;
+}
+.wpda_gall_tabs_content span{	
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.wpda_gall_tabs_content span.active{	
+   background-color: #58d94f;
+}
+.wpda_gall_main_settings_div{
+	width: calc(100% - 670px);
+	border: solid 1px #404040;
+	margin-right: 20px;
+	height: 700px;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	background-color: #FFFFFF;
+	overflow: auto;
+}
+.wpda_gall_main_settings_div table{
+	width:100%;
+	border-spacing: 0px;
+}
+.wpda_gall_main_settings_div select{
+	font-family: 'FontAwesome',Arial;
+}
+.wpda_gall_main_settings_div select option.arial{
+	font-family: Arial;
+}
+.wpda_gall_main_settings_div tr{
+	display: none;
+}
+.wpda_gall_main_settings_div tr.active{
+	display: table-row;
+}
+.tr_heading{
+	font-size: 18px;
+    height: 32px;
+    background-color: #dddddd;
+}
+.td_option_description{
+	position: relative;	
+}
+.td_option_description .wpdevart-title{
+	margin-left: 5px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.tr_option{
+	height: 37px;
+}
+.tr_option:hover{ 
+	background-color:#e6e6e6;
+}
+.tr_option td{
+	border-bottom: 1px solid #9b9b9b;
+}
+.checkbox_tr .td_value span{
+	min-width: 140px;
+	display: inline-block;
+}
+.checkbox_tr .td_value label{
+	position: relative;
+	bottom:3px;
+}
+.wpda_gall_color-picker{
+	position: relative;
+	height: 30px;
+}
+.wpda_gall_color-picker .wp-picker-container{
+	position: absolute;
+	top:3px;
+}
+.wpda_gall_color-picker .wp-picker-container.wp-picker-active{
+	z-index: 9;
+}
+.wpda_gall_map_settings_map{
+	width: 650px;
+	border: solid 1px #404040;
+	height: 700px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.wpda_gall_map_settings_map .active{
+	background-color: aquamarine !important; 
+}
+/*range input styling*/
+.range_option_td output,.range_option_td small{
+	position: relative;
+	bottom: 2px;
+}
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    
+    /*required for proper track sizing in FF*/
+    width: 145px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -5px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+/*######################################### Params help ###################################*/
+
+.wpdevart-info-container{
+display: inline-block;
+    position: absolute;
+	z-index: 4;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #7052fb;
+    border-radius: 100%;
+    right: 20px;
+    text-align: center;
+    line-height: 1;
+	cursor:pointer;
+	font-weight: bold;
+	color: #7052fb;
+}
+
+.wpdevart-info-container .wpdevart-info{
+    position: absolute;
+    display: none;
+  	left: 30px;
+    top: -7px;
+    background-color: #292D31;
+    padding: 7px;
+    z-index: 1;
+    min-width: 200px;
+    color: #C5D3D6;
+    box-shadow: 0 0 2px #000;
+    text-align: left;
+    line-height: 1.3;
+    font-size: 14px;
+	font-weight: normal;
+    font-style: italic;
+}
+
+.red-section .wpdevart-info{
+    color: red;
+}
+.wpdevart-info-container:hover .wpdevart-info{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wpda_gall_map_conteiner {
+    left: 150px;
+    top: calc(50% - 182px);
+    position:           absolute;
+    width:              0px;
+	height:             0px;
+	z-index:            100002;
+}
+.wpda_gall_map_popup {
+	z-index:            0;
+    background-color:#000000;
+	position:           absolute;
+    border-radius:      10px;
+    overflow:           hidden;
+}
+.wpda_gall_map_popup_img_content {
+    position:           absolute;
+    left:               0px;
+	top:                0px;
+	z-index:            1;
+	border:             none;
+}
+.wpda_gall_map_popup_img1 {
+    position:           absolute;
+    left:               0px;
+	bottom:             0px;
+    z-index:            1;
+	border:             none;
+}
+.wpda_gall_map_popup_canvas_copi {
+	position:           absolute;
+    left:               0px;
+    top:                0px;
+    width:              100%;
+	z-index:            1;
+}
+.wpda_gall_map_popup_icon_left_bar {
+	color:              #ffffff;
+    position:           absolute;
+	left:               0%;
+	top:                0%;
+	opacity:            0.5;
+	width:              0%;
+	height:             100%;
+}
+.wpda_gall_map_popup_icon_left_bar:hover {
+    opacity:            1;
+}
+.wpda_gall_map_popup_icon_left_base {
+    position:           absolute;
+	left:               0%;
+	top:                50%;
+	width:              0px;
+	height:             0px;
+	font-size:          30px;
+}
+.wpda_gall_map_popup_icon_left {
+	color:              #0000ff;
+	position:           absolute;
+    left:               15px;
+    top:                -15px;
+	cursor:             pointer;
+}
+.wpda_gall_map_popup_icon_right_bar {
+    color:              #ffffff;
+    position:           absolute;
+	opacity:            0.5;
+	left:               100%;
+	top:                0%;
+	width:              0%;
+	height:             100%;
+}
+.wpda_gall_map_popup_icon_right_bar:hover {
+    opacity:            1;
+}
+.wpda_gall_map_popup_icon_right_base {
+    position:           absolute;
+    right:              0%;
+    top:                50%;
+	width:              0px;
+	height:             0px;
+	font-size:          30px;
+}
+.wpda_gall_map_popup_icon_right {
+    color:              #0000ff;
+    position:           absolute;
+	right:              15px;
+	top:                -15px;
+	cursor:             pointer;
+}
+.wpda_gall_left_bar_icons {
+    background-color:#000000;
+    position:           absolute;
+	width:              100%;
+	height:             36px;
+	line-height:        32.4px;
+	left:               0px;
+	bottom:             0px;
+	z-index:            11;
+}
+.wpda_gall_left_bar_icons:hover {
+    opacity:            1;
+}
+.wpda_gall_right_bar_icons {
+    position:           absolute;
+	height:             100%;
+    line-height:        32.4px;
+	top:                0px;
+	right:              0px;
+	display:            inline-block;
+	z-index:            1;
+	overflow:           hidden;
+}
+.wpda_gall_number_image {
+    margin-left:        12px;
+	color:              #ffffff;
+    display:            inline-block;
+	vertical-align:     middle;
+	line-height:        normal;
+}
+.wpda_gall_class_icon {
+	margin-left:        12px;
+	color:              #ffffff;
+	display:            inline-block;
+	vertical-align:     middle;
+	cursor:             pointer;
+}
+.wpda_gall_class_icon:hover {
+	color:              #ff0000;
+	opacity:            1;
+}
+.wpda_gall_map_thumbnail_controll_bar {
+    position:           absolute;
+    top:                -4px;
+	left:               8.5%;
+	height:             0px;
+	width:              83%;
+	z-index:            2;
+	text-align:         center;
+}
+.wpda_gall_bar_thumbnail_imgs {
+    height:             4px;
+	background-color:   rgb(255, 0, 0);
+    position:           absolute;
+	left:               0%;
+	top:                0%;
+	text-align:         center;
+	width:              100%;
+}
+.wpda_gall_thumbnail_imgs {
+	position:           relative;
+    float:              left;
+	height:             100%;
+	width:              100%;
+	top:                0px;
+}
+.wpda_gall_thumbnail_imgs_ {
+    background-color:   #ffffff;
+	position:           relative;
+	float:              left;
+	height:             100%;
+	top:                0px;
+}
+.wpda_gall_pntik {
+    background-color:   #a75858;
+    border-radius:      10px;
+    position:           absolute;
+	left:               0px;
+	height:             100%;
+	width:              100%;
+}
+.wpda_gall_map_thumbnail {
+    width:              150px;
+	top:                -109px;
+    height:             80px;
+	border:             solid #c0c0c0 4px;
+	background-color:   #000000;
+	opacity:            0.91;
+	position:           absolute;
+	background-repeat:  no-repeat;
+	background-position:center;
+	background-size:    contain;
+}
+.wpda_gall_map_thumbnail_count {
+    left:               50px;
+	width:              50px;
+	height:             40px;
+	background-color:   #000000;
+	opacity:            0.6;
+	color:              #ffffff;
+	bottom:             0px;
+	position:           absolute;
+	text-align:         center;
+}
+.wpda_gall_bar_icons_out {
+    position: absolute;
+    z-index: 100000;
+    left: 30px;
+    top: 100px;
+    width: calc(100% - 60px);
+    height: calc(100% - 191px);
+    background-color: rgba(0,0,0,0.6);
+}
+.wpda_gall_map_popup{
+	border: 4px solid rgba(192, 192, 192, 0.45098);
+	box-shadow: rgba(0, 0, 0, 0.952941) 0px 0px 30px 0px;
+	left: -80px;
+	top: -4px;
+	width: 500px;
+	height: 363px;
+}
+#wpda_gall_overlay{
+    box-shadow: 0px 0px 5px #000000;
+    display:inline-block;
+	background-color:   rgba(0,0,0,0.19);	
+    position:           relative;
+	width:              100%;
+	height:             inherit;
+	z-index:            2;
+
+}
+#wpda_gall_wrap_overlay{    	
+    position:           absolute;
+	width:              100%;
+	left:               0px;
+	top:                -45px;
+    z-index:            1;
+}
+
+@media screen and (max-width: 1500px) {			
+	.wpda_gall_map_popup_settings_ {
+		width:      calc(100% - 10px);
+	    min-width:  800px; 
+	}		
+}
+
+/*For Support link*/
+.wpdevart_plugins_header {
+    margin: 10px 20px 10px 0;
+	width:95%;
+}
+.wpdevart_plugins_get_pro {
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    float: left;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.04);
+}
+.wpdevart_plugins_get_pro_info {
+    float: left;
+    margin-right: 30px;
+}
+.wpdevart_plugins_get_pro_info h3 {
+    margin: 0 0 5px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.wpdevart_plugins_get_pro_info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 200;
+}
+.wpdevart_support, .wpdevart_upgrade {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    background-image: linear-gradient(141deg, #7052fb, #00a0d2);
+}
+.wpdevart_upgrade {
+    float: left;
+    padding: 11px 25px 12px;
+    text-transform: uppercase;
+}
+.wpdevart_support {
+    float: right;
+    padding: 11px 20px 12px 50px;
+    margin-top: 15px;
+    position: relative;
+}
+.wpdevart_support:before {
+    content: "";
+    background: url(../images/support-white.png) no-repeat;
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    top: 8px;
+    position: absolute;
+    left: 15px;
+}
+.div-for-clear:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.wpdevart_support:hover,
+.wpdevart_upgrade:hover,
+.wpdevart_support:focus,
+.wpdevart_upgrade:focus {
+    color:#ffffff;
+	opacity:0.85;
+	box-shadow: none;
+    outline: none;
+}
+.wpda_gall_head h2{
+	height: 28px;	
+}
+.wpda_gall_head > h2 > span{
+	margin-top: 3px;
+    display: inline-block;
+}

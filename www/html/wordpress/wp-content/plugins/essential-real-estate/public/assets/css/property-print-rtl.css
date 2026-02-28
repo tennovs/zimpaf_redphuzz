@@ -1,0 +1,66 @@
+html {
+	direction: rtl;
+}
+
+body {
+	direction: rtl;
+}
+.pull-left {
+	float: right !important;
+}
+.pull-right {
+	float: left !important;
+}
+table th {
+	text-align: right !important;
+}
+#property-print-wrap .property-info > div {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+#property-print-wrap .property-info > div:last-child {
+	margin-left: 0;
+}
+#property-print-wrap .property-info > div > span {
+	padding-left: 15px;
+	padding-right: 0;
+}
+.agent-block > div {
+	padding-left: 40px;
+	padding-right: 0;
+}
+
+.agent-block > div:last-child {
+	padding-left: 0;
+}
+
+.agent-block .agent-info span {
+	display: inline-block;
+}
+.overview-block .overview-table,
+.location-block .location-table{
+	float: right;
+}
+
+.features-block .feature-item {
+	float: right;
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+.floor-main-info > div {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.floor-main-info span {
+	display: inline-block;
+}
+.floor-main-info > div:last-child {
+	margin-left: 0;
+}
+.property-contact-agent i{
+	margin-right: auto;
+	margin-left: 15px;
+}

@@ -1,0 +1,1 @@
+{"function":"mysqli_query","params":["SELECT first_name, last_name FROM users WHERE user_id = '<a href='javascript:alert(0xde\u0004adbeef)'\u00031';"],"errno":1064,"errstr":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'javascript:alert(0xde\u0004adbeef)'\u00031'' at line 1"}

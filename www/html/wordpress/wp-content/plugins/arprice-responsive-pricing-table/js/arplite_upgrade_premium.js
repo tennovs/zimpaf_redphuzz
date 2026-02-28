@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){t('a[href="admin.php?page=arplite_upgrade_to_premium"]').on("click",function(){t(this).attr("target","_blank")})});

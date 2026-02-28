@@ -1,0 +1,22 @@
+{"malformed":[
+  "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE root [<!ENTITY greeting \"Hello, world\">><root><msg>&greeting;</msg></root>",
+"<?xml version=\"1.0\"?><!DOCTYPE [<!ENTITY % word \"safe\"><!ENTITY message \"%word; entity\">]><root>&message;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE note ><note><to>User</to><from>&sender;</from><body>This is a test.</body></note>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY unused \"nothing\">]>",
+"<!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM >]><root><data>&xxe;</data></root>",
+"<!DOCTYPE root [<!ENTITY xxe PUBLIC \"-//ANY//ID\" \"file:///etc/passwd\">]>",
+"<!DOCTYPE root [<!ENTITY % file SYSTEM \"file:///etc/passwd\"><xxe \"%file;\">]><root>&xxe;</root>"
+],
+               
+"wellformed":
+["<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE root [<!ENTITY greeting \"Hello, world\">]><root><msg>&greeting;</msg></root>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY % word \"safe\"><!ENTITY message \"%word; entity\">]><root>&message;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE note [<!ENTITY sender \"System\">]><note><to>User</to><from>&sender;</from><body>This is a test.</body></note>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY unused \"nothing\">]><root>OK</root>",
+"<!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root>&xxe;</root>",
+"<?xml version=\"1.0\"?><!DOCTYPE root [<!ENTITY xxe SYSTEM \"file:///etc/passwd\">]><root><data>&xxe;</data></root>",
+"<!DOCTYPE root [<!ENTITY xxe PUBLIC \"-//ANY//ID\" \"file:///etc/passwd\">]><root>&xxe;</root>",
+"<!DOCTYPE root [<!ENTITY % file SYSTEM \"file:///etc/passwd\"><!ENTITY xxe \"%file;\">]><root>&xxe;</root>"
+]
+}

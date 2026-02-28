@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HC_WP\n"
+"POT-Creation-Date: 2013-09-30 11:42+0300\n"
+"PO-Revision-Date: 2013-09-30 11:55+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: /var/www/wptest/wp-content/plugins/hypercomments\n"
+"X-Poedit-SearchPath-0: /var/www/wptest/wp-content/plugins/hypercomments\n"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:5
+msgid "Comments"
+msgstr "Комментарии"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:6
+msgid "Settings"
+msgstr "Настройки"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:10
+msgid ""
+"You need to create a folder \"uploads\" with 777 permissions in the \"/path/"
+"to/wordpress/wp-content\" directory."
+msgstr ""
+"Вам необходимо создать папку \"uploads\" с правами 777 в директории \"/path/"
+"to/wordpress/wp-content\""
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:11
+msgid "Comments will be imported at least 15 minutes."
+msgstr "Комментарии будут импортированы в течение 15 минут"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:12
+msgid "Error when trying to generate XML"
+msgstr "Ошибка формирования XML"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:13
+msgid "Invalid format"
+msgstr "Неверный формат"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:15
+msgid "The settings are saved"
+msgstr "Настройки сохранены"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:18
+msgid "Login with Google"
+msgstr "Войти с помощью Google"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:29
+msgid "Import comments"
+msgstr "Импорт комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:32
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:34
+msgid "Import comments to HyperComments"
+msgstr "Импорт комментариев в HyperComments"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:38
+msgid "Formation file"
+msgstr "Формирование файла"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:41
+msgid "Import"
+msgstr "Импорт"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:54
+msgid "Comments widget"
+msgstr "Виджет комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:57
+msgid "Block to insert the widget code"
+msgstr "Блок вставки кода виджета"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:61
+msgid "Number of words that are allowed to hypercomment on"
+msgstr ""
+"Максимальное количество слов к которым можно оставить гиперкомментарий\r\r"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:65
+msgid "Realtime comments display"
+msgstr "Realtime отображение комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:68
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:130
+msgid "on/off"
+msgstr "вкл/выкл"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:72
+msgid "The level of comments nesting for \"All\" tab"
+msgstr "Уровень вложенности комментариев для фильтра отображения \"Все\""
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:77
+msgid "Path to css file"
+msgstr "Путь к CSS файлу"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:78
+msgid "for tariffs above Professional"
+msgstr "для тарифов выше Professional"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:82
+msgid "Create CSS file"
+msgstr "Создать CSS файл"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:86
+msgid "CSS Editor"
+msgstr "CSS редактор"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:93
+msgid "Save CSS"
+msgstr "Сохранить CSS"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:103
+msgid "Counter widget"
+msgstr "Виджет счетчик комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:106
+msgid "HTML - selector to insert the counter comments"
+msgstr "HTML - cелектор для вставки счетчика комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:112
+msgid "Label counter comments"
+msgstr "Подпись счетчиков комментариев"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:115
+msgid ""
+"{%COUNT%} - displays the number of comments. Default: Comments({%COUNT%})"
+msgstr ""
+"{%COUNT%} - отображает количество комментариев. По умолчанию: Комментарии"
+"({%COUNT%})"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:123
+msgid "General settings"
+msgstr "Общие настройки"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:126
+msgid "Synchronizing users and comments"
+msgstr "Синхронизировать пользователей и комментарии"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:135
+msgid "Site's root  is in the subdirectory"
+msgstr "Корень сайта находится в поддиректории"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:139
+msgid "yes/no"
+msgstr "да/нет"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:140
+msgid ""
+"Mark the checkbox if the site is located in a subdirectory and you import "
+"comments via hypercomments.com website"
+msgstr ""
+"Поставте галочку если сайт находится в поддиректории и  Вы импортируете "
+"комментарии через сайт hypercomments.com"
+
+#: /var/www/wptest/wp-content/plugins/hypercomments/hc_manage.php:148
+msgid "Update Options"
+msgstr "Обновить настройки"
+
+msgid "Localization"
+msgstr "Локализация"

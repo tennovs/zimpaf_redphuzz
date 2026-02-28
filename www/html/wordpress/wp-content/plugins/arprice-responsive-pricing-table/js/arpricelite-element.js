@@ -1,0 +1,1 @@
+"use strict";!function(e){var n=function(e){console.log(e)};e(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/arpricelite-element-shortcode.default",n)})}(jQuery);

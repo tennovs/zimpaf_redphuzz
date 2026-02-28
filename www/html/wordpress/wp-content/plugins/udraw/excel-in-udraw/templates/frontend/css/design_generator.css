@@ -1,0 +1,128 @@
+#udraw-bootstrap [data-udraw="design_generator_modal"] {
+    z-index: 2000;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] {
+    z-index: 3000;
+}
+
+    #udraw-bootstrap [data-udraw="design_generator_modal"] div.label_div {
+        display: inline-block;
+        padding: 10px;
+        overflow-x: hidden;
+        text-align: center;
+        width: 100%;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] table.input_data_table td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] input.qty_input[type="number"] {
+        width: 90%;
+        padding: 1%;
+        text-align: center;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] input.label_input[type="text"] {
+        padding: 1%;
+        text-align: center;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] div.img_input_container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] div.img_input_container img.input_image {
+        display: inline-block;
+        width: 90%;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] table.input_data_table i.delete_entry_row_btn {
+        vertical-align: bottom;
+        color: #ff0000;
+        cursor: pointer;
+    }
+        #udraw-bootstrap [data-udraw="design_generator_modal"] table.input_data_table i.delete_entry_row_btn.disabled {
+            color: #ccc;
+            cursor: default;
+        }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] [data-udraw="add_excel_table_row"] {
+        margin: 5px;
+    }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] [data-udraw="inputTableError"] {
+        display: none;
+    }
+        #udraw-bootstrap [data-udraw="design_generator_modal"] .active[data-udraw="inputTableError"] {
+            display: block;
+        }
+    #udraw-bootstrap [data-udraw="design_generator_modal"] div.quantity_div {
+        position: relative;
+        float: right;
+        right: 10%;
+        padding: 5px;
+        display: inline-block;
+    }
+        
+#udraw-bootstrap [data-udraw="design_preview_modal"] .modal-title {
+    text-align: center;
+}
+#udraw-bootstrap [data-udraw="design_preview_modal"] [data-udraw="designPreviewList"] {
+    list-style: none;
+    overflow: auto;
+}
+    #udraw-bootstrap [data-udraw="design_preview_modal"] [data-udraw="designPreviewList"] li {
+        text-align: center;
+        border: 1px solid #eee;
+        padding: 5px;
+    }
+        #udraw-bootstrap [data-udraw="design_preview_modal"] [data-udraw="designPreviewList"] li div {
+            display: inline-block;
+            width: 250px;
+            height: 250px;
+            vertical-align: middle;
+        }
+        #udraw-bootstrap [data-udraw="design_preview_modal"] [data-udraw="designPreviewList"] li input[type="checkbox"] {
+            margin-left: 5px;
+        }
+        #udraw-bootstrap [data-udraw="design_preview_modal"] [data-udraw="designPreviewList"] li img {
+            max-width: 250px;
+            max-height: 250px;
+            width: 250px;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+#udraw-bootstrap [data-udraw="design_preview_modal"] .modal-footer > div {
+    text-align: center;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] [data-udraw="qrcode_prefix_input"] {
+    width: 100%;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] div.valuesDiv {
+    overflow-y: auto;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] div.valuesListDiv,
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] div.previewDiv {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+    max-height: 45%;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] [data-udraw="qrcode_input_list"] {
+    list-style-type: none;
+}
+#udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] .qrcode_preview {
+    max-width: 150px;
+    max-height: 150px;
+}
+    #udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] [data-udraw="serialCodeSettingsContainer"] {
+        display: none;
+    }
+    #udraw-bootstrap [data-udraw="edit_qrcode_setting_modal"] .active[data-udraw="serialCodeSettingsContainer"] {
+        display: inline-block;
+    }
+#udraw-bootstrap [data-udraw="excel_select_image_modal"] {
+    z-index: 3000;
+}
+    #udraw-bootstrap [data-udraw="excel_select_image_modal"] [data-udraw="excelUploadedImagesList"] {
+        list-style-type: none;
+    }
+        #udraw-bootstrap [data-udraw="excel_select_image_modal"] [data-udraw="excelUploadedImagesList"] li {
+            display: inline-block;
+        }

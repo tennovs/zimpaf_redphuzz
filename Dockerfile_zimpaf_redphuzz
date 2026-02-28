@@ -1,0 +1,113 @@
+FROM php:8.3.19-apache
+
+# 1. Install build tools + Python for the fuzzer
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libxml2-dev \
+    libonig-dev \
+    libyaml-dev \
+    python3 \
+    python3-pip \
+    iputils-ping \
+    && rm -rf /var/lib/apt/lists/*
+
+
+# 2. Install necessary extensions for db and php potentially vulnerable functions
+RUN docker-php-ext-install mysqli pdo pdo_mysql mbstring
+RUN pecl install yaml igbinary \
+    && docker-php-ext-enable yaml igbinary
+
+# 3. Build and install zimpaf. zimpaf is jus folder naming.
+COPY ./zimpaf /usr/src/php/ext/zimpaf
+WORKDIR /usr/src/php/ext/zimpaf
+
+# RUN phpize && ./configure && make -j$(nproc) && make install
+# a. Verify API Version, ZTS, and Debug status
+RUN php -i | grep -E "Thread Safety|Debug Build|PHP API" && \
+    phpize -v
+
+# b. Ensure no host-machine artifacts interfere
+RUN make distclean || true && phpize --clean
+
+# c. Build and install.
+RUN phpize && \
+    ./configure && \
+    make -j$(nproc) && \
+    make install
+RUN docker-php-ext-enable zimpaf
+
+# 4. Setup the Fuzzer environment
+# a.   Copy the required libraries
+COPY requirements.txt /tmp/
+
+# b. Install the requirements and force installation directly on docker without venv
+# RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt
+
+# c. set workdir
+WORKDIR /redphuzz
+
+
+# 5. Create directories for zimpaf instrumentation logs and new inputs
+# a. Directories for zimpaf instrumentation logs
+# function-call-traces and input_params_comparisons exist in ZIMPAF and RedPhuzz, not Phuzz
+# ZIMPAF and RedPhuzz do not use the last three because excluding mysql and code exection, all errors and exceptions are centralized
+RUN mkdir -p /shared-tmpfs/coverage-reports \
+             /shared-tmpfs/exception-reports \
+             /shared-tmpfs/error-reports \
+             /shared-tmpfs/function-call-traces \
+             /shared-tmpfs/input_params_comparisons \
+             /shared-tmpfs/mysql-error-reports \
+             /shared-tmpfs/shell-error-reports \
+             /shared-tmpfs/unserialize-error-reports \
+             /shared-tmpfs/pathtraversal-error-reports \
+             /shared-tmpfs/xxe-error-reports && \
+    chmod -R 777 /shared-tmpfs
+
+# Ensure the web server and fuzzer can write to them
+RUN chmod -R 777 /shared-tmpfs
+
+# b. Directory for new inputs
+RUN mkdir -p /sync-tmpfs/
+RUN chmod -R 777 /sync-tmpfs
+
+# 6. Install the benchmark web applications
+# a. Copy the files into docker docroot
+COPY ./www/html /var/www/html
+COPY ./www/auth_bypass /var/www/auth_bypass
+RUN chmod 777 /var/www/html/bwapp/passwords/
+RUN chmod 777 /var/www/html/bwapp/images/
+RUN chmod 777 /var/www/html/bwapp/documents/
+
+# b. Special treatment for wackopicko to avoid broken link
+RUN cp -a /var/www/html/wackopicko/website/. /var/www/html/
+RUN echo "<?php header('Location: /index.php'); exit; ?>" > /var/www/html/wackopicko/index.php
+RUN chmod 777 /var/www/html/upload
+
+# c. Change folders' ownership to www-data'
+RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/auth_bypass
+
+# 7. Overwrite docker php.ini and mpm_prefork.conf
+COPY ./zredphuzzf_php.ini /usr/local/etc/php/php.ini
+COPY ./zimpaf_mpm_prefork.conf /etc/apache2/mods-available/mpm_prefork.conf
+
+
+#8.Activate wordpress plugins
+RUN chmod +x /var/www/html/wordpress/wp-cli.phar
+# Wait for db to be active and activate all wordpress plugins
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
+
+
+# 9. Map the Apache logs to terminal for analysis
+RUN ln -sf /dev/stdout /var/log/apache2/access.log && \
+    ln -sf /dev/stderr /var/log/apache2/error.log
+
+# 10. Working directory is active and ready to be acesses using docker command to run the fuzzer
+# docker exec -it <container_id> bash
+# python fuzzer_redphuzz.py
+# The vulnerabilities and bugs are in /fuzzer/output/fuzzer-1
+WORKDIR /redphuzz

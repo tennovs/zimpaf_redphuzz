@@ -1,0 +1,196 @@
+@head_bg: #4ebd4a;
+@head_hover:#3c9b39; 
+@head_border:#3c9b39; 
+@head_border_hover:#3c9b39; 
+@input_color:#cfcfcf;
+@input_hover:#a7d065;
+@input_bg:#a7d065;
+@input_focus:#4ebd4a;
+@input_bg_focus:#4ebd4a;
+@input_border:#4ebd4a;
+@btn_bg:#4ebd4a; 
+@btn_hover:#3c9b39; 
+@btn_focus:#3c9b39; 
+@btn_border_color:#4ebd4a; 
+@btn_border_hover:#3c9b39; 
+@btn_border_focus:#3c9b39; 
+@btn_border_width:0px; 
+@btn_text:#fff; 
+@head_text:#fff; 
+@body_bg:#fff;; 
+@footer_bg:#f1f1f1; 
+@input_height:38px; 
+@border_color:#4ebd4a; 
+@border_width:1px; 
+@input_margin:10px; 
+@desc_size:12px; 
+@desc_color:#999; 
+@desc_style:italic; 
+@label_size:14px; 
+@label_color:#3c9b39;
+@label_style:normal;
+@footer_border_color:#d3d3d3;
+@footer_border_width:0px;
+@input_border_style_focus:solid;
+@input_border_style:solid;
+@form_body_bg:rgba(255,255,255,0);
+@form_border_color:#ccc;
+@input_text:#333;
+@input_place:#ddd;
+
+ #crm-panel-content  .cfx_form_div{
+       border-radius: 3px 3px 0 0; overflow: hidden; font-size: 16px;
+     margin: 5px auto; border: 0px solid #ccc;    -ms-text-size-adjust:100%;-webkit-text-size-adjust:100% ;
+    background: #fff;
+    }
+ #crm-panel-content   .cfx_form_div *{
+            -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+#crm-panel-content    .cfx_form_div .col12{
+      padding-bottom: 4px;  
+    }
+#crm-panel-content .crm_form_con {
+	border-width: 1px;
+	border-style: solid;
+	border-color: @border_color;
+	overflow:hidden;
+}
+ #crm-panel-content   .cfx_form_div .cfx_input{
+            -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    outline: 0;
+        -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: @input_bg;
+	  border-color: @input_color;  
+    position: relative;
+    vertical-align: top;
+    border-width:@border_width;
+    border-style:@input_border_style;
+    display: inline-block;
+*display:inline;
+    outline: 0;
+    height: @input_height;
+    width: 100%;font-size: 16px; 
+*zoom:1;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    }
+	 #crm-panel-content textarea{
+         padding: 5px 10px;
+     }
+  #crm-panel-content  .cfx_input::placeholder{
+ color: @input_place;  
+  }
+
+  #crm-panel-content      .cfx_form_div .cfx_input:focus{
+             color: #3c3c3c;
+    background:@input_bg_focus;
+    border-color: @input_focus;
+	  border-style: @input_border_style_focus;	
+  /*  -webkit-box-shadow: 0 0 3px @head_bg inset;
+    -moz-box-shadow: 0 0 3px @head_bg inset;
+    -o-box-shadow: 0 0 3px @head_bg inset;
+    box-shadow: 0 0 3px @head_bg inset;*/
+    outline: 0;  
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;	
+        }
+     #crm-panel-content  .cfx_desc{
+	font-size: @desc_size; 
+	color: @desc_color; 
+	font-style: @desc_style;
+	line-height:normal;
+	 }
+  #crm-panel-content  .cfx_form_head{
+        background: @head_bg;
+        padding: 0px 30px;
+        color:@head_text;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-left-width: 0px;
+        border-bottom-width: 5px;
+        border-style: solid;
+        border-color: @head_border;
+		line-height:normal;
+    }
+
+  #crm-panel-content  .crm_form_body{
+        padding: 20px;
+		  border: 0px solid #ccc;
+    border-top:0px;
+    border-bottom:0px;
+	background:@form_body_bg;
+    }
+  #crm-panel-content  .cfx_form_div .cfx_form_label{
+           	font-size: @label_size; 
+	color: @label_color; 
+	font-style: @label_style; 
+			font-weight: normal;
+           margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: block;
+	} 
+  #crm-panel-content   .cfx_form_div .crm_btn{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-size: 18px;
+            border: none;
+            color: @btn_text;
+            cursor: pointer;
+    background-color: @btn_bg;
+    border-width: @btn_border_width;
+    border-color: @btn_border_color;
+    border-style: solid;
+ text-align:center;
+    
+}
+.crm_form_con{
+clear: both;
+}
+#crm-panel-content .cfx_form_div .crm_btn:hover {
+    background-color: @btn_hover;
+	 border-color: @btn_border_hover;
+    
+}
+ #crm-panel-content .cfx_form_div .crm_form_row{
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+
+#crm-panel-content  .cfx_form_div .btn:active {
+    background-color: @btn_focus;
+	 border-color: @btn_border_focus;
+    }
+#crm-panel-content .crm_bg_footer{
+    background:  url(images/foobg.png) top left repeat-x;
+}
+#crm-panel-content .crm_light_footer{
+background-color: #f1f1f1;
+}
+#crm-panel-content .crm_form_footer {
+    overflow: hidden;
+    padding: 20px 25px;
+	  border-bottom-width: 0px;
+	  border-right-width: 0px;
+	  border-left-width: 0px;
+	  border-top-width: @footer_border_width;
+	  border-top-style: solid;
+border-top-color:@footer_border_color;
+	text-align: center;
+    padding-top: 25px; background-color:@footer_bg;
+
+}

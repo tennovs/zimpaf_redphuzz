@@ -1,0 +1,196 @@
+.ere-property-advanced-search {
+    display: block;
+}
+.ere-property-advanced-search input[type="text"],
+.ere-property-advanced-search select {
+    width: 100%;
+}
+.ere-property-advanced-search option:not(first-child) {
+    color: #444;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+.ere-property-advanced-search option:not(first-child):hover {
+    background-color: #FE6A00;
+}
+.ere-property-advanced-search .form-group {
+    height: 44px;
+}
+.ere-property-advanced-search .submit-search-form {
+    text-align: right;
+}
+.ere-property-advanced-search .ere-search-status-tab {
+    height: 44px;
+    margin-bottom: 30px;
+    background-color: #2C2C2C;
+}
+.ere-property-advanced-search .ere-search-status-tab span {
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    background-color: #222222;
+}
+.ere-property-advanced-search .ere-search-status-tab span i {
+    font-size: 25px;
+    line-height: 44px;
+    color: #ffffff;
+}
+.ere-property-advanced-search .ere-search-status-tab button {
+    width: auto !important;
+    vertical-align: top;
+    height: 44px;
+    line-height: 1;
+    border: 0;
+    background-color: transparent;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+.ere-property-advanced-search .ere-search-status-tab button.active {
+    background-color: #FE6A00;
+    color: #ffffff;
+}
+.ere-property-advanced-search .ere-property-wrap .form-search-wrap {
+    padding-top: 0 !important;
+}
+.ere-property-advanced-search .sidebar-filter.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+    position: relative;
+    margin: 15px 4px 10px 8px;
+    background: #e5e5e5;
+    height: 4px;
+    border: none;
+    border-radius: 0;
+}
+.ere-property-advanced-search .sidebar-filter .ui-slider-handle.ui-state-default.ui-corner-all {
+    position: absolute;
+    z-index: 4;
+    height: 14px;
+    width: 14px;
+    background: #FE6A00;
+    top: -5px;
+    cursor: ew-resize;
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.ere-property-advanced-search .sidebar-filter .ui-slider-handle.ui-state-default.ui-corner-all:active,
+.ere-property-advanced-search .sidebar-filter .ui-slider-handle.ui-state-default.ui-corner-all:focus {
+    outline: none;
+}
+.ere-property-advanced-search .sidebar-filter .ui-slider-range.ui-widget-header.ui-corner-all {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background: #FE6A00;
+    height: 4px;
+    border-radius: 0;
+    border: none;
+}
+.ere-property-advanced-search .btn-other-features {
+    cursor: pointer;
+    font-weight: 600;
+    color: #222222;
+}
+.ere-property-advanced-search .btn-other-features i {
+    background: #FE6A00;
+    color: #FFF;
+    margin-right: 5px;
+    padding: 3px;
+}
+.ere-property-advanced-search .ere-sliderbar-filter {
+    line-height: 1;
+}
+.ere-property-advanced-search .other-features-list {
+    clear: both;
+    display: none;
+}
+.ere-property-advanced-search .ui-state-active,
+.ere-property-advanced-search .ui-widget-content .ui-state-active {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+.ere-property-advanced-search .title-slider-filter span {
+    display: inline-block;
+}
+.ere-property-advanced-search.color-light .form-search-wrap {
+    padding-top: 60px;
+    padding-bottom: 44px;
+    background-color: #2C2C2C;
+}
+.ere-property-advanced-search.color-light .form-search-wrap input,
+.ere-property-advanced-search.color-light .form-search-wrap select,
+.ere-property-advanced-search.color-light .form-search-wrap .select2-container .select2-selection--single {
+    border-color: #565656;
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap .title-slider-filter {
+    color: #bababa;
+}
+.ere-property-advanced-search.color-light .form-search-wrap .btn-other-features,
+.ere-property-advanced-search.color-light .form-search-wrap .other-features-list h4 {
+    color: #ffffff;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap {
+    background-color: transparent;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap input,
+.ere-property-advanced-search.color-dark .form-search-wrap select,
+.ere-property-advanced-search.color-dark .form-search-wrap .select2-container .select2-selection--single {
+    border-color: #dedede;
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap .title-slider-filter {
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8f8f8f;
+}
+.ere-property-advanced-search.color-dark .form-search-wrap input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #8f8f8f;
+}
+.ere-property-advanced-search .other-features-list.ere-display-block {
+    display: block;
+}
+.ere-property-advanced-search.ere-show-status-tab .form-search-wrap {
+    padding-top: 0 !important;
+}

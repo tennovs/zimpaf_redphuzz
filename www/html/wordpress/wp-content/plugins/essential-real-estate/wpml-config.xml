@@ -1,0 +1,24 @@
+<wpml-config>
+    <admin-texts>
+        <key name="ere_options">
+            <key name="custom_measurement_units"/>
+            <key name="empty_price_text"/>
+            <key name="additional_fields">
+                <key name="*">
+                    <key name="label" />
+                    <key name="select_choices" />
+                </key>
+            </key>
+            <key name="thankyou_title"/>
+            <key name="thankyou_content"/>
+            <key name="thankyou_title_wire_transfer"/>
+            <key name="thankyou_content_wire_transfer"/>
+            <key name="company_name"/>
+            <key name="company_address"/>
+            <key name="company_phone"/>
+            <key name="thousand_text"/>
+            <key name="million_text"/>
+            <key name="billion_text"/>
+        </key>
+    </admin-texts>
+</wpml-config>

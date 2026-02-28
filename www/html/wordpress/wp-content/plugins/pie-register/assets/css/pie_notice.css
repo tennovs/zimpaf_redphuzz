@@ -1,0 +1,109 @@
+/* Admin Bar Number for Notices */
+#wp-admin-bar-pie_register .piereg-notice-num , .piereg-notice-num{
+    min-width: 8px;
+    height: 18px;
+    border-radius: 9px;
+    background: #ca4a1f;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 5px;
+}
+#wp-admin-bar-pie_register:hover .piereg-notice-num{
+    color: #ffffff;
+}
+#adminmenu .piereg-menu-notification-indicator{
+    margin: 5px 0 0 !important;
+}
+#wpadminbar .pie-reg-admin-bar-menu-notification-counter {
+    display: inline-block !important;
+    vertical-align: top !important;
+    box-sizing: border-box !important;
+    margin: 7px 0 0 2px !important;
+    padding: 0 5px !important;
+    min-width: 18px !important;
+    height: 18px !important;
+    border-radius: 9px !important;
+    background-color: #ca4a1f !important;
+    color: #fff !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+  }
+  
+  #wpadminbar .pie-reg-admin-bar-menu-notification-counter span {
+    line-height: 1 !important;
+    font-size: 11px !important;
+  }
+.notice.notice-info.wc_promo_users.is-dismissible,.notice.notice-info.bb_promo_users.is-dismissible, .notice.notice-info.mc_promo_users.is-dismissible, .notice.notice-info.wpb_promo_users.is-dismissible{
+    display: flex;
+    border-left-color: #c12526;
+    padding: 10px 10px 10px 20px;
+    align-items: center;
+}
+.notice.notice-info.wc_promo_users.is-dismissible .pr-launch-icon, .notice.notice-info.bb_promo_users.is-dismissible .pr-launch-icon, .notice.notice-info.mc_promo_users.is-dismissible .pr-launch-icon{
+    margin-right: 1.5%;
+    width: calc( 30% - 1.5% );
+}
+.notice.notice-info.wc_promo_users.is-dismissible > div:last-child, .notice.notice-info.bb_promo_users.is-dismissible > div:last-child, .notice.notice-info.mc_promo_users.is-dismissible > div:last-child{
+    width: calc( 100% - 30% - 1.5% );
+}
+.notice.notice-info.wc_promo_users.is-dismissible .button.button-primary, .notice.notice-info.bb_promo_users.is-dismissible .button.button-primary, .notice.notice-info.mc_promo_users.is-dismissible .button.button-primary {
+    background: #c12526;
+    border: none;
+}
+.notice.notice-info.wc_promo_users.is-dismissible p:first-child, .notice.notice-info.bb_promo_users.is-dismissible p:first-child, .notice.notice-info.mc_promo_users.is-dismissible p:first-child{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.notice.notice-info.wc_promo_users.is-dismissible p, .notice.notice-info.bb_promo_users.is-dismissible p, .notice.notice-info.mc_promo_users.is-dismissible p{
+    margin-bottom: 4.5px;
+    margin-top: 0px;
+}
+.notice.notice-info.wpb_promo_users.is-dismissible .sib-product-container{
+    margin-left: 30px;
+    width: calc( 100% - 30px );
+}
+.notice.notice-info.wpb_promo_users.is-dismissible .sib-product-container .sib-product-detail h5{
+    font-size: 15px;
+    margin: 6px 0;
+}
+.notice.notice-info.wc_promo_users.is-dismissible .pr-launch-icon img, .notice.notice-info.bb_promo_users.is-dismissible .pr-launch-icon img, .notice.notice-info.mc_promo_users.is-dismissible .pr-launch-icon img{
+    width: 100%;
+}
+.piereg-menu-notification-indicator {
+    float: right;
+    margin: 10px 0 0 !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background-color: #ca4a1f !important;
+    line-height: 1.6 !important;
+    animation: piereg-menu-notification-indicator-pulse 1.5s infinite !important;
+}
+  
+@keyframes piereg-menu-notification-indicator-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(202, 74, 31, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(202, 74, 31, 0);
+    }
+}
+@media only screen and (max-width: 980px){
+    .notice.notice-info.wc_promo_users.is-dismissible,.notice.notice-info.bb_promo_users.is-dismissible, .notice.notice-info.mc_promo_users.is-dismissible{
+        flex-wrap: wrap;
+    }
+    .notice.notice-info.wc_promo_users.is-dismissible .pr-launch-icon, .notice.notice-info.bb_promo_users.is-dismissible .pr-launch-icon, .notice.notice-info.mc_promo_users.is-dismissible .pr-launch-icon{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .notice.notice-info.pie-admin-notice.wpb_promo_users.is-dismissible{
+        flex-wrap: wrap;
+    }
+}
