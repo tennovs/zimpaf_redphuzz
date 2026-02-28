@@ -1,17 +1,10 @@
-# Core research code
+# Force C as primary language
 *.c linguist-language=C
 *.h linguist-language=C
-*.py linguist-language=Python
 
-# Ignore web/testbed files that confuse Linguist
+# Mark Python as vendored (so it doesn’t count toward language stats)
+*.py linguist-vendored
+
+# Ignore web/testbed files
 www/html/** linguist-vendored
-www/html/**/*.php linguist-vendored
-www/html/**/*.html linguist-vendored
-www/html/**/*.css linguist-vendored
-
-# Ignore leftover binaries
 *.zip linguist-vendored
-*.tar linguist-vendored
-*.o linguist-vendored
-*.so linguist-vendored
-
