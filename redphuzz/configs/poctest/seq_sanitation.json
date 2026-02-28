@@ -1,0 +1,23 @@
+{
+    "target": "http://localhost/poc/cashiers.php",
+    "methods": [
+        "GET"
+    ],
+    "query_params": {
+        "data": [
+            {
+                "name": "name",
+                "seeds": ["name"]
+            },
+            {
+                "name": "file",
+                "seeds": ["file"]
+            }
+        ],
+        "fixed": [],
+        "fuzz": [
+            ".*"
+        ],
+        "weight": 1.0
+    }
+}

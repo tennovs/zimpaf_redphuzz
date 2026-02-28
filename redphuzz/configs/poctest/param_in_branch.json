@@ -1,0 +1,30 @@
+{
+    "target": "http://localhost/poc/search_and_add_user.php",
+    "methods": [
+        "POST"
+    ],
+    "body_params": {
+        "data": [
+            {
+                "name": "username",
+                "seeds": "notaname"
+            },
+            {
+                "name": "age",
+                "value": 10
+            },
+            {
+                "name": "income",
+                "value": 1123324
+            },
+            {
+                "name": "add_user",
+                "value": "Add User"
+            }
+        ],
+        "fixed": ["add_user"],
+        "fuzz": [".*"],
+        "weight": 1.0
+    }
+}
+

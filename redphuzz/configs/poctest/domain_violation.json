@@ -1,0 +1,31 @@
+{
+    "target": "http://localhost/poc/update_product_name.php",
+    "methods": [
+        "POST"
+    ],
+    "body_params": {
+        "data": [
+            {
+                "name": "product_name",
+                "seeds": ["Lappet"]
+            },
+            {
+                "name": "order_id",
+                "value": 2
+            },
+            {
+                "name": "update",
+                "value": "1"
+            }
+        ],
+        "fixed": [  "order_id",
+                    "update"
+
+        ],
+        "fuzz": [
+            ".*"
+        ],
+        "weight": 1.0
+    }
+}
+

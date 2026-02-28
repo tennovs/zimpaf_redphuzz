@@ -1,0 +1,19 @@
+{
+    "target": "http://localhost/poc/",
+    "methods": [
+        "GET"
+    ],
+    "query_params": {
+        "data": [
+            {
+                "name": "username",
+                "seeds": ["1"]
+            }
+        ],
+        "fixed": [],
+        "fuzz": [
+            ".*"
+        ],
+        "weight": 1.0
+    }
+}

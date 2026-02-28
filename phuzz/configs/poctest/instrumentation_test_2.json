@@ -1,0 +1,19 @@
+{
+    "target": "http://localhost/poc/instrumentation_test_2.php",
+    "methods": [
+        "GET"
+    ],
+    "query_params": {
+        "data": [
+            {
+                "name": "maxcounter",
+                "value": 100
+            }
+        ],
+        "fixed": [],
+        "fuzz": [
+            ".*"
+        ],
+        "weight": 1.0
+    }
+}

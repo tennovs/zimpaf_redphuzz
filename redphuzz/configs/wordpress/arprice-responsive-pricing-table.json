@@ -1,0 +1,30 @@
+{
+    "target": "http://localhost/wordpress/wp-admin/admin-ajax.php",
+    "methods": [
+        "POST"
+    ],
+    "body_params": {
+        "data": [
+            {
+                "name": "action",
+                "value": "arplite_insert_plan_id"
+            },
+            {
+                "name": "arp_plan_id",
+                "value": "planfuzzing"
+            },
+            {
+                "name": "arp_template_id",
+                "value": "templatefuzzing"
+            }
+        ],
+        "fixed": [
+            "action"
+        ],
+        "fuzz": [
+            "arp_plan_id",
+            "arp_template_id"
+        ],
+        "weight": 1
+    }
+}

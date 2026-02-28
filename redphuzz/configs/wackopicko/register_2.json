@@ -1,0 +1,32 @@
+{
+    "target": "http://localhost/users/similar.php",
+    "methods": [
+        "GET"
+    ],
+    "cookies": {
+        "data": [],
+        "fixed": [
+            ".*"
+        ],
+        "login": [
+            "PHPSESSID"
+        ],
+        "weight": 0.0
+    },
+    "query_params": {
+        "data": [
+            {
+                "name": "firstname",
+                "seeds": [
+                    "fuzz"
+                ]
+            }
+        ],
+        "fixed": [
+            "query"
+        ],
+        "fuzz": [
+        ],
+        "weight": 1.0
+    }
+}
