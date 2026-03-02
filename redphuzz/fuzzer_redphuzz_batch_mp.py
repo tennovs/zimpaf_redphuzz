@@ -2524,17 +2524,17 @@ if __name__ == "__main__":
     inputs = prepare_inputs()
     if not "FUZZER_CONFIG" in os.environ:
         EXCLUDED = {
-            "wordpress/arprice-responsive-pricing-table",           #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/essential-real-estate",                      #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/gallery-album",                              #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/joomsport-sports-league-results-management", #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/kivicare-clinic-management-system",          #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/nirweb-support",                             #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/photo-gallery",                              #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/show-all-comments-in-one-page",              #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/ubigeo-peru"                                 #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/udraw"                                       #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/all-in-one-wp-security-and-firewall",
+            # "wordpress/arprice-responsive-pricing-table",           #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/essential-real-estate",                      #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/gallery-album",                              #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/joomsport-sports-league-results-management", #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/kivicare-clinic-management-system",          #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/nirweb-support",                             #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/photo-gallery",                              #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/show-all-comments-in-one-page",              #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/ubigeo-peru"                                 #moderate input growth, the entire fuzzing lasts long using single process
+            # "wordpress/udraw"                                       #moderate input growth, the entire fuzzing lasts long using single process
+            "wordpress/all-in-one-wp-security-and-firewall",        #open redirect, out of scope for now
             "wordpress/newsletter-optin-box"                        #open redirect, out of scope for now
             "wordpress/phastpress",                                 #open redirect, out of scope for now
             "wordpress/pie-register",                               #open redirect, out of scope for now
