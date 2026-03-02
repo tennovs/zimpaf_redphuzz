@@ -155,21 +155,20 @@ While this framework is fully containerized for reproducibility, the **Docker Un
 **For this reason, we highly suggest running the framework on the host directly for maximum throughput.** For large targets (e.g., complex **WordPress plugins**), ZIMPAF can generate bursts exceeding **30 MB per write**. While the framework utilizes **large-scale batch writing** to minimize syscall overhead, the Docker storage driver (Overlay2) can struggle with these heavy bursts on standard hardware.
 
 ### **Optimizing I/O Throughput**
-If you are **still opting for a Docker run** and experience performance degradation or high Disk Wait (I/O Wait) on a host with limited resources (e.g., **16 GB RAM / SATA SSD**), which was the evaluation environment for this framework:
+If you are **still opting for a Docker run** and experience performance degradation or high Disk Wait (I/O Wait) on a host with limited resources (e.g., **16 GB RAM / SATA SSD**), which was the evaluation environment for this framework, we suggest:
 
 1. **Volume Binding:** The default `docker-compose.yml` only maps `redphuzz/output` to the host, keeping other files isolated. To mitigate UFS overhead, you can extend volume binding to the `/shared-tmpfs/` and `/sync-tmpfs/` directories in your Compose file.
 2. **Native Execution:** For maximum throughput and detection accuracy, we recommend running the framework directly on the **host machine**.
     * Ensure the host has `php-dev` headers and `build-essential` installed.
     * Compile ZIMPAF locally: `phpize && ./configure && make`.
     * This eliminates the Docker storage abstraction layer, providing direct NVMe/SSD access for the mutation engine.
-3. Currently, all logs are not deleted so that you can view and analyze the log. However, to save disk storage, please consider to remove them after certain time when the logs are not useful anymore or when every input completed.
 
 > **Note on Memory:** Although the logging directories are named `tmpfs`, they are currently mapped to physical storage to prevent **Out-Of-Memory (OOM)** errors on 16 GB systems.
 
 ### 🧹 Disk Space & Log Management
-Currently, the framework retains all instrumentation logs in `/shared-tmpfs/` to allow for deep post-mortem analysis of every mutation. However, due to the high-volume nature of ZIMPAF traces (can reach 30 MB+ per burst):
 
-* **Manual Cleanup:** Users are advised to periodically clear the `/shared-tmpfs/` subdirectories between major benchmark runs to prevent disk saturation or you can add a function to remove them from RedPhuzz. You can also clean up the output in `/redphuzz/output`
+Currently, the framework retains all instrumentation logs in the container's `/shared-tmpfs/` to allow for deep post-mortem analysis of every mutation. However, due to the high-volume nature of ZIMPAF traces (can reach 30 MB+ per burst):
+* **Manual Cleanup:** Users are advised to periodically clear the `/shared-tmpfs/` subdirectories between major benchmark runs to prevent disk saturation or you can add a function to remove them from RedPhuzz. You can also clean up the output in `/redphuzz/output`.
 * **Planned Feature:** Future version of **the front-end fuzzer** will include this feature.
 
 ## Reporting Bugs
