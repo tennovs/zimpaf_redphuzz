@@ -10,7 +10,7 @@ It combines Zend VM–level instrumentation with feedback mechanism to provide d
 ---
 ## Architecture
 ![zimpaf_redphuzz architecture](./docs/zimpaf_redphuzz_architecture.png)
-The highligh
+
 
 
 
