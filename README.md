@@ -8,6 +8,11 @@ ZIMPAF_RedPhuzz is developed as part of ongoing security research at Computer Sc
 It combines Zend VM–level instrumentation with feedback mechanism to provide deep runtime visibility and highly-targeted vulnerability detection.
 
 ---
+## Architecture
+![zimpaf_redphuzz architecture](./docs/zimpaf_redphuzz_architecture.png)
+The highligh
+
+
 
 ## What is ZIMPAF?
 
@@ -28,6 +33,8 @@ Proceedings of the 19th ACM Asia Conference on Computer and Communications Secur
 
 Original Phuzz repository:
 https://github.com/gehaxelt/phuzz/tree/main/code/fuzzer
+
+The four brown-shaded components in RedPhuzz are reused from Phuzz.
 
 
 ---
