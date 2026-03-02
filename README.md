@@ -141,8 +141,8 @@ for big wordpress plugin can produce >30MB logs.
 /sync-tmpfs/
 ```
 
-If you want a clean fuzzing start, delete this directory first.
-Otherwise, incomplete inputs may be restored automatically.
+If you want a clean fuzzing start, delete the content of this directory first.
+Otherwise, incomplete inputs are restored automatically.
 
 ---
 
