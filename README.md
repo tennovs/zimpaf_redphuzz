@@ -126,7 +126,7 @@ redphuzz/output/fuzzer[id]
 - **function-call-traces** — Traces of vulnerable and sanitization functions
 - **input_params_comparisons** — Branch instructions influenced by input
 - **mysql-error-reports** — MySQL error traces via mysqlnd and PDO
-- **shell-error-reports** — Command injection handler traces
+- **shell-error-reports** — Command injection error traces via command injection functions handler, some of which require simulation.
 
 Although these directories contain the name `tmpfs`, they are NOT memory-backed.
 The system runs on a 16GB RAM machine, and storing large logs/traces purely in memory is inefficient.
@@ -146,7 +146,7 @@ Otherwise, incomplete inputs are restored automatically.
 
 ---
 
-## Restarting docker again
+## Restarting the Container
 If for a reason you stop the containers and want to restart it again using this command:
 
 ```bash
