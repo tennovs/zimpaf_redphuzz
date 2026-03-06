@@ -146,8 +146,6 @@ Otherwise, incomplete inputs are restored automatically.
 
 ---
 
----
-
 ## Restarting docker again
 If for a reason you stop the containers and want to restart it again using this command:
 
@@ -155,6 +153,8 @@ If for a reason you stop the containers and want to restart it again using this 
 docker start zimpaf_redphuzz
 ```
 wait for about 1-2 minutes until the apache2 on docker is ready to serve requests.
+
+---
 
 
 ## ⚡ Performance Optimization: UFS vs. Host Execution
