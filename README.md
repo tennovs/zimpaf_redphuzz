@@ -61,7 +61,7 @@ docker compose up
 - You can modify the number of processes created:
   - Open `redphuzz/fuzzer_redphuzz_batch_mp.py`
   - Scroll to the bottom (around line 2549)
-  - Please make sure the number of processes is balanced with the number of apache workers specified ```zimpaf_redphuzz/zimpaf_mpm_prefork.conf```.
+  - Please make sure the number of processes is balanced with the number of apache workers specified in ```zimpaf_redphuzz/zimpaf_mpm_prefork.conf```.
 
 Run:
 
