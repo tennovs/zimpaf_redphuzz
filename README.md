@@ -40,7 +40,7 @@ The four brown-shaded components in RedPhuzz are reused from Phuzz.
 ---
 
 # 🚀 Getting Started
-We suggest to run our framework directly on host computer due to
+We suggest to run our framework directly on host computer due to massive and deep-surgical monitoring of branches, language constructs, and function calls. E.g. for  Wordpress plugin, Arprice-responsive-pricing-table-3.6, it logs 35,623 language constructs and function calls, and 81,730 branch instruction executions, producing >43MB log. The instrumentation itself is highly efficient, however running inside docker may create performance degradation as additional layers are added to environment which can particularly affect I/O.
 
 ## 1. Start the Environment
 Go to project root: zimpaf_redphuzz and open terminal in this folder and execute
@@ -147,6 +147,15 @@ Otherwise, incomplete inputs are restored automatically.
 ---
 
 ---
+
+## Restarting docker again
+If for a reason you stop the containers and want to restart it again using this command:
+
+```bash
+docker start zimpaf_redphuzz
+```
+wait for about 1-2 minutes until the apache2 on docker is ready to serve requests.
+
 
 ## ⚡ Performance Optimization: UFS vs. Host Execution
 
