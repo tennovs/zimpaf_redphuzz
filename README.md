@@ -84,7 +84,7 @@ docker exec -it zimpaf_redphuzz python3 fuzzer_redphuzz_batch_sp.py
 
 ### Single Test Case Run
 
-- Open `redphuzz/fuzzer_redphuzz.py`
+- Open `redphuzz/fuzzer_redphuzz.py` on host. Since the folder is mapped using a bind volume, any changes will be reflected in the corresponding files inside the ```zimpaf_redphuzz``` container.
 - Scroll to the bottom
 - Uncomment the test case you want to fuzz
 
