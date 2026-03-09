@@ -1055,7 +1055,7 @@ class Fuzzer:
                     elapsed = time.time() - self.start_time  # elapsed in seconds (float)
                     seconds = int(elapsed) 
                     print(f"\033[91mFOUND an Old {k} after {seconds} seconds \033[0m")
-                    print(f"\033[91mThis has already found before with HASH: {v_hash} \033[0m")
+                    print(f"\033[91mThis has already been found before with HASH: {v_hash} \033[0m")
                     print(f"\033[91mDETAIL: {v} \033[0m")
                 #vulnerability has been found, fuzzing of vuln func is done, remove from c.vuln_functions
                 #and add to c.vuln_functions_done
