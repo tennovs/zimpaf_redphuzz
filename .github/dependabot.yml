@@ -1,5 +1,21 @@
-ignore:
-  - dependency-name: "*"
-    versions: ["*"]
-    paths:
-      - "./www/html/*"
+version: 0
+updates:
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "never"
+    ignore:
+      - dependency-name: "*"
+        versions: ["*"]
+        paths:
+          - "www/html/*"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "never"
+    ignore:
+      - dependency-name: "*"
+        versions: ["*"]
+        paths:
+          - "www/html/*"            # benchmarks containing intentional vulnerabilities
