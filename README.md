@@ -42,6 +42,12 @@ The four brown-shaded components in RedPhuzz are reused from Phuzz.
 # 🚀 Getting Started
 We suggest to run our framework directly on host computer due to massive and deep-surgical monitoring of branches, language constructs, and function calls. E.g., for  Wordpress plugin Arprice-responsive-pricing-table-3.6, it logs 35,623 language constructs and function calls, and 81,730 branch instruction executions, producing > 43MB log. While the instrumentation itself is highly efficient, running inside Docker may introduce performance degradation due to additional environment layers, which can particularly affect I/O operations. The framework has been tested on a computer with the following specs: Intel® CoreTM i7-8550U CPU @ 1.80 GHz (4 cores), 16 GB of RAM, and NVMe SSD 2 TB. The benchmarks are hosted on Ubuntu with Apache/2.4.58 mod_php and PHP 8.3.19.
 
+
+
+## 0. Benchmark Web paplications with Intentional Vulnerabilities
+Redphuzz uses 6 benchmark applications containing vulnerabilities and bugs: 1 our PoC web application and the rest are bWAPP, DVWA, WackoPicko, Wordpress with vulnerable plugins, and XVWA.All of them are inside ```./www/html/``` folder. We also provided the source of Wordpress vulnerable plugins in ```./www/html/wordpress/_plugins```.
+
+
 ## 1. Start the Environment
 Go to project root: zimpaf_redphuzz and open terminal in this folder and execute
 
