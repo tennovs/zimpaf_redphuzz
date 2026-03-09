@@ -57,6 +57,8 @@ Run:
 docker compose up
 ```
 
+The build of all containers takes around 4 minutes on our machine.
+
 ---
 
 ## 2. Running the Fuzzer
