@@ -1,0 +1,5 @@
+ignore:
+  - dependency-name: "*"
+    versions: ["*"]
+    paths:
+      - "./www/html/*"
