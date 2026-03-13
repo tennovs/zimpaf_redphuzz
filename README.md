@@ -44,7 +44,7 @@ We suggest to run our framework directly on host computer due to massive and dee
 
 
 
-## 0. Benchmark Web paplications with Intentional Vulnerabilities
+## 0. Benchmark Web Applications with Intentional Vulnerabilities
 Redphuzz uses 6 benchmark applications containing vulnerabilities and bugs: 1 our PoC web application and the rest are bWAPP, DVWA, WackoPicko, Wordpress with vulnerable plugins, and XVWA.All of them are inside ```./www/html/``` folder. We also provided the source of Wordpress vulnerable plugins in ```./www/html/wordpress/_plugins```.
 
 
