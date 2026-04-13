@@ -17,7 +17,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql mbstring
 RUN pecl install yaml igbinary \
     && docker-php-ext-enable yaml igbinary
 
-# 3. Build and install zimpaf. zimpaf is jus folder naming.
+# 3. Build and install zimpaf.
 COPY ./zimpaf /usr/src/php/ext/zimpaf
 WORKDIR /usr/src/php/ext/zimpaf
 
