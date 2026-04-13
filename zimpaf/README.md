@@ -1,11 +1,9 @@
 # ZIMPAF — Zend Instrumentation Module for PHP Application Fuzzing
 
-ZIMPAF is a Zend Engine instrumentation module designed to provide
-high-fidelity runtime visibility for PHP applications during fuzzing.
+ZIMPAF is a novel instrumentation module for the Zend interpreter, designed to provide
+high-fidelity runtime visibility for PHP application fuzzing.
 
-It operates at the opcode level inside the Zend VM and enables precise
-monitoring of execution behavior, control flow, data flow, and security-
-relevant events.
+It performs fine-grained and targeted interception within the Zend VM to achieve efficient instrumentation, avoiding global interception at the Zend Engine’s main execution loop (zend_execute_ex) and the function call dispatcher (e.g., ZEND_DO_FCALL). It monitors execution behavior by intercepting branch instructions, security-sensitive language constructs, function calls, as well as errors and exceptions.
 
 ## Research Context
 
@@ -17,10 +15,12 @@ College of Engineering, The University of Texas at Arlington.
 
 
 ## Design Goals
+To provide a novel, efficient, and effective instrumentation that avoids code patching, usable, extendable, and adapts to the evolution of the PHP.
 
 - High-fidelity instrumentation at Zend VM level
 - Awareness of execution context
-- Fine-grained coverage collection
+- Fine-grained coverage collection via branch instructions
+- Fine-grained tracing of language constructs and function calls
 - Security-oriented runtime tracing
 - Integration with grey-box fuzzers (e.g., RedPhuzz)
 
@@ -60,7 +60,7 @@ ZIMPAF hooks into Zend internals to collect:
 
 
 ### 7. Shell Error Reporting
-- Reporting of errors for command injection functions.
+- Reporting of errors for command injection functions
 
 ---
 
