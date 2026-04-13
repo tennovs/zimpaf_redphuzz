@@ -2,6 +2,12 @@
 
 **ZIMPAF_RedPhuzz** is a high-fidelity grey-box fuzzing framework for PHP web applications.
 
+### ZIMPAF v1.1.0 is released
+
+- Introduces additional branch-level hooks, resolves logic issues, and optimizes memory usage, achieving approximately 40–50% reduction in large PHP applications such as WordPress plugins. See zimpaf/README for details.
+
+- Observation: certain complex regex patterns (e.g., `/^(?:[ \t]*<\?php)?[ \t\/*#@]*WC requires at least:(.*)$/mi`) can trigger deep recursive behavior in Python’s `xeger` implementation, potentially resulting in out-of-memory conditions. Designing a safe inverse-regex generation mechanism for fuzzing remains an open research problem.
+
 ## Research Context
 
 ZIMPAF_RedPhuzz is developed as part of ongoing security research at Computer Science and Engineering Department, College of Engineering, The University of Texas at Arlington.
