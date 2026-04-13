@@ -1,3 +1,19 @@
+
+## Releases
+
+### v1.1.0 (2026-04-13)
+#### zimpaf.c
+- Add ZEND_JMP_SET and ZEND_COALESCE hooks
+- Modify GINIT and GSHUTDOWN to use pointer-style access ("->") in global module variable access so that ZIMPAF can be used in both ZTS and Non-ZTS
+
+#### utils.h
+- Add function declaration: get_zval_ptr
+- Update function declaration: is_zval_in_superglobal and is_zval_value_in_array
+
+#### utils.c
+- Update is_zval_in_superglobal
+- Fixed logic issues in is_zval_value_in_array and optimized its implementation, achieving ~40–50% memory reduction in large PHP applications, such large WordPress plugins
+
 # ZIMPAF — Zend Instrumentation Module for PHP Application Fuzzing
 
 ZIMPAF is a novel instrumentation module for the Zend interpreter, designed to provide

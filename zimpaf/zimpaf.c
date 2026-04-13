@@ -54,7 +54,7 @@ static user_opcode_handler_t original_jmpnz_handler;
 static user_opcode_handler_t original_jmpz_ex_handler;
 static user_opcode_handler_t original_jmpnz_ex_handler;
 static user_opcode_handler_t original_jmp_null_handler;
-// static user_opcode_handler_t original_jmp_set_handler;
+static user_opcode_handler_t original_jmp_set_handler;
 
 // IS-variants hook
 static user_opcode_handler_t original_is_equal_handler;
@@ -67,6 +67,9 @@ static user_opcode_handler_t original_is_smaller_equal_handler;
 //CASE hook
 static user_opcode_handler_t original_case_handler;
 static user_opcode_handler_t original_case_strict_handler;
+
+//COALESCE hook
+static user_opcode_handler_t original_coalesce_handler;
 
 //INCLUDE_OR_EVAL hook
 static user_opcode_handler_t original_include_or_eval_handler;
@@ -119,6 +122,47 @@ void realloc_path_table(){
     	memset(ZIMPAF_G(path_table)[i], 0, MAX_CHARS * sizeof(char));
 	}
 }
+
+// void realloc_path_table() {
+// 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
+// 		ZEND_TSRMLS_CACHE_UPDATE();
+// 	#endif
+
+// 	unsigned int old_size = ZIMPAF_G(path_table_size);
+//     ZIMPAF_G(path_table_size) += MAX_FILES;
+
+//     /* 1. Expand the "Directory" (The list of pointers) */
+//     ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size) * sizeof(char *), 1);
+
+//     /* 2. Expand the "Giant Slab" (The actual string data) */
+//     /* We realloc the first pointer because it anchors the entire block */
+//     char *old_slab = ZIMPAF_G(path_table)[0];
+//     char *new_slab = perealloc(old_slab, ZIMPAF_G(path_table_size) * MAX_CHARS * sizeof(char), 1);
+    
+//     /* 3. Re-map ALL pointers */
+//     /* If 'perealloc' moved the slab to a new address, all old pointers are now invalid! */
+//     /* This loop fix ensures every 'Ant' knows where its new home is. */
+//     for (size_t i = 0; i < ZIMPAF_G(path_table_size); i++) {
+//         ZIMPAF_G(path_table)[i] = new_slab + (i * MAX_CHARS);
+//     }
+
+//     /* 4. Zero out only the new portion */
+//     memset(new_slab + (old_size * MAX_CHARS), 0, MAX_FILES * MAX_CHARS);
+
+// 	//**risky as it creates islands of memory */
+// 	// unsigned int prev_size = ZIMPAF_G(path_table_size);
+// 	// ZIMPAF_G(path_table_size) += MAX_FILES;  // Increase the size of path table by MAX_FILES
+// 	// ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size * sizeof(char *)), 1);
+	
+// 	// // Allocate a new "Giant Block" for the new rows
+// 	// char *new_table_storage = pemalloc(MAX_FILES * MAX_CHARS * sizeof(char), 1);
+// 	// memset(new_table_storage, 0, MAX_FILES * MAX_CHARS * sizeof(char));
+	
+// 	// // Assign new blocks to the new rows
+// 	// for (size_t i = prev_size; i < ZIMPAF_G(path_table_size); i++) {
+// 	// 	ZIMPAF_G(path_table)[i] = new_table_storage + ((i - prev_size) * MAX_CHARS);
+// 	// }
+// }
 
 zval* get_zval_op(zend_execute_data *execute_data, const zend_op *opline, const znode_op op, uint8_t type) {
 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
@@ -370,13 +414,14 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 	user_opcode_handler_t original_handler = NULL;
 	const zend_op *opline = execute_data->opline;
 	uint32_t lineno = opline->lineno;
+	uint32_t current_line = zend_get_executed_lineno();
 	zend_string *op1_input_param = NULL;
 	zend_string *op2_input_param = NULL;
 	uint8_t opcode = opline->opcode;
 	uint8_t input_cmp_opcode = 0;
 	printf("Executing statement at %s:%d\n", filename, lineno);
 	op1 = get_op1(execute_data,opline);
-	op1_input_param = is_zval_in_superglobal(op1, opcode);
+	op1_input_param = is_zval_in_superglobal(execute_data, op1, opline);
 	switch (opcode){
 		case ZEND_JMP:
 			printf("Intercepted ZEND_JMP at line %d\n", opline->lineno);
@@ -418,10 +463,19 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			printf("path_condition=%d\n",path_condition);
 			original_handler = original_jmp_null_handler;
 			break;
-		// case ZEND_JMP_SET:
-		// 	printf("Intercepted ZEND_JMP_SET at line %d\n", opline->lineno);
-		// 	original_handler = original_jmp_set_handler;
-		// 	break;
+		case ZEND_JMP_SET:
+			printf("Intercepted ZEND_JMP_SET at line %d\n", opline->lineno);
+			printf("zend_is_true(op1)=%d\n",zend_is_true(op1));
+			path_condition = zend_is_true(op1);
+			printf("path_condition=%d\n",path_condition);
+			original_handler = original_jmp_set_handler;
+			break;
+		case ZEND_COALESCE:
+			printf("Intercepted ZEND_COALESCE at line %d\n", opline->lineno);
+			path_condition = (Z_TYPE_P(op1) != IS_NULL);
+			printf("path_condition=%d\n",path_condition);
+			original_handler = original_coalesce_handler;
+			break;
 		case ZEND_IS_EQUAL:
 			printf("Intercepted ZEND_IS_EQUAL at line %d\n", opline->lineno);
 			op2 = get_op2(execute_data,opline);
@@ -429,7 +483,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_EQUAL);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2,opline);
 			input_cmp_opcode = ZEND_IS_EQUAL;
 			original_handler = original_is_equal_handler;
 			break;
@@ -440,7 +494,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_NOT_EQUAL);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2,opline);
 			input_cmp_opcode = ZEND_IS_NOT_EQUAL;
 			original_handler = original_is_not_equal_handler;
 			break;
@@ -451,7 +505,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_IDENTICAL);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_IS_IDENTICAL;
 			original_handler = original_is_identical_handler;
 			break;
@@ -462,7 +516,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_NOT_IDENTICAL);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_IS_NOT_IDENTICAL;
 			original_handler = original_is_not_identical_handler;
 			break;
@@ -473,7 +527,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_SMALLER);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_IS_SMALLER;
 			original_handler = original_is_smaller_handler;
 			break;
@@ -484,7 +538,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_IS_SMALLER_OR_EQUAL);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_IS_SMALLER_OR_EQUAL;
 			original_handler = original_is_smaller_equal_handler;
 			break;
@@ -495,7 +549,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_CASE);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_CASE;
 			original_handler = original_case_handler;
 			break;
@@ -506,7 +560,7 @@ int conditional_statement_handler(zend_execute_data *execute_data){
 			print_op(op2,2);
 			path_condition = is_met_path_condition(op1, op2, ZEND_CASE_STRICT);
 			printf("path_condition=%d\n",path_condition);
-			op2_input_param = is_zval_in_superglobal(op2, opcode);
+			op2_input_param = is_zval_in_superglobal(execute_data, op2, opline);
 			input_cmp_opcode = ZEND_CASE_STRICT;
 			original_handler = original_case_strict_handler;
 			break;
@@ -973,8 +1027,8 @@ PHP_MINIT_FUNCTION(zimpaf){
 	zend_set_user_opcode_handler(ZEND_JMPNZ_EX,conditional_statement_handler);
 	original_jmp_null_handler = zend_get_user_opcode_handler(ZEND_JMP_NULL);
 	zend_set_user_opcode_handler(ZEND_JMP_NULL,conditional_statement_handler);
-	// original_jmp_set_handler = zend_get_user_opcode_handler(ZEND_JMP_SET);
-	// zend_set_user_opcode_handler(ZEND_JMP_SET,conditional_statement_handler);
+	original_jmp_set_handler = zend_get_user_opcode_handler(ZEND_JMP_SET);
+	zend_set_user_opcode_handler(ZEND_JMP_SET,conditional_statement_handler);
 
 	/*IS-variants hook*/
 	original_is_equal_handler = zend_get_user_opcode_handler(ZEND_IS_EQUAL);
@@ -995,6 +1049,12 @@ PHP_MINIT_FUNCTION(zimpaf){
 	zend_set_user_opcode_handler(ZEND_CASE,conditional_statement_handler);
 	original_case_strict_handler = zend_get_user_opcode_handler(ZEND_CASE_STRICT);
 	zend_set_user_opcode_handler(ZEND_CASE_STRICT,conditional_statement_handler);
+
+	/*COALESCE hook*/
+	original_coalesce_handler = zend_get_user_opcode_handler(ZEND_COALESCE);
+	zend_set_user_opcode_handler(ZEND_COALESCE,conditional_statement_handler);
+
+
 	/*INCLUDE_OR_EVAL hook*/
 	original_include_or_eval_handler = zend_get_user_opcode_handler(ZEND_INCLUDE_OR_EVAL);
 	zend_set_user_opcode_handler(ZEND_INCLUDE_OR_EVAL,generic_lang_construct_handler);
@@ -1020,7 +1080,7 @@ PHP_MSHUTDOWN_FUNCTION(zimpaf) {
 	zend_set_user_opcode_handler(ZEND_JMPZ_EX,original_jmpz_ex_handler);
 	zend_set_user_opcode_handler(ZEND_JMPNZ_EX, original_jmpnz_ex_handler);
 	zend_set_user_opcode_handler(ZEND_JMP_NULL,original_jmp_null_handler);
-	// zend_set_user_opcode_handler(ZEND_JMP_SET,original_jmp_set_handler);
+	zend_set_user_opcode_handler(ZEND_JMP_SET,original_jmp_set_handler);
 
 	// Restore the original IS-variants handler
 	zend_set_user_opcode_handler(ZEND_IS_EQUAL, original_is_equal_handler);
@@ -1033,6 +1093,9 @@ PHP_MSHUTDOWN_FUNCTION(zimpaf) {
 	// Restore the original CASE handler
 	zend_set_user_opcode_handler(ZEND_CASE, original_case_handler);
 	zend_set_user_opcode_handler(ZEND_CASE_STRICT, original_case_strict_handler);
+
+	// Restore the original COALESCE handler
+	zend_set_user_opcode_handler(ZEND_COALESCE, original_coalesce_handler);
 
 	// Restore the original INCLUDE_OR_EVAL handler
 	zend_set_user_opcode_handler(ZEND_INCLUDE_OR_EVAL, original_include_or_eval_handler);
@@ -1112,10 +1175,22 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 		}
 		EG(bailout) = ZIMPAF_G(orig_bailout);  
 	}
-	unsigned int covid_len = ZIMPAF_G(coverage_id) ? strlen(ZIMPAF_G(coverage_id)) : 7; //7 is fow unknown string
-	covid_len = covid_len + 1;
-	char covid_name[covid_len];
-	strcpy(covid_name, ZIMPAF_G(coverage_id) ? ZIMPAF_G(coverage_id) : "unknown");
+
+	unsigned int covid_len = 0;
+	if(ZIMPAF_G(coverage_id) == NULL){
+		covid_len = 7; //length of "unknown"
+	}else{
+		covid_len = strlen(ZIMPAF_G(coverage_id));
+	}
+
+	char covid_name[covid_len+1];
+	if(ZIMPAF_G(coverage_id) != NULL){
+		strcpy(covid_name, ZIMPAF_G(coverage_id));
+	}else{
+		strcpy(covid_name, "unknown");
+	}
+	covid_name[covid_len+1] = '\0';
+		
 
 	double start_logging = zend_hrtime();
 
@@ -1216,18 +1291,16 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 	double start_logging_sec = start_logging / 1000000000;
     double end_sec   = ZIMPAF_G(end_time) / 1000000000;
 	char cocov_dir[] = "/shared-tmpfs/coverage-reports/";
-	unsigned int len_time_fname = strlen(cocov_dir) + strlen("/")+strlen(covid_name)+ 5 //_time 
-								  + strlen(".json")+1;
+	unsigned int len_time_fname = strlen(cocov_dir) + strlen(covid_name)+ strlen("_time.json")+1;
 	char time_fname[len_time_fname];
-	snprintf(time_fname, len_time_fname, "%s/%s_time.json", cocov_dir, covid_name);
+	snprintf(time_fname, len_time_fname, "%s%s_time.json", cocov_dir, covid_name);
 	FILE *ftime = fopen(time_fname,"w");
-	if (ftime){
+	if(ftime){
 		fprintf(ftime, "start_time: %.16f \n", start_sec);
 		fprintf(ftime, "end_time:   %.16f \n", end_sec);
 		fprintf(ftime, "total_duration:   %.16f \n", (end_sec - start_sec));
 		fprintf(ftime, "writing_duration:   %.16f \n", (end_sec - start_logging_sec));
-
-		fflush(ftime); // optional
+    	fflush(ftime); // optional
 		fclose(ftime);
 	}
 
@@ -1251,27 +1324,35 @@ PHP_GINIT_FUNCTION(zimpaf){
 #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
-	zimpaf_globals->path_table = pemalloc(MAX_FILES * sizeof(char *), 1);
-	memset(zimpaf_globals->path_table, 0, MAX_FILES * sizeof(char *));
-	for (size_t i = 0; i < MAX_FILES; i++) {
-        zimpaf_globals->path_table[i] = pemalloc(MAX_CHARS * sizeof(char), 1);
-		memset(zimpaf_globals->path_table[i], 0, MAX_CHARS * sizeof(char));
-    }
-	zimpaf_globals->cur_filename = pemalloc(LENGTH_FNAME * sizeof(char), 1);
-	memset(zimpaf_globals->cur_filename, 0, LENGTH_FNAME * sizeof(char));
-	zimpaf_globals->path_table_size = MAX_FILES;
-	zimpaf_globals->pt_cur_rows_size = MAX_CHARS;
-	zimpaf_globals->coverage_id = NULL;
-	zimpaf_globals->func_call_seq = NULL;
-	zimpaf_globals->orig_bailout = NULL;
 
+// 	/* Using the pointer 'zimpaf_globals' directly to avoid NTS macro collision */
+    
+    zimpaf_globals->path_table = pemalloc(MAX_FILES * sizeof(char *), 1);
+    memset(zimpaf_globals->path_table, 0, MAX_FILES * sizeof(char *));
+
+    for (size_t i = 0; i < MAX_FILES; i++) {
+        zimpaf_globals->path_table[i] = pemalloc(MAX_CHARS * sizeof(char), 1);
+        memset(zimpaf_globals->path_table[i], 0, MAX_CHARS * sizeof(char));
+    }
+
+    zimpaf_globals->cur_filename = pemalloc(LENGTH_FNAME * sizeof(char), 1);
+    memset(zimpaf_globals->cur_filename, 0, LENGTH_FNAME * sizeof(char));
+
+    zimpaf_globals->path_table_size = MAX_FILES;
+    zimpaf_globals->pt_cur_rows_size = MAX_CHARS;
+    zimpaf_globals->coverage_id = NULL;
+    zimpaf_globals->func_call_seq = NULL;
+    zimpaf_globals->orig_bailout = NULL;
 }
 
 PHP_GSHUTDOWN_FUNCTION(zimpaf){
 #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
-	if (zimpaf_globals->path_table) {
+
+	/* Using the pointer 'zimpaf_globals' directly for clean teardown */
+
+    if (zimpaf_globals->path_table) {
         for (size_t i = 0; i < MAX_FILES; i++) {
             if (zimpaf_globals->path_table[i]) {
                 pefree(zimpaf_globals->path_table[i], 1);
@@ -1314,4 +1395,5 @@ ZEND_TSRMLS_CACHE_DEFINE()
 # endif
 ZEND_GET_MODULE(zimpaf)
 #endif
+
 

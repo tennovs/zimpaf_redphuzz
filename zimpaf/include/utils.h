@@ -32,9 +32,12 @@ char *extract_from_stack_trace(const char *msg);
 void normalize_method_name(char *func_name); 
 char *get_func_param_string(zval *param);
 
+//for getting the zval of op1, op2, or result in an opline, which can be a constant, variable, or temporary variable.
+zval* get_zval_ptr(zend_execute_data *execute_data, const zend_op *opline, znode_op op, int op_type);
+
 //this is for logging comparison involving user inputs
-zend_string *is_zval_in_superglobal(zval *zv, uint8_t opcode);   //called from conditional_statement_handler in zimpaf main module.
-zend_string *is_zval_value_in_array(zval *zv, zval *array_zv, uint8_t opcode);
+zend_string *is_zval_in_superglobal(zend_execute_data *execute_data, zval *zv, const zend_op *opline);   //called from conditional_statement_handler in zimpaf main module.
+zend_string *is_zval_value_in_array(zend_execute_data *execute_data, zval *zv, zval *array_zv, const zend_op *opline);
 void log_request_param_comparison(zend_string *op1_input_param, zend_string *op2_input_param, 
                                 int result, zval *op1, uint8_t opcode, zval *op2,
                                 char *filename, uint32_t lineno);

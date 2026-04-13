@@ -394,7 +394,35 @@ void normalize_method_name(char *func_name) {
     }
 }
 
-zend_string *is_zval_in_superglobal(zval *zv, uint8_t opcode){
+zval* get_zval_ptr(zend_execute_data *execute_data, const zend_op *opline, znode_op op, int op_type) {
+	#if defined(ZTS) && defined(COMPILE_DL_TEST)
+        ZEND_TSRMLS_CACHE_UPDATE();
+    #endif
+	zval *zv = NULL;
+	
+    switch (op_type) {							// Determine how the operand is stored
+        case IS_CONST: 
+            zv = RT_CONSTANT(opline, op);
+            break;
+        case IS_CV:
+        case IS_VAR:
+        case IS_TMP_VAR:
+            zv = EX_VAR(op.var);
+            break;
+        case IS_UNUSED:
+            return NULL; // No meaningful value
+        default:
+			return NULL;
+    }
+    // Dereference if it's a reference
+    if (zv && Z_ISREF_P(zv)) {
+        return Z_REFVAL_P(zv); // Returns the actual value inside the reference wrapper
+    }
+    return zv;
+}
+
+
+zend_string *is_zval_in_superglobal(zend_execute_data *execute_data, zval *zv, const zend_op *opline){
      #if defined(ZTS) && defined(COMPILE_DL_TEST)
 		ZEND_TSRMLS_CACHE_UPDATE();
 	#endif
@@ -410,42 +438,101 @@ zend_string *is_zval_in_superglobal(zval *zv, uint8_t opcode){
         } else if (zend_string_equals_literal(Z_STR_P(req_method), "GET")) {
             zend_is_auto_global_str(ZEND_STRL("_GET"));
             input_array = &PG(http_globals)[TRACK_VARS_GET];
-         }
+        }
     }
-    return is_zval_value_in_array(zv, input_array, opcode);
 
+    // if ((opline-7)->handler != zend_get_user_opcode_handler(ZEND_JMPZ)) {
+    //     php_printf("Surgical Proof: VM is using a specialized pointer, bypassing ZIMPAF.\n");
+    // }
+    return is_zval_value_in_array(execute_data,zv, input_array, opline);
+
+ 
 }
 
-zend_string *is_zval_value_in_array(zval *zv, zval *array_zv, uint8_t opcode){
+zend_string *is_zval_value_in_array(zend_execute_data *execute_data, zval *zv, zval *array_zv, const zend_op *opline){
     if (!zv || !array_zv || Z_TYPE_P(array_zv) != IS_ARRAY) {
         return 0;
     }
+    uint8_t opcode = opline->opcode;
     zval res;
     ZVAL_UNDEF(&res);
     zend_ulong h = 0;
     zend_string *key = NULL;
     zval *val = NULL;
-    void *ptr_zv = zv->value.ptr;
+    // void *ptr_zv = zv->value.ptr;
     printf("Op1 Type: %d, Ptr: %p\n", Z_TYPE_P(zv), zv->value.ptr);
 
-    ZEND_HASH_FOREACH_KEY_VAL(Z_ARRVAL_P(array_zv), h, key, val) {
-        if(opcode == ZEND_JMP){
-            return NULL;
-        }else if (opcode == ZEND_JMPZ     || opcode == ZEND_JMPNZ ||
-                  opcode == ZEND_JMPZ_EX  || opcode == ZEND_JMPNZ_EX || opcode == ZEND_JMP_NULL){
-            if(compare_function(&res, zv, val) == SUCCESS){
-                if(Z_LVAL(res) == 0){
-                    return key;
-                }
+    // uint32_t current_line = zend_get_executed_lineno();//zend line number might not be accurate.
+
+    const zend_op *first = execute_data->func->op_array.opcodes;
+    const zend_op *fetch_isset = NULL; 
+    unsigned int limit = 4;
+
+    if(opcode == ZEND_JMP){
+        return NULL;
+    }else if (  opcode == ZEND_JMPZ      || opcode == ZEND_JMPNZ    || opcode == ZEND_JMPZ_EX  || 
+                opcode == ZEND_JMPNZ_EX  || opcode == ZEND_JMP_NULL || opcode == ZEND_COALESCE ){
+        while(opline > first && limit > 0){
+            opline--;
+            if(opline->opcode == ZEND_ISSET_ISEMPTY_DIM_OBJ || 
+                    opline->opcode == ZEND_FETCH_DIM_R || 
+                    opline->opcode == ZEND_FETCH_DIM_IS ||
+                    opline->opcode == ZEND_FETCH_DIM_W ||
+                    opline->opcode == ZEND_FETCH_DIM_RW ||
+                    opline->opcode == ZEND_FETCH_OBJ_R ||
+                    opline->opcode == ZEND_FETCH_IS ||
+                    opline->opcode == ZEND_FETCH_R ||
+                    opline->opcode == ZEND_ISSET_ISEMPTY_VAR){
+                
+                fetch_isset = opline;
+                break;
             }
-               
-        }else{
+            limit--;
+        }
+        //if no isset/fetch found in the previous few lines, 
+        if(!fetch_isset){
+            return NULL;
+        }
+        zval *op2_zv = get_zval_ptr(execute_data, fetch_isset, fetch_isset->op2, fetch_isset->op2_type);
+        if (op2_zv && Z_TYPE_P(op2_zv) == IS_STRING) {
+            key = Z_STR_P(op2_zv);
+            // Direct lookup in the superglobal hashtable
+            zval *found_val = zend_hash_find(Z_ARRVAL_P(array_zv), key);
+    
+            if (found_val) {
+                // Match found! You have the tainted value without looping.
+                return key;
+            }
+        }
+    }else{
+        ZEND_HASH_FOREACH_KEY_VAL(Z_ARRVAL_P(array_zv), h, key, val) {
             if(zv->value.ptr == val->value.ptr){
                 printf("Op2 Type: %d, Ptr: %p\n", Z_TYPE_P(val), val->value.ptr);
                 return key;
             } 
-        }
-    } ZEND_HASH_FOREACH_END();
+
+            if (Z_TYPE_P(zv) == Z_TYPE_P(val)) {
+                switch (Z_TYPE_P(zv)) { 
+                    case IS_STRING:
+                        if (zend_string_equals(Z_STR_P(zv), Z_STR_P(val))) return key;
+                        break;
+                    case IS_LONG:
+                        if (Z_LVAL_P(zv) == Z_LVAL_P(val)) return key;
+                        break;
+                    case IS_DOUBLE:
+                        if (Z_DVAL_P(zv) == Z_DVAL_P(val)) return key;
+                        break;
+                    case IS_TRUE:
+                    case IS_FALSE:
+                    case IS_NULL:
+                // Since types match and these have no 'value.ptr', 
+                // the type match itself is the equality.
+                return key;
+                }
+            }
+        } ZEND_HASH_FOREACH_END();
+    }
+   
     return NULL;
 }
 

@@ -1,5 +1,5 @@
 /*
- * Copyright © 2026 Tennov Simanjuntak, The University of Texas at Arlington
+ * Copyright © Tennov Simanjuntak at The University of Texas at Arlinton
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,15 +16,11 @@
 #ifndef PHP_ZIMPAF_H
 # define PHP_ZIMPAF_H
 
+#include "php.h"
 #include "libcjson/cJSON.h"
 
 extern zend_module_entry zimpaf_module_entry;
 # define phpext_zimpaf_ptr &zimpaf_module_entry
-
-#if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
-    ZEND_TSRMLS_CACHE_EXTERN()
-#endif
-
 
 #define PHP_ZIMPAF_VERSION "1.0.0"
 #define MAX_CHARS 1000			//max chars in file path and branch instruction executed for each request path
@@ -69,24 +65,17 @@ ZEND_BEGIN_MODULE_GLOBALS(zimpaf)
     int bailout_triggered;
 ZEND_END_MODULE_GLOBALS(zimpaf)
 
-/* Declaration of visibility (SAFE TO INCLUDE EVERYWHERE) */
 ZEND_EXTERN_MODULE_GLOBALS(zimpaf)
+
+#if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
+    ZEND_TSRMLS_CACHE_EXTERN()
+#endif
+
 #ifdef ZTS
     #include "TSRM.h"
     #define ZIMPAF_G(v) TSRMG(zimpaf_globals_id, zend_zimpaf_globals *, v)
 #else
     #define ZIMPAF_G(v) (zimpaf_globals.v)
 #endif /* ZTS */
-#endif	/* PHP_ZIMPAF_H */
-// #ifdef ZTS
-//     #define ZIMPAF_G(v) TSRMG(zimpaf_globals_id, zend_zimpaf_globals *, v)
-// #else
-//     /* 1. Define the accessor using the PHP 8 internal logic */
-//     #ifdef ZEND_MODULE_GLOBALS_ACCESSOR
-//         #define ZIMPAF_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(zimpaf, v)
-//     #else
-//         #define ZIMPAF_G(v) (zimpaf_globals.v)
-//     #endif
-// #endif
-// #endif	/* PHP_ZIMPAF_H */
 
+#endif	/* PHP_ZIMPAF_H */
