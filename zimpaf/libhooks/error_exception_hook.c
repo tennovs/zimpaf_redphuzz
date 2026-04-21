@@ -38,8 +38,8 @@ static void zend_error_cb_handler(int type, zend_string *error_filename, const u
     if (ZIMPAF_G(coverage_id) == NULL) {
         if (original_zend_error_cb) {
             original_zend_error_cb(type, error_filename, error_lineno, message);
-            return;
         }
+        return;
     }
 
 // normal instrumentation logic...
@@ -201,8 +201,8 @@ static void zend_throw_exception_hook_handler(zend_object *ex){
     if (ZIMPAF_G(coverage_id) == NULL) {
         if (original_zend_throw_exception_hook) {
             original_zend_throw_exception_hook(ex);
-            return;
         }
+        return;
     }
 
     if (ZIMPAF_G(last_observed_ex) == ex) {
