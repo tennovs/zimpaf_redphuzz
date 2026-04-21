@@ -30,7 +30,7 @@ zif_handler ori_xml_parse_handler = NULL;                                   //xm
 zif_handler get_xxefunction_handler(char *scope_name, char *func_name);
 
 zif_handler get_xxefunction_handler(char *scope_name, char *func_name){
-    if(scope_name, func_name){
+    if(scope_name && func_name){
         if(strcmp(scope_name,"DOMDocument")== 0){
             if(strcmp(func_name,"load")==0){
                 return ori_domdocument_load_method_handler; 
