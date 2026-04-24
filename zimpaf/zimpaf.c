@@ -123,47 +123,6 @@ void realloc_path_table(){
 	}
 }
 
-// void realloc_path_table() {
-// 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
-// 		ZEND_TSRMLS_CACHE_UPDATE();
-// 	#endif
-
-// 	unsigned int old_size = ZIMPAF_G(path_table_size);
-//     ZIMPAF_G(path_table_size) += MAX_FILES;
-
-//     /* 1. Expand the "Directory" (The list of pointers) */
-//     ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size) * sizeof(char *), 1);
-
-//     /* 2. Expand the "Giant Slab" (The actual string data) */
-//     /* We realloc the first pointer because it anchors the entire block */
-//     char *old_slab = ZIMPAF_G(path_table)[0];
-//     char *new_slab = perealloc(old_slab, ZIMPAF_G(path_table_size) * MAX_CHARS * sizeof(char), 1);
-    
-//     /* 3. Re-map ALL pointers */
-//     /* If 'perealloc' moved the slab to a new address, all old pointers are now invalid! */
-//     /* This loop fix ensures every 'Ant' knows where its new home is. */
-//     for (size_t i = 0; i < ZIMPAF_G(path_table_size); i++) {
-//         ZIMPAF_G(path_table)[i] = new_slab + (i * MAX_CHARS);
-//     }
-
-//     /* 4. Zero out only the new portion */
-//     memset(new_slab + (old_size * MAX_CHARS), 0, MAX_FILES * MAX_CHARS);
-
-// 	//**risky as it creates islands of memory */
-// 	// unsigned int prev_size = ZIMPAF_G(path_table_size);
-// 	// ZIMPAF_G(path_table_size) += MAX_FILES;  // Increase the size of path table by MAX_FILES
-// 	// ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size * sizeof(char *)), 1);
-	
-// 	// // Allocate a new "Giant Block" for the new rows
-// 	// char *new_table_storage = pemalloc(MAX_FILES * MAX_CHARS * sizeof(char), 1);
-// 	// memset(new_table_storage, 0, MAX_FILES * MAX_CHARS * sizeof(char));
-	
-// 	// // Assign new blocks to the new rows
-// 	// for (size_t i = prev_size; i < ZIMPAF_G(path_table_size); i++) {
-// 	// 	ZIMPAF_G(path_table)[i] = new_table_storage + ((i - prev_size) * MAX_CHARS);
-// 	// }
-// }
-
 zval* get_zval_op(zend_execute_data *execute_data, const zend_op *opline, const znode_op op, uint8_t type) {
 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
         ZEND_TSRMLS_CACHE_UPDATE();
