@@ -978,6 +978,12 @@ def strip_possessive_quantifiers(pattern: str) -> str:
         .replace('?+', '?')
     )
 
+
+# Prevent infinite or deep recursion that can lead to oom (out of memory)
+import sys
+sys.setrecursionlimit(2000)
+
+
 def generate_string_matches_pattern(pattern, pattern_type, input=None): 
     if not pattern or not pattern_type:
         return None
@@ -991,11 +997,11 @@ def generate_string_matches_pattern(pattern, pattern_type, input=None):
                 match = strategy.example()
             else:
                 match = rstr.xeger(pattern)
-        except Exception as e:
+        except (RecursionError, Exception) as e:
             try:
                 pattern = strip_possessive_quantifiers(pattern)
                 match = rstr.xeger(pattern)
-            except Exception as e:
+            except (RecursionError, Exception) as e:
                 print(f"[xeger failed] pattern={pattern!r} error={e}")
                 return ''
 
