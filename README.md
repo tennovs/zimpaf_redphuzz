@@ -75,6 +75,7 @@ Wait until the Docker build logs for both `zimpaf_redphuzz` and `pcov_uopz_phuzz
 ```text
 Activation cycle complete.
 Starting Apache...
+```
 
 Once both containers reach this state, open a new terminal and proceed to next step: Running the Fuzzer.
 
