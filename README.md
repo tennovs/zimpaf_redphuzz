@@ -48,6 +48,12 @@ The four brown-shaded components in RedPhuzz are reused from Phuzz.
 # 🚀 Getting Started
 We suggest to run our framework directly on host computer due to massive and deep-surgical monitoring of branches, language constructs, and function calls. E.g., for  Wordpress plugin Arprice-responsive-pricing-table-3.6, it logs 35,623 language constructs and function calls, and 81,730 branch instruction executions, producing > 43MB log. While the instrumentation itself is highly efficient, running inside Docker may introduce performance degradation due to additional environment layers, which can particularly affect I/O operations. The framework has been tested on a computer with the following specs: Intel® CoreTM i7-8550U CPU @ 1.80 GHz (4 cores), 16 GB of RAM, and NVMe SSD 2 TB. The benchmarks are hosted on Ubuntu with Apache/2.4.58 mod_php and PHP 8.3.19.
 
+Recently, we attempted to run the framework on Windows Subsystem for Linux (WSL) with Ubuntu. The build could not be completed because the database container for the Zimpaf RedPhuzz framework, `benchmarks_db_zrf`, failed to build, while the other three containers — including the Phuzz database container, `benchmarks_db_pupf` — built successfully.
+
+We also tried removing the Phuzz framework container, `pcov_uopz_phuzz_framework`, along with its database container, `benchmarks_db_pupf`, so that only the Zimpaf framework and its database would be built. However, the same issue still occurred: the Zimpaf database container failed to build.
+
+Since the database builds for both Zimpaf and Phuzz use the same files and differ only in their service names, this behavior is unexpected.
+
 
 
 ## 0. Benchmark Web Applications with Intentional Vulnerabilities
@@ -63,11 +69,19 @@ Run:
 docker compose up
 ```
 
-The build of all containers takes around 4 minutes on our machine.
+The build of all containers takes around 8-12 minutes on our machine.
+Wait until the Docker build logs for both `zimpaf_redphuzz` and `pcov_uopz_phuzz` display:
+
+```text
+Activation cycle complete.
+Starting Apache...
+
+Once both containers reach this state, open a new terminal and proceed to next step: Running the Fuzzer.
 
 ---
 
 ## 2. Running the Fuzzer
+
 
 ### Batch Run — Multiprocessing (Recommended)
 
