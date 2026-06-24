@@ -1,10 +1,11 @@
 # Force C as primary language
 **/*.c linguist-language=C
 **/*.h linguist-language=C
-*.py linguist-language=Python
+#*.py linguist-language=Python
 
 # Mark Python as vendored (so it doesn’t count toward language stats)
 #*.py linguist-vendored
+*.py linguist-detectable=false
 
 # Ignore web/testbed files
 www/html/** linguist-vendored
