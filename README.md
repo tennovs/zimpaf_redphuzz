@@ -1,6 +1,22 @@
 # ZIMPAF_RedPhuzz
 
-**ZIMPAF_RedPhuzz** is a high-fidelity grey-box fuzzing framework for PHP web applications.
+**ZIMPAF_RedPhuzz** is a high-fidelity grey-box fuzzing framework for PHP web applications to enable highly-targeted, multi-granular, and deterministic fuzzing.
+
+## Cite
+
+The preprint manuscript can be cited as follows:
+
+```bibtex
+@misc{simanjuntak2026zimpafredphuzz,
+  title={{ZIMPAF} \& {RedPhuzz}: High-fidelity Web Application Fuzzing via Branch, Language Construct, and Function Call Monitoring},
+  author={Tennov Simanjuntak and Christoph Csallner},
+  year={2026},
+  eprint={2607.25012},
+  archivePrefix={arXiv},
+  primaryClass={cs.CR},
+  url={https://arxiv.org/abs/2607.25012}
+}
+```
 
 ### ZIMPAF v1.1.0 is released
 

@@ -5,7 +5,7 @@
 
 # Mark Phuzz's code in Python as vendored (so it doesn’t count toward language stats)
 phuzz/** linguist-vendored
-
+redphuzz/mutator.py linguist-vendored
 
 # Ignore web/testbed files
 www/html/** linguist-vendored
