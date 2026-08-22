@@ -43,4 +43,6 @@ void log_request_param_comparison(zend_string *op1_input_param, zend_string *op2
                                 char *filename, uint32_t lineno);
 void add_zval_value_info_to_cJSON_object(zval *zv, cJSON *object, char *key_value, char *key_data_type);
 
+void trace_directory_setup(char *base_dir);
+
 #endif

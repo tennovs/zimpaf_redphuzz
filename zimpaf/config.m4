@@ -1,19 +1,3 @@
-
-dnl Copyright 2026 Tennov Simanjuntak, The University of Texas at Arlington
-dnl
-dnl Licensed under the Apache License, Version 2.0 (the "License");
-dnl you may not use this file except in compliance with the License.
-dnl You may obtain a copy of the License at
-dnl
-dnl     http://www.apache.org/licenses/LICENSE-2.0
-dnl
-dnl Unless required by applicable law or agreed to in writing, software
-dnl distributed under the License is distributed on an "AS IS" BASIS,
-dnl WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-dnl See the License for the specific language governing permissions and
-dnl limitations under the License.
-
-
 dnl config.m4 for extension zimpaf
 
 dnl Comments in this file start with the string 'dnl'.
@@ -115,8 +99,15 @@ if test "$PHP_ZIMPAF" != "no"; then
 
   AC_DEFINE(COMPILE_DL_ZIMPAF, 1, [Compile as dynamic library])
 
-  PHP_NEW_EXTENSION(zimpaf, zimpaf.c request_retrieval.c libhooks/dbhook.c \
-                                libhooks/sanithook.c libhooks/deserhook.c libhooks/xxehook.c \
-                                libhooks/codexechook.c libhooks/dirtravshook.c libcjson/cJSON.c \
-                                libhooks/error_exception_hook.c utils/utils.c, $ext_shared)
+  dnl PHP_NEW_EXTENSION(zimpaf, zimpaf.c request_retrieval.c libhooks/dbhook.c \
+  dnl                              libhooks/sanithook.c libhooks/deserhook.c libhooks/xxehook.c \
+  dnl                              libhooks/codexechook.c libhooks/dirtravshook.c libcjson/cJSON.c \
+  dnl                              libhooks/error_exception_hook.c libhooks/hooks_installer.c libhooks/flowfunctionhook.c \
+  dnl                              utils/utils.c, $ext_shared)
+
+  # Use shell globbing to collect files from the libhooks directory
+  HOOK_FILES=`echo libhooks/*.c | tr '\n' ' '`
+
+  PHP_NEW_EXTENSION(zimpaf, zimpaf.c request_retrieval.c $HOOK_FILES \
+                          libcjson/cJSON.c utils/utils.c, $ext_shared)
 fi

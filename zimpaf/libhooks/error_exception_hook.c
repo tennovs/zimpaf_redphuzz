@@ -39,7 +39,7 @@ static void zend_error_cb_handler(int type, zend_string *error_filename, const u
         if (original_zend_error_cb) {
             original_zend_error_cb(type, error_filename, error_lineno, message);
         }
-        return;
+         return;
     }
 
 // normal instrumentation logic...
@@ -47,11 +47,17 @@ static void zend_error_cb_handler(int type, zend_string *error_filename, const u
     
     // zend_error_info **errors = EG(errors);
     zend_object *ex = NULL;
-    if (EG(exception)) {
+    // if (EG(exception)) {
+    //     ex = EG(exception);
+    // }else if(EG(prev_exception)){
+    //     ex = EG(prev_exception);
+    // }
+
+    #if PHP_VERSION_ID >= 80600
         ex = EG(exception);
-    }else if(EG(prev_exception)){
-        ex = EG(prev_exception);
-    }
+    #else
+        ex = EG(exception) ? EG(exception) : EG(prev_exception);
+    #endif
     
     if (ex) {
         zimpaf_observe_exception(EG(exception));
@@ -200,7 +206,7 @@ static void zend_throw_exception_hook_handler(zend_object *ex){
 
     if (ZIMPAF_G(coverage_id) == NULL) {
         if (original_zend_throw_exception_hook) {
-            original_zend_throw_exception_hook(ex);
+            original_zend_throw_exception_hook(ex); 
         }
         return;
     }
@@ -342,11 +348,16 @@ void zimpaf_observer_error_handler(int type, zend_string *error_filename, uint32
 
     zend_object *ex = NULL;
 
-    if (EG(exception)) {
+    // if (EG(exception)) {
+    //     ex = EG(exception);
+    // }else if(EG(prev_exception)){
+    //     ex = EG(prev_exception);
+    // }
+    #if PHP_VERSION_ID >= 80600
         ex = EG(exception);
-    }else if(EG(prev_exception)){
-        ex = EG(prev_exception);
-    }
+    #else
+        ex = EG(exception) ? EG(exception) : EG(prev_exception);
+    #endif
 
     if(ex){
         zimpaf_observe_exception(EG(exception));

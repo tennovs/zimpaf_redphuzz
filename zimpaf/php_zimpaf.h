@@ -14,23 +14,63 @@
 
 /* zimpaf extension for PHP */
 #ifndef PHP_ZIMPAF_H
-# define PHP_ZIMPAF_H
+#define PHP_ZIMPAF_H
 
 #include "php.h"
 #include "libcjson/cJSON.h"
 
+
+/* =================================================================== */
+/* INSERT COMPATIBILITY MACROS HERE                                    */
+/* =================================================================== */
+/* Global structural fallback for the purged zval_dtor symbol in PHP 4.0*/
+#ifndef zval_dtor
+// # define zval_dtor(z) zval_ptr_dtor(z)
+# define zval_dtor(z) zval_ptr_dtor_nogc(z)
+#endif
+
+/* Guard against the deletion of ZEND_EXIT in PHP 8.5+ */
+// #ifndef ZEND_EXIT
+// # define ZEND_EXIT ZEND_RETURN
+// #endif
+/* =================================================================== */
+
+// /*  ===============================================================
+//     Support for Linux and Windows: directory to store zimpaf traces
+//     ===============================================================
+// */
+// #ifdef PHP_WIN32
+// #   include <direct.h>
+// #   define ZIMPAF_MKDIR(path, mode) _mkdir(path)
+// #   define DIRECTORY_SEPARATOR "\\"
+// #else
+// #   include <sys/stat.h>
+// #   include <sys/types.h>
+// #   define ZIMPAF_MKDIR(path, mode) mkdir(path, mode)
+// #   define DIRECTORY_SEPARATOR "/"
+// #endif
+
 extern zend_module_entry zimpaf_module_entry;
 # define phpext_zimpaf_ptr &zimpaf_module_entry
 
-#define PHP_ZIMPAF_VERSION "1.1.0"
-#define MAX_CHARS 1000			//max chars in file path and branch instruction executed for each request path
-#define MAX_FILES 50			   //max #files involved in each request execution, this is number of rows in path table
-#define LENGTH_FNAME 255		//max length of filename containing branch instruction executed for each request path
+#define PHP_ZIMPAF_VERSION "1.2.0"
+
+#ifdef PHP_WIN32
+#	define PHP_ZIMPAF_API __declspec(dllexport)
+#elif defined(__GNUC__) && __GNUC__ >= 4
+#	define PHP_ZIMPAF_API __attribute__ ((visibility("default")))
+#else
+#	define PHP_ZIMPAF_API
+#endif
+
+#define MAX_CHARS 1000			//max chars in file path and branch instruction executed for each request path, increase when neccessary
+#define MAX_FILES 50			//max #files involved in each request execution, this is number of rows in path table, increase when neccessary
+#define LENGTH_FNAME 255		//max length of filename containing branch instruction executed for each request path, increase when neccessary
 
 ZEND_BEGIN_MODULE_GLOBALS(zimpaf)
     char *coverage_id;
     cJSON *func_call_seq;
-    cJSON *input_comparisons;
+    cJSON *input_tainted_branches;
 
     char **path_table;
     unsigned int path_table_size;	//size of path table, number of rows in path table  
@@ -60,9 +100,13 @@ ZEND_BEGIN_MODULE_GLOBALS(zimpaf)
     double start_time;
     double end_time;
 
-    JMP_BUF bailout_buf;        //global vars for bailout as indicator for script early termination
-    JMP_BUF *orig_bailout;      //implemented in rinit and rshutdown, used to restore the original bailout buffer      
-    int bailout_triggered;
+    #if PHP_VERSION_ID < 80400
+        JMP_BUF bailout_buf;        //global vars for bailout as indicator for script early termination
+        JMP_BUF *orig_bailout;      //implemented in rinit and rshutdown, used to restore the original bailout buffer      
+        int bailout_triggered;
+    #endif
+
+    char *base_dir;               //base directory to store traces and logs, set in MINIT
 ZEND_END_MODULE_GLOBALS(zimpaf)
 
 ZEND_EXTERN_MODULE_GLOBALS(zimpaf)

@@ -17,8 +17,8 @@
 #include "zend_API.h"
 
 char * get_http_header(const char *header_name) {      //HTTP_ is appended automatically
-    zval *server_vars, *header_value;
-    HashTable *server_hash;
+    zval *server_vars = NULL, *header_value = NULL;
+    HashTable *server_hash = NULL;
 
     //Ensure $_SERVER is populated
     if (!zend_is_auto_global_str(ZEND_STRL("_SERVER"))) {
@@ -34,10 +34,11 @@ char * get_http_header(const char *header_name) {      //HTTP_ is appended autom
 
     //Example: Retrieve "User-Agent" header (stored as HTTP_USER_AGENT in $_SERVER)
     if ((header_value = zend_hash_str_find(server_hash, header_name, strlen(header_name))) != NULL) {
-        php_printf("User-Agent: %s\n", Z_STRVAL_P(header_value));
+        //comment this 
+        //php_printf("User-Agent: %s\n", Z_STRVAL_P(header_value));
     }
     if(header_value == NULL) {
-        php_printf("Header not found: %s\n", header_name);
+        //php_printf("Header not found: %s\n", header_name);
         return NULL;
     }else{
         return Z_STRVAL_P(header_value);

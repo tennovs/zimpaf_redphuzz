@@ -14,6 +14,7 @@
 
 #include "../include/utils.h"
 #include "../php_zimpaf.h"
+#include "zend_virtual_cwd.h"
 
 #define PHP_STREAM_FLAG_DEAD 0x04
 
@@ -533,6 +534,67 @@ zend_string *is_zval_value_in_array(zend_execute_data *execute_data, zval *zv, z
         } ZEND_HASH_FOREACH_END();
     }
    
+
+   
+
+    // ZEND_HASH_FOREACH_KEY_VAL(Z_ARRVAL_P(array_zv), h, key, val) {
+    //     if(opcode == ZEND_JMP){
+    //         return NULL;
+    //     }else if (opcode == ZEND_JMPZ     || opcode == ZEND_JMPNZ ||
+    //               opcode == ZEND_JMPZ_EX  || opcode == ZEND_JMPNZ_EX || opcode == ZEND_JMP_NULL){
+            
+    //         if(prevopl->opcode == ZEND_ISSET_ISEMPTY_DIM_OBJ || 
+    //             prevopl->opcode == ZEND_FETCH_DIM_R || 
+    //             prevopl->opcode == ZEND_FETCH_DIM_IS ||
+    //             prevopl->opcode == ZEND_FETCH_DIM_W ||
+    //             prevopl->opcode == ZEND_FETCH_DIM_RW ||
+    //             prevopl->opcode == ZEND_FETCH_OBJ_R ||
+    //             prevopl->opcode == ZEND_ISSET_ISEMPTY_VAR){
+    //            zval *op2_zv = get_zval_ptr(execute_data, prevopl, prevopl->op2, prevopl->op2_type);
+    //            if(op2_zv &&Z_TYPE_P(op2_zv) == IS_STRING && key && zend_string_equals(Z_STR_P(op2_zv), key)){
+    //                 return key;
+    //            }
+    //         }else if(   prev_prevopl->opcode == ZEND_ISSET_ISEMPTY_DIM_OBJ || 
+    //                     prev_prevopl->opcode == ZEND_FETCH_DIM_R || 
+    //                     prev_prevopl->opcode == ZEND_FETCH_DIM_IS ||
+    //                     prevopl->opcode == ZEND_FETCH_DIM_W ||
+    //                     prevopl->opcode == ZEND_FETCH_DIM_RW ||
+    //                     prevopl->opcode == ZEND_FETCH_OBJ_R ||
+    //                     prev_prevopl->opcode == ZEND_ISSET_ISEMPTY_VAR){
+    //             zval *op2_zv = get_zval_ptr(execute_data, prev_prevopl, prev_prevopl->op2, prev_prevopl->op2_type);
+    //             if(op2_zv && Z_TYPE_P(op2_zv) == IS_STRING && key && zend_string_equals(Z_STR_P(op2_zv), key)){
+    //                 return key;
+    //            }
+    //         }
+            
+    //     }else{
+    //         if(zv->value.ptr == val->value.ptr){
+    //             printf("Op2 Type: %d, Ptr: %p\n", Z_TYPE_P(val), val->value.ptr);
+    //             return key;
+    //         } 
+
+    //         if (Z_TYPE_P(zv) == Z_TYPE_P(val)) {
+    //             switch (Z_TYPE_P(zv)) { 
+    //                 case IS_STRING:
+    //                     if (zend_string_equals(Z_STR_P(zv), Z_STR_P(val))) return key;
+    //                     break;
+    //                 case IS_LONG:
+    //                     if (Z_LVAL_P(zv) == Z_LVAL_P(val)) return key;
+    //                     break;
+    //                 case IS_DOUBLE:
+    //                     if (Z_DVAL_P(zv) == Z_DVAL_P(val)) return key;
+    //                     break;
+    //                 case IS_TRUE:
+    //                 case IS_FALSE:
+    //                 case IS_NULL:
+    //             // Since types match and these have no 'value.ptr', 
+    //             // the type match itself is the equality.
+    //             return key;
+    //             }
+    //         }
+    //     }
+    // } ZEND_HASH_FOREACH_END();
+
     return NULL;
 }
 
@@ -576,7 +638,7 @@ void log_request_param_comparison(zend_string *op1_input_param, zend_string *op2
     }
     cJSON_AddStringToObject(comparison, "filename", filename);
     cJSON_AddNumberToObject(comparison, "lineno", lineno);
-    cJSON_AddItemToArray(ZIMPAF_G(input_comparisons), comparison);
+    cJSON_AddItemToArray(ZIMPAF_G(input_tainted_branches), comparison);
 }
 
 void add_zval_value_info_to_cJSON_object(zval *zv, cJSON *object, char *key_value, char *key_data_type){
@@ -619,9 +681,77 @@ void add_zval_value_info_to_cJSON_object(zval *zv, cJSON *object, char *key_valu
             break;
     }
 }
-	
 
+void trace_directory_setup(char *base_dir){
+    char *subdirs[] = {"coverage-reports", "error-reports", "exception-reports", "mysql-error-reports",
+                        "shell-error-reports","function-call-traces",
+                        "input-tainted-branch-traces",  //ZIMPAF new folder name to store the tainted branch traces (>= version 2.0.0)
+                        };
+    char *old_subdirs[] = {"coverage-reports", "error-reports", "exception-reports", "mysql-error-reports",
+                        "shell-error-reports","function-call-traces",
+                        "input_params_comparisons"      //ZIMPAF old folder name to store the tainted branch traces (version 1.x.x) 
+                    };  
+    int num_subdirs = sizeof(subdirs) / sizeof(subdirs[0]);
+    int old_num_subdirs = sizeof(old_subdirs) / sizeof(old_subdirs[0]);
+    if (base_dir) {
+        #ifdef PHP_WIN32
+            char sep = '\\';
+            if (VCWD_ACCESS(base_dir, F_OK) == -1) {
+                if (VCWD_MKDIR(base_dir, 0777) == -1) {
+                    php_error_docref(NULL, E_CORE_ERROR, "Failed to create trace directory: %s. ZIMPAF terminates", base_dir);
+                    exit(1);
+                }
+                VCWD_CHMOD(base_dir, 0777); // Ensure the directory is writable by all users
+            }
+            for (int i = 0; i < num_subdirs; i++) {
+                unsigned int len = strlen(base_dir) + 1 + strlen(subdirs[i]) + 1;
+                char subdir_path[512];
+                snprintf(subdir_path, len, "%s%c%s", base_dir, sep, subdirs[i]);
+                if (VCWD_ACCESS(subdir_path, F_OK) == -1) {
+                    if (VCWD_MKDIR(subdir_path, 0777) == -1) {
+                        php_error_docref(NULL, E_CORE_ERROR, "Failed to create trace subdirectory: %s. ZIMPAF terminates", subdir_path);
+                        exit(1);
+                    }
+                    VCWD_CHMOD(subdir_path, 0777); // Ensure the subdirectory is writable by all users
+                }
+            }
 
-
-
-
+        #else
+            char sep = '/';
+            if(strcmp(base_dir, "/zimpaf_traces") == 0){ //Traces location for ZIMPAF version >= 2.0.0
+                if (VCWD_ACCESS(base_dir, F_OK) == -1) {
+                    if (VCWD_MKDIR(base_dir, 0777) == -1) {
+                        php_error_docref(NULL, E_CORE_ERROR, "Failed to create trace directory: %s. ZIMPAF terminates", base_dir);
+                        exit(1);
+                    }
+                    VCWD_CHMOD(base_dir, 0777); // Ensure the directory is writable by all users
+                }
+                for (int i = 0; i < num_subdirs; i++) {
+                    unsigned int len = strlen(base_dir) + 1 + strlen(subdirs[i]) + 1;
+                    char subdir_path[len];
+                    snprintf(subdir_path, len, "%s%c%s", base_dir, sep, subdirs[i]);
+                    if (VCWD_ACCESS(subdir_path, F_OK) == -1) {
+                        if (VCWD_MKDIR(subdir_path, 0777) == -1) {
+                            php_error_docref(NULL, E_CORE_ERROR, "Failed to create trace subdirectory: %s. ZIMPAF terminates", subdir_path);
+                            exit(1);    
+                        }
+                        VCWD_CHMOD(subdir_path, 0777); // Ensure the subdirectory is writable by all users
+                    }
+                }
+            }else if(strcmp(base_dir, "/shared-tmpfs") == 0){ //Traces location for ZIMPAF version 1.x.x
+                for (int i = 0; i < old_num_subdirs; i++) {
+                    unsigned int len = strlen(base_dir) + 1 + strlen(old_subdirs[i]) + 1;
+                    char subdir_path[len];
+                    snprintf(subdir_path, len, "%s%c%s", base_dir, sep, old_subdirs[i]);
+                    if (VCWD_ACCESS(subdir_path, F_OK) == -1) {
+                        if (VCWD_MKDIR(subdir_path, 0777) == -1) {
+                            php_error_docref(NULL, E_CORE_ERROR, "Failed to create trace subdirectory: %s. ZIMPAF terminates", subdir_path);
+                            exit(1);    
+                        }
+                        VCWD_CHMOD(subdir_path, 0777); // Ensure the subdirectory is writable by all users
+                    }
+                }
+            }
+        #endif
+    }  
+}

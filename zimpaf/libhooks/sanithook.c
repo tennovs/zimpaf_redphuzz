@@ -12,8 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-
-
 #include "../include/sanithook.h"
 #include "../include/utils.h"
 #include "../php_zimpaf.h"
@@ -692,3 +690,4 @@ void hook_is_uploaded_file(){       //payload in 1st arg
         ori_is_uploaded_file_func->internal_function.handler = (zif_handler)generic_sanitation_handler;
     }
 } 
+

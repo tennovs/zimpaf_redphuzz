@@ -118,8 +118,9 @@ void generic_code_execution_handler(zend_execute_data *execute_data, zval *retur
     int is_error = 0;
     zval *result_code_zv = NULL;
     FILE *in = NULL;
-    proc_open_trace trace;
+    proc_open_trace trace = {0};
     zval tmp_exit_code;
+    ZVAL_UNDEF(&tmp_exit_code);
     
     if(strcmp(func_name_str,"assert")==0){
         ori_assert_handler(INTERNAL_FUNCTION_PARAM_PASSTHRU);
@@ -217,8 +218,8 @@ static int fake_php_exec_ex(INTERNAL_FUNCTION_PARAMETERS, int mode) {
     #if defined(ZTS) && defined(COMPILE_DL_TEST)
         ZEND_TSRMLS_CACHE_UPDATE();
     #endif
-	char *cmd;
-	size_t cmd_len;
+	char *cmd = NULL;
+	size_t cmd_len = 0;
 	zval *ret_code=NULL, *ret_array=NULL;
 	int ret;
 
@@ -266,9 +267,9 @@ int call_popen_libc(INTERNAL_FUNCTION_PARAMETERS){
         ZEND_TSRMLS_CACHE_UPDATE();
     #endif
 
-    char *command, *mode;
+    char *command = NULL, *mode = NULL;
 	size_t command_len, mode_len;
-	FILE *fp;
+	FILE *fp = NULL;
     int is_error = 0;
 
     ZEND_PARSE_PARAMETERS_START(2, 2)

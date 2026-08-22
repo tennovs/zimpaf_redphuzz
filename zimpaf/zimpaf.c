@@ -27,15 +27,11 @@
 #include "php_zimpaf.h"
 #include "zimpaf_arginfo.h"
 #include "include/request_retrieval.h"
-#include "include/dbhook.h"
-#include "include/sanithook.h"
-#include "include/deserhook.h"
-#include "include/codexechook.h"
-#include "include/dirtravshook.h"
-#include "include/xxehook.h"
+#include "include/hook_installer.h"
 #include "include/error_exception_hook.h"
 #include "include/utils.h"
 #include "zend_hrtime.h"
+
 
 
 /* For compatibility with older PHP versions */
@@ -73,10 +69,13 @@ static user_opcode_handler_t original_coalesce_handler;
 
 //INCLUDE_OR_EVAL hook
 static user_opcode_handler_t original_include_or_eval_handler;
-//EXIT hook
-static user_opcode_handler_t original_exit_handler;
+
+#if PHP_VERSION_ID < 80400
+	//EXIT hook
+	static user_opcode_handler_t original_exit_handler;
+#endif
+
 //for holding the value of handler used in conditional_statement_handler, generic_lang_construct handler
-	
 static user_opcode_handler_t original_throw_handler;
 
 //to get which opcode handler is active for early termination when request is not for fuzzing or request without coverage_id
@@ -122,6 +121,47 @@ void realloc_path_table(){
     	memset(ZIMPAF_G(path_table)[i], 0, MAX_CHARS * sizeof(char));
 	}
 }
+
+// void realloc_path_table() {
+// 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
+// 		ZEND_TSRMLS_CACHE_UPDATE();
+// 	#endif
+
+// 	unsigned int old_size = ZIMPAF_G(path_table_size);
+//     ZIMPAF_G(path_table_size) += MAX_FILES;
+
+//     /* 1. Expand the "Directory" (The list of pointers) */
+//     ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size) * sizeof(char *), 1);
+
+//     /* 2. Expand the "Giant Slab" (The actual string data) */
+//     /* We realloc the first pointer because it anchors the entire block */
+//     char *old_slab = ZIMPAF_G(path_table)[0];
+//     char *new_slab = perealloc(old_slab, ZIMPAF_G(path_table_size) * MAX_CHARS * sizeof(char), 1);
+    
+//     /* 3. Re-map ALL pointers */
+//     /* If 'perealloc' moved the slab to a new address, all old pointers are now invalid! */
+//     /* This loop fix ensures every 'Ant' knows where its new home is. */
+//     for (size_t i = 0; i < ZIMPAF_G(path_table_size); i++) {
+//         ZIMPAF_G(path_table)[i] = new_slab + (i * MAX_CHARS);
+//     }
+
+//     /* 4. Zero out only the new portion */
+//     memset(new_slab + (old_size * MAX_CHARS), 0, MAX_FILES * MAX_CHARS);
+
+// 	//**risky as it creates islands of memory */
+// 	// unsigned int prev_size = ZIMPAF_G(path_table_size);
+// 	// ZIMPAF_G(path_table_size) += MAX_FILES;  // Increase the size of path table by MAX_FILES
+// 	// ZIMPAF_G(path_table) = perealloc(ZIMPAF_G(path_table), ZIMPAF_G(path_table_size * sizeof(char *)), 1);
+	
+// 	// // Allocate a new "Giant Block" for the new rows
+// 	// char *new_table_storage = pemalloc(MAX_FILES * MAX_CHARS * sizeof(char), 1);
+// 	// memset(new_table_storage, 0, MAX_FILES * MAX_CHARS * sizeof(char));
+	
+// 	// // Assign new blocks to the new rows
+// 	// for (size_t i = prev_size; i < ZIMPAF_G(path_table_size); i++) {
+// 	// 	ZIMPAF_G(path_table)[i] = new_table_storage + ((i - prev_size) * MAX_CHARS);
+// 	// }
+// }
 
 zval* get_zval_op(zend_execute_data *execute_data, const zend_op *opline, const znode_op op, uint8_t type) {
 	#if defined(ZTS) && defined(COMPILE_DL_TEST)
@@ -316,10 +356,12 @@ static user_opcode_handler_t get_original_opcode_handler(const zend_op *opline){
 		case ZEND_JMP_NULL:
 			original_handler = original_jmp_null_handler;
 			break;
-		// case ZEND_JMP_SET:
-		// 	printf("Intercepted ZEND_JMP_SET at line %d\n", opline->lineno);
-		// 	original_handler = original_jmp_set_handler;
-		// 	break;
+		case ZEND_JMP_SET:
+			original_handler = original_jmp_set_handler;
+			break;
+		case ZEND_COALESCE:
+			original_handler = original_coalesce_handler;
+			break;
 		case ZEND_IS_EQUAL:
 			original_handler = original_is_equal_handler;
 			break;
@@ -593,15 +635,21 @@ int generic_lang_construct_handler(zend_execute_data *execute_data){
 
 	char *filename = execute_data->func->op_array.filename->val;
 	const zend_op *opline = execute_data->opline;
+
 	if(ZIMPAF_G(coverage_id) == NULL || !strstr(filename,"/var/www/html/")){
 		if(opline->opcode == ZEND_INCLUDE_OR_EVAL && original_include_or_eval_handler){
 			return original_include_or_eval_handler(execute_data);
-		}else if(opline->opcode == ZEND_EXIT && original_exit_handler){
-			return original_exit_handler(execute_data);
-		}else{
-			//default dispatch
-			return ZEND_USER_OPCODE_DISPATCH;
+		
 		}
+	#if PHP_VERSION_ID < 80400
+		else if(opline->opcode == ZEND_EXIT && original_exit_handler){
+			return original_exit_handler(execute_data);
+		}
+	#endif
+		
+		//default dispatch
+		return ZEND_USER_OPCODE_DISPATCH;
+		
 	}
 	
 	user_opcode_handler_t original_handler = NULL;
@@ -639,6 +687,7 @@ int generic_lang_construct_handler(zend_execute_data *execute_data){
 			printf("Intercepted %s(...) by ZEND_INCLUDE_OR_EVAL at line %d\n", function_name,opline->lineno);
 			original_handler = original_include_or_eval_handler;
 			break;
+		#if PHP_VERSION_ID < 80400
 		case ZEND_EXIT:
 			strcpy(function_name, "die or exit");
 			char message[] = "";
@@ -648,6 +697,7 @@ int generic_lang_construct_handler(zend_execute_data *execute_data){
 			printf("Intercepted %s(...) by ZEND_EXIT at line %d\n", function_name,opline->lineno);
 			original_handler = original_exit_handler;
 			break;
+		#endif
 		default:
 			return ZEND_USER_OPCODE_DISPATCH; // For other opcodes, we can just return the default dispatch
 	}
@@ -694,7 +744,8 @@ int generic_lang_construct_handler(zend_execute_data *execute_data){
 	if(opline->extended_value == ZEND_EVAL){
 		cJSON_AddStringToObject(func_call, "command", param_str);
 		cJSON_AddNumberToObject(func_call, "sink_opline_type", cmd_opline_type);
-	}else{
+	}else if(opline->extended_value == ZEND_INCLUDE || opline->extended_value == ZEND_INCLUDE_ONCE 
+			|| opline->extended_value == ZEND_REQUIRE || opline->extended_value == ZEND_REQUIRE_ONCE){
 		cJSON_AddStringToObject(func_call, "path", param_str);
 		cJSON_AddNumberToObject(func_call, "sink_opline_type", path_opline_type);	
 	}
@@ -821,157 +872,34 @@ int exception_via_zend_throw_handler(zend_execute_data *execute_data){
 
 
 PHP_MINIT_FUNCTION(zimpaf){
-	#if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
-		ZEND_TSRMLS_CACHE_UPDATE();
-	#endif
+	#ifdef PHP_WIN32
+        const char *disk_drive = getenv("SystemDrive");
+        if(!disk_drive){
+            disk_drive = "C:";
+        }
+        unsigned int dirlen = strlen(disk_drive) + strlen("\\")+strlen("zimpaf_traces")+1;
+        ZIMPAF_G(base_dir) = pemalloc(dirlen, 1);
+        if (ZIMPAF_G(base_dir)) {
+            snprintf(ZIMPAF_G(base_dir), dirlen, "%s\\zimpaf_traces", disk_drive);
+            trace_directory_setup(ZIMPAF_G(base_dir));
+        }   
+    #else
+		const char *directory = "/zimpaf_traces"; // New zimpaf version > 2.0.0 traces location
 
-	//hook for code execution
-	hook_assert();
-	hook_system();
-	hook_exec();
-	hook_passthru();
-	hook_shell_exec();
-	hook_popen();
-	hook_proc_open();								//7 functions
+        // Backward compatibility heck for old ZIMPAF v 1.x.x traces location
+        if (VCWD_ACCESS("/shared-tmpfs", F_OK) == 0) { 
+            directory = "/shared-tmpfs";
+        }
 
-	//dbhook for sqli vuln probe
-	hook_mysqli_query();
-	hook_mysqli_query_cm();
-	hook_pdo_query_cm();
-	hook_mysqli_real_query();
-	hook_mysqli_real_query_cm();
-	hook_mysqli_multi_query();
-	hook_mysqli_multi_query_cm();
-
-	hook_mysqli_prepare();
-	hook_mysqli_prepare_cm();
-	hook_pdo_prepare_cm();
-	hook_pdo_exec_cm();
+        size_t dirlen = strlen(directory) + 1;
+        ZIMPAF_G(base_dir) = pemalloc(dirlen, 1);
+        if (ZIMPAF_G(base_dir)) {
+            strcpy(ZIMPAF_G(base_dir), directory);
+            trace_directory_setup(ZIMPAF_G(base_dir));
+        }
+    #endif
 	
-	hook_mysqli_stmt_bind_param();
-	hook_mysqli_stmt_bind_param_cm();
-	hook_pdostmt_bindParam_cm();
-	hook_pdostmt_bindValue_cm();
-
-	hook_mysqli_execute_query();
-	hook_mysqli_execute_query_cm();
-	hook_mysqli_stmt_execute();
-	hook_mysqli_stmt_execute_cm();
-	hook_pdostmt_execute_cm();						//20 functions
-
-	//hook for deserialization vuln probe
-	hook_unserialize();
-	hook_yaml_parse();
-	hook_yaml_parse_file();
-	hook_unpack();
-	hook_igbinary_unserialize();					//5 functions
-
-	// hook for dirtravshook 
-	hook_chgrp();
-	hook_chown();
-	hook_chmod();
-	hook_copy();
-	hook_delete();
-	hook_dirname();
-	hook_file();	
-	hook_file_get_contents();
-	hook_fopen();
-	hook_glob();
-	hook_lchgrp();
-	hook_lchown();
-	hook_link();
-	hook_mkdir();
-	hook_move_uploaded_file();	
-	hook_parse_ini_file();
-	hook_parse_ini_string();
-	hook_pathinfo();
-	hook_readfile();
-	hook_rename();
-	hook_rmdir();
-	hook_stat();
-	hook_symlink();
-	hook_tempnam();
-	hook_touch();
-	hook_unlink();
-	hook_scandir();									
-	hook_header();//28 functions
-
-	//added during evaluation with http://testsuite benchmark
- 	hook_clearstatcache();         	//payload in 2nd arg  
-	hook_disk_free_space();         //payload in 1st arg
-	hook_disk_total_space();        //payload in 1st arg    
-	hook_fileatime();        		//payload in 1st arg
- 	hook_filectime();        		//payload in 1st arg
-	hook_filegroup();       		//payload in 1st arg
-	hook_fileinode();       		//payload in 1st arg
-	hook_filemtime();       		//payload in 1st arg
-	hook_fileowner();       		//payload in 1st arg
-	hook_fileperms();       		//payload in 1st arg
-	hook_filesize();        		//payload in 1st arg
-	hook_filetype();        		//payload in 1st arg
-	hook_lchgroup();      			//payload in 1st arg
-	hook_linkinfo();     			//payload in 1st arg
-	hook_lstat();           		//payload in 1st arg
-	hook_readlink();        		//payload in 1st arg
-
-	//hook for sanitations
-	hook_htmlspecialchars();
-	hook_htmlentities();
-	hook_addslashes();
-	hook_stripslashes();
-	hook_strip_tags();
-	hook_mysqli_real_escape_string();
-	hook_mysqli_real_escape_string_cm();
-	hook_pdo_quote_cm();
-	hook_preg_replace();
-	hook_preg_match();
-	hook_realpath();
-	hook_basename();
-	hook_escapeshellarg();
-	hook_escapeshellcmd();
-	hook_str_replace();
-	hook_strpos();
-	hook_stripos();
-	hook_filter_var();
-	hook_filter_var_array();
-	hook_filter_input();
-	hook_filter_input_array();
-	hook_libxml_disable_entity_loader();
-	hook_is_numeric();
-	hook_base64_decode();
-	hook_json_decode();
-	hook_fnmatch();									
-	hook_is_file();				//27 functions
-
-	//added during evaluation with http://testsuite benchmark
-	hook_file_exists();         //payload in 1st arg
-	hook_is_dir();         		//payload in 1st arg
-	hook_is_executable();  		//payload in 1st arg    
-	hook_is_link();        		//payload in 1st arg
-	hook_is_readable();    		//payload in 1st arg
-	hook_is_writable();    		//payload in 1st arg
-	hook_is_uploaded_file(); 	//payload in 1st arg
-
-
-	//hook for XXE
-	hook_simplexml_load_string();
-	hook_simplexml_load_file();
-	hook_domdocument_load_cm();
-	hook_domdocument_loadxml_cm();
-	hook_xmlreader_xml_cm();
-	hook_xmlreader_open_cm();
-	hook_xmlreader_read_cm();
-	hook_xml_set_external_entity_ref_handler();
-	hook_xml_parse();								//9 functions
-
-	//hook for generic error and exception, the main mechanism for error and exception reporting in zend interpreter
-	hook_zend_error_cb();
-	hook_zend_throw_exception_hook();
-	/*for cold error, means errors that are raised to userland via different path than main main mechanism above
-	 *zimpaf_observer_error_handler is the error handler function defined in error_exception_hook.c.
-	 *Just in case Php version < 8 does not have this mechanism.
-	*/
-	zend_observer_error_register(zimpaf_observer_error_handler);
+	install_hooks();	//install hooks in to intercepts function calls and error/exception handling
 
 	/*Branch opcodes hook*/
 	original_jmp_handler = zend_get_user_opcode_handler(ZEND_JMP);
@@ -1017,9 +945,12 @@ PHP_MINIT_FUNCTION(zimpaf){
 	/*INCLUDE_OR_EVAL hook*/
 	original_include_or_eval_handler = zend_get_user_opcode_handler(ZEND_INCLUDE_OR_EVAL);
 	zend_set_user_opcode_handler(ZEND_INCLUDE_OR_EVAL,generic_lang_construct_handler);
-
-	original_exit_handler = zend_get_user_opcode_handler(ZEND_EXIT);
-	zend_set_user_opcode_handler(ZEND_EXIT, generic_lang_construct_handler);	
+	
+	#if PHP_VERSION_ID < 80400
+		//for exit hook via ZEND_EXIT opcode
+		original_exit_handler = zend_get_user_opcode_handler(ZEND_EXIT);
+		zend_set_user_opcode_handler(ZEND_EXIT, generic_lang_construct_handler);	
+	#endif
 	
 	//for exception hook via ZEND_THROW opcode
 	original_throw_handler = zend_get_user_opcode_handler(ZEND_THROW);
@@ -1060,10 +991,17 @@ PHP_MSHUTDOWN_FUNCTION(zimpaf) {
 	zend_set_user_opcode_handler(ZEND_INCLUDE_OR_EVAL, original_include_or_eval_handler);
 
 	// Restore the original EXIT handler
-	zend_set_user_opcode_handler(ZEND_EXIT, original_exit_handler);
+	#if PHP_VERSION_ID < 80400
+		zend_set_user_opcode_handler(ZEND_EXIT, original_exit_handler);
+	#endif
 
 	// Restore the original THROW handler
 	zend_set_user_opcode_handler(ZEND_THROW, original_throw_handler);
+
+	if(ZIMPAF_G(base_dir)){
+		pefree(ZIMPAF_G(base_dir), 1);
+		ZIMPAF_G(base_dir) = NULL;
+	}	
 
 	return SUCCESS;
 }
@@ -1073,13 +1011,14 @@ PHP_RINIT_FUNCTION(zimpaf){
 #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
 ZEND_TSRMLS_CACHE_UPDATE();
 #endif
+
 	ZIMPAF_G(start_time) = zend_hrtime();
 
 	ZIMPAF_G(coverage_id) = NULL;
 	ZIMPAF_G(func_call_seq) = NULL;
-	ZIMPAF_G(input_comparisons) = NULL;
+	ZIMPAF_G(input_tainted_branches) = NULL;
 
-	//These purpose is to avoid duplication of error or exception report caught by zimpaf_observe_exception, 
+	//This purpose is to avoid duplication of error or exception report caught by zimpaf_observe_exception, 
 	//zimpaf_observer_error_handler, and zend_error_cb, see libhooks/error_exception_hook.c
 	ZIMPAF_G(last_observed_ex) = NULL; //DON'T FREE !!!, holds zend last exception object logged/seen.
 	ZIMPAF_G(error_exception_just_logged) = 0;
@@ -1100,7 +1039,10 @@ ZEND_TSRMLS_CACHE_UPDATE();
 		ZIMPAF_G(coverage_id) = emalloc(length+1);
 		memset(ZIMPAF_G(coverage_id), 0, length+1);
 		strcpy(ZIMPAF_G(coverage_id), coverid);
-		php_printf("Coverage-ID: %s\n", ZIMPAF_G(coverage_id));
+
+		// comment this since osticket expect response to be clean, without additional info
+		// php_printf("Coverage-ID: %s\n", ZIMPAF_G(coverage_id));
+		// sapi_add_header("X-ZIMPAF-Coverage-ID: 1", sizeof("X-ZIMPAF-Coverage-ID: 1") - 1, 1);
 	}
 	/*Clear or reset path table to collect code coverate in terms of branch opcodes execution
 	  Allocate cJSON array to hold the function calls
@@ -1109,17 +1051,21 @@ ZEND_TSRMLS_CACHE_UPDATE();
 	if(ZIMPAF_G(coverage_id) != NULL){
 		clear_path_table(ZIMPAF_G(path_table));
 		ZIMPAF_G(func_call_seq) = cJSON_CreateArray();
-		ZIMPAF_G(input_comparisons) = cJSON_CreateArray();
+		ZIMPAF_G(input_tainted_branches) = cJSON_CreateArray();
 		
-		ZIMPAF_G(orig_bailout) = EG(bailout);
-		EG(bailout) = &ZIMPAF_G(bailout_buf);
-		if (SETJMP(ZIMPAF_G(bailout_buf)) == 0) {
-			ZIMPAF_G(bailout_triggered) = 0;
-		} else {
-			ZIMPAF_G(bailout_triggered) = 1;
-		}
+		#if PHP_VERSION_ID < 80400
+			// Save the original bailout function pointer and set a new one
+			ZIMPAF_G(orig_bailout) = EG(bailout);
+			EG(bailout) = &ZIMPAF_G(bailout_buf);
+			if (SETJMP(ZIMPAF_G(bailout_buf)) == 0) {
+				ZIMPAF_G(bailout_triggered) = 0;
+			} else {
+				ZIMPAF_G(bailout_triggered) = 1;
+			}
+		#endif
 	}
 	//  zend_hrtime_t start = zend_hrtime();
+	
 	return SUCCESS;
 }
 
@@ -1129,11 +1075,14 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
 	if(ZIMPAF_G(coverage_id) != NULL){
-		if(ZIMPAF_G(bailout_triggered)) {
-			fprintf(stderr, "Premature script termination (zend_bailout) detected!\n");
-		}
-		EG(bailout) = ZIMPAF_G(orig_bailout);  
+		#if PHP_VERSION_ID < 80400
+			if(ZIMPAF_G(bailout_triggered)) {
+				fprintf(stderr, "Premature script termination (zend_bailout) detected!\n");
+			}
+			EG(bailout) = ZIMPAF_G(orig_bailout);  
+		#endif
 	}
+
 
 	unsigned int covid_len = 0;
 	if(ZIMPAF_G(coverage_id) == NULL){
@@ -1150,14 +1099,23 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 	}
 	covid_name[covid_len+1] = '\0';
 		
-
 	double start_logging = zend_hrtime();
+	char cocov_dir[512] = {0};
 
 	if(ZIMPAF_G(coverage_id) != NULL){
-		char cocov_dir[] = "/shared-tmpfs/coverage-reports/";
+		
+		unsigned int len_cocov_dir = strlen(ZIMPAF_G(base_dir)) + strlen("/coverage-reports") + 1;
+		#ifdef PHP_WIN32
+			char sep = '\\';
+			snprintf(cocov_dir, len_cocov_dir, "%s\\coverage-reports", ZIMPAF_G(base_dir));
+		#else
+			char sep = '/';
+			snprintf(cocov_dir, len_cocov_dir, "%s/coverage-reports", ZIMPAF_G(base_dir));
+		#endif
+
 		unsigned int len_cocov_fname = strlen(cocov_dir) + strlen("/")+strlen(ZIMPAF_G(coverage_id))+strlen(".json")+1;
-		char cocov_fname[len_cocov_fname];
-		snprintf(cocov_fname, len_cocov_fname, "%s/%s.json", cocov_dir, ZIMPAF_G(coverage_id));
+		char cocov_fname[1024]; //to avoid Variable Length Array which can fail on some platforms.
+		snprintf(cocov_fname, len_cocov_fname, "%s%c%s.json", cocov_dir, sep, ZIMPAF_G(coverage_id));
 		FILE *file = fopen(cocov_fname,"w");
 		char **table = ZIMPAF_G(path_table);
 
@@ -1188,10 +1146,19 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 			}
 		}
 		if(ZIMPAF_G(func_call_seq) != NULL && cJSON_GetArraySize(ZIMPAF_G(func_call_seq)) > 0){
-			char func_trace_dir[] = "/shared-tmpfs/function-call-traces";
+			char func_trace_dir[512] = {0};
+			unsigned int len_func_trace_dir = strlen(ZIMPAF_G(base_dir)) + strlen("/function-call-traces") + 1;
+			#ifdef PHP_WIN32
+				char sep = '\\';
+				snprintf(func_trace_dir, len_func_trace_dir, "%s\\function-call-traces", ZIMPAF_G(base_dir));
+			#else
+				char sep = '/';
+				snprintf(func_trace_dir, len_func_trace_dir, "%s/function-call-traces", ZIMPAF_G(base_dir));
+			#endif
+
 			unsigned int len_func_trace_fname = strlen(func_trace_dir) + strlen("/")+strlen(ZIMPAF_G(coverage_id))+strlen(".json")+1;
-			char func_trace_fname[len_func_trace_fname];
-			snprintf(func_trace_fname, len_func_trace_fname, "%s/%s.json", func_trace_dir, ZIMPAF_G(coverage_id));
+			char func_trace_fname[1024]; //to avoid Variable Length Array which can fail on some platforms.
+			snprintf(func_trace_fname, len_func_trace_fname, "%s%c%s.json", func_trace_dir, sep, ZIMPAF_G(coverage_id));
 			char *json_string = cJSON_Print(ZIMPAF_G(func_call_seq)); // Use cJSON_PrintUnformatted() for compact output
 			if(json_string!= NULL){
 				printf("%s\n", json_string);
@@ -1205,23 +1172,40 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 			cJSON_Delete(ZIMPAF_G(func_call_seq));
 			ZIMPAF_G(func_call_seq) = NULL;
 		}
-		if(ZIMPAF_G(input_comparisons) != NULL && cJSON_GetArraySize(ZIMPAF_G(input_comparisons)) > 0){
-			char input_comparisons_dir[] = "/shared-tmpfs/input_params_comparisons";
-			unsigned int len_input_comparisons_fname = strlen(input_comparisons_dir) + strlen("/")+strlen(ZIMPAF_G(coverage_id))+strlen(".json")+1;
-			char input_comparisons_fname[len_input_comparisons_fname];
-			snprintf(input_comparisons_fname, len_input_comparisons_fname, "%s/%s.json", input_comparisons_dir, ZIMPAF_G(coverage_id));
-			char *json_string = cJSON_Print(ZIMPAF_G(input_comparisons)); // Use cJSON_PrintUnformatted() for compact output
+		if(ZIMPAF_G(input_tainted_branches) != NULL && cJSON_GetArraySize(ZIMPAF_G(input_tainted_branches)) > 0){
+			char tainted_branches_dir[512] = {0};
+			unsigned int len_tainted_branches_dir = strlen(ZIMPAF_G(base_dir)) + strlen("/input-tainted-branch-traces") + 1;
+			// Backward compatibility check for old ZIMPAF v 1.x.x traces location for branches tainted by input.
+			unsigned int len_input_comparisons_dir = strlen(ZIMPAF_G(base_dir)) + strlen("/input_params_comparisons") + 1;
+
+			#ifdef PHP_WIN32
+				char sep = '\\';
+				snprintf(tainted_branches_dir, len_tainted_branches_dir, "%s\\input-tainted-branch-traces", ZIMPAF_G(base_dir));
+			#else
+				char sep = '/';
+				if(strcmp(ZIMPAF_G(base_dir), "/zimpaf_traces") == 0){
+					snprintf(tainted_branches_dir, len_tainted_branches_dir, "%s/input-tainted-branch-traces", ZIMPAF_G(base_dir));
+				}else{
+					// Backward compatibility check for old ZIMPAF v 1.x.x traces location for branches tainted by input.
+					snprintf(tainted_branches_dir, len_input_comparisons_dir, "%s/input_params_comparisons", ZIMPAF_G(base_dir));
+				}
+			#endif
+
+			unsigned int len_tainted_branches_fname = strlen(tainted_branches_dir) + strlen("/")+strlen(ZIMPAF_G(coverage_id))+strlen(".json")+1;
+			char tainted_branch_traces_fname[1024]; //to avoid Variable Length Array which can fail on some platforms.
+			snprintf(tainted_branch_traces_fname, len_tainted_branches_fname, "%s%c%s.json", tainted_branches_dir, sep, ZIMPAF_G(coverage_id));
+			char *json_string = cJSON_Print(ZIMPAF_G(input_tainted_branches)); // Use cJSON_PrintUnformatted() for compact output
 			if(json_string!= NULL){
 				printf("%s\n", json_string);
-				FILE *f = fopen(input_comparisons_fname, "w");
+				FILE *f = fopen(tainted_branch_traces_fname, "w");
 				if (f) {
 					fputs(json_string, f);
 					fclose(f);
 				}
 			free(json_string); // Free the JSON string
 			}
-			cJSON_Delete(ZIMPAF_G(input_comparisons));
-			ZIMPAF_G(input_comparisons) = NULL;
+			cJSON_Delete(ZIMPAF_G(input_tainted_branches));
+			ZIMPAF_G(input_tainted_branches) = NULL;
 		}
 		efree(ZIMPAF_G(coverage_id));
 		ZIMPAF_G(coverage_id) = NULL;
@@ -1249,10 +1233,10 @@ PHP_RSHUTDOWN_FUNCTION(zimpaf)
 	double start_sec = ZIMPAF_G(start_time) / 1000000000;
 	double start_logging_sec = start_logging / 1000000000;
     double end_sec   = ZIMPAF_G(end_time) / 1000000000;
-	char cocov_dir[] = "/shared-tmpfs/coverage-reports/";
-	unsigned int len_time_fname = strlen(cocov_dir) + strlen(covid_name)+ strlen("_time.json")+1;
+	// char cocov_dir[] = "/shared-tmpfs/coverage-reports/";
+	unsigned int len_time_fname = strlen(cocov_dir) + strlen(covid_name)+ strlen("_perf.json")+1;
 	char time_fname[len_time_fname];
-	snprintf(time_fname, len_time_fname, "%s%s_time.json", cocov_dir, covid_name);
+	snprintf(time_fname, len_time_fname, "%s%s_perf.json", cocov_dir, covid_name);
 	FILE *ftime = fopen(time_fname,"w");
 	if(ftime){
 		fprintf(ftime, "start_time: %.16f \n", start_sec);
@@ -1283,6 +1267,19 @@ PHP_GINIT_FUNCTION(zimpaf){
 #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
+// 	// ZIMPAF_G(path_table) = pemalloc(MAX_FILES * sizeof(char *), 1);
+// 	// memset(ZIMPAF_G(path_table), 0, MAX_FILES * sizeof(char *));
+// 	// for (size_t i = 0; i < MAX_FILES; i++) {
+//     //     ZIMPAF_G(path_table)[i] = pemalloc(MAX_CHARS * sizeof(char), 1);
+// 	// 	memset(ZIMPAF_G(path_table)[i], 0, MAX_CHARS * sizeof(char));
+//     // }
+// 	// ZIMPAF_G(cur_filename) = pemalloc(LENGTH_FNAME * sizeof(char), 1);
+// 	// memset(ZIMPAF_G(cur_filename), 0, LENGTH_FNAME * sizeof(char));
+// 	// ZIMPAF_G(path_table_size) = MAX_FILES;
+// 	// ZIMPAF_G(pt_cur_rows_size) = MAX_CHARS;
+// 	// ZIMPAF_G(coverage_id) = NULL;
+// 	// ZIMPAF_G(func_call_seq) = NULL;
+// 	// ZIMPAF_G(orig_bailout) = NULL;
 
 // 	/* Using the pointer 'zimpaf_globals' directly to avoid NTS macro collision */
     
@@ -1301,14 +1298,31 @@ PHP_GINIT_FUNCTION(zimpaf){
     zimpaf_globals->pt_cur_rows_size = MAX_CHARS;
     zimpaf_globals->coverage_id = NULL;
     zimpaf_globals->func_call_seq = NULL;
-    zimpaf_globals->orig_bailout = NULL;
+
+	#if PHP_VERSION_ID < 80400
+	    zimpaf_globals->orig_bailout = NULL;
+	#endif
 }
 
 PHP_GSHUTDOWN_FUNCTION(zimpaf){
 #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
+	// if (ZIMPAF_G(path_table)) {
+    //     for (size_t i = 0; i < MAX_FILES; i++) {
+    //         if (ZIMPAF_G(path_table)[i]) {
+    //             pefree(ZIMPAF_G(path_table)[i], 1);
+    //             ZIMPAF_G(path_table)[i] = NULL;
+    //         }
+    //     }
+    //     pefree(ZIMPAF_G(path_table), 1);
+    //     ZIMPAF_G(path_table) = NULL;
+    // }
 
+    // if (ZIMPAF_G(cur_filename)) {
+    //     pefree(ZIMPAF_G(cur_filename), 1);
+    //     ZIMPAF_G(cur_filename) = NULL;
+    // }
 	/* Using the pointer 'zimpaf_globals' directly for clean teardown */
 
     if (zimpaf_globals->path_table) {
@@ -1356,3 +1370,48 @@ ZEND_GET_MODULE(zimpaf)
 #endif
 
 
+// /**initialize path table as single contigious table and allocate per row memory***/
+// PHP_GINIT_FUNCTION(zimpaf){
+//     /* 1. Allocate the "Directory" of pointers */
+//     zimpaf_globals->path_table = pemalloc(MAX_FILES * sizeof(char *), 1);
+    
+//     /* 2. Allocate one "Giant Block" for all character data */
+//     char *table_storage = pemalloc(MAX_FILES * MAX_CHARS * sizeof(char), 1);
+//     memset(table_storage, 0, MAX_FILES * MAX_CHARS * sizeof(char));
+
+//     /* 3. Carve the block into rows - No new allocations here! */
+//     for (size_t i = 0; i < MAX_FILES; i++) {
+//         zimpaf_globals->path_table[i] = &table_storage[i * MAX_CHARS];
+//     }
+
+//     /* 4. The rest of your persistent pointers */
+//     zimpaf_globals->cur_filename = pemalloc(LENGTH_FNAME * sizeof(char), 1);
+//     memset(zimpaf_globals->cur_filename, 0, LENGTH_FNAME * sizeof(char));
+
+//     zimpaf_globals->path_table_size = MAX_FILES;
+//     zimpaf_globals->pt_cur_rows_size = MAX_CHARS;
+// 	zimpaf_globals->coverage_id = NULL;
+//     zimpaf_globals->func_call_seq = NULL;
+//     zimpaf_globals->orig_bailout = NULL;
+// }
+
+// PHP_GSHUTDOWN_FUNCTION(zimpaf){
+// #if defined(ZTS) && defined(COMPILE_DL_ZIMPAF)
+// 	ZEND_TSRMLS_CACHE_UPDATE();
+// #endif
+// 	/* Using the pointer 'zimpaf_globals' directly for clean teardown */	
+// 	if (zimpaf_globals->path_table) {
+// 		// Since we allocated a single block for all rows, we only need to free the first row
+// 		if (zimpaf_globals->path_table[0]) {
+// 			pefree(zimpaf_globals->path_table[0], 1);
+// 			zimpaf_globals->path_table[0] = NULL;
+// 		}
+// 		pefree(zimpaf_globals->path_table, 1);
+// 		zimpaf_globals->path_table = NULL;
+// 	}
+
+// 	if (zimpaf_globals->cur_filename) {
+// 		pefree(zimpaf_globals->cur_filename, 1);
+// 		zimpaf_globals->cur_filename = NULL;
+// 	}
+// }

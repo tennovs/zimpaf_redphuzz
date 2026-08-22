@@ -24,7 +24,6 @@
 #include "zend_string.h"
 #include "zend.h"
 #include "ext/mysqli/php_mysqli_structs.h"
-// #include ext/mysqli/mysqli_mysqlnd.h
 #include "ext/pdo/php_pdo_driver.h"
 #include "ext/pdo/php_pdo.h"
    
@@ -48,8 +47,13 @@ zif_handler ori_mysqli_execute_query_method_handler = NULL;     // mysqli::execu
 zif_handler ori_mysqli_stmt_execute_handler = NULL;             // mysqli_stmt_execute
 zif_handler ori_mysqli_stmt_execute_method_handler = NULL;      // mysqli_stmt::execute
 zif_handler ori_pdostmt_execute_method_handler = NULL;         // pdo_stmt::execute
+//total functions hooked: 20, including both global functions and class methods.
+
+#define NUM_FUNCTIONS_HOOKED 20;
 
 zif_handler get_dbfunction_handler(char *scope_name, char *func_name);
+
+// void *db_hook_map[num_functions_hooked + 100][3]; // Extra space to anticipate hash collisions and future additions
 
 
 zif_handler get_dbfunction_handler(char *scope_name, char *func_name){
@@ -533,20 +537,61 @@ void hook_mysqli_execute_query_cm(){
     }
 }
 
+// void hook_pdo_query_cm(){
+//     #if defined(ZTS) && defined(COMPILE_DL_TEST)
+// 		ZEND_TSRMLS_CACHE_UPDATE();
+// 	#endif
+//     zend_class_entry *pdo_ce = zend_hash_str_find_ptr(CG(class_table), "pdo", sizeof("pdo")-1);
+//     if (pdo_ce) {
+//         zend_function *pdo_query_method = zend_hash_str_find_ptr(&pdo_ce->function_table, "query", sizeof("query") - 1);
+//         // pdo_query_method = zend_hash_str_find_ptr(&pdo_query_ce->function_table, ZEND_STRL("query"));
+//         if (pdo_query_method && pdo_query_method->type == ZEND_INTERNAL_FUNCTION) {
+//             ori_pdo_query_method_handler = pdo_query_method->internal_function.handler;
+//             pdo_query_method->internal_function.handler = query_handler;
+//             // php_printf("PDO::query handler is installed.\n");
+//         }
+//     }
+// }
+
 void hook_pdo_query_cm(){
     #if defined(ZTS) && defined(COMPILE_DL_TEST)
-		ZEND_TSRMLS_CACHE_UPDATE();
-	#endif
-    zend_class_entry *pdo_ce = zend_hash_str_find_ptr(CG(class_table), "pdo", sizeof("pdo")-1);
-    if (pdo_ce) {
-        zend_function *pdo_query_method = zend_hash_str_find_ptr(&pdo_ce->function_table, "query", sizeof("query") - 1);
-        // pdo_query_method = zend_hash_str_find_ptr(&pdo_query_ce->function_table, ZEND_STRL("query"));
-        if (pdo_query_method && pdo_query_method->type == ZEND_INTERNAL_FUNCTION) {
-            ori_pdo_query_method_handler = pdo_query_method->internal_function.handler;
-            pdo_query_method->internal_function.handler = query_handler;
-            // php_printf("PDO::query handler is installed.\n");
+        ZEND_TSRMLS_CACHE_UPDATE();
+    #endif
+
+    #if PHP_VERSION_ID >= 80400
+        // For PHP 8.4 and above, we can directly hook the PDO::query
+        // List of all target PDO class variants introduced in 8.4/8.5
+        const char *targets[] = {"pdo", "pdo\\mysql", "pdo\\sqlite", "pdo\\pgsql", "pdo\\odbc"};
+        size_t target_lengths[] = {3, 9, 10, 9, 8};
+        int num_targets = 5;
+
+        for (int i = 0; i < num_targets; i++) {
+            zend_class_entry *ce = zend_hash_str_find_ptr(CG(class_table), targets[i], target_lengths[i]);
+            if (ce) {
+                zend_function *query_method = zend_hash_str_find_ptr(&ce->function_table, "query", sizeof("query") - 1);
+                if (query_method && query_method->type == ZEND_INTERNAL_FUNCTION) {
+                    // Save original handler once if not already saved
+                    if (!ori_pdo_query_method_handler) {
+                        ori_pdo_query_method_handler = query_method->internal_function.handler;
+                    }
+                    // Hook this specific table entry slot
+                    query_method->internal_function.handler = query_handler;
+                }
+            }
         }
-    }
+    #else
+        // For PHP versions below 8.4, we can only hook the base PDO class
+        zend_class_entry *pdo_ce = zend_hash_str_find_ptr(CG(class_table), "pdo", sizeof("pdo")-1);
+        if (pdo_ce) {
+            zend_function *pdo_query_method = zend_hash_str_find_ptr(&pdo_ce->function_table, "query", sizeof("query") - 1);
+            // pdo_query_method = zend_hash_str_find_ptr(&pdo_query_ce->function_table, ZEND_STRL("query"));
+            if (pdo_query_method && pdo_query_method->type == ZEND_INTERNAL_FUNCTION) {
+                ori_pdo_query_method_handler = pdo_query_method->internal_function.handler;
+                pdo_query_method->internal_function.handler = query_handler;
+                // php_printf("PDO::query handler is installed.\n");
+            }
+        }
+    #endif
 }
 
 void hook_mysqli_real_query() {
@@ -749,3 +794,4 @@ void hook_pdostmt_execute_cm(){
         }
     }
 }
+

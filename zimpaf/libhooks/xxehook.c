@@ -12,8 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
-
-
 #include "../include/xxehook.h"
 #include "../include/utils.h"
 #include "../php_zimpaf.h"

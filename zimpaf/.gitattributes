@@ -1,0 +1,9 @@
+# Force C recognition for everything in your project
+**/*.c linguist-language=C
+**/*.h linguist-language=C
+
+# Explicitly ignore autotools and test artifacts
+configure~ linguist-detectable=false
+config.m4 linguist-detectable=false
+*.phpt linguist-detectable=false
+*.json linguist-detectable=false

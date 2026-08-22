@@ -13,11 +13,11 @@
  */
 
 
-#ifndef ZIMPAP_FPM_REQUEST_RETRIEVAL_H
-#define ZIMPAP_FPM_REQUEST_RETRIEVAL_H
+#ifndef FLOWFUNCTION_HOOK_H
+#define FLOWFUNCTION_HOOK_H
 
 #include "php.h"
 
-char* get_http_header(const char *header_name);
+void hook_exit();
 
-#endif /* ZIMPAP_FPM_REQUEST_RETRIEVAL_H */
+#endif

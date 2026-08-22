@@ -12,12 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  */
 
+#ifndef INSTALL_HOOK_H
+#define INSTALL_HOOK_H
 
-#ifndef ZIMPAP_FPM_REQUEST_RETRIEVAL_H
-#define ZIMPAP_FPM_REQUEST_RETRIEVAL_H
+void install_hooks();
+void uninstall_hooks();
 
-#include "php.h"
-
-char* get_http_header(const char *header_name);
-
-#endif /* ZIMPAP_FPM_REQUEST_RETRIEVAL_H */
+#endif
