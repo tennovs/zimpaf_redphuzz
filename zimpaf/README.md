@@ -1,6 +1,16 @@
 
 ## Releases
 
+### v1.2.0 (2026-08-24)
+Add supports for PHP-8.4 and 8.5.
+- Adds a ZVAL structure fallback for the purged `zval_dtor`.
+- Adds function interceptor for `exit` and `die` (See the `generic_lang_construct_handler` function in `zimpaf.c` and `flowfunchook.c`).
+- Puts bailout codes inside conditional inclusion because bailout works for PHP < 8.4.
+- Adds `hooks_installer.c` and move function hooks from `zimpaf.c` into it.
+- Adds ZIMPAF owned directory creation, to decouple it from RedPhuzz.
+- Adds directory support support for Windows (the plan is to add support for Windows), but this has not been tested.
+
+
 ### v1.1.0 (2026-04-13)
 #### zimpaf.c
 - Add ZEND_JMP_SET and ZEND_COALESCE hooks
