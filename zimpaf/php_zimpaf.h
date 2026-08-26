@@ -23,7 +23,7 @@
 /* =================================================================== */
 /* INSERT COMPATIBILITY MACROS HERE                                    */
 /* =================================================================== */
-/* Global structural fallback for the purged zval_dtor symbol in PHP 4.0*/
+/* Global structural fallback for the purged zval_dtor symbol in PHP 8.4.0*/
 #ifndef zval_dtor
 // # define zval_dtor(z) zval_ptr_dtor(z)
 # define zval_dtor(z) zval_ptr_dtor_nogc(z)

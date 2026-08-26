@@ -884,9 +884,9 @@ PHP_MINIT_FUNCTION(zimpaf){
             trace_directory_setup(ZIMPAF_G(base_dir));
         }   
     #else
-		const char *directory = "/zimpaf_traces"; // New zimpaf version > 2.0.0 traces location
+		const char *directory = "/zimpaf_traces"; // New zimpaf version > 1.2.0 traces location
 
-        // Backward compatibility heck for old ZIMPAF v 1.x.x traces location
+        // Backward compatibility heck for old ZIMPAF < v 1.2.0 traces location
         if (VCWD_ACCESS("/shared-tmpfs", F_OK) == 0) { 
             directory = "/shared-tmpfs";
         }
