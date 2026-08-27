@@ -12,6 +12,7 @@ import string
 import sys
 import copy
 from datetime import datetime, timedelta
+from hypothesis import strategies as st
 
 def fuzz_open(path, mode="r"):
     if os.environ["FUZZER_COMPRESS"] == "1":
@@ -179,7 +180,7 @@ def extract_input_vectors_from_har(file_path, domain=None):
 
 
 ###These functions are added and written by tennov
-#used by zimpaf extension to process code coverage reports that is based on conditional statements and outcome
+#used by zimpaf_fpm extension to process code coverage reports that is based on conditional statements and outcome
 
 from libzimpaf.constants import Key, MatchingPattern, Vulnerability
 import pymysql
@@ -978,12 +979,6 @@ def strip_possessive_quantifiers(pattern: str) -> str:
         .replace('?+', '?')
     )
 
-
-# Prevent infinite or deep recursion that can lead to oom (out of memory)
-import sys
-sys.setrecursionlimit(2000)
-
-
 def generate_string_matches_pattern(pattern, pattern_type, input=None): 
     if not pattern or not pattern_type:
         return None
@@ -993,15 +988,16 @@ def generate_string_matches_pattern(pattern, pattern_type, input=None):
             #temporary workaround because exception is not raised, and python is killed by the OS
             # if pattern == '/^(?:[ \\t]*<\\?php)?[ \\t\\/*#@]*WC requires at least:(.*)$/mi':
             if "WC requires at least" in pattern or "at least" in pattern:
-                strategy = st.from_regex(pattern, fullmatch=False)
-                match = strategy.example()
+                # strategy = st.from_regex(pattern, fullmatch=False)
+                # match = strategy.example()
+                return ''
             else:
                 match = rstr.xeger(pattern)
-        except (RecursionError, Exception) as e:
+        except Exception as e:
             try:
                 pattern = strip_possessive_quantifiers(pattern)
                 match = rstr.xeger(pattern)
-            except (RecursionError, Exception) as e:
+            except Exception as e:
                 print(f"[xeger failed] pattern={pattern!r} error={e}")
                 return ''
 
@@ -1010,6 +1006,10 @@ def generate_string_matches_pattern(pattern, pattern_type, input=None):
 
         anchored_start = pattern.startswith("^")
         anchored_end = pattern.endswith("$")
+        # if input:
+        #     return input
+        # else:
+        #     return None
 
         if anchored_start and anchored_end:
             return match

@@ -1,17 +1,17 @@
 def get_db_config(http_target): #c is the candidate/input object
-    HOST    = 'db_host'
-    if 'poc' in http_target.lower():
-        return HOST, 'all_db_user', 'password', 'simple_db'
+    HOST    = 'localhost'
+    if 'orders' in http_target.lower():
+        return HOST, 'simple_db_user', 'password', 'simple_db'
     elif 'dvwa' in http_target.lower():
-        return HOST, 'all_db_user', 'password', 'dvwa'
+        return HOST, 'dvwa_user', 'password', 'dvwa'
     elif 'bwapp' in http_target.lower():
-        return HOST, 'all_db_user', 'password', 'bWAPP'
+        return HOST, 'bwapp_user', 'password', 'bWAPP'
+    elif 'wackopicko' in http_target.lower():
+        return HOST, 'wackopicko', 'webvuln!@#', 'wackopicko'
     elif 'xvwa' in http_target.lower():
-        return HOST, 'all_db_user', 'password', 'xvwa'
+        return HOST, 'xvwa_user', 'password', 'xvwa'
     elif 'wordpress' in http_target.lower():
-        return HOST, 'all_db_user', 'password', 'wordpress'
-    else:
-        return HOST, 'all_db_user', 'password', 'wackopicko'
+        return HOST, 'wordpress_user', 'password', 'wordpress'
 
 # USER    = 'simple_db_user'
 # PASSWD  = 'password'

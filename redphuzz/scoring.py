@@ -30,7 +30,7 @@ class DefaultScoringFormula(ScoringFormula):
 
 
 #autor: tennov
-#The code below calculates score based on the function traces collected by zimpaf extension
+#The code below calculates score based on the function traces collected by zimpaf_fpm extension
 from libzimpaf.constants import (APICallTraceStatus, CandidatePriority, SoftwareFlaw, Vulnerability,
                                  Key)
 import libzimpaf.function_traces as func_trace

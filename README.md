@@ -46,12 +46,11 @@ It combines Zend VM–level instrumentation with feedback mechanism to provide d
 
 > **Zend Instrumentation Module for PHP Application Fuzzing**
 
-It is an interpreter instrumentation engine to achieve a high-fidelity web application fuzzing via
-branch, error and exception, language construct and function call monitoring. See ZIMPAF's README for details.
+It is a runtime interpreter instrumentation engine to achieve a high-fidelity, highly targeted, and deterministic web application fuzzing via function call and opcode execution monitoring to collec the traces of function calls, language constructs, input-tainted branches, coverage, and errors and exceptions. ([See ZIMPAF for details](https://github.com/tennovs/zimpaf_redphuzz/tree/main/zimpaf)).
 
 ## What is RedPhuzz?
 
-**RedPhuzz** is a redesigned fuzzer based on:
+**RedPhuzz** is a redesigned fuzzer based on to allow high-fidelity, higly-targeted, and deterministic fuzzing guided by the runtime semantics of function and language construct executions, input-tainted branches, and coverage. It goes beyond the traditional coverage feedback fuzzing and error- and exception-based detection with capability to detect "silent-vulnerability" when fuzzing produces no errors/exceptions while vulnerabilites still exis. [See RedPhuzz for details](https://github.com/tennovs/zimpaf_redphuzz/tree/main/redphuzz)
 
 Phuzz — Neef, Sebastian, Lorenz Kleissner, and Jean-Pierre Seifert.
 *"What all the phuzz is about: A coverage-guided fuzzer for finding vulnerabilities in PHP web applications."*

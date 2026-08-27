@@ -1,18 +1,11 @@
 # RedPhuzz
 
-RedPhuzz is a high-fidelity web application fuzzer that leverages runtime
-information produced by ZIMPAF, including:
-
+RedPhuzz is a high-fidelity,  web application fuzzer that leverages runtime
+semantics feedback produced by ZIMPAF, to achieve highly-targeted and deterministic fuzzing that goes beyond the traditional code coverage feedback. It also extends beyond simple error-and exception-based detection that fails when the code allows only well-formed input reaching vulnerable functions, resulting in no error while vulnerabilities still exist. Instead, it utilizes function-level semantics to detect these "silent vulnerabilities. The feedback includes:
 - Coverage reports
-- Error reports
-- Exception traces
-- Language construct traces
-- Function call traces
-- Input parameters used as operands in branch instruction.
-
-By combining grey-box feedback with fine-grained Zend-level instrumentation,
-RedPhuzz enables precise and structured vulnerability detection for PHP
-applications.
+- Error and Exception traces
+- Function call and language construct execution traces
+- Input-tainted branch traces .
 
 ---
 
@@ -22,48 +15,16 @@ applications.
 
 RedPhuzz performs fuzzing at two complementary levels:
 
+- **Function-level fuzzing** — Targets security-sensitive functions and language constructs based on runtime traces.
 - **Input-level fuzzing** — Mutates HTTP parameters and payloads.
-- **Function-level fuzzing** — Targets security-sensitive functions and
-  language constructs based on runtime traces.
 
-This dual-level strategy increases precision when exploring vulnerability-relevant code paths.
-
----
-
-### 2. Multi-Stage Vulnerability Detection
-
-RedPhuzz uses layered detection mechanisms:
-
-#### (a) Error-Based Detection
-Triggers when runtime errors or warnings are produced.
-Useful for detecting classic injection and misuse vulnerabilities.
-
-#### (b) Function-Trace-Based Detection
-Detects silent vulnerabilities that:
-- Produce no errors
-- Require well-formed input
-- Only manifest through execution of dangerous functions
-
-This allows detection beyond simple crash or error signals.
-
-#### (c) Safe-Sequence Verification
-Identifies whether sensitive functions are executed safely by verifying
-that they are preceded by a correct sequence of sanitization or secure calls.
-
-Example secure sequence:
-- `prepare`
-- `bind`
-- `execute`
-
-Safe-sequence analysis is also used to validate function-based detection
-and reduce false positives.
+This dual-level mode increases precision when exploring vulnerability-relevant code paths.
 
 ---
 
 ## Mutation Strategies
 
-RedPhuzz implements three advanced mutation strategies:
-
+For function-level fuzzing, RedPhuzz mutation specifically targets tainted-parameters and guided by three advanced mutation strategies to allow deterministic fuzzing.
 ### 1. Sanitization-Aware Mutation
 Generates inputs that:
 - Satisfy required sanitization sequences
@@ -74,7 +35,7 @@ This enables deeper exploration of protected execution paths.
 
 ---
 
-### 2. Parameter-in-Branch Mutation
+### 2. Input-tainted branch mutation
 Targets branch instructions whose operands originate from user input.
 
 Two sub-strategies:
@@ -97,6 +58,34 @@ Generates mutations that:
 
 This is particularly effective for database-driven applications.
 
+When function-level fuzzing completed, RedPhuzz continues with input-level fuzzing and perform stochastic/random mutation for path exploration.
+
+---
+
+### 2. Multi-Stage Vulnerability Detection
+
+RedPhuzz uses multi-stage detection mechanisms:
+
+#### (a) Error-Based Detection
+Triggers when runtime errors or warnings are produced. Useful for detecting classic injection and misuse vulnerabilities.
+
+#### (b) Function-Trace-Based Detection
+Detects silent vulnerabilities that:
+- Produce no errors
+- Require well-formed input
+- Only manifest through execution of dangerous functions
+
+This allows detection beyond simple error and exception signals.
+
+#### (c) Safe-Sequence Verification
+Identifies whether sensitive functions are executed safely by verifying that they are preceded by a safe-call-semantics.
+Example:
+- `prepare`
+- `bind`
+- `execute`
+
+Safe-sequence analysis is also used to validate function-based detection and reduce false positives.
+
 ---
 
 ## Supported Vulnerability Classes
@@ -114,27 +103,13 @@ security-sensitive functions and language constructs:
 Notes:
 
 - Stored XSS often involves SQL `INSERT` / `UPDATE` flows.
-- Reflected XSS is typically detected at the output level and may not
-  directly correspond to a specific function or language construct.
+- Reflected XSS is typically detected at the output level and may not directly correspond to a specific function or language construct.
 
 ---
 
-## Design Philosophy
-
-RedPhuzz is designed to:
-
-- Go beyond simple error-based fuzzing
-- Detect silent vulnerabilities
-- Reduce false positives via safe-sequence verification
-- Use structured runtime feedback instead of blind mutation
-- Integrate tightly with Zend-level instrumentation
-
-It is built for high-fidelity, research-grade fuzzing of PHP web applications.
-
 ## Reporting Bugs
 
-If you discover a bug or security issue, please open an issue on GitHub.
-For responsible disclosure of security vulnerabilities, you may contact:
+If you discover a bug or security issue, please open an issue on GitHub. For responsible disclosure of security vulnerabilities, you may contact:
 
 Tennov Simanjuntak
 <tennov.simanjuntak@uta.edu>

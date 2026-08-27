@@ -499,7 +499,7 @@ zend_string *is_zval_value_in_array(zend_execute_data *execute_data, zval *zv, z
             //Pragmatic solution to avoid SIGSEGV on PHP >= 8.5
             #if PHP_VERSION_ID >= 80500
                 if (fetch_isset->op2_type == IS_TMP_VAR) {
-                        // Fall through to the 'else' branch below for PHP 8.5+ tmp_vars, avoiding SIGSEGV
+                        // Fall through for PHP 8.5+ tmp_vars, avoiding SIGSEGV
                     return NULL;
                 }
             #endif
