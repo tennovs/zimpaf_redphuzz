@@ -203,6 +203,13 @@ docker start zimpaf_redphuzz
 ```
 wait for about 1-2 minutes until the apache2 on docker is ready to serve requests.
 
+If you also stop the database, restart it using this command:
+
+```bash
+docker start db_zredphuzzf_mysql
+```
+wait for about 1-2 minutes until the mysql db on docker is ready to serve requests.
+
 ---
 
 
