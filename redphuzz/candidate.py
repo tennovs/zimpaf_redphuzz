@@ -76,7 +76,6 @@ class Candidate:
         self.parameter_comparison_report = [] #holds input params used in conditional statement, list of dict
         self.mutated_parameter_comparison = [] #holds which parameters and conditional branches applied to candidate
                                                #for mutation. list of dict
-        self.vuln_functions_sink_constant = 0   #For evaluation only, to store vuln funcs whose sinks are constant, marked by backward constant probe
         
         
 
@@ -125,8 +124,7 @@ class Candidate:
             'num_iterations' : self.num_iterations,
             'sanitation_report' : self.sanitation_report,
             'parameter_comparison_report' : self.parameter_comparison_report,
-            'mutated_parameter_comparison' : self.mutated_parameter_comparison,
-            'vuln_functions_sink_constant' : self.vuln_functions_sink_constant
+            'mutated_parameter_comparison' : self.mutated_parameter_comparison
         }
 
     def __str__(self):

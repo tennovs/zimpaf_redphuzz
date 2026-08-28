@@ -18,7 +18,7 @@ PATHTRAVS_VULN_FUNCTIONS = {'include', 'include_once', 'require', 'require_once'
                            'fopen', 'glob', 'lchgrp', 'lchown', 'link', 'mkdir', 'move_uploaded_file',
                            'parse_ini_file', 'parse_ini_string', 'readfile', 'rename',
                            'rmdir', 'stat', 'symlink', 'tempnam', 'touch', 'unlink', 'scandir', 'header',
-                           'clearstatcache', 'disk_free_space', 'disk_total_space', 
+                           'clearstatcache', 'disk_free_space', 'disk_total_space', 'file_get_contents',
                            'fileatime', 'filectime', 'filegroup', 'fileinode', 'filemtime', 'fileowner',
                            'filesize', 'fileperms', 'filetype', 'linkinfo',
                            'lstat', 'readlink'} #46 functions
@@ -128,13 +128,11 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
     '''
     For evaluation data
     '''
-    # uncomment 4 functions below to inspect categorization of functions by debugging and set a breakpoint at last statement
-    if f_trace:
-        num_functions = len(candidate.function_trace)
-    num_vuln_functions = 0
-    num_sanit_functions = 0
-    num_untainted_vuln_functions = 0          #uncomment and set breakpoint to see functions whose sink originates from constant, identified by backward constant probe
-    num_trav_functions_in_code_base = 0
+    # num_functions = len(candidate.function_trace)
+    # num_vuln_functions = 0
+    # num_sanit_functions = 0
+    # num_untainted_vuln_functions = 0
+    # num_trav_functions_in_code_base = 0
     if f_trace is None:
         trace_status |= APICallTraceStatus.NO_TRACE
         return trace_status
@@ -147,7 +145,7 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
             continue
 
         elif func_name in SANITATION_FUNCTIONS:
-            num_sanit_functions += 1                                            #uncomment to count number of sanitization functions                                    
+            # num_sanit_functions += 1
             if func != prev_sanit_func:
                 trace_status |= APICallTraceStatus.EXIST_SANITATION_FUNCTION
                 candidate.sanit_functions.append(func)
@@ -157,32 +155,32 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
             continue
 
         elif func_name in CODE_EXEC_VULN_FUNCTIONS:
-            num_vuln_functions += 1                                             #uncomment to count number of vulnerable functions
+            # num_vuln_functions += 1
 
             trace_status |= APICallTraceStatus.EXIST_CODE_EXEC_VULN_FUNCTION
             if Key.COMMAND_OPLINE_TYPE in func and  func[Key.COMMAND_OPLINE_TYPE] != OplineType.IS_CONST:
                 is_vuln_func = True
                 f_param = func[Key.COMMAND]
             else:
-                num_untainted_vuln_functions += 1                               #uncomment to count number of vuln functions whose sink originates from constants
+                # num_untainted_vuln_functions += 1
 
                 print(f"\033[32mVULN FUNCTION: {func[Key.FUNCTION_NAME]} is safe, PARAMETER IS CONSTANT. \033[0m")
                 print(f"Location: {func[Key.FILENAME]}:{func[Key.LINENO]}")
                 f_trace.remove(func) 
                 continue
         elif func_name in PATHTRAVS_VULN_FUNCTIONS:
-            num_vuln_functions += 1                                             #uncomment to count number of vulnerable functions
+            # num_vuln_functions += 1
 
             trace_status |= APICallTraceStatus.EXIST_PATHTRAVS_VULN_FUNCTION
             if Key.PATH_OPLINE_TYPE in func and func[Key.PATH_OPLINE_TYPE] == OplineType.IS_CONST:
-                num_untainted_vuln_functions += 1                               #uncomment to count number of vuln functions whose sink originates from constants
+                # num_untainted_vuln_functions += 1
 
                 print(f"\033[32mVULN FUNCTION: {func[Key.FUNCTION_NAME]} is safe, PARAMETER IS CONSTANT. \033[0m")
                 print(f"Location: {func[Key.FILENAME]}:{func[Key.LINENO]}")
                 f_trace.remove(func)
                 continue 
             elif traversal_function_path_in_codebase(func):
-                num_trav_functions_in_code_base += 1                            #uncomment to count traversal functions whose path in the code base, signifying invulnerability for path travs
+                # num_trav_functions_in_code_base += 1
                 f_trace.remove(func) 
                 continue
             elif Key.PATH_OPLINE_TYPE in func and func[Key.PATH_OPLINE_TYPE] != OplineType.IS_CONST:
@@ -191,13 +189,13 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
             
             
         elif func_name in SQLI_VULN_FUNCTIONS:
-            num_vuln_functions += 1                                             #uncomment to count number of vulnerable functions
+            # num_vuln_functions += 1
 
             trace_status |= APICallTraceStatus.EXIST_SQLI_VULN_FUNCTION
             is_vuln_func = True
             if Key.QUERY_FUNC in func and func[Key.QUERY_FUNC]== 1:
                 if Key.QUERY_OPLINE_TYPE in func and func[Key.QUERY_OPLINE_TYPE] == OplineType.IS_CONST:
-                    num_untainted_vuln_functions += 1                           #uncomment to count number of vuln functions whose sink originates from constants
+                    # num_untainted_vuln_functions += 1
 
                     is_vuln_func = False
                     print(f"\033[32mVULN FUNCTION: {func[Key.FUNCTION_NAME]} is safe, PARAMETER IS CONSTANT. \033[0m")
@@ -215,28 +213,28 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
                 f_param = func[Key.QUERY]
 
         elif func_name in UNSERIALIZE_VULN_FUNCTIONS:
-            num_vuln_functions += 1                                             #uncomment to count number of vulnerable functions
+            # num_vuln_functions += 1
 
             trace_status |= APICallTraceStatus.EXIST_UNSERIALIZE_VULN_FUNCTION
             if Key.SERIALIZED_STRING_OPLINE_TYPE in func and func[Key.SERIALIZED_STRING_OPLINE_TYPE] != OplineType.IS_CONST:
                 is_vuln_func = True
                 f_param = func[Key.SERIALIZED_STRING]
             else:
-                num_untainted_vuln_functions += 1                               #uncomment to count number of vuln functions whose sink originates from constants
+                # num_untainted_vuln_functions += 1
 
                 print(f"\033[32mVULN FUNCTION: {func[Key.FUNCTION_NAME]} is safe, PARAMETER IS CONSTANT. \033[0m")
                 print(f"Location: {func[Key.FILENAME]}:{func[Key.LINENO]}")
                 f_trace.remove(func)
                 continue
         elif func_name in XXE_VULN_FUNCTIONS:
-            num_vuln_functions += 1                                             #uncomment to count number of vulnerable functions
+            # num_vuln_functions += 1
 
             trace_status |= APICallTraceStatus.EXIST_XXE_VULN_FUNCTION
             if Key.XML_PAYLOAD_OPLINE_TYPE in func and func[Key.XML_PAYLOAD_OPLINE_TYPE] != OplineType.IS_CONST:
                 is_vuln_func = True
                 f_param = func[Key.XML_PAYLOAD]
             else:
-                num_untainted_vuln_functions += 1                               #uncomment to count number of vuln functions whose sink originates from constants
+                # num_untainted_vuln_functions += 1
 
                 print(f"\033[32mVULN FUNCTION: {func[Key.FUNCTION_NAME]} is safe, PARAMETER IS CONSTANT. \033[0m")
                 print(f"Location: {func[Key.FILENAME]}:{func[Key.LINENO]}")
@@ -281,11 +279,9 @@ def set_api_call_trace_status(candidate, ff_vuln_function_hashes): #f_trace is a
                     func[Key.FUNC_SANIT_REP] = None
                     candidate.vuln_functions.append(func)
           
-    candidate.vuln_functions_sink_constant = num_untainted_vuln_functions
     if processing_err_flag:
-        candidate.api_call_status |= APICallTraceStatus.INCOMPLETE
-    else:     
-        candidate.api_call_status = trace_status
+        candidate.api_call_status |= APICallTraceStatus.INCOMPLETE     
+    candidate.api_call_status = trace_status
 
 '''
 This function main purpose is to update sanitation functions be used in producing sanitation report by
@@ -404,10 +400,10 @@ def is_vuln_func_exec_safe(vf, c, patterns, sink_key, opline_type_key):
             func_name = func[Key.FUNCTION_NAME]
             if func_name in options:
                 #case 1: the function in trace is a sanitation function.
-                if func_name in SANITATION_FUNCTIONS:   #don't match to vuln function, but match the fuzz inputs to string to be sanitized
+                if func_name in SANITATION_FUNCTIONS:           #don't match to vuln function, but match the fuzz inputs to string to be sanitized
                     if Key.STRING in func and func[Key.STRING]: #sanitation function has to have string parameter, otherwise it is weird, ignore this function call
-                        tainted_string = func[Key.STRING] #the string to be sanitized
-                    elif Key.PATH in func and func[Key.PATH]: #for path traversal, the path is the string to be sanitized
+                        tainted_string = func[Key.STRING]       #the string to be sanitized
+                    elif Key.PATH in func and func[Key.PATH]:   #for path traversal, the path is the string to be sanitized
                         tainted_string = func[Key.PATH]
                     params_reach_sink = utils.match_fuzz_params_to_function_param(c.fuzz_params, tainted_string)
                     if not params_reach_sink: #the sanitation function does not use our input, seems bogus

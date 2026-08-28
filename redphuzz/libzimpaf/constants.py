@@ -38,7 +38,7 @@ class Key:
     PARAMS_QUOTED       = 'params_quoted'       #num of quoted literal params in sql query
     PARAMS_NUMERIC      = 'params_numeric'      #num of numeric literal params in sql query, excl: NULL, TRUE, FALSE
     PARAMS_UNQUOTED     = 'params_unquoted'     #num of unquoted literal params in sql query, numeric, null, bool
-    QUERY_OPLINE_TYPE   = 'sink_opline_type'   #is query originated from constant, despite the use of opline the value only 1 (IS_CONST) or 0 otherwise
+    QUERY_OPLINE_TYPE   = 'sink_opline_type'    #is query originated from constant, despite the use of opline the value only 1 (IS_CONST) or 0 otherwise
     COMMAND             = 'command'             #for function trace: code_exec
     COMMAND_OPLINE_TYPE = 'sink_opline_type'
     PATH                = 'path'                #for function trace: pathtravs
@@ -71,10 +71,10 @@ class Key:
     DATA_TYPE           = 'data_type'           #data type of the column parsed from query and db metadata, see utils.get_tables_columns_to_fuzz and fuzzer.fuzz_sqli_function
     PARAMS_IN_SINK      = 'params_in_sink'      #hold input parameters reach sink
     FUNC_SANIT_REP      = 'func_sanit_rep'      #hold sanitation applied to parameters of vulnerable function
-    REQ_PART            = 'req_part'        #part of request: headers, cookies, body params, query params
-    PARAM               = 'param'           #the parameter in REQ_PART
+    REQ_PART            = 'req_part'            #part of request: headers, cookies, body params, query params
+    PARAM               = 'param'               #the parameter in REQ_PART
     QUOTED              = 'quoted'
-    IS_ERROR            = 'is_error'        #whether the error is triggered by the candidate
+    IS_ERROR            = 'is_error'            #whether the error is triggered by the candidate
 
     CODE_EXEC_FUNCTION      = 'CODE_EXECUTION_FUNCTION' #These naming are extension of Vulnerability class
     PATHTRAVS_FUNCTION      = 'PATH_TRAVERSAL_FUNCTION' #use as keys, e.g. in candidate.vuln_functions = {}

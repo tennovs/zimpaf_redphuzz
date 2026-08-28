@@ -2510,15 +2510,16 @@ if __name__ == "__main__":
             "wordpress/nirweb-support",                             #moderate input growth, the entire fuzzing lasts long using single process
             "wordpress/photo-gallery",                              #moderate input growth, the entire fuzzing lasts long using single process
             "wordpress/show-all-comments-in-one-page",              #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/ubigeo-peru",                                 #moderate input growth, the entire fuzzing lasts long using single process
-            "wordpress/udraw",                                       #moderate input growth, the entire fuzzing lasts long using single process
+            "wordpress/ubigeo-peru"                                 #moderate input growth, the entire fuzzing lasts long using single process
+            "wordpress/udraw"                                       #moderate input growth, the entire fuzzing lasts long using single process
             "wordpress/all-in-one-wp-security-and-firewall",
-            "wordpress/newsletter-optin-box",        #open redirect, out of scope for now
+            "wordpress/newsletter-optin-box"        #open redirect, out of scope for now
             "wordpress/phastpress",                 #open redirect, out of scope for now
             "wordpress/pie-register",               #open redirect, out of scope for now
+            "wordpress/phastpress"                  #open redirect, out of scope for now
             "wordpress/webp-converter-for-media",   #open redirect, out of scope for now
             "instrumentation_test",                                 #For comparing execution time of ZIMPAF and PCOV+UOPZ, no vulnerabilites
-            "testsuite"                                            #Small, single path to test the monitored function
+            "testsuite",                                            #Small, single path to test the monitored function
         }
         fuzzed_inputs = [input for input in inputs if not any(x in input for x in EXCLUDED)]
 

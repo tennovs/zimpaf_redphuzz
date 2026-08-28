@@ -877,7 +877,7 @@ class ZimpafVulnChecker(VulnChecker):
         
         if Key.FUNC_SANIT_REP in vuln_func and vuln_func.get(Key.FUNC_SANIT_REP):
             sanit_rep = vuln_func[Key.FUNC_SANIT_REP]
-            if malice_param_key in sanit_rep and sanit_rep[malice_param_key]: #check if the malice param is sanitized, if yes, then check the sanitation sequence to see if the payload can be transformed to a known malicious pattern.
+            if malice_param_key in sanit_rep and sanit_rep.get(malice_param_key):
                 sanit_seq = sanit_rep[malice_param_key][0]
                 sink = function_traces.generate_sanitation_aware_string(sanit_seq,sink)
         
