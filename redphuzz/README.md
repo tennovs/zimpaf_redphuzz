@@ -62,7 +62,7 @@ When function-level fuzzing completed, RedPhuzz continues with input-level fuzzi
 
 ---
 
-### 2. Multi-Stage Vulnerability Detection
+### 4. Multi-Stage Vulnerability Detection
 
 RedPhuzz uses multi-stage detection mechanisms:
 
