@@ -19,7 +19,7 @@ The preprint manuscript can be cited as follows:
 ```
 
 ### ZIMPAF v1.2.0 is released
-- Adds support for PHP 8.4 and 8.5. The ZIMPAF_RedPhuzz framework has been tested with PHP 8.3.19, 8.4.24, 8.5.7, and 8.5.9. See zimpaf/README for details.
+- Adds support for PHP 8.4 and 8.5. The ZIMPAF_RedPhuzz framework has been tested with PHP 8.3.19, 8.4.24, 8.5.7, and 8.5.9. ([See ZIMPAF for details](https://github.com/tennovs/zimpaf_redphuzz/tree/main/zimpaf)).
 
 
 ### ZIMPAF v1.1.0 is released
