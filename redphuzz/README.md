@@ -22,10 +22,10 @@ This dual-level mode increases precision when exploring vulnerability-relevant c
 
 ---
 
-## Mutation Strategies
+### 2. Mutation Strategies
 
 For function-level fuzzing, RedPhuzz mutation specifically targets tainted-parameters and guided by three advanced mutation strategies to allow deterministic fuzzing.
-### 1. Sanitization-Aware Mutation
+### 2.1. Sanitization-Aware Mutation
 Generates inputs that:
 - Satisfy required sanitization sequences
 - Bypass partial sanitization
@@ -35,7 +35,7 @@ This enables deeper exploration of protected execution paths.
 
 ---
 
-### 2. Input-tainted branch mutation
+### 2.2. Input-tainted branch mutation
 Targets branch instructions whose operands originate from user input.
 
 Two sub-strategies:
@@ -50,7 +50,7 @@ Two sub-strategies:
 
 ---
 
-### 3. Data-Type-Aware Mutation
+### 2.3. Data-Type-Aware Mutation
 Generates mutations that:
 - Comply with expected database constraints
 - Deliberately violate type or schema expectations
@@ -62,14 +62,14 @@ When function-level fuzzing completed, RedPhuzz continues with input-level fuzzi
 
 ---
 
-### 4. Multi-Stage Vulnerability Detection
+### 3. Multi-Stage Vulnerability Detection
 
 RedPhuzz uses multi-stage detection mechanisms:
 
-#### (a) Error-Based Detection
+#### 3.1 Error-Based Detection
 Triggers when runtime errors or warnings are produced. Useful for detecting classic injection and misuse vulnerabilities.
 
-#### (b) Function-Trace-Based Detection
+#### 3.2 Function-Trace-Based Detection
 Detects silent vulnerabilities that:
 - Produce no errors
 - Require well-formed input
@@ -77,7 +77,7 @@ Detects silent vulnerabilities that:
 
 This allows detection beyond simple error and exception signals.
 
-#### (c) Safe-Sequence Verification
+#### 3.3 Safe-Sequence Verification
 Identifies whether sensitive functions are executed safely by verifying that they are preceded by a safe-call-semantics.
 Example:
 - `prepare`
