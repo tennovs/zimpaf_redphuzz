@@ -24,14 +24,20 @@ The preprint manuscript can be cited as follows:
 
   **Option 1: Clone as a standalone directory (stripping git history)**
   a. `cd zimpaf_redphuzz`
+
   b. `rm -rf zimpaf`
+
   c. `git clone https://github.com/tennovs/zimpaf`
+
   d. `cd zimpaf && rm -rf .git && cd ..`
 
   **Option 2: Add ZIMPAF as a Git submodule**
   a. `cd zimpaf_redphuzz`
+
   b. `git rm -r zimpaf`
+
   c. `git submodule add https://github.com/tennovs/zimpaf.git zimpaf`
+
   d. `git commit -m "Switch zimpaf directory to a git submodule"`
 
 
