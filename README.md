@@ -18,6 +18,24 @@ The preprint manuscript can be cited as follows:
 }
 ```
 
+### ZIMPAF v1.2.1 is released
+- ZIMPAF v1.2.1 is now available in [its dedicated repository](https://github.com/tennovs/zimpaf). This decouples ZIMPAF from RedPhuzz, allowing it to be used independently with any fuzzer utilizing ZIMPAF traces. Going forward, all ZIMPAF development is published in the new repository. Please refer to [RELEASE_NOTES](https://github.com/tennovs/zimpaf/blob/main/RELEASE_NOTES.md) for detailed update information.
+- If you want to use it inside an existing `zimpaf_redphuzz` project, you can delete the `zimpaf` folder and proceed with either of these options:
+
+  **Option 1: Clone as a standalone directory (stripping git history)**
+  a. `cd zimpaf_redphuzz`
+  b. `rm -rf zimpaf`
+  c. `git clone https://github.com/tennovs/zimpaf`
+  d. `cd zimpaf && rm -rf .git && cd ..`
+
+  **Option 2: Add ZIMPAF as a Git submodule**
+  a. `cd zimpaf_redphuzz`
+  b. `git rm -r zimpaf`
+  c. `git submodule add https://github.com/tennovs/zimpaf.git zimpaf`
+  d. `git commit -m "Switch zimpaf directory to a git submodule"`
+
+
+
 ### ZIMPAF v1.2.0 is released
 - Adds support for PHP 8.4 and 8.5. The ZIMPAF_RedPhuzz framework has been tested with PHP 8.3.19, 8.4.24, 8.5.7, and 8.5.9. ([See ZIMPAF for details](https://github.com/tennovs/zimpaf_redphuzz/tree/main/zimpaf)).
 
