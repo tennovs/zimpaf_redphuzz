@@ -23,6 +23,7 @@ The preprint manuscript can be cited as follows:
 - If you want to use it inside an existing `zimpaf_redphuzz` project, you can delete the `zimpaf` folder and proceed with either of these options:
 
   **Option 1: Clone as a standalone directory (stripping git history)**
+
   a. `cd zimpaf_redphuzz`
 
   b. `rm -rf zimpaf`
@@ -32,6 +33,7 @@ The preprint manuscript can be cited as follows:
   d. `cd zimpaf && rm -rf .git && cd ..`
 
   **Option 2: Add ZIMPAF as a Git submodule**
+
   a. `cd zimpaf_redphuzz`
 
   b. `git rm -r zimpaf`
