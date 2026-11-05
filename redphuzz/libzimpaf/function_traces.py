@@ -299,7 +299,7 @@ def traversal_function_path_in_codebase(vuln_func):
 def update_sanitation_functions(c, trace_is_updated=False, vuln_type=None):
     #If trace is just updated, then use c.function_trace directly
     #otherwise, load from shared tmpfs, so that the trace and input parameters are consistent, not stale
-    new_sanit_funcs = None
+    new_sanit_funcs = []
     #the caller function just updated the trace
     if trace_is_updated:                        #caller is function_based_check(...) and sanitation_report
         new_trace = c.function_trace            #that is called from copy_candidate(...)
@@ -321,7 +321,7 @@ def update_sanitation_functions(c, trace_is_updated=False, vuln_type=None):
         new_sanit_funcs = [func for func in new_trace if func.get(Key.SANITATION_FLAG) and
                                                         func.get(Key.FUNCTION_NAME) in sanit_funcs]
         return new_sanit_funcs
-    return None
+    return new_sanit_funcs
 
        
 def is_vuln_funcs_executed_in_safe_seq(c, start_time=None, vuln_func=None): #c is candidate
